@@ -22,6 +22,8 @@
 
 An AI-transformation portfolio for **a large FMCG business** — a prioritised map of *where* AI pays off, plus running software that proves the top three cases. Everything runs on one laptop, offline, with no API key. Every number below is either **measured by a test in this repo** or a **labelled estimate with its basis written down** — nothing is asserted.
 
+> **▶ Try it live in your browser:** [**fmcgai.netlify.app**](https://fmcgai.netlify.app/) — the landing page has three *playable* demos (drag the cockpit sliders, flip the assistant's role gate, work the invoice queue). They run fully client-side on the **real engine output**. The complete Python systems run locally via `START_ALL.bat`.
+
 ```text
 Windows:  double-click  files practice/START_ALL.bat   →   it opens HOME.html
 Anything else:  see "Run it" below

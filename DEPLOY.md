@@ -1,16 +1,23 @@
 # Deploy & publish
 
-## Why Netlify was blank / erroring
-1. **No `index.html` at the repo root** → Netlify had nothing to serve at `/` (blank page / 404). **Fixed:** a hand-written static `index.html` is now the landing page.
-2. **The three apps are Python servers** (ports 8765/8770/8780). Netlify is *static hosting* — it cannot run Python, so any `localhost` links break once hosted. **Fixed:** the hosted page **showcases** the apps with screenshots + a "run locally" quick-start, and never links to `localhost`. The **strategy documents** (blueprint, deck, one-pager) are pure HTML and work perfectly on Netlify.
-3. **Heavy backup files** (`*.gitbundle`, ~81 MB) were bloating the repo. **Fixed:** they're now git-ignored and removed from tracking.
+## Why Netlify was blank / erroring — and what changed
+1. **No `index.html` at the repo root** → Netlify had nothing to serve at `/` (blank page / 404). **Fixed:** a polished, business-first `index.html` is now the landing page — animated stats, a live ROI model, and three **Launch live demo** buttons.
+2. **The three apps were Python servers** (ports 8765/8770/8780). Netlify is *static hosting* — it can't run Python. **Fixed:** each app now has a **fully client-side, browser-playable demo** under `demo/` that reads the **real engine output** (extracted by `files practice/build_demo_data.py`, de-branded, inlined into each page so it works on Netlify *and* offline). Visitors can actually drag the cockpit sliders, flip the assistant's role gate, and work the invoice queue — no server, no `localhost`.
+3. **Heavy backup files** (`*.gitbundle`, ~81 MB) were bloating the repo. **Fixed:** git-ignored and removed from tracking.
 
-## What's hosted vs. local
-| Works on Netlify (static) | Runs locally only (Python) |
+## What's on the hosted site now
+| Page | What a visitor can do |
 |---|---|
-| `index.html` (landing) · `2026-07-12-fmcg-blueprint.html` · `-blueprint-deck.html` · `-exec-onepager.html` · `-portfolio-home.html` | Demand Cockpit · Company Assistant · Invoice Checker (`files practice/START_ALL.bat`) |
+| `index.html` | Landing — stats, live ROI scenario model, links into everything |
+| `demo/cockpit/index.html` | **Playable** — price/demand sliders recompute via real elasticities; role gate hides ₹ |
+| `demo/assistant/index.html` | **Playable** — 25 real cited answers; flip role → confidential Qs refuse vs answer; open sources |
+| `demo/invoice/index.html` | **Playable** — work the review queue, approve/reject, answer key revealed |
+| `2026-07-12-*.html` | Blueprint, board deck, one-pager, portfolio home |
+| `showcase.html` | Screenshots + one-command local run for the **full** Python systems |
 
-`netlify.toml` sets `publish = "."`, an empty build command (nothing to compile), a soft-404 fallback to `index.html`, and basic security headers.
+The full Python systems (with the LP solver, SQLite DB and test gates) still run locally via `files practice/START_ALL.bat`; the browser demos show the decision surface, the local apps run the complete engine.
+
+`netlify.toml` sets `publish = "."`, an empty build command, a soft-404 fallback to `index.html` (real files/dirs always win, so `demo/*` resolve directly), and basic security headers.
 
 ## Publish it (one block — run in the repo root)
 ```bash
