@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0022",
+ "po_date": "2025-04-29",
+ "buyer": {
+  "code": "DIST-EA-036",
+  "city": "Ranchi",
+  "state": "Jharkhand",
+  "gstin": "14SYNTH9929F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-SNACSNA-110",
+   "description": "SnackFactory Namkeen (100g / 600ml)",
+   "hsn": "2008",
+   "qty": 624,
+   "unit_price": 15.2
+  },
+  {
+   "sku": "DS-SNACNOT-135",
+   "description": "NotJustNuts TrailMix (200g / 1L)",
+   "hsn": "2008",
+   "qty": 240,
+   "unit_price": 38.0
+  },
+  {
+   "sku": "DS-DAIRKSH-067",
+   "description": "Ksheer Ghee (12g / 200ml)",
+   "hsn": "0403",
+   "qty": 288,
+   "unit_price": 9.6
+  }
+ ]
+}

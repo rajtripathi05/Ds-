@@ -1,0 +1,48 @@
+{
+ "invoice_no": "INV/25-26/1031",
+ "invoice_date": "2025-03-02",
+ "po_no": "PO-2025-0031",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-050",
+  "city": "Guwahati",
+  "state": "Assam",
+  "gstin": "30SYNTH3471F1Z5"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICCAT-130",
+   "description": "Catch ChilliPwd (50g / 250ml)",
+   "hsn": "0910",
+   "category": "Spices",
+   "qty": 624,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-BEVECAT-093",
+   "description": "Catch Water (50g / 250ml)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 240,
+   "unit_price": 7.8
+  }
+ ],
+ "subtotal": 6988.8,
+ "gst": {
+  "igst": 1257.98
+ },
+ "grand_total": 8246.78,
+ "amount_in_words": "Rupees Eight Thousand Two Hundred Forty Seven Only",
+ "coa": {
+  "coa_no": "COA-0031",
+  "issue_date": "2024-12-28",
+  "valid_till": "2025-12-28"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

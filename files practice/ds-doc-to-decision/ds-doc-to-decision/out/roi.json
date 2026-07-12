@@ -1,0 +1,20 @@
+{
+ "measured": {
+  "stp": 0.675,
+  "queue_pct": 0.2,
+  "reject_pct": 0.125,
+  "false_approvals_at_12pct_noise": 0,
+  "planted_caught": "13/13 (DECISIONS.md)"
+ },
+ "scenario": {
+  "docs_per_year": 70000,
+  "min_manual": 12,
+  "min_review": 4,
+  "rate_inr_hr": 400,
+  "manual_hours": 14000.0,
+  "system_hours": 1517,
+  "hours_saved": 12483,
+  "inr_saved": 4993333,
+  "note": "scale scenario uses blueprint estimate E6 (~70k docs/yr); measured rates from this repo"
+ }
+}

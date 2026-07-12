@@ -1,0 +1,4 @@
+model,wmape,bias,n_cells,fva_vs_plan_pp
+champion,0.0618,-0.0105,252,54.2494
+plan_target,0.6043,0.4901,252,0.0
+snaive,0.1505,-0.1355,252,45.3823

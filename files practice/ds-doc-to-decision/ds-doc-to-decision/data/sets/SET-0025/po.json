@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0025",
+ "po_date": "2025-02-28",
+ "buyer": {
+  "code": "DIST-NO-045",
+  "city": "Guwahati",
+  "state": "Assam",
+  "gstin": "20SYNTH8465F1Z1"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTTAN-031",
+   "description": "Tansen Supreme (50g / 250ml)",
+   "hsn": "2106",
+   "qty": 1100,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-SPICCAT-027",
+   "description": "Catch Sprinkler (50g / 250ml)",
+   "hsn": "0910",
+   "qty": 480,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-MOUTRAJ-034",
+   "description": "Rajnigandha PanMasala (50g / 250ml)",
+   "hsn": "2106",
+   "qty": 1200,
+   "unit_price": 8.2
+  }
+ ]
+}

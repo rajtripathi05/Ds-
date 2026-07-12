@@ -1,0 +1,52 @@
+{
+ "invoice_no": "INV/25-26/1024",
+ "invoice_date": "2025-05-08",
+ "po_no": "PO-2025-0024",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-010",
+  "city": "Ludhiana",
+  "state": "Punjab",
+  "gstin": "29SYNTH7553F1Z8"
+ },
+ "lines": [
+  {
+   "sku": "DS-CONFPUL-060",
+   "description": "Pulse Orange (8g / 5ml)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 800,
+   "unit_price": 3.4
+  },
+  {
+   "sku": "DS-CONFLUV-086",
+   "description": "LuvIt SharePack (2g / 1 unit)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 1200,
+   "unit_price": 1.36
+  },
+  {
+   "sku": "DS-SNACNOT-062",
+   "description": "NotJustNuts TrailMix (50g / 250ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 192,
+   "unit_price": 7.6
+  }
+ ],
+ "subtotal": 5811.2,
+ "gst": {
+  "igst": 1046.02
+ },
+ "grand_total": 6857.22,
+ "amount_in_words": "Rupees Six Thousand Eight Hundred Fifty Seven Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

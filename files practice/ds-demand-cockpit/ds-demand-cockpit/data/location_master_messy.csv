@@ -1,0 +1,62 @@
+distributor_code,super_stockist,territory,city,state,zone,channel,urban_rural,region_weight,golive
+DIST-NO-001,SS-NO-02,Gurugram-T1,Gurugram,Haryana,North,GT,Urban,1.155,2024-01-01
+DIST-NO-002,SS-NO-03,Ludhiana-T1,Ludhiana,Punjab,North,GT,Rural,1.447,2024-01-01
+DIST-NO-003,SS-NO-04,Sikar-T1,Sikar,Rajasthan,North,MT,Urban,1.199,2024-01-01
+DIST-NO-004,SS-NO-05,Gurugram-T1,Gurugram,Haryana,North,GT,Urban,1.353,2024-01-01
+DIST-NO-005,SS-NO-06,Delhi-T3,Delhi,Delhi,North,GT,Urban,1.55,2024-01-01
+DIST-NO-006,SS-NO-01,Gurugram-T1,Gurugram,Haryana,North,GT,Rural,1.365,2024-01-01
+DIST-NO-007,SS-NO-02,Sikar-T2,Sikar,Rajasthan,North,GT,Urban,1.388,2024-01-01
+DIST-NO-008,SS-NO-03,Delhi-T1,Delhi,Delhi,North,GT,Rural,1.155,2024-01-01
+DIST-NO-009,SS-NO-04,Delhi-T2,Delhi,Delhi,North,GT,Rural,1.25,2024-01-01
+DIST-NO-010,SS-NO-05,Ludhiana-T2,Ludhiana,Punjab,North,GT,Urban,1.422,2024-01-01
+DIST-NO-011,SS-NO-06,Gurugram-T3,Gurugram,Haryana,North,GT,Rural,1.317,2024-01-01
+DIST-NO-012,SS-NO-01,Jaipur-T2,Jaipur,Rajasthan,North,GT,Rural,1.358,2024-01-01
+DIST-WE-013,SS-WE-02,Ahmedabad-T2,Ahmedabad,Gujarat,West,GT,Rural,0.969,2024-01-01
+DIST-WE-014,SS-WE-03,Pune-T1,Pune,Maharashtra,West,GT,Rural,0.91,2024-01-01
+DIST-WE-015,SS-WE-04,Pune-T3,Pune,Maharashtra,West,MT,Urban,0.914,2024-01-01
+DIST-WE-016,SS-WE-05,Ahmedabad-T2,Ahmedabad,Gujarat,West,GT,Rural,0.964,2024-01-01
+DIST-WE-017,SS-WE-06,Ahmedabad-T2,Ahmedabad,Gujarat,West,GT,Rural,1.085,2024-01-01
+DIST-WE-018,SS-WE-01,Indore-T2,Indore,Madhya Pradesh,West,GT,Rural,1.11,2024-01-01
+DIST-WE-019,SS-WE-02,Indore-T3,Indore,Madhya Pradesh,West,GT,Urban,1.073,2024-01-01
+DIST-WE-020,SS-WE-03,Ahmedabad-T1,Ahmedabad,Gujarat,West,Ecom,Urban,0.963,2024-01-01
+DIST-WE-021,SS-WE-04,Indore-T3,Indore,Madhya Pradesh,West,MT,Urban,0.968,2024-01-01
+DIST-WE-022,SS-WE-05,Ahmedabad-T1,Ahmedabad,Gujarat,West,GT,Urban,0.973,2024-01-01
+DIST-SO-023,SS-SO-06,Bengaluru-T2,Bengaluru,Karnataka,South,Ecom,Urban,0.792,2024-01-01
+DIST-SO-024,SS-SO-01,Bengaluru-T1,Bengaluru,Karnataka,South,GT,Urban,0.711,2024-01-01
+DIST-SO-025,SS-SO-02,Chennai-T1,Chennai,Tamil Nadu,South,GT,Urban,0.909,2024-01-01
+DIST-SO-026,SS-SO-03,Hyderabad-T1,Hyderabad,Telangana,South,GT,Rural,0.891,2024-01-01
+DIST-SO-027,SS-SO-04,Chennai-T1,Chennai,Tamil Nadu,South,GT,Urban,0.805,2024-01-01
+DIST-SO-028,SS-SO-05,Bengaluru-T2,Bengaluru,Karnataka,South,GT,Urban,0.796,2024-01-01
+DIST-SO-029,SS-SO-06,Bengaluru-T3,Bengaluru,Karnataka,South,GT,Urban,0.707,2024-01-01
+DIST-SO-030,SS-SO-01,Bengaluru-T1,Bengaluru,Karnataka,South,GT,Rural,0.89,2024-01-01
+DIST-EA-031,SS-EA-02,Ranchi-T3,Ranchi,Jharkhand,East,Ecom,Urban,1.202,2024-01-01
+DIST-EA-032,SS-EA-03,Patna-T3,Patna,Bihar,East,GT,Urban,0.988,2024-01-01
+DIST-EA-033,SS-EA-04,Kolkata-T2,Kolkata,West Bengal,East,GT,Rural,1.087,2024-01-01
+DIST-EA-034,SS-EA-05,Patna-T2,Patna,Bihar,East,GT,Urban,0.943,2024-01-01
+DIST-EA-035,SS-EA-06,Kolkata-T3,Kolkata,West Bengal,East,GT,Rural,0.986,2024-01-01
+DIST-EA-036,SS-EA-01,Ranchi-T2,Ranchi,Jharkhand,East,GT,Rural,1.136,2024-01-01
+DIST-EA-037,SS-EA-02,Kolkata-T1,Kolkata,West Bengal,East,Ecom,Urban,0.931,2024-01-01
+DIST-EA-038,SS-EA-03,Kolkata-T3,Kolkata,West Bengal,East,GT,Urban,1.159,2024-01-01
+DIST-EA-039,SS-EA-04,Bhubaneswar-T1,Bhubaneswar,Odisha,East,GT,Urban,0.97,2024-01-01
+DIST-EA-040,SS-EA-05,Ranchi-T3,Ranchi,Jharkhand,East,MT,Urban,1.168,2024-01-01
+DIST-NO-041,SS-NO-06,Shillong-T2,Shillong,Meghalaya,Northeast,GT,Urban,1.078,2024-10-01
+DIST-NO-042,SS-NO-01,Guwahati-T3,Guwahati,Assam,Northeast,MT,Urban,1.206,2024-01-01
+DIST-NO-043,SS-NO-02,Guwahati-T2,Guwahati,Assam,Northeast,GT,Urban,1.067,2024-10-01
+DIST-NO-044,SS-NO-03,Agartala-T1,Agartala,Tripura,Northeast,Ecom,Urban,1.363,2024-10-01
+DIST-NO-045,SS-NO-04,Guwahati-T1,Guwahati,Assam,Northeast,GT,Urban,1.031,2024-10-01
+DIST-NO-046,SS-NO-05,Agartala-T1,Agartala,Tripura,Northeast,MT,Urban,1.239,2024-10-01
+DIST-NO-047,SS-NO-06,Guwahati-T2,Guwahati,Assam,Northeast,GT,Urban,1.376,2024-10-01
+DIST-NO-048,SS-NO-01,Guwahati-T3,Guwahati,Assam,Northeast,GT,Urban,1.351,2024-10-01
+DIST-NO-049,SS-NO-02,Shillong-T2,Shillong,Meghalaya,Northeast,GT,Urban,1.244,2024-01-01
+DIST-NO-050,SS-NO-03,Guwahati-T3,Guwahati,Assam,Northeast,GT,Urban,1.178,2024-01-01
+DIST-NO-051,SS-NO-04,Guwahati-T2,Guwahati,Assam,Northeast,GT,Rural,1.042,2024-10-01
+DIST-NO-052,SS-NO-05,Agartala-T2,Agartala,Tripura,Northeast,GT,Urban,1.161,2024-01-01
+DIST-CE-053,SS-CE-06,Raipur-T3,Raipur,Chhattisgarh,Central,GT,Rural,0.84,2024-01-01
+DIST-CE-054,SS-CE-01,Raipur-T2,Raipur,Chhattisgarh,Central,GT,Urban,0.965,2024-01-01
+DIST-CE-055,SS-CE-02,Indore-T2,Indore,Madhya Pradesh,Central,GT,Rural,0.938,2024-01-01
+DIST-CE-056,SS-CE-03,Indore-T1,Indore,Madhya Pradesh,Central,GT,Rural,0.914,2024-01-01
+DIST-CE-057,SS-CE-04,Raipur-T3,Raipur,Chhattisgarh,Central,GT,Rural,0.8,2024-01-01
+DIST-CE-058,SS-CE-05,Raipur-T3,Raipur,Chhattisgarh,Central,GT,Rural,0.825,2024-01-01
+DIST-CE-059,SS-CE-06,Indore-T2,Indore,Madhya Pradesh,Central,GT,Urban,0.954,2024-01-01
+DIST-CE-060,SS-CE-01,Raipur-T2,Raipur,Chhattisgarh,Central,GT,Urban,0.827,2024-01-01
+DIST-NO-001,SS-DUPLICATE,dup-collision,Gurugram,Haryana,North,GT,Urban,1.155,2024-01-01

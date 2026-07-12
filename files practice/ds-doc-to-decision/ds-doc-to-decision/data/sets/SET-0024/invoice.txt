@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1024               Date: 2025-05-08
+PO Ref: PO-2025-0024                     Buyer: DIST-NO-010 (Ludhiana, Punjab)
+Buyer GSTIN: 29SYNTH7553F1Z8
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-CONFPUL-060    Pulse Orange (8g / 5ml)     1704       800    3.40   2720.00
+DS-CONFLUV-086    LuvIt SharePack (2g / 1 uni 1704      1200    1.36   1632.00
+DS-SNACNOT-062    NotJustNuts TrailMix (50g / 2008       192    7.60   1459.20
+------------------------------------------------------------------------------
+                                                            Subtotal   5811.20
+                                                            IGST 18%   1046.02
+                                                         GRAND TOTAL   6857.22
+Amount in words: Rupees Six Thousand Eight Hundred Fifty Seven Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0014",
+ "po_date": "2025-06-16",
+ "buyer": {
+  "code": "DIST-NO-049",
+  "city": "Shillong",
+  "state": "Meghalaya",
+  "gstin": "10SYNTH2500F1Z1"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICKEW-077",
+   "description": "Kewal Std (200g / 1L)",
+   "hsn": "0910",
+   "qty": 144,
+   "unit_price": 41.0
+  },
+  {
+   "sku": "DS-SNACNOT-096",
+   "description": "NotJustNuts TrailMix (50g / 250ml)",
+   "hsn": "2008",
+   "qty": 672,
+   "unit_price": 7.6
+  }
+ ]
+}

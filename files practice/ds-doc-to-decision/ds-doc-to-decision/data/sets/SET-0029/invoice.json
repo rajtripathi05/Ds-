@@ -1,0 +1,36 @@
+{
+ "invoice_no": "INV/25-26/1029",
+ "invoice_date": "2025-08-30",
+ "po_no": "PO-2025-0029",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-CE-060",
+  "city": "Raipur",
+  "state": "Chhattisgarh",
+  "gstin": "35SYNTH8488F1Z2"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTTAN-085",
+   "description": "Tansen Supreme (25g)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 700,
+   "unit_price": 20.5
+  }
+ ],
+ "subtotal": 14350.0,
+ "gst": {
+  "igst": 2583.0
+ },
+ "grand_total": 17433.0,
+ "amount_in_words": "Rupees Seventeen Thousand Four Hundred Thirty Three Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

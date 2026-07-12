@@ -1,0 +1,21 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1003               Date: 2025-02-04
+PO Ref: PO-2025-0003                     Buyer: DIST-CE-056 (Indore, Madhya Pradesh)
+Buyer GSTIN: 36SYNTH2395F1Z1
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-BEVECAT-022    Catch GreenApple (50g / 250 2202        72    7.80    561.60
+------------------------------------------------------------------------------
+                                                            Subtotal    561.60
+                                                            IGST 18%    101.09
+                                                         GRAND TOTAL    662.69
+Amount in words: Rupees Six Hundred Sixty Three Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

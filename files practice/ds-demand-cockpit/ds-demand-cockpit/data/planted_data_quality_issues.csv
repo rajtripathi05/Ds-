@@ -1,0 +1,6 @@
+table,issue,rows_affected,keys,expected_system_behavior
+product_master,missing dist_price (blank),3,DS-BEVECAT-098; DS-SPICKEW-009; DS-CONFFRU-026,impute from mrp*(1-margins) or warn+continue
+product_master,#N/A literal in numeric mrp,1,DS-BEVECAT-006,"coerce-to-NaN + quarantine row, never fatal"
+product_master,unit mismatch: g rows labelled kg,3,DS-CONFPULSE-001; DS-SPICCAT-003; DS-DAIRKSH-004,unit-normalize to internal base (÷1000) before aggregation
+location_master,duplicate distributor_code (PK collision),2,DIST-NO-001,"dedupe on PK, keep first / flag conflict"
+sales_secondary,mixed date format (DD-MM-YYYY),2976,2976 random rows,"dateutil/format-tolerant parse, not position-based"

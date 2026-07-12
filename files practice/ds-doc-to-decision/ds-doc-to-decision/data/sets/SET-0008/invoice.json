@@ -1,0 +1,56 @@
+{
+ "invoice_no": "INV/25-26/1008",
+ "invoice_date": "2025-09-28",
+ "po_no": "PO-2025-0008",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-011",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "gstin": "27SYNTH5705F1Z8"
+ },
+ "lines": [
+  {
+   "sku": "DS-BEVECAT-093",
+   "description": "Catch Water (50g / 250ml)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 48,
+   "unit_price": 7.8
+  },
+  {
+   "sku": "DS-DAIRKSH-033",
+   "description": "Ksheer FlavMilk (25g)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 264,
+   "unit_price": 20.0
+  },
+  {
+   "sku": "DS-SNACNOT-015",
+   "description": "NotJustNuts TrailMix (50g / 250ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 192,
+   "unit_price": 7.6
+  }
+ ],
+ "subtotal": 7113.6,
+ "gst": {
+  "igst": 1280.45
+ },
+ "grand_total": 8394.05,
+ "amount_in_words": "Rupees Eight Thousand Three Hundred Ninety Four Only",
+ "coa": {
+  "coa_no": "COA-0008",
+  "issue_date": "2025-06-29",
+  "valid_till": "2026-06-29"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

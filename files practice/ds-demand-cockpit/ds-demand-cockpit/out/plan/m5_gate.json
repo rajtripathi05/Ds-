@@ -1,0 +1,59 @@
+{
+ "checks": [
+  [
+   "cockpit html serves",
+   true
+  ],
+  [
+   "exec sees financial layer",
+   true
+  ],
+  [
+   "ops payload zero financial keys (leak=None)",
+   true
+  ],
+  [
+   "5 what-ifs reconcile+solve, max wall 23 ms (<2000)",
+   true
+  ],
+  [
+   "promo scenario raises volume",
+   true
+  ],
+  [
+   "price rise lowers volume",
+   true
+  ],
+  [
+   "ops what-if scrubbed",
+   true
+  ],
+  [
+   "scenario save+list >=2",
+   true
+  ],
+  [
+   "xlsx exec magic+size",
+   true
+  ],
+  [
+   "xlsx ops magic+size",
+   true
+  ],
+  [
+   "ops xlsx has no financial columns",
+   true
+  ],
+  [
+   "exec xlsx has financial columns",
+   true
+  ]
+ ],
+ "whatif_wall_ms": [
+  23,
+  7,
+  5,
+  7,
+  6
+ ]
+}

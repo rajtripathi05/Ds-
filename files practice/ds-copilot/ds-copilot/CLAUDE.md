@@ -1,0 +1,5 @@
+# CLAUDE.md — ds-copilot (rules for any agent in this repo)
+LAWS: (1) semantic layer is the only queryable surface — every SQL validated read-only against allow-lists BEFORE execution; (2) grounded+cited or say-so — no citation, no claim; (3) role scope enforced twice (retrieval access-tags AND SQL column policy) — Operations never sees margin/price/cost/ROI; (4) guardrails: PII refusal, injection defence (RF-02), out-of-scope refusal; (5) privacy: any optional model call carries query+snippets only, never raw DB.
+DISCIPLINE: data/ and db/ are read-only; gates never weakened (anti-fabrication, 2026-07-12 instruction); measured numbers only; PROGRESS.md heartbeats; honest reds in BLOCKERS.md.
+COMMIT RULE (added after red-team): a commit message may claim GREEN only from the gate's exit code captured in the same shell — never pre-written. Two early commits violated this; see MORNING_REPORT.
+CI: tests/eval_harness.py is the canonical gate (≥23/25, zero role leaks, RF-02 refused, both buried answers found).

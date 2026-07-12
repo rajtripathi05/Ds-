@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0027",
+ "po_date": "2025-01-07",
+ "buyer": {
+  "code": "DIST-WE-021",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "17SYNTH6609F1Z8"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTRAJ-040",
+   "description": "Rajnigandha Meetha (2g / 1 unit)",
+   "hsn": "2106",
+   "qty": 1400,
+   "unit_price": 1.64
+  },
+  {
+   "sku": "DS-CONFFRU-079",
+   "description": "FRU Jelly (8g / 5ml)",
+   "hsn": "1704",
+   "qty": 600,
+   "unit_price": 3.4
+  },
+  {
+   "sku": "DS-SPICCAT-133",
+   "description": "Catch ChilliPwd (500g)",
+   "hsn": "0910",
+   "qty": 480,
+   "unit_price": 82.0
+  }
+ ]
+}

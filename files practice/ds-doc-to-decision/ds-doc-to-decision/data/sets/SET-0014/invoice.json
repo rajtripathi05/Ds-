@@ -1,0 +1,48 @@
+{
+ "invoice_no": "INV/25-26/1014",
+ "invoice_date": "2025-06-18",
+ "po_no": "PO-2025-0014",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-049",
+  "city": "Shillong",
+  "state": "Meghalaya",
+  "gstin": "10SYNTH2500F1Z1"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICKEW-077",
+   "description": "Kewal Std (200g / 1L)",
+   "hsn": "0910",
+   "category": "Spices",
+   "qty": 144,
+   "unit_price": 41.0
+  },
+  {
+   "sku": "DS-SNACNOT-096",
+   "description": "NotJustNuts TrailMix (50g / 250ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 672,
+   "unit_price": 7.6
+  }
+ ],
+ "subtotal": 11011.2,
+ "gst": {
+  "igst": 1982.02
+ },
+ "grand_total": 12993.22,
+ "amount_in_words": "Rupees Twelve Thousand Nine Hundred Ninety Three Only",
+ "coa": {
+  "coa_no": "COA-0014",
+  "issue_date": "2025-04-28",
+  "valid_till": "2026-04-28"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

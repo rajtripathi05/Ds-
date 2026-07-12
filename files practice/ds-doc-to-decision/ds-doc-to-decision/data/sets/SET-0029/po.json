@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0029",
+ "po_date": "2025-08-23",
+ "buyer": {
+  "code": "DIST-CE-060",
+  "city": "Raipur",
+  "state": "Chhattisgarh",
+  "gstin": "35SYNTH8488F1Z2"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTTAN-085",
+   "description": "Tansen Supreme (25g)",
+   "hsn": "2106",
+   "qty": 700,
+   "unit_price": 20.5
+  }
+ ]
+}

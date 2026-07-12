@@ -1,0 +1,6 @@
+# GAPS — noted per instruction, worked around from what exists
+| # | Missing / referenced but absent | Impact | Workaround used |
+|---|--------------------------------|--------|-----------------|
+| G1 | `ds-demand-cockpit/reference/CLAUDE.md` (the actual IGL NSU CLAUDE.md — folder still holds the placeholder txt) | P1 cannot quote the NSU document's own text or its four laws verbatim | P1 reconstructs the pattern from: (a) the IGL operating discipline quoted identically in all three kickoffs, (b) tonight's instruction describing NSU (IGL digital-twin; four architecture laws; intent → deterministic-truth → twin), (c) the four-law architecture actually shipped in the three DS builds. Marked inside the note itself. ACTION FOR RAJ: drop the real CLAUDE.md into reference/ and I can revise the note to quote it. |
+| G2 | Cockpit repo has no single "hero" UI screenshot (screenshots are matplotlib data renders per BLOCKERS B3/K-notes) | GitHub hero image weaker than a browser capture | github_checklist.md includes a 5-minute step to capture real browser screenshots on the user's machine before publishing |
+| G3 | No public GitHub usernames/URLs known | Checklist uses placeholders `<username>` | Fill-in-the-blank commands |

@@ -1,0 +1,36 @@
+{
+ "invoice_no": "INV/25-26/1001",
+ "invoice_date": "2025-07-16",
+ "po_no": "PO-2025-0001",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-CE-054",
+  "city": "Raipur",
+  "state": "Chhattisgarh",
+  "gstin": "24SYNTH2530F1Z2"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTRAJ-145",
+   "description": "Rajnigandha PanMasala (25g)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 400,
+   "unit_price": 20.5
+  }
+ ],
+ "subtotal": 8200.0,
+ "gst": {
+  "igst": 1476.0
+ },
+ "grand_total": 9676.0,
+ "amount_in_words": "Rupees Nine Thousand Six Hundred Seventy Six Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

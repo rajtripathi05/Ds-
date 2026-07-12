@@ -1,0 +1,52 @@
+{
+ "invoice_no": "INV/25-26/1023",
+ "invoice_date": "2025-09-14",
+ "po_no": "PO-2025-0023",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-006",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "gstin": "37SYNTH1549F1Z6"
+ },
+ "lines": [
+  {
+   "sku": "DS-BEVECAT-093",
+   "description": "Catch Water (50g / 250ml)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 120,
+   "unit_price": 7.8
+  },
+  {
+   "sku": "DS-BEVECAT-019",
+   "description": "Catch LimeJuice (600ml)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 192,
+   "unit_price": 27.3
+  },
+  {
+   "sku": "DS-CONFCHI-111",
+   "description": "Chingles Mint (1 unit)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 2600,
+   "unit_price": 0.68
+  }
+ ],
+ "subtotal": 7945.6,
+ "gst": {
+  "igst": 1430.21
+ },
+ "grand_total": 9375.81,
+ "amount_in_words": "Rupees Nine Thousand Three Hundred Seventy Six Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

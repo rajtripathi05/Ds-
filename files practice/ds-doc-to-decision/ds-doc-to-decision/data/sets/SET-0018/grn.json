@@ -1,0 +1,16 @@
+{
+ "grn_no": "GRN-2025-0018",
+ "po_no": "PO-2025-0018",
+ "grn_date": "2025-06-19",
+ "receiver": "DIST-NO-007",
+ "lines": [
+  {
+   "sku": "DS-MOUTRAJ-104",
+   "qty": 1400
+  },
+  {
+   "sku": "DS-CONFCHE-069",
+   "qty": 400
+  }
+ ]
+}

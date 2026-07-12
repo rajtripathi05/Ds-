@@ -1,0 +1,48 @@
+{
+ "invoice_no": "INV/25-26/1015",
+ "invoice_date": "2025-09-16",
+ "po_no": "PO-2025-0015",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-EA-031",
+  "city": "Ranchi",
+  "state": "Jharkhand",
+  "gstin": "11SYNTH5346F1Z5"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-067",
+   "description": "Ksheer Ghee (12g / 200ml)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 312,
+   "unit_price": 9.6
+  },
+  {
+   "sku": "DS-DAIRKSH-120",
+   "description": "Ksheer FullCreamMilk (25g)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 312,
+   "unit_price": 20.0
+  }
+ ],
+ "subtotal": 9235.2,
+ "gst": {
+  "igst": 1662.34
+ },
+ "grand_total": 10897.54,
+ "amount_in_words": "Rupees Ten Thousand Eight Hundred Ninety Eight Only",
+ "coa": {
+  "coa_no": "COA-0015",
+  "issue_date": "2025-05-11",
+  "valid_till": "2026-05-11"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

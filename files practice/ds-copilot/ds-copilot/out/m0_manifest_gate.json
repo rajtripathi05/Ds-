@@ -1,0 +1,37 @@
+{
+ "checks": [
+  [
+   "24 docs parsed",
+   true
+  ],
+  [
+   "access tags parsed (all/exec_only)",
+   true
+  ],
+  [
+   "2 exec-only docs (margin memo + ROI note)",
+   true
+  ],
+  [
+   "leave-policy version family detected",
+   true
+  ],
+  [
+   "db built: 7 tables",
+   true
+  ],
+  [
+   "sales_secondary = 297,610 rows",
+   true
+  ]
+ ],
+ "table_counts": {
+  "product_master": 151,
+  "location_master": 60,
+  "calendar": 731,
+  "promo_calendar": 120,
+  "price_history": 152,
+  "sku_costs": 151,
+  "sales_secondary": 297610
+ }
+}

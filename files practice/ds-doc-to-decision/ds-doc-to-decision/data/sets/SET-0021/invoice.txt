@@ -1,0 +1,22 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1021               Date: 2025-06-05
+PO Ref: PO-2025-0021                     Buyer: DIST-NO-049 (Shillong, Meghalaya)
+Buyer GSTIN: 23SYNTH6855F1Z2
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-SNACNOT-029    NotJustNuts Almond (100g /  2008       576   15.20   8755.20
+DS-SNACSNA-110    SnackFactory Namkeen (100g  2008       528   15.20   8025.60
+------------------------------------------------------------------------------
+                                                            Subtotal  16780.80
+                                                            IGST 18%   3020.54
+                                                         GRAND TOTAL  19801.34
+Amount in words: Rupees Nineteen Thousand Eight Hundred One Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

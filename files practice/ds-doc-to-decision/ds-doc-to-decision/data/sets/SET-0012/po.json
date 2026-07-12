@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0012",
+ "po_date": "2025-05-12",
+ "buyer": {
+  "code": "DIST-SO-027",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "gstin": "20SYNTH7629F1Z1"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTTAN-031",
+   "description": "Tansen Supreme (50g / 250ml)",
+   "hsn": "2106",
+   "qty": 1200,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-CONFLUV-065",
+   "description": "LuvIt Bar (8g / 5ml)",
+   "hsn": "1704",
+   "qty": 2400,
+   "unit_price": 3.4
+  }
+ ]
+}

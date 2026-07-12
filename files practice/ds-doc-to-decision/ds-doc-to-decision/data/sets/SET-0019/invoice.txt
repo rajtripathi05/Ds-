@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1019               Date: 2025-10-25
+PO Ref: PO-2025-0019                     Buyer: DIST-NO-049 (Shillong, Meghalaya)
+Buyer GSTIN: 17SYNTH1513F1Z5
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-CONFLUV-086    LuvIt SharePack (2g / 1 uni 1704      1400    1.36   1904.00
+DS-BEVECAT-093    Catch Water (50g / 250ml)   2202        96    7.80    748.80
+DS-BEVECAT-098    Catch ClubSoda (600ml)      2202       120   27.30   3276.00
+------------------------------------------------------------------------------
+                                                            Subtotal   5928.80
+                                                            IGST 18%   1067.18
+                                                         GRAND TOTAL   6995.98
+Amount in words: Rupees Six Thousand Nine Hundred Ninety Six Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

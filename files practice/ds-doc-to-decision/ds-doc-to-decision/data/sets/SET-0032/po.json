@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0032",
+ "po_date": "2025-08-31",
+ "buyer": {
+  "code": "DIST-NO-003",
+  "city": "Sikar",
+  "state": "Rajasthan",
+  "gstin": "26SYNTH4296F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-083",
+   "description": "Ksheer FullCreamMilk (12g / 200ml)",
+   "hsn": "0403",
+   "qty": 168,
+   "unit_price": 9.6
+  }
+ ]
+}

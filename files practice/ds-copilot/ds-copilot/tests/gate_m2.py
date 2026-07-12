@@ -1,0 +1,26 @@
+import sys, os, json
+sys.path.insert(0, "src")
+from pathlib import Path as _P; os.environ.setdefault("DSCOPILOT_DB", str(_P(__file__).resolve().parents[1] / "out" / "copilot.db"))
+from sqlgen import ask_data, run_sql, validate
+
+checks = []
+r = ask_data("monthly Rajnigandha volume in North zone early 2025", "ops")
+checks.append(("NL→SQL runs for ops volumes", len(r.get("rows", [])) == 6))
+checks.append(("LIMIT enforced in generated SQL", "LIMIT" in r.get("sql", "")))
+r2 = ask_data("gross margin by category 2025", "ops")
+checks.append(("ops margin metric refused w/ reason", "REFUSE" in r2.get("error", "") and "executive-scoped" in r2.get("error","")))
+_, e3 = run_sql("SELECT unit_cogs FROM sku_costs", "ops")
+checks.append(("blocked column via raw SQL refused at driver", e3 is not None and "denied" in e3))
+_, e4 = run_sql("SELECT * FROM sqlite_master", "ops")
+checks.append(("blocked table attempt refused", e4 is not None and "REFUSE" in e4))
+_, e5 = run_sql("DROP TABLE sales_secondary", "exec")
+checks.append(("write attempt refused even for exec", e5 is not None))
+s6, _ = validate("SELECT qty FROM sales_secondary", "ops")
+checks.append(("row limit appended when missing", s6 and "LIMIT 500" in s6))
+r7 = ask_data("gross margin by category 2025", "exec")
+checks.append(("exec margin metric answers", len(r7.get("rows", [])) >= 5))
+ok = all(c[1] for c in checks)
+for n, p in checks: print(("✅" if p else "❌"), n)
+json.dump({"checks": [(n, bool(p)) for n, p in checks]}, open("out/m2_gate.json", "w"), indent=1)
+print("M2 GATE:", "GREEN" if ok else "RED")
+sys.exit(0 if ok else 1)

@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1015               Date: 2025-09-16
+PO Ref: PO-2025-0015                     Buyer: DIST-EA-031 (Ranchi, Jharkhand)
+Buyer GSTIN: 11SYNTH5346F1Z5
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-DAIRKSH-067    Ksheer Ghee (12g / 200ml)   0403       312    9.60   2995.20
+DS-DAIRKSH-120    Ksheer FullCreamMilk (25g)  0403       312   20.00   6240.00
+------------------------------------------------------------------------------
+                                                            Subtotal   9235.20
+                                                            IGST 18%   1662.34
+                                                         GRAND TOTAL  10897.54
+Amount in words: Rupees Ten Thousand Eight Hundred Ninety Eight Only
+COA: COA-0015  issued 2025-05-11  valid till 2026-05-11
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

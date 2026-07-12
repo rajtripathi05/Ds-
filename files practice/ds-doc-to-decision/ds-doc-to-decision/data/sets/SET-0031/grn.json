@@ -1,0 +1,16 @@
+{
+ "grn_no": "GRN-2025-0031",
+ "po_no": "PO-2025-0031",
+ "grn_date": "2025-03-02",
+ "receiver": "DIST-NO-050",
+ "lines": [
+  {
+   "sku": "DS-SPICCAT-130",
+   "qty": 624
+  },
+  {
+   "sku": "DS-BEVECAT-093",
+   "qty": 240
+  }
+ ]
+}

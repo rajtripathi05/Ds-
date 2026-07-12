@@ -1,0 +1,48 @@
+{
+ "invoice_no": "INV/25-26/1007",
+ "invoice_date": "2025-07-18",
+ "po_no": "PO-2025-0007",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-006",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "gstin": "21SYNTH3051F1Z5"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-047",
+   "description": "Ksheer FlavMilk (1L)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 144,
+   "unit_price": 48.0
+  },
+  {
+   "sku": "DS-MOUTTAN-021",
+   "description": "Tansen Supreme (25g)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 900,
+   "unit_price": 20.5
+  }
+ ],
+ "subtotal": 25362.0,
+ "gst": {
+  "igst": 4565.16
+ },
+ "grand_total": 29927.16,
+ "amount_in_words": "Rupees Twenty Nine Thousand Nine Hundred Twenty Seven Only",
+ "coa": {
+  "coa_no": "COA-0007",
+  "issue_date": "2024-11-04",
+  "valid_till": "2025-11-04"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

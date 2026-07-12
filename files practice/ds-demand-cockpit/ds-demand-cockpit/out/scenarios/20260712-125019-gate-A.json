@@ -1,0 +1,1 @@
+{"name": "gate-A", "params": {"promo": {"category": "Confectionery", "depth": 0.25, "type": "consumer", "weeks": [1, 2, 3, 4]}}, "result": {"delta_volume_pct": 7.44, "binding": "capacity: Confectionery (100.0% used)", "solve_ms": 3.8}}

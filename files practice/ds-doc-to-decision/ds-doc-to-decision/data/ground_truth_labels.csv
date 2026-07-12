@@ -1,0 +1,41 @@
+set_id,decision,reason,discrepancy_type,expected_confidence
+SET-0001,auto_approve,all checks passed,,high
+SET-0002,reject,qty variance 14.1% on DS-SPICCAT-027 (>10% -> reject),qty_large,n/a - rule-driven
+SET-0003,auto_approve,all checks passed,,high
+SET-0004,reject,COA expired on invoice date (12-month validity rule) -> non-payable,expired_cert,n/a - rule-driven
+SET-0005,auto_approve,all checks passed,,high
+SET-0006,route_to_human,GRN missing -> cannot 3-way match; hold for goods-receipt confirmation,missing_grn,n/a - rule-driven
+SET-0007,auto_approve,all checks passed,,high
+SET-0008,auto_approve,all checks passed,,high
+SET-0009,reject,duplicate invoice number -> reject second occurrence,duplicate_invoice,n/a - rule-driven
+SET-0010,auto_approve,all checks passed,,high
+SET-0011,auto_approve,all checks passed,,high
+SET-0012,auto_approve,all checks passed,,high
+SET-0013,auto_approve,all checks passed,,high
+SET-0014,auto_approve,all checks passed,,high
+SET-0015,auto_approve,all checks passed,,high
+SET-0016,auto_approve,all checks passed,,high
+SET-0017,auto_approve,all checks passed,,high
+SET-0018,route_to_human,unit price differs from PO on DS-MOUTRAJ-104 -> pricing desk,price_mismatch,n/a - rule-driven
+SET-0019,auto_approve,all checks passed,,high
+SET-0020,reject,COA expired on invoice date (12-month validity rule) -> non-payable,expired_cert,n/a - rule-driven
+SET-0021,auto_approve,all checks passed,,high
+SET-0022,route_to_human,GRN missing -> cannot 3-way match; hold for goods-receipt confirmation,missing_grn,n/a - rule-driven
+SET-0023,auto_approve,all checks passed,,high
+SET-0024,auto_approve,all checks passed,,high
+SET-0025,auto_approve,all checks passed,,high
+SET-0026,auto_approve,all checks passed,,high
+SET-0027,route_to_human,qty variance 6.8% on DS-MOUTRAJ-040 (2-10% band -> human review),qty_small,n/a - rule-driven
+SET-0028,route_to_human,unit price differs from PO on DS-CONFCHE-069 -> pricing desk,price_mismatch,n/a - rule-driven
+SET-0029,reject,"arithmetic mismatch: total != subtotal+GST (Rs 500 off, > Rs 1 rounding)",math_error,n/a - rule-driven
+SET-0030,auto_approve,all checks passed,,high
+SET-0031,auto_approve,all checks passed,,high
+SET-0032,auto_approve,all checks passed,,high
+SET-0033,auto_approve,all checks passed,,high
+SET-0034,route_to_human,qty variance 4.8% on DS-MOUTMAS-049 (2-10% band -> human review),qty_small,n/a - rule-driven
+SET-0035,auto_approve,all checks passed,,high
+SET-0036,auto_approve,all checks passed,,high
+SET-0037,route_to_human,unit price differs from PO on DS-BEVECAT-129 -> pricing desk,price_mismatch,n/a - rule-driven
+SET-0038,auto_approve,all checks passed,,high
+SET-0039,route_to_human,qty variance 3.2% on DS-DAIRKSH-084 (2-10% band -> human review),qty_small,n/a - rule-driven
+SET-0040,auto_approve,all checks passed,,high

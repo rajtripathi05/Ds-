@@ -1,0 +1,8 @@
+# PASTE YOUR OPENROUTER API KEY ON THE LINE BELOW (replace this whole file's contents with just the key).
+# Get one at https://openrouter.ai/keys  — it looks like:  sk-or-v1-xxxxxxxxxxxxxxxxxxxx
+# Leave this file as-is (starts with #) to keep everything in free, offline rules-mode.
+#
+# SETUP: copy this file to  openrouter_key.txt  in the same folder, then paste your key.
+#   openrouter_key.txt is gitignored, so your key never reaches the repo.
+# Without a key everything still runs — the prototypes fall back to deterministic
+# rules-mode (see SETUP_LLM.md).

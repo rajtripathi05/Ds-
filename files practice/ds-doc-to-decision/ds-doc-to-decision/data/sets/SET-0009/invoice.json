@@ -1,0 +1,44 @@
+{
+ "invoice_no": "INV/25-26/1001",
+ "invoice_date": "2025-09-21",
+ "po_no": "PO-2025-0009",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-CE-053",
+  "city": "Raipur",
+  "state": "Chhattisgarh",
+  "gstin": "31SYNTH7970F1Z2"
+ },
+ "lines": [
+  {
+   "sku": "DS-SNACSNA-097",
+   "description": "SnackFactory Namkeen (200g / 1L)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 96,
+   "unit_price": 38.0
+  },
+  {
+   "sku": "DS-CONFPULSE-149",
+   "description": "Pulse Blackcurrant (8g / 5ml)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 2200,
+   "unit_price": 0.68
+  }
+ ],
+ "subtotal": 5144.0,
+ "gst": {
+  "igst": 925.92
+ },
+ "grand_total": 6069.92,
+ "amount_in_words": "Rupees Six Thousand Seventy Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

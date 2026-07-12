@@ -1,0 +1,40 @@
+{
+ "invoice_no": "INV/25-26/1039",
+ "invoice_date": "2025-08-08",
+ "po_no": "PO-2025-0039",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-052",
+  "city": "Agartala",
+  "state": "Tripura",
+  "gstin": "13SYNTH1522F1Z4"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-084",
+   "description": "Ksheer Whitener (500ml)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 173,
+   "unit_price": 24.0
+  }
+ ],
+ "subtotal": 4152.0,
+ "gst": {
+  "igst": 747.36
+ },
+ "grand_total": 4899.36,
+ "amount_in_words": "Rupees Four Thousand Eight Hundred Ninety Nine Only",
+ "coa": {
+  "coa_no": "COA-0039",
+  "issue_date": "2024-12-06",
+  "valid_till": "2025-12-06"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

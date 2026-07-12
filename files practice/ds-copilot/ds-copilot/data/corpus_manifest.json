@@ -1,0 +1,224 @@
+{
+  "docs": [
+    {
+      "doc_id": "hr-leave-policy-2023",
+      "file": "hr-leave-policy-2023.md",
+      "title": "Leave Policy",
+      "access": "all",
+      "version": "1.0",
+      "effective": "2023-04-01"
+    },
+    {
+      "doc_id": "hr-leave-policy-2025",
+      "file": "hr-leave-policy-2025.md",
+      "title": "Leave Policy",
+      "access": "all",
+      "version": "2.0",
+      "effective": "2025-04-01"
+    },
+    {
+      "doc_id": "hr-travel-policy",
+      "file": "hr-travel-policy.md",
+      "title": "Domestic Travel Policy",
+      "access": "all",
+      "version": "1.2",
+      "effective": "2024-06-01"
+    },
+    {
+      "doc_id": "hr-travel-faq",
+      "file": "hr-travel-faq.md",
+      "title": "Travel Policy \u2014 FAQ",
+      "access": "all",
+      "version": "1.2",
+      "effective": "2024-06-01"
+    },
+    {
+      "doc_id": "hr-posh-policy",
+      "file": "hr-posh-policy.md",
+      "title": "Prevention of Sexual Harassment (POSH) Policy",
+      "access": "all",
+      "version": "1.1",
+      "effective": "2023-01-01"
+    },
+    {
+      "doc_id": "hr-wfh-policy",
+      "file": "hr-wfh-policy.md",
+      "title": "Hybrid / Work-from-Home Policy",
+      "access": "all",
+      "version": "1.0",
+      "effective": "2024-01-01"
+    },
+    {
+      "doc_id": "hr-expense-reimbursement-sop",
+      "file": "hr-expense-reimbursement-sop.md",
+      "title": "Expense Reimbursement SOP",
+      "access": "all",
+      "version": "1.3",
+      "effective": "2024-03-01"
+    },
+    {
+      "doc_id": "sales-distributor-onboarding-sop",
+      "file": "sales-distributor-onboarding-sop.md",
+      "title": "Distributor Onboarding SOP",
+      "access": "all",
+      "version": "2.0",
+      "effective": "2024-02-01"
+    },
+    {
+      "doc_id": "sales-beat-pjp-sop",
+      "file": "sales-beat-pjp-sop.md",
+      "title": "Beat & PJP SOP",
+      "access": "all",
+      "version": "1.4",
+      "effective": "2024-02-01"
+    },
+    {
+      "doc_id": "sales-claims-policy",
+      "file": "sales-claims-policy.md",
+      "title": "Distributor Claims Policy (Damage / Expiry / Shortage)",
+      "access": "all",
+      "version": "2.1",
+      "effective": "2024-05-01"
+    },
+    {
+      "doc_id": "sales-trade-scheme-circular-2025-q3",
+      "file": "sales-trade-scheme-circular-2025-q3.md",
+      "title": "Trade Scheme Circular \u2014 Q3 2025",
+      "access": "all",
+      "version": "-",
+      "effective": "2025-07-01"
+    },
+    {
+      "doc_id": "sales-price-revision-circular-2025",
+      "file": "sales-price-revision-circular-2025.md",
+      "title": "Price Revision Circular \u2014 Rajnigandha",
+      "access": "all",
+      "version": "-",
+      "effective": "2024-12-15"
+    },
+    {
+      "doc_id": "sales-ne-expansion-circular-2024",
+      "file": "sales-ne-expansion-circular-2024.md",
+      "title": "Northeast Distribution Expansion",
+      "access": "all",
+      "version": "-",
+      "effective": "2024-09-15"
+    },
+    {
+      "doc_id": "sales-credit-policy",
+      "file": "sales-credit-policy.md",
+      "title": "Trade Credit Policy",
+      "access": "all",
+      "version": "1.5",
+      "effective": "2024-04-01"
+    },
+    {
+      "doc_id": "product-faq-pulse",
+      "file": "product-faq-pulse.md",
+      "title": "Product FAQ \u2014 Pulse",
+      "access": "all",
+      "version": "1.1",
+      "effective": "2024-07-01"
+    },
+    {
+      "doc_id": "product-faq-catch-water",
+      "file": "product-faq-catch-water.md",
+      "title": "Product FAQ \u2014 Catch Water & Beverages",
+      "access": "all",
+      "version": "1.0",
+      "effective": "2024-04-01"
+    },
+    {
+      "doc_id": "product-faq-ksheer",
+      "file": "product-faq-ksheer.md",
+      "title": "Product FAQ \u2014 Ksheer Dairy",
+      "access": "all",
+      "version": "1.0",
+      "effective": "2024-04-01"
+    },
+    {
+      "doc_id": "quality-cert-requirements",
+      "file": "quality-cert-requirements.md",
+      "title": "Quality Certification Requirements",
+      "access": "all",
+      "version": "1.2",
+      "effective": "2024-01-01"
+    },
+    {
+      "doc_id": "supply-cold-chain-sop",
+      "file": "supply-cold-chain-sop.md",
+      "title": "Cold-Chain Handling SOP (Dairy Fresh)",
+      "access": "all",
+      "version": "1.1",
+      "effective": "2024-01-01"
+    },
+    {
+      "doc_id": "fin-margin-structure-memo",
+      "file": "fin-margin-structure-memo.md",
+      "title": "Channel Margin Structure Memo",
+      "access": "exec_only",
+      "version": "1.0",
+      "effective": "2024-06-01"
+    },
+    {
+      "doc_id": "fin-distributor-roi-note",
+      "file": "fin-distributor-roi-note.md",
+      "title": "Distributor ROI Framework",
+      "access": "exec_only",
+      "version": "1.0",
+      "effective": "2024-06-01"
+    },
+    {
+      "doc_id": "fin-payment-terms-sop",
+      "file": "fin-payment-terms-sop.md",
+      "title": "Payments & Settlement SOP",
+      "access": "all",
+      "version": "1.0",
+      "effective": "2024-04-01"
+    },
+    {
+      "doc_id": "it-security-policy",
+      "file": "it-security-policy.md",
+      "title": "Information Security Policy",
+      "access": "all",
+      "version": "1.3",
+      "effective": "2024-01-01"
+    },
+    {
+      "doc_id": "it-ai-copilot-usage-policy",
+      "file": "it-ai-copilot-usage-policy.md",
+      "title": "Internal AI Copilot \u2014 Usage Policy",
+      "access": "all",
+      "version": "1.0",
+      "effective": "2025-02-01"
+    }
+  ],
+  "planted": {
+    "version_conflict": [
+      "hr-leave-policy-2023",
+      "hr-leave-policy-2025"
+    ],
+    "near_duplicate": [
+      "hr-travel-policy",
+      "hr-travel-faq"
+    ],
+    "buried_answers": [
+      "hr-expense-reimbursement-sop:21-day window",
+      "sales-claims-policy:30-day window & \u00b12% tolerance"
+    ],
+    "exec_only": [
+      "fin-margin-structure-memo",
+      "fin-distributor-roi-note"
+    ],
+    "spine_ties": [
+      "sales-price-revision-circular-2025:DS-MOUTRAJ-145",
+      "sales-ne-expansion-circular-2024:8 NE dists 2024-10-01",
+      "product-faq-pulse:DS-CONFPULSE-149 launch",
+      "sales-trade-scheme-circular-2025-q3:promo mechanics"
+    ],
+    "goat3_rule_anchors": [
+      "sales-claims-policy:\u00b12% qty tolerance",
+      "quality-cert-requirements:COA 12-month validity"
+    ]
+  }
+}

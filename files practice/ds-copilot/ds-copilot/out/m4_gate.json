@@ -1,0 +1,34 @@
+{
+ "exec_answer": "Channel Margin Structure \u2014 CONFIDENTIAL (Executive) \u2014 Confectionery: Distributor 10%; Retailer 22%. Indicative manufacturer gross margin on distributor price: Confectionery ~45%, Mouth Freshener ~55%,",
+ "ops_answer": "REFUSE \u2014 margin/ROI/pricing/cost information is executive-scoped (margin memo + IT security policy). Operations can query volumes and policies; request Executive access if needed. This request is logg",
+ "checks": [
+  [
+   "exec gets the margin answer (10% of MRP)",
+   true
+  ],
+  [
+   "exec cites the exec-only memo",
+   true
+  ],
+  [
+   "ops is refused with a reason",
+   true
+  ],
+  [
+   "ops answer contains zero financial specifics",
+   true
+  ],
+  [
+   "retrieval layer: exec docs absent from ops index",
+   true
+  ],
+  [
+   "SQL layer: exec column denied for ops",
+   true
+  ],
+  [
+   "SQL layer: same column fine for exec",
+   true
+  ]
+ ]
+}

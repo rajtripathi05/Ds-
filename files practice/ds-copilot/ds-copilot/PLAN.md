@@ -1,0 +1,5 @@
+# PLAN — ds-copilot (pre-approved per overnight instruction; recorded for audit)
+**Objective.** Role-scoped enterprise copilot: cited extractive RAG over the 24-doc governed corpus + validated text-to-SQL over the sqlite spine + rule-based agent planner with visible traces — offline-first (no LLM key: rules mode per override 5), gated by the 25-question eval (≥23/25, zero role leaks, RF-02 refused).
+**Approach.** BM25+TF-IDF hybrid retrieval over section chunks with effective-date version logic; YAML semantic layer as the ONLY SQL surface (allow-lists, read-only sqlite, LIMIT enforced); planner routes doc/SQL/chart tools; roles enforced at retrieval AND SQL; stdlib HTTP chat UI.
+**Files.** src/{corpus,db,retrieve,answer,semantic(.yaml),sql,planner,roles,server}.py · tests/{gates,eval_harness,ui_walk} · EVAL_RESULTS.md · README.md · MORNING_REPORT.md.
+**Risks.** Extractive answers vs eval phrasing (mitigate: sentence-level extraction + keyed patterns); buried details need fine chunking; sandbox 45s/exec (gates sliced as in cockpit build, B-series assumptions).

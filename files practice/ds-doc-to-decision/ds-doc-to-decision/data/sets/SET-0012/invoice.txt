@@ -1,0 +1,22 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1012               Date: 2025-05-17
+PO Ref: PO-2025-0012                     Buyer: DIST-SO-027 (Chennai, Tamil Nadu)
+Buyer GSTIN: 20SYNTH7629F1Z1
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-MOUTTAN-031    Tansen Supreme (50g / 250ml 2106      1200    8.20   9840.00
+DS-CONFLUV-065    LuvIt Bar (8g / 5ml)        1704      2400    3.40   8160.00
+------------------------------------------------------------------------------
+                                                            Subtotal  18000.00
+                                                            IGST 18%   3240.00
+                                                         GRAND TOTAL  21240.00
+Amount in words: Rupees Twenty One Thousand Two Hundred Forty Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

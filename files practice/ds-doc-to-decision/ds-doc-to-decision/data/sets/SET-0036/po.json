@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0036",
+ "po_date": "2025-06-25",
+ "buyer": {
+  "code": "DIST-NO-005",
+  "city": "Delhi",
+  "state": "Delhi",
+  "gstin": "14SYNTH8900F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-CONFPULSE-001",
+   "description": "Pulse KacchaAam (8g / 5ml)",
+   "hsn": "1704",
+   "qty": 1800,
+   "unit_price": 0.68
+  }
+ ]
+}

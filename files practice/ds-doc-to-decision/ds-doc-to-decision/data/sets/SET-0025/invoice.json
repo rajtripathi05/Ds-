@@ -1,0 +1,56 @@
+{
+ "invoice_no": "INV/25-26/1025",
+ "invoice_date": "2025-03-02",
+ "po_no": "PO-2025-0025",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-045",
+  "city": "Guwahati",
+  "state": "Assam",
+  "gstin": "20SYNTH8465F1Z1"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTTAN-031",
+   "description": "Tansen Supreme (50g / 250ml)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 1100,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-SPICCAT-027",
+   "description": "Catch Sprinkler (50g / 250ml)",
+   "hsn": "0910",
+   "category": "Spices",
+   "qty": 480,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-MOUTRAJ-034",
+   "description": "Rajnigandha PanMasala (50g / 250ml)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 1200,
+   "unit_price": 8.2
+  }
+ ],
+ "subtotal": 22796.0,
+ "gst": {
+  "igst": 4103.28
+ },
+ "grand_total": 26899.28,
+ "amount_in_words": "Rupees Twenty Six Thousand Eight Hundred Ninety Nine Only",
+ "coa": {
+  "coa_no": "COA-0025",
+  "issue_date": "2024-07-15",
+  "valid_till": "2025-07-15"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

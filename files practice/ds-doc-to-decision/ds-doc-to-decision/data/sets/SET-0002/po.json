@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0002",
+ "po_date": "2025-06-25",
+ "buyer": {
+  "code": "DIST-CE-057",
+  "city": "Raipur",
+  "state": "Chhattisgarh",
+  "gstin": "11SYNTH2478F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-CONFFRU-079",
+   "description": "FRU Jelly (8g / 5ml)",
+   "hsn": "1704",
+   "qty": 400,
+   "unit_price": 3.4
+  },
+  {
+   "sku": "DS-SPICKEW-094",
+   "description": "Kewal Std (50g / 250ml)",
+   "hsn": "0910",
+   "qty": 672,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-SPICCAT-027",
+   "description": "Catch Sprinkler (50g / 250ml)",
+   "hsn": "0910",
+   "qty": 144,
+   "unit_price": 8.2
+  }
+ ]
+}

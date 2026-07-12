@@ -1,0 +1,24 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1022               Date: 2025-05-07
+PO Ref: PO-2025-0022                     Buyer: DIST-EA-036 (Ranchi, Jharkhand)
+Buyer GSTIN: 14SYNTH9929F1Z5
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-SNACSNA-110    SnackFactory Namkeen (100g  2008       624   15.20   9484.80
+DS-SNACNOT-135    NotJustNuts TrailMix (200g  2008       240   38.00   9120.00
+DS-DAIRKSH-067    Ksheer Ghee (12g / 200ml)   0403       288    9.60   2764.80
+------------------------------------------------------------------------------
+                                                            Subtotal  21369.60
+                                                            IGST 18%   3846.53
+                                                         GRAND TOTAL  25216.13
+Amount in words: Rupees Twenty Five Thousand Two Hundred Sixteen Only
+COA: COA-0022  issued 2024-09-09  valid till 2025-09-09
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

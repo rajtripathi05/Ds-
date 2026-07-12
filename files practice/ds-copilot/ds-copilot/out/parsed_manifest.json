@@ -1,0 +1,14 @@
+{
+ "n_docs": 24,
+ "n_chunks": 24,
+ "exec_only": [
+  "fin-margin-structure-memo",
+  "fin-distributor-roi-note"
+ ],
+ "version_families": {
+  "Leave Policy": [
+   "hr-leave-policy-2023",
+   "hr-leave-policy-2025"
+  ]
+ }
+}

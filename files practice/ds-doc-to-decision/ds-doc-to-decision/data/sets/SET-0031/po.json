@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0031",
+ "po_date": "2025-02-24",
+ "buyer": {
+  "code": "DIST-NO-050",
+  "city": "Guwahati",
+  "state": "Assam",
+  "gstin": "30SYNTH3471F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICCAT-130",
+   "description": "Catch ChilliPwd (50g / 250ml)",
+   "hsn": "0910",
+   "qty": 624,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-BEVECAT-093",
+   "description": "Catch Water (50g / 250ml)",
+   "hsn": "2202",
+   "qty": 240,
+   "unit_price": 7.8
+  }
+ ]
+}

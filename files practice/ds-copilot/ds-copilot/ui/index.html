@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Assistant — ask anything, get cited answers</title>
+<style>
+:root{--ink:#171412;--ink2:#403a35;--mut:#6c645c;--line:#e6e1db;--bg:#f7f4f0;--card:#fff;--acc:#b3282d;--acc2:#8a1f23;--vio:#6d28d9;--ok:#15803d;--focus:#1d4ed8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;height:100vh;display:flex;flex-direction:column}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+header.app{background:linear-gradient(120deg,#171412,#3b1d1e);color:#fff;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+header.app .ttl{font-size:22px;font-weight:800}
+header.app .sub{font-size:13.5px;color:#e7dcd6;margin-top:2px}
+.rolewrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.rolewrap .lbl{font-size:13px;color:#e7dcd6}
+.seg{display:inline-flex;background:rgba(255,255,255,.12);border-radius:999px;padding:4px}
+.seg button{border:0;background:transparent;color:#f3e9e5;font-weight:700;font-size:15px;padding:9px 18px;border-radius:999px;cursor:pointer;min-height:44px}
+.seg button.on{background:#fff;color:var(--acc2)}
+#llmPill{font-size:12.5px;color:#e7dcd6;background:rgba(255,255,255,.10);padding:6px 12px;border-radius:999px}
+main{flex:1;overflow-y:auto;width:100%;max-width:1000px;margin:0 auto;padding:20px 20px 8px}
+.hello{background:#fffdf7;border:1px solid #f0e6cf;border-left:5px solid var(--acc);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.hello b{font-size:17px}
+.hello p{font-size:15px;color:var(--ink2);margin-top:3px}
+.msg{margin:14px 0;display:flex}
+.msg.user{justify-content:flex-end}
+.bubble{max-width:82%;border-radius:16px;padding:14px 16px;font-size:16.5px;line-height:1.6}
+.user .bubble{background:var(--ink);color:#fff;border-bottom-right-radius:5px}
+.bot .bubble{background:var(--card);border:1px solid var(--line);border-bottom-left-radius:5px}
+.bot .bubble.refused{background:#fff1f2;border-color:#fecdd3}
+.roleband{font-size:11px;font-weight:800;letter-spacing:.06em;color:#ffd9db;display:block;margin-bottom:3px}
+.cites{margin-top:10px;display:flex;flex-wrap:wrap;gap:7px}
+.cite{font-size:12px;font-weight:800;background:#efe9fe;color:var(--vio);border:1px solid #c9bdf5;border-radius:999px;padding:3px 11px}
+.tbtn{font-size:12.5px;color:var(--acc2);cursor:pointer;margin-top:9px;font-weight:800}
+.trace{margin-top:9px;font-size:12.5px;color:var(--mut);border-top:1px dashed var(--line);padding-top:8px;white-space:pre-wrap;word-break:break-word;display:none}
+.bubble.open .trace{display:block}
+.bubble img{max-width:100%;border:1px solid var(--line);border-radius:10px;margin-top:10px}
+footer{border-top:1px solid var(--line);background:var(--card);padding:14px 20px}
+.inrow{max-width:1000px;margin:0 auto;display:flex;gap:10px}
+#q{flex:1;border:2px solid var(--line);border-radius:12px;padding:13px 16px;font-family:inherit;font-size:17px;min-height:52px}
+#send{background:var(--acc);color:#fff;border:0;border-radius:12px;padding:0 26px;font-weight:800;cursor:pointer;font-size:17px;min-height:52px}
+#send:hover{background:var(--acc2)}
+.chips{max-width:1000px;margin:12px auto 2px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:14.5px;border:2px solid var(--line);background:var(--bg);border-radius:999px;padding:9px 15px;cursor:pointer;color:var(--ink2);min-height:44px}
+.chip:hover{border-color:var(--acc);color:var(--acc2)}
+body.ops .fin{display:none!important}
+</style>
+</head>
+<body>
+<header class="app">
+  <div><div class="ttl">💬 Company Assistant</div><div class="sub">Ask about any policy, scheme or number — every answer shows its source</div></div>
+  <div class="rolewrap"><span id="llmPill">·</span>
+    <span class="lbl">I'm signed in as:</span>
+    <div class="seg"><button id="rOps" class="on">Operations</button><button id="rExec">Executive</button></div>
+  </div>
+</header>
+<main id="chat">
+  <div class="hello">
+    <b>Ask me anything about the company.</b>
+    <p>Try a question below, or type your own. I answer only from official documents and the database, and I show you exactly which document each answer came from. Sensitive figures (margins, pricing) only appear for the <b>Executive</b> role — switch roles top-right to see the difference.</p>
+  </div>
+</main>
+<footer>
+  <div class="inrow"><input id="q" placeholder="Type your question and press Enter…"><button id="send">Ask</button></div>
+  <div class="chips" id="chips"></div>
+</footer>
+<script>
+
+let ROLE = "ops";
+const $ = id => document.getElementById(id);
+const SUGGEST = [
+ "How many Earned Leave days do employees get per year now?",
+ "Why did North-zone Rajnigandha volumes drop in early 2025?",
+ "What is the distributor margin on Confectionery?",
+ "What's the deadline to file an expense claim?",
+ "monthly Pulse volume in Northeast 2025",
+];
+function chip(t){ const c=document.createElement("span"); c.className="chip"; c.textContent=t;
+  c.onclick=()=>{ $("q").value=t; send(); }; return c; }
+SUGGEST.forEach(s=>$("chips").appendChild(chip(s)));
+function add(role, html, cls){
+  const m=document.createElement("div"); m.className="msg "+role;
+  const b=document.createElement("div"); b.className="bubble "+(cls||"");
+  b.innerHTML=html; m.appendChild(b); $("chat").appendChild(m);
+  $("chat").scrollTop=$("chat").scrollHeight; return b;
+}
+async function send(){
+  const q=$("q").value.trim(); if(!q) return;
+  $("q").value="";
+  add("user", `<span class="roleband">${ROLE==="ops"?"OPERATIONS":"EXECUTIVE"}</span><br>`+esc(q));
+  const b=add("bot","<i>thinking…</i>");
+  try{
+    const r=await (await fetch("/ask?role="+ROLE,{method:"POST",body:JSON.stringify({question:q})})).json();
+    let h=esc(r.answer);
+    if(r.citations&&r.citations.length)
+      h+=`<div class="cites">${r.citations.map(c=>`<span class="cite">${esc(c)}</span>`).join("")}</div>`;
+    if(r.ai && r.ai.used) h+=`<div style="margin-top:6px;font-size:10.5px;color:#7c3aed;font-weight:700">\u2728 AI-polished${r.ai.usd!=null?` \u00b7 $${(+r.ai.usd).toFixed(5)}`:""}${r.ai.cached?" \u00b7 cached":""} \u00b7 citations preserved</div>`;
+    if(r.chart) h+=`<img src="/${r.chart}" alt="chart">`;
+    h+=`<div class="tbtn" onclick="this.parentElement.classList.toggle('open')">⛓ tool trace</div>
+        <div class="trace">${esc(JSON.stringify(r.trace,null,1))}</div>`;
+    b.innerHTML=h; b.className="bubble"+(r.refused?" refused":"");
+  }catch(e){ b.innerHTML="server error: "+esc(String(e)); }
+}
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\n/g,"<br>");
+$("send").onclick=send;
+$("q").addEventListener("keydown",e=>{if(e.key==="Enter")send();});
+$("rOps").onclick=()=>{ROLE="ops";$("rOps").classList.add("on");$("rExec").classList.remove("on");};
+$("rExec").onclick=()=>{ROLE="exec";$("rExec").classList.add("on");$("rOps").classList.remove("on");};
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+ "n_samples": 240,
+ "train": 120,
+ "holdout": 120,
+ "raw_brier": 0.2656,
+ "isotonic_brier": 0.2395,
+ "calibrated_brier": 0.2146,
+ "method": "platt",
+ "monotone": true,
+ "threshold_view": [
+  {
+   "threshold": 0.5,
+   "stp": 0.25,
+   "auto_error": 0.2
+  },
+  {
+   "threshold": 0.6,
+   "stp": 0.242,
+   "auto_error": 0.2069
+  },
+  {
+   "threshold": 0.7,
+   "stp": 0.242,
+   "auto_error": 0.2069
+  },
+  {
+   "threshold": 0.8,
+   "stp": 0.242,
+   "auto_error": 0.2069
+  },
+  {
+   "threshold": 0.85,
+   "stp": 0.0,
+   "auto_error": 0.0
+  },
+  {
+   "threshold": 0.9,
+   "stp": 0.0,
+   "auto_error": 0.0
+  },
+  {
+   "threshold": 0.95,
+   "stp": 0.0,
+   "auto_error": 0.0
+  },
+  {
+   "threshold": 0.98,
+   "stp": 0.0,
+   "auto_error": 0.0
+  },
+  {
+   "threshold": 0.995,
+   "stp": 0.0,
+   "auto_error": 0.0
+  }
+ ],
+ "recommended_threshold": 0.798
+}

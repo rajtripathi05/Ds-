@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1038               Date: 2025-01-25
+PO Ref: PO-2025-0038                     Buyer: DIST-CE-060 (Raipur, Chhattisgarh)
+Buyer GSTIN: 12SYNTH7365F1Z3
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-SNACSNA-122    SnackFactory Namkeen (50g / 2008       384    7.60   2918.40
+DS-CONFLUV-053    LuvIt SharePack (50g / 250m 1704       800    6.80   5440.00
+DS-BEVECAT-076    Catch ClubSoda (200g / 1L)  2202       120   39.00   4680.00
+------------------------------------------------------------------------------
+                                                            Subtotal  13038.40
+                                                            IGST 18%   2346.91
+                                                         GRAND TOTAL  15385.31
+Amount in words: Rupees Fifteen Thousand Three Hundred Eighty Five Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

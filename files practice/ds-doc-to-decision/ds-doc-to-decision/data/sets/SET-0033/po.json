@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0033",
+ "po_date": "2025-04-07",
+ "buyer": {
+  "code": "DIST-CE-059",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "31SYNTH9010F1Z2"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTRAJ-128",
+   "description": "Rajnigandha Saffron (25g)",
+   "hsn": "2106",
+   "qty": 500,
+   "unit_price": 20.5
+  }
+ ]
+}

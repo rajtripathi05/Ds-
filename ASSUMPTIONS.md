@@ -1,0 +1,16 @@
+# ASSUMPTIONS.md — ambiguity decisions log (overnight session)
+
+| # | Ambiguity | Decision | Why defensible |
+|---|-----------|----------|----------------|
+| A1 | "Improvements go to -v2" vs editing in place | Blueprint v1 kept untouched as last-known-good; ALL S1/S2/S5 improvements land in `DS-Group-AI-Transformation-Blueprint-v2.html` | Exactly matches the stated guardrail; v1 remains openable/demo-ready |
+| A2 | S1+S2 both modify the blueprint — one new version or two? | Single v2 evolves through S1→S2→S5 fixes; verified with node syntax+logic checks after every edit; a broken state is never left on disk | Checkpoint rule is about shippable states, not file count; v1 is the rollback |
+| A3 | Prototype metrics (297,610 rows, 3.13×, 24 docs, 25-q eval, 40 sets, 13 discrepancies, 40/40 labels) — how to tag? | New third tag `PROTOTYPED — internal synthetic data`; cross-checked against the kickoff/spec docs in the uploaded zips before citing | They are real, user-verified artefact metrics, but not DS Group facts — a separate evidence class keeps VERIFIED clean |
+| A4 | File naming: user's repo discipline uses YYYY-MM-DD- prefixes | Kept the already-established un-dated names of this session; INDEX.md carries dates | Consistency within the deliverable set beats mid-stream renaming |
+| A5 | Arithmetic slips found while re-auditing Part 1 (BC6 hours, BC8 payback, one exec-summary range) | Fixed in v2 immediately (Part-1 quality bar), logged in REDTEAM_FIXES.md even though found before S5 | "Honesty is non-negotiable" outranks ladder ordering; downstream artifacts (S3/S4) must inherit correct numbers |
+| A6 | Timestamps | Asia/Kolkata (user context is India) | User email + ₹ context |
+| A7 | Deck format (S4 allows HTML slides or PDF) | Self-contained HTML slides (arrow-key nav + print-to-PDF CSS) | Matches "no CDN, works offline" bar; PDF derivable by user in one keystroke |
+| A8 | Run-2 mandated dated filename `2026-07-12-ds-blueprint-v2.html`; an interim `DS-Group-...-v2.html` existed for ~20 min | Renamed (mv) the interim file to the mandated name; v1 untouched | Single live v2 avoids a confusing duplicate; rename ≠ delete; logged here + INDEX |
+| A9 | Adding newly verified facts could renumber V-references embedded in body text | Kept V1–V14 IDs stable, appended V15–V18; downgraded items keep their ID with an explicit REPORTED/downgrade note | Stable citation IDs preserve every existing cross-reference |
+| A10 | BS interview (V18) revealed confectionery manufacturing is outsourced — Case 8's pilot had assumed a confectionery line | Re-scoped pilot to own units (mouth-freshener + spices/foods); added co-packer note | Keeps the case honest without killing it; own-unit pilot is the defensible start |
+| A11 | Aggregator scenario semantics | Conservative = low benefit + high cost; Base = midpoints; Aggressive = high benefit + low cost; one-time cash shown separately, never mixed into recurring | Standard analyst convention; stated on the panel itself |
+| A12 | Pitch kit deliberately mentions the retired "21 plants" phrase | Kept — it narrates the correction story (Tab-7 talk track) | Describing a fix requires naming it; flagged so the consistency grep isn't "failing" |

@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1023               Date: 2025-09-14
+PO Ref: PO-2025-0023                     Buyer: DIST-NO-006 (Gurugram, Haryana)
+Buyer GSTIN: 37SYNTH1549F1Z6
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-BEVECAT-093    Catch Water (50g / 250ml)   2202       120    7.80    936.00
+DS-BEVECAT-019    Catch LimeJuice (600ml)     2202       192   27.30   5241.60
+DS-CONFCHI-111    Chingles Mint (1 unit)      1704      2600    0.68   1768.00
+------------------------------------------------------------------------------
+                                                            Subtotal   7945.60
+                                                            IGST 18%   1430.21
+                                                         GRAND TOTAL   9375.81
+Amount in words: Rupees Nine Thousand Three Hundred Seventy Six Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

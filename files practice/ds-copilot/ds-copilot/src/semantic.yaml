@@ -1,0 +1,33 @@
+# SEMANTIC LAYER — the ONLY queryable surface (LAW 1). exec: true fields never reach Operations.
+tables:
+  sales_secondary:
+    columns: {date: {}, sku: {}, distributor: {}, qty: {}, price_realized: {exec: true}, promo_id: {}}
+  product_master:
+    columns: {sku_code: {}, category: {}, brand: {}, variant: {}, pack_size: {}, abc_class: {},
+              launch_date: {}, is_intermittent: {}, mrp: {exec: true}, dist_price: {exec: true}}
+  location_master:
+    columns: {distributor_code: {}, zone: {}, state: {}, city: {}, channel: {}, urban_rural: {}}
+  calendar:
+    columns: {date: {}, iso_week: {}, month: {}, season: {}, is_festival: {}, festival_name: {}}
+  promo_calendar:
+    columns: {promo_id: {}, sku: {}, type: {}, start: {}, end: {}, depth_pct: {}, mechanic: {}}
+  price_history:
+    columns: {sku: {}, effective_from: {}, reason: {}, mrp: {exec: true}, dist_price: {exec: true}}
+  sku_costs:
+    columns: {sku_code: {}, category: {}, unit_cogs: {exec: true}, mfr_gross_margin_pct: {exec: true}}
+metrics:
+  secondary_qty:      {sql: "SUM(s.qty)", needs: [sales_secondary]}
+  n_transactions:     {sql: "COUNT(*)", needs: [sales_secondary]}
+  realized_revenue:   {sql: "SUM(s.qty * s.price_realized)", needs: [sales_secondary], exec: true}
+  avg_realized_price: {sql: "AVG(s.price_realized)", needs: [sales_secondary], exec: true}
+  gross_margin:       {sql: "SUM(s.qty * (s.price_realized - c.unit_cogs))", needs: [sales_secondary, sku_costs], exec: true}
+dimensions:
+  month:    {sql: "substr(s.date,1,7)"}
+  date:     {sql: "s.date"}
+  sku:      {sql: "s.sku"}
+  brand:    {sql: "p.brand", join: product_master}
+  category: {sql: "p.category", join: product_master}
+  zone:     {sql: "l.zone", join: location_master}
+  channel:  {sql: "l.channel", join: location_master}
+  distributor: {sql: "s.distributor"}
+row_limit: 500

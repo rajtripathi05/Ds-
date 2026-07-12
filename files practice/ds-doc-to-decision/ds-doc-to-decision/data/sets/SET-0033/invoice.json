@@ -1,0 +1,36 @@
+{
+ "invoice_no": "INV/25-26/1033",
+ "invoice_date": "2025-04-14",
+ "po_no": "PO-2025-0033",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-CE-059",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "31SYNTH9010F1Z2"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTRAJ-128",
+   "description": "Rajnigandha Saffron (25g)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 500,
+   "unit_price": 20.5
+  }
+ ],
+ "subtotal": 10250.0,
+ "gst": {
+  "igst": 1845.0
+ },
+ "grand_total": 12095.0,
+ "amount_in_words": "Rupees Twelve Thousand Ninety Five Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

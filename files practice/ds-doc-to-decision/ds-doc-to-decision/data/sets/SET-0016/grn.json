@@ -1,0 +1,16 @@
+{
+ "grn_no": "GRN-2025-0016",
+ "po_no": "PO-2025-0016",
+ "grn_date": "2025-10-17",
+ "receiver": "DIST-NO-007",
+ "lines": [
+  {
+   "sku": "DS-SNACSNA-143",
+   "qty": 240
+  },
+  {
+   "sku": "DS-CONFCHE-057",
+   "qty": 1600
+  }
+ ]
+}

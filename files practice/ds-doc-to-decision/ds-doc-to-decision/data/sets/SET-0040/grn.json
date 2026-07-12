@@ -1,0 +1,16 @@
+{
+ "grn_no": "GRN-2025-0040",
+ "po_no": "PO-2025-0040",
+ "grn_date": "2025-08-20",
+ "receiver": "DIST-WE-021",
+ "lines": [
+  {
+   "sku": "DS-SPICKEW-095",
+   "qty": 288
+  },
+  {
+   "sku": "DS-DAIRKSH-136",
+   "qty": 48
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice Checker — only what needs your eyes</title>
+<style>
+:root{--ink:#171412;--ink2:#403a35;--mut:#6c645c;--line:#e6e1db;--bg:#f7f4f0;--card:#fff;--acc:#b3282d;--acc2:#8a1f23;--ok:#15803d;--okbg:#e7f6ec;--warn:#b45409;--bad:#b91c1c;--vio:#6d28d9;--focus:#1d4ed8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+header.app{background:linear-gradient(120deg,#171412,#3b1d1e);color:#fff;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+header.app .ttl{font-size:22px;font-weight:800}
+header.app .sub{font-size:13.5px;color:#e7dcd6;margin-top:2px}
+.rt{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+#llmPill{font-size:12.5px;color:#e7dcd6;background:rgba(255,255,255,.10);padding:6px 12px;border-radius:999px}
+.btn{border:0;border-radius:12px;font-weight:800;cursor:pointer;font-family:inherit;min-height:48px;font-size:16px;padding:0 18px}
+.retune{background:#fff;color:var(--acc2)}
+.retune:hover{background:#f3e9e5}
+main{max-width:1160px;margin:0 auto;padding:20px 24px 70px}
+.help{background:#fffdf7;border:1px solid #f0e6cf;border-left:5px solid var(--acc);border-radius:14px;padding:14px 18px;margin-bottom:18px}
+.help b{font-size:16px}.help p{font-size:15px;color:var(--ink2);margin-top:2px}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:18px}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:14px;padding:14px 16px}
+.kpi b{display:block;font-size:26px;font-weight:800}
+.kpi span{font-size:13px;color:var(--mut);display:block}
+.kpi span.t{font-weight:700;color:var(--ink2);font-size:13.5px;margin-bottom:4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+.card h2{font-size:19px;font-weight:800;margin-bottom:4px}
+.card .cap{font-size:14px;color:var(--mut);margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid var(--line);padding:9px 9px}
+td{border-bottom:1px solid var(--line);padding:11px 9px;vertical-align:middle}
+.code{font-weight:800;color:var(--acc2)}
+.age{display:inline-block;min-width:38px;text-align:center;border-radius:8px;font-weight:800;font-size:13.5px;padding:4px 8px}
+.age.ok{background:var(--okbg);color:var(--ok)}.age.warn{background:#fdecd8;color:var(--warn)}.age.bad{background:#fde2e2;color:var(--bad)}
+.approve{background:var(--okbg);color:var(--ok);border:2px solid #b6e3c4;border-radius:10px;font-weight:800;cursor:pointer;font-family:inherit;min-height:46px;font-size:15px;padding:0 16px;margin-right:6px}
+.approve:hover{background:#d6f0de}
+.reject{background:#fde2e2;color:var(--bad);border:2px solid #f3b7b7;border-radius:10px;font-weight:800;cursor:pointer;font-family:inherit;min-height:46px;font-size:15px;padding:0 16px}
+.reject:hover{background:#fbcfcf}
+.hist{font-size:15px;color:var(--ink2)}
+.audit{font-size:12.5px;color:var(--mut);white-space:pre-wrap;max-height:220px;overflow-y:auto;background:#faf7f2;border:1px solid var(--line);border-radius:10px;padding:10px}
+</style>
+</head>
+<body>
+<header class="app">
+  <div><div class="ttl">🧾 Invoice Checker</div><div class="sub">The system clears the easy invoices. You only see the few that genuinely need a human.</div></div>
+  <div class="rt"><span id="llmPill">·</span><button class="btn retune" id="retune">↺ Teach the system from my decisions</button></div>
+</header>
+<main>
+  <div class="help">
+    <b>How this works.</b>
+    <p>Every invoice is checked against the rulebook automatically. Clean ones are approved on their own. Anything with a problem lands in the list below with a plain reason — approve it ✓ or reject it ✗. Each decision you make teaches the system, so over time the list gets shorter. Press <b>Teach the system</b> after a few decisions to see it learn.</p>
+  </div>
+  <div class="kpis" id="kpis"></div>
+  <div class="card"><h2>Invoices that need your attention</h2>
+    <div class="cap">Each row shows the exact check that failed, how confident the system is, and how long it's been waiting.</div>
+    <table><thead><tr><th>Invoice</th><th>Issue code</th><th>Why it needs you</th><th>Confidence</th><th>Waiting</th><th>Your decision</th></tr></thead>
+    <tbody id="qbody"></tbody></table>
+  </div>
+  <div class="card"><h2>The system learning from you</h2><div class="hist" id="hist">Make a few decisions, then press “Teach the system”.</div></div>
+  <div class="card"><h2>History (every decision, permanently recorded)</h2><div class="audit" id="audit"></div></div>
+</main>
+<script>
+
+const $ = id => document.getElementById(id);
+async function load(){
+  const d = await (await fetch("/queue")).json();
+  const s = d.stats;
+  $("kpis").innerHTML = [
+    ["Cleared automatically", (s.stp*100).toFixed(1)+"%", "no human needed"],
+    ["Auto-approved", s.auto, "of "+s.total+" invoices"],
+    ["Waiting for you", s.queued, "in the list below"],
+    ["Rejected by rules", s.rejected, "clear rule failures"],
+    ["Confidence needed", s.threshold, "to clear on its own"],
+  ].map(k=>`<div class="kpi"><span class="t">${k[0]}</span><b>${k[1]}</b><span>${k[2]}</span></div>`).join("");
+  $("qbody").innerHTML = d.queue.map(r=>{
+    const cls = r.aging_days>10?"bad":r.aging_days>5?"warn":"ok";
+    return `<tr><td><b>${r.set_id}</b></td><td class="code">${r.reason_code}</td>
+      <td>${r.reason}${r.plain?`<div style="font-size:11px;color:#7c3aed;margin-top:2px">\u2728 ${r.plain}</div>`:""}</td><td>${r.confidence} → ${r.conf_calibrated}</td>
+      <td><span class="age ${cls}">${r.aging_days}d</span></td>
+      <td><button class="approve" onclick="review('${r.set_id}','approve',${r.confidence})">✓ approve</button>
+          <button class="reject" onclick="review('${r.set_id}','override_reject',${r.confidence})">✗ reject</button></td></tr>`;
+  }).join("") || `<tr><td colspan="6" style="color:var(--mut)">queue empty — everything auto-decided</td></tr>`;
+  $("hist").innerHTML = d.history.length
+    ? d.history.map(h=>`[${h.ts}] threshold ${h.from_th} → <b>${h.to_th}</b> · STP now <b>${(h.stp*100).toFixed(1)}%</b>`).join("<br>")
+    : "no retunes yet — review some documents, then hit ↺";
+  const a = await (await fetch("/audit")).json();
+  $("audit").textContent = a.map(x=>`${x.ts} ${x.actor.padEnd(6)} ${x.set_id} ${x.outcome} ← ${x.reason[0]} #${x.hash}`).join("\n");
+}
+async function review(id, action, conf){
+  await fetch("/review", {method:"POST", body: JSON.stringify({set_id:id, action, confidence:conf})});
+  load();
+}
+$("retune").onclick = async ()=>{ await fetch("/retune",{method:"POST",body:"{}"}); load(); };
+(async()=>{try{const s=await (await fetch("/llm_status")).json();
+  document.getElementById("llmPill").textContent = s.active
+    ? `\u2728 AI explanations ON \u00b7 $${s.spent_usd.toFixed(4)}/$${s.budget_usd}` : "rules mode";}catch(e){}})();
+load();
+
+</script>
+</body>
+</html>

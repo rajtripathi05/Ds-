@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0007",
+ "po_date": "2025-07-12",
+ "buyer": {
+  "code": "DIST-NO-006",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "gstin": "21SYNTH3051F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-047",
+   "description": "Ksheer FlavMilk (1L)",
+   "hsn": "0403",
+   "qty": 144,
+   "unit_price": 48.0
+  },
+  {
+   "sku": "DS-MOUTTAN-021",
+   "description": "Tansen Supreme (25g)",
+   "hsn": "2106",
+   "qty": 900,
+   "unit_price": 20.5
+  }
+ ]
+}

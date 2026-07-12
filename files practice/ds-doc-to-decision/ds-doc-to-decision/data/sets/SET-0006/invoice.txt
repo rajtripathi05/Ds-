@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1006               Date: 2025-09-06
+PO Ref: PO-2025-0006                     Buyer: DIST-EA-032 (Patna, Bihar)
+Buyer GSTIN: 26SYNTH6765F1Z7
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-SNACNOT-096    NotJustNuts TrailMix (50g / 2008       576    7.60   4377.60
+DS-CONFPUL-012    Pulse Guava (1 unit)        1704       400    0.68    272.00
+DS-SNACNOT-007    NotJustNuts Cashew (100g /  2008       528   15.20   8025.60
+------------------------------------------------------------------------------
+                                                            Subtotal  12675.20
+                                                            IGST 18%   2281.54
+                                                         GRAND TOTAL  14956.74
+Amount in words: Rupees Fourteen Thousand Nine Hundred Fifty Seven Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

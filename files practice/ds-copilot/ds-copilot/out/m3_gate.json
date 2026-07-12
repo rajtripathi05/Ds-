@@ -1,0 +1,14 @@
+{
+ "answer": "Data: 2025-01 \u2192 2025-06: 53,792 \u2192 50,405 (-6.3%). [governed-db] Effective 2025-01-01, the MRP of Rajnigandha Pan Masala SKU DS-MOUTRAJ-145 revises from \u20b925 to \u20b926 on account of input-cost inflation (areca, cardamom, packaging). Distributor billing price moves from \u20b920.50 to \u20b921.32 correspondingly; margins in percentage terms are unchanged. Expect a short-term volume adjustment post-revision; territory targets for Q4 FY25 already factor this. Catch spices 50g/100g: 20% off display scheme for MT chains, against planogram photo proof.",
+ "citations": [
+  "[sales-price-revision-circular-2025]",
+  "[sales-trade-scheme-circular-2025-q3]"
+ ],
+ "tools": [
+  "run_sql",
+  "make_chart",
+  "expand_doc_query",
+  "search_docs"
+ ],
+ "chart": "out/charts/why-did-north-zone-rajnigandha-volumes-drop-in-e.png"
+}

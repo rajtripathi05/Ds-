@@ -1,0 +1,52 @@
+{
+ "invoice_no": "INV/25-26/1038",
+ "invoice_date": "2025-01-25",
+ "po_no": "PO-2025-0038",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-CE-060",
+  "city": "Raipur",
+  "state": "Chhattisgarh",
+  "gstin": "12SYNTH7365F1Z3"
+ },
+ "lines": [
+  {
+   "sku": "DS-SNACSNA-122",
+   "description": "SnackFactory Namkeen (50g / 250ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 384,
+   "unit_price": 7.6
+  },
+  {
+   "sku": "DS-CONFLUV-053",
+   "description": "LuvIt SharePack (50g / 250ml)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 800,
+   "unit_price": 6.8
+  },
+  {
+   "sku": "DS-BEVECAT-076",
+   "description": "Catch ClubSoda (200g / 1L)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 120,
+   "unit_price": 39.0
+  }
+ ],
+ "subtotal": 13038.4,
+ "gst": {
+  "igst": 2346.91
+ },
+ "grand_total": 15385.31,
+ "amount_in_words": "Rupees Fifteen Thousand Three Hundred Eighty Five Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

@@ -1,0 +1,24 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1025               Date: 2025-03-02
+PO Ref: PO-2025-0025                     Buyer: DIST-NO-045 (Guwahati, Assam)
+Buyer GSTIN: 20SYNTH8465F1Z1
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-MOUTTAN-031    Tansen Supreme (50g / 250ml 2106      1100    8.20   9020.00
+DS-SPICCAT-027    Catch Sprinkler (50g / 250m 0910       480    8.20   3936.00
+DS-MOUTRAJ-034    Rajnigandha PanMasala (50g  2106      1200    8.20   9840.00
+------------------------------------------------------------------------------
+                                                            Subtotal  22796.00
+                                                            IGST 18%   4103.28
+                                                         GRAND TOTAL  26899.28
+Amount in words: Rupees Twenty Six Thousand Eight Hundred Ninety Nine Only
+COA: COA-0025  issued 2024-07-15  valid till 2025-07-15
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

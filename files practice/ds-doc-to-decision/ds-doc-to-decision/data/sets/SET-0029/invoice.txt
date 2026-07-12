@@ -1,0 +1,21 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1029               Date: 2025-08-30
+PO Ref: PO-2025-0029                     Buyer: DIST-CE-060 (Raipur, Chhattisgarh)
+Buyer GSTIN: 35SYNTH8488F1Z2
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-MOUTTAN-085    Tansen Supreme (25g)        2106       700   20.50  14350.00
+------------------------------------------------------------------------------
+                                                            Subtotal  14350.00
+                                                            IGST 18%   2583.00
+                                                         GRAND TOTAL  17433.00
+Amount in words: Rupees Seventeen Thousand Four Hundred Thirty Three Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

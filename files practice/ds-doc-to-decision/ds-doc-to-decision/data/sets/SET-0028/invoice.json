@@ -1,0 +1,56 @@
+{
+ "invoice_no": "INV/25-26/1028",
+ "invoice_date": "2025-01-04",
+ "po_no": "PO-2025-0028",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-WE-021",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "27SYNTH6818F1Z5"
+ },
+ "lines": [
+  {
+   "sku": "DS-CONFCHE-069",
+   "description": "Cherio Std (50g / 250ml)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 1000,
+   "unit_price": 7.19
+  },
+  {
+   "sku": "DS-CONFFRU-026",
+   "description": "FRU Jelly (1 unit)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 600,
+   "unit_price": 0.68
+  },
+  {
+   "sku": "DS-DAIRKSH-136",
+   "description": "Ksheer Dahi (500ml)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 288,
+   "unit_price": 24.0
+  }
+ ],
+ "subtotal": 14510.0,
+ "gst": {
+  "igst": 2611.8
+ },
+ "grand_total": 17121.8,
+ "amount_in_words": "Rupees Seventeen Thousand One Hundred Twenty Two Only",
+ "coa": {
+  "coa_no": "COA-0028",
+  "issue_date": "2024-09-16",
+  "valid_till": "2025-09-16"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

@@ -1,0 +1,48 @@
+{
+ "invoice_no": "INV/25-26/1040",
+ "invoice_date": "2025-08-22",
+ "po_no": "PO-2025-0040",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-WE-021",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "37SYNTH8965F1Z5"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICKEW-095",
+   "description": "Kewal Std (200g / 1L)",
+   "hsn": "0910",
+   "category": "Spices",
+   "qty": 288,
+   "unit_price": 41.0
+  },
+  {
+   "sku": "DS-DAIRKSH-136",
+   "description": "Ksheer Dahi (500ml)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 48,
+   "unit_price": 24.0
+  }
+ ],
+ "subtotal": 12960.0,
+ "gst": {
+  "igst": 2332.8
+ },
+ "grand_total": 15292.8,
+ "amount_in_words": "Rupees Fifteen Thousand Two Hundred Ninety Three Only",
+ "coa": {
+  "coa_no": "COA-0040",
+  "issue_date": "2024-11-25",
+  "valid_till": "2025-11-25"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

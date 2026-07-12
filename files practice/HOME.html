@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DS Portfolio — Home</title>
+<style>
+:root{--ink:#171412;--ink2:#403a35;--mut:#6c645c;--line:#e6e1db;--bg:#f7f4f0;--card:#fff;--acc:#b3282d;--acc2:#8a1f23;--vio:#6d28d9;--ok:#15803d;--focus:#1d4ed8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:8px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+.serif{font-family:Georgia,'Times New Roman',serif}
+header{background:linear-gradient(135deg,#171412,#2a2420 55%,#3b1d1e);color:#fff;padding:44px 24px 38px;text-align:center}
+header .k{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#e7dcd6;margin-bottom:10px}
+header h1{font-size:34px;line-height:1.15}
+header p{color:#e7dcd6;max-width:720px;margin:12px auto 0;font-size:16px}
+main{max-width:1080px;margin:0 auto;padding:30px 24px 70px}
+h2{font-size:20px;margin:8px 0 14px;font-weight:800}
+.run{background:#fffdf7;border:1px solid #f0e6cf;border-left:5px solid var(--acc);border-radius:14px;padding:16px 20px;margin-bottom:26px;font-size:15.5px;color:var(--ink2)}
+.run b{color:var(--ink)}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.apps{grid-template-columns:1fr}}
+.app{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--acc);border-radius:16px;padding:22px;display:flex;flex-direction:column}
+.app .emoji{font-size:34px}
+.app h3{font-size:20px;margin:8px 0 2px}
+.app .what{font-size:15px;color:var(--ink2);margin-bottom:10px}
+.app ul{list-style:none;margin:0 0 16px;padding:0}
+.app li{font-size:13.5px;color:var(--mut);padding:3px 0 3px 20px;position:relative}
+.app li:before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+.app a.open{margin-top:auto;display:block;text-align:center;background:var(--acc);color:#fff;text-decoration:none;font-weight:800;font-size:16px;border-radius:12px;padding:13px;min-height:50px}
+.app a.open:hover{background:var(--acc2)}
+.app .port{font-size:12px;color:var(--mut);text-align:center;margin-top:8px}
+.docs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+@media(max-width:900px){.docs{grid-template-columns:1fr}}
+a.doc{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+a.doc:hover{border-color:var(--acc)}
+a.doc b{font-size:15px}a.doc span{font-size:13px;color:var(--mut);display:block;margin-top:2px}
+footer{border-top:1px solid var(--line);padding:20px 24px 40px;color:var(--mut);font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">RAJ · AI portfolio · demo home</div>
+  <h1 class="serif">Three working AI systems for an FMCG business</h1>
+  <p>Each one solves a real problem and shows its own proof. Open any of them below — they run entirely on this computer. Built and measured on a synthetic test bed with planted ground truth; independent work, not affiliated with DS Group.</p>
+</header>
+<main>
+  <div class="run">
+    <b>Before opening the apps:</b> double-click <b>START_ALL.bat</b> in this folder once. It installs
+    what's needed and starts the three apps (first time takes a couple of minutes). If an app link
+    below says “can't reach this page”, the apps aren't started yet — run START_ALL and refresh.
+  </div>
+
+  <h2>The three apps</h2>
+  <div class="apps">
+    <div class="app">
+      <div class="emoji">📈</div>
+      <h3>Demand Cockpit</h3>
+      <div class="what">See what will sell, and safely test a change before you commit.</div>
+      <ul>
+        <li>One-click “what-if” scenarios</li>
+        <li>Answers in ~half a second, maths always re-checked</li>
+        <li>Switch to Operations and watch money figures hide</li>
+      </ul>
+      <a class="open" href="http://localhost:8765" target="_blank" rel="noopener">Open the Cockpit →</a>
+      <div class="port">localhost : 8765</div>
+    </div>
+    <div class="app">
+      <div class="emoji">💬</div>
+      <h3>Company Assistant</h3>
+      <div class="what">Ask about any policy, scheme or number — every answer shows its source.</div>
+      <ul>
+        <li>Cited answers, never guesses</li>
+        <li>Sensitive figures only for Executive role</li>
+        <li>Refuses trick questions, on the record</li>
+      </ul>
+      <a class="open" href="http://localhost:8770" target="_blank" rel="noopener">Open the Assistant →</a>
+      <div class="port">localhost : 8770</div>
+    </div>
+    <div class="app">
+      <div class="emoji">🧾</div>
+      <h3>Invoice Checker</h3>
+      <div class="what">Clears the easy invoices; you only see the few that need a human.</div>
+      <ul>
+        <li>Plain reason on every flagged invoice</li>
+        <li>Big approve / reject — it learns from you</li>
+        <li>Every decision permanently recorded</li>
+      </ul>
+      <a class="open" href="http://localhost:8780" target="_blank" rel="noopener">Open the Checker →</a>
+      <div class="port">localhost : 8780</div>
+    </div>
+  </div>
+
+  <h2 style="margin-top:34px">The strategy behind them (no app needed — just open)</h2>
+  <div class="docs">
+    <a class="doc" href="../2026-07-12-ds-blueprint-v2.html"><b>📊 Interactive Blueprint</b><span>30 scored AI use-cases, live prioritiser, ROI aggregator</span></a>
+    <a class="doc" href="../2026-07-12-blueprint-deck.html"><b>🖥️ Boardroom Deck</b><span>14 slides — arrow keys to move, prints to PDF</span></a>
+    <a class="doc" href="../2026-07-12-exec-onepager.html"><b>📄 Executive One-Pager</b><span>The 3-minute read for a CXO</span></a>
+    <a class="doc" href="portfolio-final/PORTFOLIO_MASTER.md"><b>🗂️ Master Index</b><span>Every file, one measured result each</span></a>
+  </div>
+</main>
+<footer>Turn on the optional AI layer any time — see <b>SETUP_LLM.md</b>. Everything works fully offline without it.</footer>
+</body>
+</html>

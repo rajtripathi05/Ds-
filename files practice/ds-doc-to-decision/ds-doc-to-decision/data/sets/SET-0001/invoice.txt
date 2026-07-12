@@ -1,0 +1,21 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1001               Date: 2025-07-16
+PO Ref: PO-2025-0001                     Buyer: DIST-CE-054 (Raipur, Chhattisgarh)
+Buyer GSTIN: 24SYNTH2530F1Z2
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-MOUTRAJ-145    Rajnigandha PanMasala (25g) 2106       400   20.50   8200.00
+------------------------------------------------------------------------------
+                                                            Subtotal   8200.00
+                                                            IGST 18%   1476.00
+                                                         GRAND TOTAL   9676.00
+Amount in words: Rupees Nine Thousand Six Hundred Seventy Six Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

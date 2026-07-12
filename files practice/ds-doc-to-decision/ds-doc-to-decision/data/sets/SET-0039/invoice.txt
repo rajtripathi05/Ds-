@@ -1,0 +1,22 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1039               Date: 2025-08-08
+PO Ref: PO-2025-0039                     Buyer: DIST-NO-052 (Agartala, Tripura)
+Buyer GSTIN: 13SYNTH1522F1Z4
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-DAIRKSH-084    Ksheer Whitener (500ml)     0403       173   24.00   4152.00
+------------------------------------------------------------------------------
+                                                            Subtotal   4152.00
+                                                            IGST 18%    747.36
+                                                         GRAND TOTAL   4899.36
+Amount in words: Rupees Four Thousand Eight Hundred Ninety Nine Only
+COA: COA-0039  issued 2024-12-06  valid till 2025-12-06
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

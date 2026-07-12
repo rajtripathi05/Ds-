@@ -1,0 +1,24 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1035               Date: 2025-07-04
+PO Ref: PO-2025-0035                     Buyer: DIST-EA-032 (Patna, Bihar)
+Buyer GSTIN: 31SYNTH5443F1Z8
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-CONFFRU-026    FRU Jelly (1 unit)          1704      1200    0.68    816.00
+DS-MOUTMAS-091    Mastaba Std (50g / 250ml)   2106       900    8.20   7380.00
+DS-DAIRKSH-115    Ksheer FullCreamMilk (12g / 0403        72    9.60    691.20
+------------------------------------------------------------------------------
+                                                            Subtotal   8887.20
+                                                            IGST 18%   1599.70
+                                                         GRAND TOTAL  10486.90
+Amount in words: Rupees Ten Thousand Four Hundred Eighty Seven Only
+COA: COA-0035  issued 2024-10-18  valid till 2025-10-18
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

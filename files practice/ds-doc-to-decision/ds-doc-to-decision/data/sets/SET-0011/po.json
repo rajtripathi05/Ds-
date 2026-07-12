@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0011",
+ "po_date": "2025-02-03",
+ "buyer": {
+  "code": "DIST-NO-002",
+  "city": "Ludhiana",
+  "state": "Punjab",
+  "gstin": "23SYNTH1845F1Z3"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-SNACNOT-124",
+   "description": "NotJustNuts Cashew (100g / 600ml)",
+   "hsn": "2008",
+   "qty": 144,
+   "unit_price": 15.2
+  }
+ ]
+}

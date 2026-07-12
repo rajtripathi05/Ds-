@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0018",
+ "po_date": "2025-06-15",
+ "buyer": {
+  "code": "DIST-NO-007",
+  "city": "Sikar",
+  "state": "Rajasthan",
+  "gstin": "31SYNTH4896F1Z1"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTRAJ-104",
+   "description": "Rajnigandha Saffron (25g)",
+   "hsn": "2106",
+   "qty": 1400,
+   "unit_price": 20.5
+  },
+  {
+   "sku": "DS-CONFCHE-069",
+   "description": "Cherio Std (50g / 250ml)",
+   "hsn": "1704",
+   "qty": 400,
+   "unit_price": 6.8
+  }
+ ]
+}

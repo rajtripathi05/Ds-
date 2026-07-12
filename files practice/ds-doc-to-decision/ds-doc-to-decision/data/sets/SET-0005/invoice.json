@@ -1,0 +1,48 @@
+{
+ "invoice_no": "INV/25-26/1005",
+ "invoice_date": "2025-08-18",
+ "po_no": "PO-2025-0005",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-004",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "gstin": "32SYNTH3532F1Z7"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-083",
+   "description": "Ksheer FullCreamMilk (12g / 200ml)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 48,
+   "unit_price": 9.6
+  },
+  {
+   "sku": "DS-SNACSNA-143",
+   "description": "SnackFactory Namkeen (100g / 600ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 336,
+   "unit_price": 15.2
+  }
+ ],
+ "subtotal": 5568.0,
+ "gst": {
+  "igst": 1002.24
+ },
+ "grand_total": 6570.24,
+ "amount_in_words": "Rupees Six Thousand Five Hundred Seventy Only",
+ "coa": {
+  "coa_no": "COA-0005",
+  "issue_date": "2024-12-21",
+  "valid_till": "2025-12-21"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

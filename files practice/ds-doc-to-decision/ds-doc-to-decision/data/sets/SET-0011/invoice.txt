@@ -1,0 +1,21 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1011               Date: 2025-02-07
+PO Ref: PO-2025-0011                     Buyer: DIST-NO-002 (Ludhiana, Punjab)
+Buyer GSTIN: 23SYNTH1845F1Z3
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-SNACNOT-124    NotJustNuts Cashew (100g /  2008       144   15.20   2188.80
+------------------------------------------------------------------------------
+                                                            Subtotal   2188.80
+                                                            IGST 18%    393.98
+                                                         GRAND TOTAL   2582.78
+Amount in words: Rupees Two Thousand Five Hundred Eighty Three Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

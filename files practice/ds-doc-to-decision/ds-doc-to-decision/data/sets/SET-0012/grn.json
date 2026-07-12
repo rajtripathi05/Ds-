@@ -1,0 +1,16 @@
+{
+ "grn_no": "GRN-2025-0012",
+ "po_no": "PO-2025-0012",
+ "grn_date": "2025-05-17",
+ "receiver": "DIST-SO-027",
+ "lines": [
+  {
+   "sku": "DS-MOUTTAN-031",
+   "qty": 1200
+  },
+  {
+   "sku": "DS-CONFLUV-065",
+   "qty": 2400
+  }
+ ]
+}

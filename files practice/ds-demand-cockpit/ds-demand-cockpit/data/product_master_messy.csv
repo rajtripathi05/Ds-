@@ -1,0 +1,152 @@
+sku_code,category,brand,variant,pack_size,pack_unit,mrp,dist_price,launch_date,abc_class,mts_mto,base_elasticity,is_intermittent
+DS-CONFPULSE-001,Confectionery,Pulse,KacchaAam,8g / 5ml,kg,1.0,0.68,2020-10-24,A,MTS,-0.6,False
+DS-DAIRKSH-002,Dairy,Ksheer,Whitener,500ml,ml,30.0,24.0,2018-07-21,A,MTS,-1.182,False
+DS-SPICCAT-003,Spices,Catch,Turmeric,500g,kg,100.0,82.0,2021-01-19,C,MTS,-1.081,True
+DS-DAIRKSH-004,Dairy,Ksheer,FlavMilk,12g / 200ml,kg,12.0,9.6,2021-11-14,C,MTS,-1.293,False
+DS-SPICCAT-005,Spices,Catch,Sprinkler,200g / 1L,g,50.0,41.0,2018-08-08,A,MTS,-1.089,False
+DS-BEVECAT-006,Beverages,Catch,Water,600ml,ml,#N/A,27.3,2022-09-01,C,MTO,-1.503,True
+DS-SNACNOT-007,Snacks,NotJustNuts,Cashew,100g / 600ml,g,20.0,15.2,2020-08-28,A,MTS,-1.291,False
+DS-CONFCHI-008,Confectionery,Chingles,Mint,8g / 5ml,g,5.0,3.4,2019-04-23,B,MTS,-0.66,False
+DS-SPICKEW-009,Spices,Kewal,Std,8g / 5ml,g,5.0,,2021-08-21,C,MTS,-1.201,True
+DS-MOUTTAN-010,MouthFreshener,Tansen,Supreme,50g / 250ml,g,10.0,8.2,2022-10-06,A,MTS,-0.767,False
+DS-DAIRKSH-011,Dairy,Ksheer,Whitener,1L,ml,60.0,48.0,2019-05-05,C,MTS,-1.301,True
+DS-CONFPUL-012,Confectionery,Pulse,Guava,1 unit,unit,1.0,0.68,2019-05-30,C,MTO,-0.612,False
+DS-BEVECAT-013,Beverages,Catch,MangoJuice,600ml,ml,35.0,27.3,2018-06-30,C,MTS,-1.203,True
+DS-MOUTBAB-014,MouthFreshener,BABASupari,Std,25g,g,25.0,20.5,2018-02-10,B,MTS,-0.781,False
+DS-SNACNOT-015,Snacks,NotJustNuts,TrailMix,50g / 250ml,g,10.0,7.6,2022-11-07,C,MTS,-1.411,True
+DS-SPICCAT-016,Spices,Catch,Sprinkler,50g / 250ml,g,10.0,8.2,2022-08-02,A,MTS,-0.965,False
+DS-DAIRKSH-017,Dairy,Ksheer,Whitener,500ml,ml,30.0,24.0,2020-08-30,A,MTS,-1.2,False
+DS-SNACNOT-018,Snacks,NotJustNuts,Almond,200g / 1L,g,50.0,38.0,2022-08-04,B,MTS,-1.223,False
+DS-BEVECAT-019,Beverages,Catch,LimeJuice,600ml,ml,35.0,27.3,2017-06-02,B,MTS,-1.24,False
+DS-CONFCHI-020,Confectionery,Chingles,Spearmint,2g / 1 unit,unit,2.0,1.36,2017-10-02,C,MTO,-0.558,False
+DS-MOUTTAN-021,MouthFreshener,Tansen,Supreme,25g,g,25.0,20.5,2020-09-29,B,MTS,-0.791,False
+DS-BEVECAT-022,Beverages,Catch,GreenApple,50g / 250ml,g,10.0,7.8,2020-09-14,B,MTS,-1.319,False
+DS-DAIRKSH-023,Dairy,Ksheer,Ghee,500ml,ml,30.0,24.0,2022-07-10,C,MTO,-1.293,True
+DS-MOUTTAN-024,MouthFreshener,Tansen,Supreme,2g / 1 unit,unit,2.0,1.64,2019-11-13,C,MTS,-0.788,True
+DS-MOUTBAB-025,MouthFreshener,BABASupari,Std,8g / 5ml,g,5.0,4.1,2019-04-05,A,MTS,-0.924,False
+DS-CONFFRU-026,Confectionery,FRU,Jelly,1 unit,unit,1.0,,2017-03-23,C,MTS,-0.572,True
+DS-SPICCAT-027,Spices,Catch,Sprinkler,50g / 250ml,g,10.0,8.2,2020-07-13,C,MTS,-0.962,True
+DS-BEVECAT-028,Beverages,Catch,GreenApple,50g / 250ml,g,10.0,7.8,2019-12-13,B,MTS,-1.302,False
+DS-SNACNOT-029,Snacks,NotJustNuts,Almond,100g / 600ml,g,20.0,15.2,2021-10-26,B,MTS,-1.427,False
+DS-CONFPUL-030,Confectionery,Pulse,Litchi,8g / 5ml,g,5.0,3.4,2022-10-05,C,MTS,-0.53,True
+DS-MOUTTAN-031,MouthFreshener,Tansen,Supreme,50g / 250ml,g,10.0,8.2,2018-12-08,C,MTO,-0.794,True
+DS-MOUTRAJ-032,MouthFreshener,Rajnigandha,PanMasala,50g / 250ml,g,10.0,8.2,2021-08-27,B,MTS,-0.983,False
+DS-DAIRKSH-033,Dairy,Ksheer,FlavMilk,25g,g,25.0,20.0,2019-07-16,C,MTS,-1.205,False
+DS-MOUTRAJ-034,MouthFreshener,Rajnigandha,PanMasala,50g / 250ml,g,10.0,8.2,2023-05-20,B,MTS,-1.033,False
+DS-CONFCHE-035,Confectionery,Cherio,Std,1 unit,unit,1.0,0.68,2018-10-18,C,MTS,-0.671,True
+DS-CONFFRU-036,Confectionery,FRU,Jelly,2g / 1 unit,unit,2.0,1.36,2019-05-13,B,MTS,-0.527,False
+DS-DAIRKSH-037,Dairy,Ksheer,Whitener,25g,g,25.0,20.0,2021-12-18,C,MTS,-1.107,False
+DS-SNACNOT-038,Snacks,NotJustNuts,TrailMix,50g / 250ml,g,10.0,7.6,2018-12-25,C,MTS,-1.182,False
+DS-SNACNOT-039,Snacks,NotJustNuts,TrailMix,100g / 600ml,g,20.0,15.2,2020-05-30,A,MTS,-1.11,False
+DS-MOUTRAJ-040,MouthFreshener,Rajnigandha,Meetha,2g / 1 unit,unit,2.0,1.64,2017-05-11,C,MTS,-0.902,True
+DS-CONFLUV-041,Confectionery,LuvIt,Bar,50g / 250ml,g,10.0,6.8,2018-06-08,C,MTS,-0.643,True
+DS-SPICKEW-042,Spices,Kewal,Std,8g / 5ml,g,5.0,4.1,2021-01-30,B,MTS,-1.096,False
+DS-SPICKEW-043,Spices,Kewal,Std,50g / 250ml,g,10.0,8.2,2017-06-12,B,MTS,-1.24,False
+DS-BEVECAT-044,Beverages,Catch,Water,600ml,ml,35.0,27.3,2020-01-21,C,MTS,-1.234,True
+DS-CONFCHE-045,Confectionery,Cherio,Std,1 unit,unit,1.0,0.68,2019-10-16,C,MTS,-0.655,False
+DS-SNACNOT-046,Snacks,NotJustNuts,Almond,50g / 250ml,g,10.0,7.6,2022-01-15,C,MTS,-1.196,False
+DS-DAIRKSH-047,Dairy,Ksheer,FlavMilk,1L,ml,60.0,48.0,2021-10-14,C,MTS,-1.155,False
+DS-BEVECAT-048,Beverages,Catch,GreenApple,200g / 1L,g,50.0,39.0,2020-03-19,B,MTS,-1.289,False
+DS-MOUTMAS-049,MouthFreshener,Mastaba,Std,50g / 250ml,g,10.0,8.2,2017-06-04,C,MTS,-0.783,True
+DS-CONFPUL-050,Confectionery,Pulse,Litchi,2g / 1 unit,unit,2.0,1.36,2021-08-26,A,MTS,-0.676,False
+DS-SPICCAT-051,Spices,Catch,Turmeric,50g / 250ml,g,10.0,8.2,2020-09-14,A,MTS,-0.942,False
+DS-CONFFRU-052,Confectionery,FRU,Jelly,1 unit,unit,1.0,0.68,2018-04-05,A,MTS,-0.616,False
+DS-CONFLUV-053,Confectionery,LuvIt,SharePack,50g / 250ml,g,10.0,6.8,2021-02-09,B,MTS,-0.601,False
+DS-DAIRKSH-054,Dairy,Ksheer,FlavMilk,1L,ml,60.0,48.0,2018-02-16,A,MTS,-1.085,False
+DS-SNACNOT-055,Snacks,NotJustNuts,Cashew,50g / 250ml,g,10.0,7.6,2017-06-28,C,MTS,-1.124,True
+DS-BEVECAT-056,Beverages,Catch,GreenApple,50g / 250ml,g,10.0,7.8,2022-12-23,C,MTS,-1.578,False
+DS-CONFCHE-057,Confectionery,Cherio,Std,50g / 250ml,g,10.0,6.8,2021-08-01,C,MTS,-0.65,False
+DS-DAIRKSH-058,Dairy,Ksheer,Whitener,12g / 200ml,g,12.0,9.6,2021-07-27,C,MTS,-1.329,True
+DS-SPICKEW-059,Spices,Kewal,Std,200g / 1L,g,50.0,41.0,2023-04-11,B,MTS,-1.093,False
+DS-CONFPUL-060,Confectionery,Pulse,Orange,8g / 5ml,g,5.0,3.4,2022-02-27,B,MTS,-0.576,False
+DS-DAIRKSH-061,Dairy,Ksheer,Dahi,25g,g,25.0,20.0,2021-03-14,C,MTO,-1.127,False
+DS-SNACNOT-062,Snacks,NotJustNuts,TrailMix,50g / 250ml,g,10.0,7.6,2017-06-01,C,MTO,-1.36,True
+DS-SNACSNA-063,Snacks,SnackFactory,Namkeen,100g / 600ml,g,20.0,15.2,2022-07-10,B,MTS,-1.184,False
+DS-DAIRKSH-064,Dairy,Ksheer,Ghee,500ml,ml,30.0,24.0,2017-09-07,C,MTS,-1.241,False
+DS-CONFLUV-065,Confectionery,LuvIt,Bar,8g / 5ml,g,5.0,3.4,2017-07-29,A,MTS,-0.683,False
+DS-MOUTMAS-066,MouthFreshener,Mastaba,Std,8g / 5ml,g,5.0,4.1,2019-10-22,C,MTO,-0.98,True
+DS-DAIRKSH-067,Dairy,Ksheer,Ghee,12g / 200ml,g,12.0,9.6,2023-01-20,C,MTS,-1.082,True
+DS-BEVECAT-068,Beverages,Catch,TonicWater,600ml,ml,35.0,27.3,2020-04-08,C,MTS,-1.526,True
+DS-CONFCHE-069,Confectionery,Cherio,Std,50g / 250ml,g,10.0,6.8,2022-11-23,A,MTS,-0.526,False
+DS-BEVECAT-070,Beverages,Catch,MangoJuice,600ml,ml,35.0,27.3,2020-12-11,C,MTS,-1.472,False
+DS-DAIRKSH-071,Dairy,Ksheer,Whitener,500ml,ml,30.0,24.0,2021-11-29,B,MTS,-1.133,False
+DS-MOUTRAJ-072,MouthFreshener,Rajnigandha,Saffron,2g / 1 unit,unit,2.0,1.64,2020-01-22,C,MTO,-0.868,True
+DS-BEVECAT-073,Beverages,Catch,GreenApple,200g / 1L,g,50.0,39.0,2019-09-06,C,MTO,-1.348,False
+DS-BEVECAT-074,Beverages,Catch,GreenApple,200g / 1L,g,50.0,39.0,2021-11-28,A,MTS,-1.458,False
+DS-SNACNOT-075,Snacks,NotJustNuts,Cashew,100g / 600ml,g,20.0,15.2,2019-11-03,C,MTS,-1.11,False
+DS-BEVECAT-076,Beverages,Catch,ClubSoda,200g / 1L,g,50.0,39.0,2020-09-07,B,MTS,-1.317,False
+DS-SPICKEW-077,Spices,Kewal,Std,200g / 1L,g,50.0,41.0,2018-08-01,A,MTS,-1.264,False
+DS-CONFCHE-078,Confectionery,Cherio,Std,8g / 5ml,g,5.0,3.4,2021-10-28,C,MTO,-0.529,False
+DS-CONFFRU-079,Confectionery,FRU,Jelly,8g / 5ml,g,5.0,3.4,2023-01-31,C,MTS,-0.515,True
+DS-SNACSNA-080,Snacks,SnackFactory,Namkeen,200g / 1L,g,50.0,38.0,2022-05-20,C,MTS,-1.361,True
+DS-CONFPUL-081,Confectionery,Pulse,Litchi,8g / 5ml,g,5.0,3.4,2017-05-25,C,MTS,-0.663,False
+DS-MOUTMAS-082,MouthFreshener,Mastaba,Std,25g,g,25.0,20.5,2018-02-28,C,MTS,-0.991,True
+DS-DAIRKSH-083,Dairy,Ksheer,FullCreamMilk,12g / 200ml,g,12.0,9.6,2020-02-27,C,MTO,-1.247,True
+DS-DAIRKSH-084,Dairy,Ksheer,Whitener,500ml,ml,30.0,24.0,2023-07-28,A,MTS,-1.276,False
+DS-MOUTTAN-085,MouthFreshener,Tansen,Supreme,25g,g,25.0,20.5,2020-05-09,C,MTS,-0.931,False
+DS-CONFLUV-086,Confectionery,LuvIt,SharePack,2g / 1 unit,unit,2.0,1.36,2022-07-18,A,MTS,-0.543,False
+DS-BEVECAT-087,Beverages,Catch,GreenApple,600ml,ml,35.0,27.3,2020-09-07,C,MTS,-1.457,True
+DS-MOUTMAS-088,MouthFreshener,Mastaba,Std,50g / 250ml,g,10.0,8.2,2021-09-16,C,MTS,-0.954,False
+DS-CONFPUL-089,Confectionery,Pulse,Orange,8g / 5ml,g,5.0,3.4,2017-09-20,B,MTS,-0.531,False
+DS-BEVECAT-090,Beverages,Catch,GreenApple,50g / 250ml,g,10.0,7.8,2023-01-24,B,MTS,-1.37,False
+DS-MOUTMAS-091,MouthFreshener,Mastaba,Std,50g / 250ml,g,10.0,8.2,2017-05-05,C,MTS,-0.875,True
+DS-BEVECAT-092,Beverages,Catch,MangoJuice,100g / 600ml,g,20.0,15.6,2021-09-23,A,MTS,-1.389,False
+DS-BEVECAT-093,Beverages,Catch,Water,50g / 250ml,g,10.0,7.8,2021-05-21,C,MTS,-1.485,False
+DS-SPICKEW-094,Spices,Kewal,Std,50g / 250ml,g,10.0,8.2,2021-06-10,C,MTS,-1.077,True
+DS-SPICKEW-095,Spices,Kewal,Std,200g / 1L,g,50.0,41.0,2020-01-14,C,MTS,-1.239,True
+DS-SNACNOT-096,Snacks,NotJustNuts,TrailMix,50g / 250ml,g,10.0,7.6,2021-08-16,C,MTS,-1.298,True
+DS-SNACSNA-097,Snacks,SnackFactory,Namkeen,200g / 1L,g,50.0,38.0,2023-04-24,B,MTS,-1.235,False
+DS-BEVECAT-098,Beverages,Catch,ClubSoda,600ml,ml,35.0,,2021-08-17,C,MTO,-1.196,False
+DS-BEVECAT-099,Beverages,Catch,TonicWater,600ml,ml,35.0,27.3,2022-09-03,C,MTS,-1.24,False
+DS-CONFCHE-100,Confectionery,Cherio,Std,2g / 1 unit,unit,2.0,1.36,2018-08-23,B,MTS,-0.634,False
+DS-CONFFRU-101,Confectionery,FRU,Jelly,50g / 250ml,g,10.0,6.8,2021-02-22,C,MTS,-0.512,True
+DS-BEVECAT-102,Beverages,Catch,Water,600ml,ml,35.0,27.3,2022-08-05,C,MTS,-1.605,False
+DS-DAIRKSH-103,Dairy,Ksheer,FlavMilk,500ml,ml,30.0,24.0,2022-10-02,B,MTS,-1.161,False
+DS-MOUTRAJ-104,MouthFreshener,Rajnigandha,Saffron,25g,g,25.0,20.5,2020-07-19,B,MTS,-0.806,False
+DS-BEVECAT-105,Beverages,Catch,ClubSoda,50g / 250ml,g,10.0,7.8,2017-07-18,C,MTS,-1.288,True
+DS-CONFCHE-106,Confectionery,Cherio,Std,8g / 5ml,g,5.0,3.4,2023-08-01,B,MTS,-0.554,False
+DS-CONFCHE-107,Confectionery,Cherio,Std,50g / 250ml,g,10.0,6.8,2020-01-19,C,MTO,-0.631,True
+DS-SPICKEW-108,Spices,Kewal,Std,50g / 250ml,g,10.0,8.2,2017-12-06,C,MTS,-1.214,False
+DS-BEVECAT-109,Beverages,Catch,LimeJuice,200g / 1L,g,50.0,39.0,2020-11-12,C,MTO,-1.437,True
+DS-SNACSNA-110,Snacks,SnackFactory,Namkeen,100g / 600ml,g,20.0,15.2,2020-04-21,C,MTO,-1.26,False
+DS-CONFCHI-111,Confectionery,Chingles,Mint,1 unit,unit,1.0,0.68,2021-06-19,A,MTS,-0.514,False
+DS-SPICKEW-112,Spices,Kewal,Std,200g / 1L,g,50.0,41.0,2020-10-02,B,MTS,-1.132,False
+DS-SPICCAT-113,Spices,Catch,GaramMasala,50g / 250ml,g,10.0,8.2,2020-03-31,C,MTS,-1.259,True
+DS-SPICKEW-114,Spices,Kewal,Std,500g,g,100.0,82.0,2020-04-26,C,MTO,-1.253,False
+DS-DAIRKSH-115,Dairy,Ksheer,FullCreamMilk,12g / 200ml,g,12.0,9.6,2018-05-27,C,MTS,-1.219,False
+DS-BEVECAT-116,Beverages,Catch,Water,200g / 1L,g,50.0,39.0,2018-04-27,B,MTS,-1.505,False
+DS-DAIRKSH-117,Dairy,Ksheer,Ghee,25g,g,25.0,20.0,2021-09-25,A,MTS,-1.3,False
+DS-CONFCHE-118,Confectionery,Cherio,Std,2g / 1 unit,unit,2.0,1.36,2018-01-26,C,MTS,-0.686,False
+DS-BEVECAT-119,Beverages,Catch,MangoJuice,50g / 250ml,g,10.0,7.8,2020-02-25,C,MTO,-1.578,True
+DS-DAIRKSH-120,Dairy,Ksheer,FullCreamMilk,25g,g,25.0,20.0,2021-04-08,A,MTS,-1.263,False
+DS-CONFFRU-121,Confectionery,FRU,Jelly,8g / 5ml,g,5.0,3.4,2023-08-15,C,MTO,-0.643,True
+DS-SNACSNA-122,Snacks,SnackFactory,Namkeen,50g / 250ml,g,10.0,7.6,2022-02-24,C,MTS,-1.107,False
+DS-SNACSNA-123,Snacks,SnackFactory,Namkeen,50g / 250ml,g,10.0,7.6,2019-02-11,B,MTS,-1.367,False
+DS-SNACNOT-124,Snacks,NotJustNuts,Cashew,100g / 600ml,g,20.0,15.2,2018-02-12,B,MTS,-1.438,False
+DS-SNACNOT-125,Snacks,NotJustNuts,TrailMix,100g / 600ml,g,20.0,15.2,2022-12-05,B,MTS,-1.451,False
+DS-MOUTMAS-126,MouthFreshener,Mastaba,Std,2g / 1 unit,unit,2.0,1.64,2019-04-11,A,MTS,-0.959,False
+DS-BEVECAT-127,Beverages,Catch,TonicWater,200g / 1L,g,50.0,39.0,2019-07-07,C,MTS,-1.361,True
+DS-MOUTRAJ-128,MouthFreshener,Rajnigandha,Saffron,25g,g,25.0,20.5,2019-02-08,C,MTO,-0.871,True
+DS-BEVECAT-129,Beverages,Catch,Water,50g / 250ml,g,10.0,7.8,2021-04-17,A,MTS,-1.275,False
+DS-SPICCAT-130,Spices,Catch,ChilliPwd,50g / 250ml,g,10.0,8.2,2017-12-07,C,MTO,-1.074,False
+DS-BEVECAT-131,Beverages,Catch,MangoJuice,600ml,ml,35.0,27.3,2021-05-31,B,MTS,-1.289,False
+DS-SNACSNA-132,Snacks,SnackFactory,Namkeen,50g / 250ml,g,10.0,7.6,2021-09-05,C,MTS,-1.395,False
+DS-SPICCAT-133,Spices,Catch,ChilliPwd,500g,g,100.0,82.0,2022-02-06,B,MTS,-0.986,False
+DS-BEVECAT-134,Beverages,Catch,GreenApple,50g / 250ml,g,10.0,7.8,2021-10-29,C,MTO,-1.523,True
+DS-SNACNOT-135,Snacks,NotJustNuts,TrailMix,200g / 1L,g,50.0,38.0,2022-01-03,C,MTO,-1.457,True
+DS-DAIRKSH-136,Dairy,Ksheer,Dahi,500ml,ml,30.0,24.0,2020-11-21,A,MTS,-1.364,False
+DS-SPICKEW-137,Spices,Kewal,Std,200g / 1L,g,50.0,41.0,2022-10-06,B,MTS,-1.252,False
+DS-CONFFRU-138,Confectionery,FRU,Jelly,1 unit,unit,1.0,0.68,2023-05-05,A,MTS,-0.522,False
+DS-MOUTMAS-139,MouthFreshener,Mastaba,Std,8g / 5ml,g,5.0,4.1,2018-07-11,C,MTS,-0.779,True
+DS-MOUTMAS-140,MouthFreshener,Mastaba,Std,2g / 1 unit,unit,2.0,1.64,2020-09-29,C,MTS,-0.847,True
+DS-MOUTRAJ-141,MouthFreshener,Rajnigandha,PanMasala,8g / 5ml,g,5.0,4.1,2022-12-11,C,MTS,-0.765,True
+DS-CONFCHI-142,Confectionery,Chingles,TuttiFrutti,2g / 1 unit,unit,2.0,1.36,2020-08-17,C,MTS,-0.557,True
+DS-SNACSNA-143,Snacks,SnackFactory,Namkeen,100g / 600ml,g,20.0,15.2,2021-07-02,C,MTO,-1.234,True
+DS-MOUTBAB-144,MouthFreshener,BABASupari,Std,25g,g,25.0,20.5,2019-01-14,A,MTS,-0.778,False
+DS-MOUTRAJ-145,MouthFreshener,Rajnigandha,PanMasala,25g,g,25.0,20.5,2017-08-05,A,MTS,-0.773,False
+DS-MOUTRAJ-146,MouthFreshener,Rajnigandha,PanMasala,50g / 250ml,g,10.0,8.2,2019-08-20,B,MTS,-0.919,False
+DS-MOUTTAN-147,MouthFreshener,Tansen,Supreme,50g / 250ml,g,10.0,8.2,2018-02-20,A,MTS,-0.995,False
+DS-SPICKEW-148,Spices,Kewal,Std,50g / 250ml,g,10.0,8.2,2022-08-12,C,MTS,-1.217,False
+DS-SPICCAT-149,Spices,Catch,Sprinkler,200g / 1L,g,50.0,41.0,2023-02-26,C,MTS,-1.203,False
+DS-BEVECAT-150,Beverages,Catch,Water,600ml,ml,35.0,27.3,2020-04-25,B,MTS,-1.323,False
+DS-CONFPULSE-149,Confectionery,Pulse,Blackcurrant,8g / 5ml,g,1.0,0.68,2024-07-01,B,MTS,-0.6,False

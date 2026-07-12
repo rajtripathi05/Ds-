@@ -1,0 +1,16 @@
+{
+ "grn_no": "GRN-2025-0010",
+ "po_no": "PO-2025-0010",
+ "grn_date": "2025-09-14",
+ "receiver": "DIST-NO-005",
+ "lines": [
+  {
+   "sku": "DS-MOUTMAS-082",
+   "qty": 1000
+  },
+  {
+   "sku": "DS-BEVECAT-119",
+   "qty": 216
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "grn_no": "GRN-2025-0015",
+ "po_no": "PO-2025-0015",
+ "grn_date": "2025-09-15",
+ "receiver": "DIST-EA-031",
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-067",
+   "qty": 312
+  },
+  {
+   "sku": "DS-DAIRKSH-120",
+   "qty": 312
+  }
+ ]
+}

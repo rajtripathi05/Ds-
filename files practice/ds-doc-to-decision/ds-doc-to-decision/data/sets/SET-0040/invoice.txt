@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1040               Date: 2025-08-22
+PO Ref: PO-2025-0040                     Buyer: DIST-WE-021 (Indore, Madhya Pradesh)
+Buyer GSTIN: 37SYNTH8965F1Z5
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-SPICKEW-095    Kewal Std (200g / 1L)       0910       288   41.00  11808.00
+DS-DAIRKSH-136    Ksheer Dahi (500ml)         0403        48   24.00   1152.00
+------------------------------------------------------------------------------
+                                                            Subtotal  12960.00
+                                                            IGST 18%   2332.80
+                                                         GRAND TOTAL  15292.80
+Amount in words: Rupees Fifteen Thousand Two Hundred Ninety Three Only
+COA: COA-0040  issued 2024-11-25  valid till 2025-11-25
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

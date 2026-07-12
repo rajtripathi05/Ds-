@@ -1,0 +1,1 @@
+{"name": "0", "params": {"promo": {"category": "Confectionery", "depth": 0.25, "type": "consumer", "weeks": [1, 2, 3, 4]}, "price_pct": {"Beverages": 0}, "launch_week": null, "budget_mult": 1}, "result": {"delta_volume_pct": 7.44, "binding": "capacity: Confectionery (100.0% used)", "objective_margin": 25291648, "risk_lines": 0, "solve_ms": 17.6}}

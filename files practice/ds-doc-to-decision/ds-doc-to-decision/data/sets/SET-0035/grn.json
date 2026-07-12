@@ -1,0 +1,20 @@
+{
+ "grn_no": "GRN-2025-0035",
+ "po_no": "PO-2025-0035",
+ "grn_date": "2025-07-03",
+ "receiver": "DIST-EA-032",
+ "lines": [
+  {
+   "sku": "DS-CONFFRU-026",
+   "qty": 1200
+  },
+  {
+   "sku": "DS-MOUTMAS-091",
+   "qty": 900
+  },
+  {
+   "sku": "DS-DAIRKSH-115",
+   "qty": 72
+  }
+ ]
+}

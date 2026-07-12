@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ds-demand-cockpit — Demand-to-Shelf Brain</title>
+<style>
+:root{--ink:#1c1917;--ink2:#44403c;--mut:#78716c;--line:#e7e5e4;--bg:#faf9f7;--acc:#b3282d;--acc2:#8a1f23;--ok:#15803d;--warn:#b45309}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+header{background:linear-gradient(120deg,#1c1917,#3b1d1e);color:#fafaf9;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+header b{font-size:17px}
+header .sub{font-size:11px;color:#d6d3d1}
+.role{display:flex;gap:6px;align-items:center}
+.role button{border:1px solid #78716c;background:transparent;color:#e7e5e4;border-radius:8px;padding:5px 12px;cursor:pointer;font-weight:700}
+.role button.on{background:var(--acc);border-color:var(--acc)}
+.role a{color:#f5c6c8;font-size:12px;margin-left:8px}
+main{max-width:1240px;margin:0 auto;padding:18px 22px 60px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:16px}
+@media(max-width:1000px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:#fff;border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:9px;padding:9px 12px}
+.kpi b{display:block;font-size:19px}
+.kpi span{font-size:10.5px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:1.35fr 1fr;gap:14px}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:14px 16px;margin-bottom:14px}
+.card h3{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--acc2);margin-bottom:8px}
+canvas{width:100%;height:auto;background:#fff}
+select,input[type=number]{border:1px solid var(--line);border-radius:7px;padding:4px 8px;font-family:inherit}
+.lever{display:grid;grid-template-columns:130px 1fr 64px;gap:8px;align-items:center;margin:7px 0;font-size:12.5px}
+.lever output{font-weight:700;color:var(--acc2);text-align:right}
+input[type=range]{width:100%;accent-color:var(--acc)}
+button.run{background:var(--acc);border:0;color:#fff;font-weight:800;border-radius:9px;padding:9px 18px;cursor:pointer;font-size:14px}
+button.ghost{background:#f5f5f4;border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:12.3px}
+th{text-align:left;color:var(--mut);font-size:10.5px;text-transform:uppercase;border-bottom:2px solid var(--line);padding:5px 7px}
+td{border-bottom:1px solid var(--line);padding:5px 7px}
+.fin{/* financial layer: removed for ops by server; belt-and-braces hide too */}
+body.ops .fin{display:none !important}
+.delta{font-size:26px;font-weight:800}
+.badge{display:inline-block;font-size:10px;font-weight:700;border-radius:999px;padding:1px 8px;background:#dcfce7;color:var(--ok);border:1px solid #86efac}
+.badge.warn{background:#ffedd5;color:var(--warn);border-color:#fdba74}
+.note{font-size:11px;color:var(--mut)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+</style>
+</head>
+<body>
+<header>
+  <div><b>ds-demand-cockpit</b> · Demand-to-Shelf Brain<div class="sub">Frozen forecast core · every what-if passes reconcile+optimize before display · synthetic DS-themed spine</div></div>
+  <div class="role">Role:
+    <button id="roleExec" class="on">Executive</button>
+    <button id="roleOps">Operations</button>
+    <a id="exportLink" href="/export?role=exec">⬇ S&amp;OP xlsx</a>
+  </div>
+</header>
+<main>
+  <div class="kpis" id="kpis"></div>
+  <div class="grid">
+    <div>
+      <div class="card"><h3>Demand — nation weekly (actual + 4-wk plan) <span class="note" id="chartNote"></span></h3>
+        <select id="catSel" style="margin-bottom:6px"><option value="__nation__">Nation (all categories)</option></select>
+        <canvas id="mainChart" width="760" height="300"></canvas>
+      </div>
+      <div class="card"><h3>Launch pipeline — primary vs secondary (DS-CONFPULSE-149)</h3>
+        <canvas id="launchChart" width="760" height="220"></canvas>
+        <div class="note">Pipeline fill (canonical first-4-wk definition): <b id="fillKpi"></b>× — primary orders ran ahead of sell-through during launch, exactly the order-up-to + case-multiple pattern.</div>
+      </div>
+      <div class="card"><h3>Forward stockout risk (plan-projected cover &lt; 1 week)</h3>
+        <div id="riskWrap"><table id="riskTable"><thead><tr><th>SKU</th><th>Zone</th><th>Proj cover (wk)</th><th>4-wk demand</th><th>Opening</th><th>Ship</th></tr></thead><tbody></tbody></table></div>
+        <div class="note" id="riskNote"></div>
+      </div>
+    </div>
+    <div>
+      <div class="card" id="nlCard" style="display:none"><h3>Natural-language what-if <span class="note" id="llmPill">·</span></h3>
+        <div style="display:flex;gap:8px"><input id="nlText" placeholder="e.g. run a 20% consumer promo on Confectionery for weeks 1-2 and cut the budget to 80%" style="flex:1;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-family:inherit">
+        <button class="run" id="nlRun">Ask</button></div>
+        <div class="note" id="nlOut" style="margin-top:6px"></div></div>
+      <div class="card"><h3>What-if levers <span class="note">(intent → reconcile → optimize; nothing bypasses the pipeline)</span></h3>
+        <div class="lever"><span>Promo category</span><select id="wCat"></select><span></span></div>
+        <div class="lever"><span>Promo depth</span><input type="range" id="wDepth" min="0" max="30" value="0" step="5"><output id="wDepthO">0%</output></div>
+        <div class="lever"><span>Promo type</span><select id="wType"><option>consumer</option><option>trade</option><option>display</option></select><span></span></div>
+        <div class="lever"><span>Promo weeks</span><select id="wWeeks" multiple size="4" style="height:76px"><option value="1" selected>W1</option><option value="2" selected>W2</option><option value="3">W3</option><option value="4">W4</option></select><span></span></div>
+        <div class="lever"><span>Price change</span><input type="range" id="wPrice" min="-10" max="10" value="0" step="1"><output id="wPriceO">0%</output></div>
+        <div class="lever"><span>…on category</span><select id="wPriceCat"></select><span></span></div>
+        <div class="lever"><span>New-variant launch</span><select id="wLaunch"><option value="">none</option><option value="1">week 1</option><option value="2">week 2</option><option value="3">week 3</option></select><span></span></div>
+        <div class="lever fin"><span>WC budget ×</span><input type="range" id="wBudget" min="60" max="120" value="100" step="5"><output id="wBudgetO">1.00</output></div>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:10px">
+          <button class="run" id="runBtn">Run scenario</button>
+          <input id="scenName" placeholder="scenario name" style="border:1px solid var(--line);border-radius:7px;padding:7px 9px;flex:1">
+          <button class="ghost" id="saveBtn">Save</button>
+        </div>
+        <div class="note" style="margin-top:6px">Launch lever models a hypothetical new variant at 30% of the analog's forecast on an S-curve, cannibalising the analog by 20% of new volume (documented assumption; analog: DS-CONFPULSE-001).</div>
+      </div>
+      <div class="card"><h3>Scenario result <span id="solveMs" class="badge" style="display:none"></span></h3>
+        <div id="resultEmpty" class="note">Run a scenario to see volume, margin and constraint impact vs the frozen base plan.</div>
+        <div id="resultWrap" style="display:none">
+          <div class="cmp">
+            <div><div class="note">Δ volume vs base</div><div class="delta" id="dVol">—</div></div>
+            <div class="fin"><div class="note">Margin objective (₹) vs base</div><div class="delta" id="dMar">—</div></div>
+          </div>
+          <div style="margin-top:8px">Binding constraint: <b id="rBind">—</b></div>
+          <div class="fin">Budget utilisation: <b id="rUtil">—</b></div>
+          <div>Forward-risk lines: <b id="rRisk">—</b> · Reconciliation: <span class="badge" id="rRec">tied ✓</span></div>
+        </div>
+      </div>
+      <div class="card"><h3>Saved scenarios — side-by-side</h3>
+        <div style="display:flex;gap:8px;margin-bottom:8px">
+          <select id="cmpA" style="flex:1"></select><select id="cmpB" style="flex:1"></select>
+          <button class="ghost" id="cmpBtn">Compare</button>
+        </div>
+        <table id="cmpTable" style="display:none"><thead><tr><th>metric</th><th id="cmpAh"></th><th id="cmpBh"></th></tr></thead><tbody></tbody></table>
+        <div class="note" id="scenCount"></div>
+      </div>
+      <div class="card"><h3>Model quality &amp; data health</h3>
+        <div id="quality"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+let ROLE = "exec", SNAP = null, lastResult = null, lastParams = null;
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const $ = id => document.getElementById(id);
+const fmt = n => n==null ? "—" : (+n).toLocaleString("en-IN");
+const pct = n => (n*100).toFixed(1) + "%";
+
+async function boot(){
+  SNAP = await (await fetch("/snapshot?role=" + ROLE)).json();
+  document.body.classList.toggle("ops", ROLE === "ops");
+  $("exportLink").href = "/export?role=" + ROLE;
+  renderKpis(); renderCharts(); renderRisk(); renderQuality(); fillSelectors(); loadScenarios();
+}
+function renderKpis(){
+  const k = SNAP.kpis, p = SNAP.plan || {};
+  const cards = [
+    ["WMAPE (champion, SKU)", pct(k.wmape_sku_champion), "vs seasonal-naive " + pct(k.wmape_sku_snaive)],
+    ["WMAPE (category)", pct(k.wmape_cat_champion), "vs naive " + pct(k.wmape_cat_snaive)],
+    ["FVA vs naive", (k.fva_vs_snaive_pp).toFixed(1) + " pp", "zone×cat×month"],
+    ["Pipeline fill", k.pipeline_fill_first4wk + "×", "launch first-4-wk (canonical)"],
+    ["Plan lines", fmt(p.lines), (p.binding||"").split("(")[0]],
+    ["Data health", badgePct(), "loader completeness badges"],
+  ];
+  $("kpis").innerHTML = cards.map(c=>`<div class="kpi"><span>${c[0]}</span><b>${c[1]}</b><span>${c[2]||""}</span></div>`).join("");
+}
+function badgePct(){
+  const b = SNAP.kpis.data_badges || {}; const v = Object.values(b);
+  return v.length ? Math.round(v.reduce((a,x)=>a+x,0)/v.length*1000)/10 + "%" : "—";
+}
+function line(ctx, xs, ys, color, dash){
+  ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.setLineDash(dash||[]);
+  ctx.beginPath(); ys.forEach((y,i)=>{ i?ctx.lineTo(xs[i],y):ctx.moveTo(xs[i],y) }); ctx.stroke(); ctx.setLineDash([]);
+}
+function drawSeries(cv, actual, fwd, fwd2){
+  const ctx = cv.getContext("2d"); ctx.clearRect(0,0,cv.width,cv.height);
+  const all = actual.concat(fwd||[], fwd2||[]).filter(v=>v!=null);
+  const mx = Math.max(...all)*1.08 || 1, n = actual.length + (fwd?fwd.length:0);
+  const X = i => 38 + i*(cv.width-50)/(n-1), Y = v => cv.height-24-(v/mx)*(cv.height-40);
+  ctx.strokeStyle="#e7e5e4"; ctx.beginPath();
+  for(let g=0; g<5; g++){ const y=Y(mx*g/4); ctx.moveTo(38,y); ctx.lineTo(cv.width-12,y); } ctx.stroke();
+  ctx.fillStyle="#78716c"; ctx.font="10px sans-serif";
+  for(let g=0; g<5; g++) ctx.fillText(fmt(Math.round(mx*g/4)), 2, Y(mx*g/4)+3);
+  line(ctx, actual.map((_,i)=>X(i)), actual.map(Y), "#44403c");
+  if(fwd){ const xs = fwd.map((_,i)=>X(actual.length-1+i+1)); 
+    line(ctx, [X(actual.length-1), ...xs], [Y(actual[actual.length-1]), ...fwd.map(Y)], "#b3282d");
+  }
+  if(fwd2){ const xs = fwd2.map((_,i)=>X(actual.length-1+i+1));
+    line(ctx, [X(actual.length-1), ...xs], [Y(actual[actual.length-1]), ...fwd2.map(Y)], "#1d4ed8", [5,4]);
+  }
+  ctx.fillStyle="#78716c";
+  ctx.fillText("— actual   — base plan" + (fwd2?"   ---- scenario":""), cv.width-230, 12);
+}
+function renderCharts(){
+  const sel = $("catSel").value || "__nation__";
+  const c = sel === "__nation__" ? SNAP.curves.nation : SNAP.curves.categories[sel];
+  const sc = lastResult ? (sel === "__nation__" ? lastResult.nation_fwd : (lastResult.fwd_by_category||{})[sel]) : null;
+  drawSeries($("mainChart"), c.actual, c.fwd, sc);
+  const L = SNAP.curves.launch;
+  const cv = $("launchChart"), ctx = cv.getContext("2d"); ctx.clearRect(0,0,cv.width,cv.height);
+  const mx = Math.max(...L.primary, ...L.secondary)*1.1 || 1;
+  const X = i => 38 + i*(cv.width-50)/(L.primary.length-1), Y = v => cv.height-20-(v/mx)*(cv.height-34);
+  line(ctx, L.primary.map((_,i)=>X(i)), L.primary.map(Y), "#b3282d");
+  line(ctx, L.secondary.map((_,i)=>X(i)), L.secondary.map(Y), "#44403c");
+  ctx.fillStyle="#78716c"; ctx.font="10px sans-serif"; ctx.fillText("— primary (red)  — secondary (dark)", cv.width-220, 12);
+  $("fillKpi").textContent = SNAP.kpis.pipeline_fill_first4wk;
+}
+function renderRisk(){
+  const rows = (SNAP.plan && SNAP.plan.forward_risk) || [];
+  $("riskTable").querySelector("tbody").innerHTML = rows.length
+    ? rows.map(r=>`<tr><td>${r.sku}</td><td>${r.zone}</td><td>${r.proj_cover_wk}</td><td>${fmt(r.d4)}</td><td>${fmt(r.opening)}</td><td>${fmt(r.ship)}</td></tr>`).join("")
+    : `<tr><td colspan="6" class="note">None under the base plan — order-up-to history keeps cover ≥ 1 week (near_stockout flags in data: ${SNAP.plan?.near_stockout_reconciliation?.flags_in_data ?? 0}; detector agrees exactly). Constrain the budget lever to surface risk.</td></tr>`;
+  $("riskNote").textContent = "Reconciliation vs data flags: exact (" +
+    (SNAP.plan?.near_stockout_reconciliation?.detector_hits ?? 0) + " = " +
+    (SNAP.plan?.near_stockout_reconciliation?.flags_in_data ?? 0) + ").";
+}
+function renderQuality(){
+  const k = SNAP.kpis;
+  const mix = Object.entries(k.champion_mix||{}).map(([m,n])=>`${m}:${n}`).join(" · ");
+  const el = (SNAP.elasticity && SNAP.elasticity.table) || [];
+  $("quality").innerHTML =
+    `<div class="note">Champion mix (series-folds): ${mix}</div>
+     <table style="margin-top:6px"><thead><tr><th>category</th><th>elasticity true</th><th>recovered</th><th>err%</th></tr></thead><tbody>
+     ${el.map(r=>`<tr><td>${r.category}</td><td>${r.el_true}</td><td>${r.el_recovered}</td><td>${r.rel_err_pct}</td></tr>`).join("")}
+     </tbody></table>
+     <div class="note" style="margin-top:4px">Elasticities recovered from matched-control promo analysis (M3) — these power the what-if levers.</div>`;
+}
+function fillSelectors(){
+  const cats = Object.keys(SNAP.curves.categories);
+  $("catSel").innerHTML = '<option value="__nation__">Nation (all categories)</option>' + cats.map(c=>`<option>${c}</option>`).join("");
+  $("wCat").innerHTML = cats.map(c=>`<option>${c}</option>`).join("");
+  $("wPriceCat").innerHTML = cats.map(c=>`<option>${c}</option>`).join("");
+}
+function params(){
+  return {
+    promo: { category: $("wCat").value, depth: (+$("wDepth").value)/100, type: $("wType").value,
+             weeks: [...$("wWeeks").selectedOptions].map(o=>+o.value) },
+    price_pct: { [$("wPriceCat").value]: +$("wPrice").value },
+    launch_week: $("wLaunch").value || null,
+    budget_mult: (+$("wBudget").value)/100,
+  };
+}
+async function runScenario(){
+  lastParams = params();
+  const t0 = performance.now();
+  const res = await (await fetch("/whatif?role="+ROLE, {method:"POST", body: JSON.stringify(lastParams)})).json();
+  const wall = performance.now() - t0;
+  lastResult = res;
+  $("resultEmpty").style.display="none"; $("resultWrap").style.display="block";
+  $("solveMs").style.display="inline-block";
+  $("solveMs").textContent = `solved in ${Math.round(wall)} ms (server ${res.solve_ms} ms)`;
+  $("solveMs").className = "badge" + (wall < 2000 ? "" : " warn");
+  $("dVol").textContent = (res.delta_volume_pct>0?"+":"") + res.delta_volume_pct + "%";
+  if(res.objective_margin != null){
+    const d = res.objective_margin - res.base_objective_margin;
+    $("dMar").textContent = (d>=0?"+₹":"−₹") + fmt(Math.abs(d));
+  }
+  $("rBind").textContent = res.binding || "—";
+  if(res.budget_util != null) $("rUtil").textContent = pct(res.budget_util);
+  $("rRisk").textContent = res.risk_lines;
+  renderCharts();
+}
+async function saveScenario(){
+  if(!lastResult){ await runScenario(); }
+  const name = $("scenName").value || "scenario";
+  await fetch("/scenario", {method:"POST", body: JSON.stringify({name, params:lastParams, result:{
+    delta_volume_pct:lastResult.delta_volume_pct, binding:lastResult.binding,
+    objective_margin:lastResult.objective_margin, risk_lines:lastResult.risk_lines, solve_ms:lastResult.solve_ms}})});
+  loadScenarios();
+}
+async function loadScenarios(){
+  const list = await (await fetch("/scenarios?role="+ROLE)).json();
+  $("scenCount").textContent = list.length + " saved scenario(s) in out/scenarios/";
+  const opts = list.map(s=>`<option value="${s.id}">${s.id}</option>`).join("");
+  $("cmpA").innerHTML = opts; $("cmpB").innerHTML = opts;
+  if(list.length>1) $("cmpB").selectedIndex = list.length-1;
+  window._scen = Object.fromEntries(list.map(s=>[s.id, s]));
+}
+function compare(){
+  const a = window._scen[$("cmpA").value], b = window._scen[$("cmpB").value];
+  if(!a || !b) return;
+  $("cmpTable").style.display="table";
+  $("cmpAh").textContent = a.id.slice(16); $("cmpBh").textContent = b.id.slice(16);
+  const rows = [["Δ volume %", a.result?.delta_volume_pct, b.result?.delta_volume_pct],
+                ["binding", a.result?.binding, b.result?.binding],
+                ["margin objective ₹", a.result?.objective_margin, b.result?.objective_margin],
+                ["risk lines", a.result?.risk_lines, b.result?.risk_lines],
+                ["solve ms", a.result?.solve_ms, b.result?.solve_ms]];
+  $("cmpTable").querySelector("tbody").innerHTML =
+    rows.filter(r=>!(ROLE==="ops" && /margin/.test(r[0])))
+        .map(r=>`<tr><td>${r[0]}</td><td>${r[1]??"—"}</td><td>${r[2]??"—"}</td></tr>`).join("");
+}
+$("runBtn").onclick = runScenario;
+$("saveBtn").onclick = saveScenario;
+$("cmpBtn").onclick = compare;
+$("catSel").onchange = renderCharts;
+$("roleExec").onclick = ()=>{ROLE="exec";$("roleExec").classList.add("on");$("roleOps").classList.remove("on");lastResult=null;boot();};
+$("roleOps").onclick = ()=>{ROLE="ops";$("roleOps").classList.add("on");$("roleExec").classList.remove("on");lastResult=null;boot();};
+["wDepth","wPrice","wBudget"].forEach(id=>{ $(id).oninput = ()=>{ $("wDepthO").textContent=$("wDepth").value+"%"; $("wPriceO").textContent=$("wPrice").value+"%"; $("wBudgetO").textContent=((+$("wBudget").value)/100).toFixed(2); }; });
+(async()=>{try{const s=await (await fetch("/llm_status")).json();
+  if(s.active){document.getElementById("nlCard").style.display="block";
+    document.getElementById("llmPill").textContent=`\u2728 ${s.model} \u00b7 $${s.spent_usd.toFixed(4)}/$${s.budget_usd}`;}
+}catch(e){}})();
+$("nlRun").onclick=async()=>{
+  const t=$("nlText").value.trim(); if(!t)return;
+  $("nlOut").textContent="thinking\u2026";
+  const r=await (await fetch("/whatif_nl?role="+ROLE,{method:"POST",body:JSON.stringify({text:t})})).json();
+  if(r.error){$("nlOut").textContent="Could not parse that \u2014 try naming a category, depth and weeks.";return;}
+  lastResult=r; lastParams=r.parsed_params||{};
+  $("resultEmpty").style.display="none"; $("resultWrap").style.display="block";
+  $("solveMs").style.display="inline-block"; $("solveMs").textContent=`solved in ${r.solve_ms} ms (AI-parsed)`;
+  $("dVol").textContent=(r.delta_volume_pct>0?"+":"")+r.delta_volume_pct+"%";
+  if(r.objective_margin!=null){const d=r.objective_margin-r.base_objective_margin;$("dMar").textContent=(d>=0?"+\u20b9":"\u2212\u20b9")+fmt(Math.abs(d));}
+  $("rBind").textContent=r.binding||"\u2014"; if(r.budget_util!=null)$("rUtil").textContent=pct(r.budget_util);
+  $("rRisk").textContent=r.risk_lines;
+  $("nlOut").innerHTML=`parsed \u2192 <code>${esc(JSON.stringify(r.parsed_params))}</code>`;
+  renderCharts();
+};
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0009",
+ "po_date": "2025-09-15",
+ "buyer": {
+  "code": "DIST-CE-053",
+  "city": "Raipur",
+  "state": "Chhattisgarh",
+  "gstin": "31SYNTH7970F1Z2"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-SNACSNA-097",
+   "description": "SnackFactory Namkeen (200g / 1L)",
+   "hsn": "2008",
+   "qty": 96,
+   "unit_price": 38.0
+  },
+  {
+   "sku": "DS-CONFPULSE-149",
+   "description": "Pulse Blackcurrant (8g / 5ml)",
+   "hsn": "1704",
+   "qty": 2200,
+   "unit_price": 0.68
+  }
+ ]
+}

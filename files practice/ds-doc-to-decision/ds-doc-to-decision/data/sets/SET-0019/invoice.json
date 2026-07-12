@@ -1,0 +1,52 @@
+{
+ "invoice_no": "INV/25-26/1019",
+ "invoice_date": "2025-10-25",
+ "po_no": "PO-2025-0019",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-049",
+  "city": "Shillong",
+  "state": "Meghalaya",
+  "gstin": "17SYNTH1513F1Z5"
+ },
+ "lines": [
+  {
+   "sku": "DS-CONFLUV-086",
+   "description": "LuvIt SharePack (2g / 1 unit)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 1400,
+   "unit_price": 1.36
+  },
+  {
+   "sku": "DS-BEVECAT-093",
+   "description": "Catch Water (50g / 250ml)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 96,
+   "unit_price": 7.8
+  },
+  {
+   "sku": "DS-BEVECAT-098",
+   "description": "Catch ClubSoda (600ml)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 120,
+   "unit_price": 27.3
+  }
+ ],
+ "subtotal": 5928.8,
+ "gst": {
+  "igst": 1067.18
+ },
+ "grand_total": 6995.98,
+ "amount_in_words": "Rupees Six Thousand Nine Hundred Ninety Six Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

@@ -1,0 +1,44 @@
+{
+ "invoice_no": "INV/25-26/1034",
+ "invoice_date": "2025-10-20",
+ "po_no": "PO-2025-0034",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-WE-018",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "17SYNTH8300F1Z3"
+ },
+ "lines": [
+  {
+   "sku": "DS-BEVECAT-073",
+   "description": "Catch GreenApple (200g / 1L)",
+   "hsn": "2202",
+   "category": "Beverages",
+   "qty": 192,
+   "unit_price": 39.0
+  },
+  {
+   "sku": "DS-MOUTMAS-049",
+   "description": "Mastaba Std (50g / 250ml)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 1362,
+   "unit_price": 8.2
+  }
+ ],
+ "subtotal": 18656.4,
+ "gst": {
+  "igst": 3358.15
+ },
+ "grand_total": 22014.55,
+ "amount_in_words": "Rupees Twenty Two Thousand Fifteen Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

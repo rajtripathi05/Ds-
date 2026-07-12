@@ -1,0 +1,23 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1037               Date: 2025-04-08
+PO Ref: PO-2025-0037                     Buyer: DIST-CE-056 (Indore, Madhya Pradesh)
+Buyer GSTIN: 14SYNTH4725F1Z3
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-CONFCHE-078    Cherio Std (8g / 5ml)       1704      1200    3.40   4080.00
+DS-BEVECAT-129    Catch Water (50g / 250ml)   2202        72    8.38    603.36
+DS-MOUTTAN-085    Tansen Supreme (25g)        2106       300   20.50   6150.00
+------------------------------------------------------------------------------
+                                                            Subtotal  10833.36
+                                                            IGST 18%   1950.00
+                                                         GRAND TOTAL  12783.36
+Amount in words: Rupees Twelve Thousand Seven Hundred Eighty Three Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

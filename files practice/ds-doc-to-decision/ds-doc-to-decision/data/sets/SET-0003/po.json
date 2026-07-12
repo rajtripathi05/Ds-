@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0003",
+ "po_date": "2025-01-30",
+ "buyer": {
+  "code": "DIST-CE-056",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "36SYNTH2395F1Z1"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-BEVECAT-022",
+   "description": "Catch GreenApple (50g / 250ml)",
+   "hsn": "2202",
+   "qty": 72,
+   "unit_price": 7.8
+  }
+ ]
+}

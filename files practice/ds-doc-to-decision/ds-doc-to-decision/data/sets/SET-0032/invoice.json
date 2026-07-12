@@ -1,0 +1,40 @@
+{
+ "invoice_no": "INV/25-26/1032",
+ "invoice_date": "2025-09-05",
+ "po_no": "PO-2025-0032",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-003",
+  "city": "Sikar",
+  "state": "Rajasthan",
+  "gstin": "26SYNTH4296F1Z5"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-083",
+   "description": "Ksheer FullCreamMilk (12g / 200ml)",
+   "hsn": "0403",
+   "category": "Dairy",
+   "qty": 168,
+   "unit_price": 9.6
+  }
+ ],
+ "subtotal": 1612.8,
+ "gst": {
+  "igst": 290.3
+ },
+ "grand_total": 1903.1,
+ "amount_in_words": "Rupees One Thousand Nine Hundred Three Only",
+ "coa": {
+  "coa_no": "COA-0032",
+  "issue_date": "2025-02-06",
+  "valid_till": "2026-02-06"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

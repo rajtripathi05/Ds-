@@ -1,0 +1,1847 @@
+[
+ {
+  "set_id": "SET-0001",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTRAJ-145]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTRAJ-145]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1001"
+ },
+ {
+  "set_id": "SET-0002",
+  "outcome": "reject",
+  "reason": [
+   "R2_qty[DS-SPICCAT-027]",
+   "reject",
+   "qty diff 13.89% > 10%"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-CONFFRU-079]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SPICKEW-094]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SPICCAT-027]",
+    "reject",
+    "qty diff 13.89% > 10%"
+   ],
+   [
+    "R3_price[DS-CONFFRU-079]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SPICKEW-094]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SPICCAT-027]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2026-03-09"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1002"
+ },
+ {
+  "set_id": "SET-0003",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-BEVECAT-022]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-BEVECAT-022]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1003"
+ },
+ {
+  "set_id": "SET-0004",
+  "outcome": "reject",
+  "reason": [
+   "R5_coa",
+   "reject",
+   "COA expired 2024-12-18 < invoice 2025-02-26"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-023]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SPICCAT-051]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SPICKEW-095]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-023]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SPICCAT-051]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SPICKEW-095]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "reject",
+    "COA expired 2024-12-18 < invoice 2025-02-26"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1004"
+ },
+ {
+  "set_id": "SET-0005",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-083]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SNACSNA-143]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-083]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SNACSNA-143]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-12-21"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1005"
+ },
+ {
+  "set_id": "SET-0006",
+  "outcome": "route_to_human",
+  "reason": [
+   "R1_grn_missing",
+   "route_to_human",
+   "GRN missing -> route_to_human (rule 1)"
+  ],
+  "checks": [
+   [
+    "R1_grn_missing",
+    "route_to_human",
+    "GRN missing -> route_to_human (rule 1)"
+   ],
+   [
+    "R3_price[DS-SNACNOT-096]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFPUL-012]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SNACNOT-007]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1006"
+ },
+ {
+  "set_id": "SET-0007",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-047]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-MOUTTAN-021]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-047]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-MOUTTAN-021]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-11-04"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1007"
+ },
+ {
+  "set_id": "SET-0008",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-BEVECAT-093]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-DAIRKSH-033]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SNACNOT-015]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-BEVECAT-093]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-033]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SNACNOT-015]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2026-06-29"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1008"
+ },
+ {
+  "set_id": "SET-0009",
+  "outcome": "reject",
+  "reason": [
+   "R6_duplicate",
+   "reject",
+   "invoice_no INV/25-26/1001 already seen in SET-0001"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SNACSNA-097]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFPULSE-149]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SNACSNA-097]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFPULSE-149]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R6_duplicate",
+    "reject",
+    "invoice_no INV/25-26/1001 already seen in SET-0001"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1001"
+ },
+ {
+  "set_id": "SET-0010",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTMAS-082]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-BEVECAT-119]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTMAS-082]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-BEVECAT-119]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394-0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1010"
+ },
+ {
+  "set_id": "SET-0011",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SNACNOT-124]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SNACNOT-124]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1011"
+ },
+ {
+  "set_id": "SET-0012",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTTAN-031]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFLUV-065]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTTAN-031]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFLUV-065]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1012"
+ },
+ {
+  "set_id": "SET-0013",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SNACNOT-029]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SNACNOT-029]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1013"
+ },
+ {
+  "set_id": "SET-0014",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SPICKEW-077]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SNACNOT-096]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SPICKEW-077]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SNACNOT-096]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2026-04-28"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1014"
+ },
+ {
+  "set_id": "SET-0015",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-067]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-DAIRKSH-120]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-067]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-120]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2026-05-11"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1015"
+ },
+ {
+  "set_id": "SET-0016",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SNACSNA-143]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFCHE-057]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SNACSNA-143]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFCHE-057]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1016"
+ },
+ {
+  "set_id": "SET-0017",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SPICKEW-042]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SPICKEW-042]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2026-02-03"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1017"
+ },
+ {
+  "set_id": "SET-0018",
+  "outcome": "route_to_human",
+  "reason": [
+   "R3_price[DS-MOUTRAJ-104]",
+   "route_to_human",
+   "unit price 22.9 != PO 20.5 -> pricing desk"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTRAJ-104]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFCHE-069]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTRAJ-104]",
+    "route_to_human",
+    "unit price 22.9 != PO 20.5 -> pricing desk"
+   ],
+   [
+    "R3_price[DS-CONFCHE-069]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1018"
+ },
+ {
+  "set_id": "SET-0019",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-CONFLUV-086]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-BEVECAT-093]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-BEVECAT-098]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-CONFLUV-086]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-BEVECAT-093]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-BEVECAT-098]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1019"
+ },
+ {
+  "set_id": "SET-0020",
+  "outcome": "reject",
+  "reason": [
+   "R5_coa",
+   "reject",
+   "COA expired 2025-03-04 < invoice 2025-04-04"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-071]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-071]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "reject",
+    "COA expired 2025-03-04 < invoice 2025-04-04"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1020"
+ },
+ {
+  "set_id": "SET-0021",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SNACNOT-029]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SNACSNA-110]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SNACNOT-029]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SNACSNA-110]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1021"
+ },
+ {
+  "set_id": "SET-0022",
+  "outcome": "route_to_human",
+  "reason": [
+   "R1_grn_missing",
+   "route_to_human",
+   "GRN missing -> route_to_human (rule 1)"
+  ],
+  "checks": [
+   [
+    "R1_grn_missing",
+    "route_to_human",
+    "GRN missing -> route_to_human (rule 1)"
+   ],
+   [
+    "R3_price[DS-SNACSNA-110]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SNACNOT-135]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-067]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-09-09"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394-0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1022"
+ },
+ {
+  "set_id": "SET-0023",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-BEVECAT-093]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-BEVECAT-019]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFCHI-111]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-BEVECAT-093]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-BEVECAT-019]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFCHI-111]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1023"
+ },
+ {
+  "set_id": "SET-0024",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-CONFPUL-060]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFLUV-086]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SNACNOT-062]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-CONFPUL-060]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFLUV-086]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SNACNOT-062]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394-0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1024"
+ },
+ {
+  "set_id": "SET-0025",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTTAN-031]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SPICCAT-027]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-MOUTRAJ-034]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTTAN-031]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SPICCAT-027]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-MOUTRAJ-034]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-07-15"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1025"
+ },
+ {
+  "set_id": "SET-0026",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-084]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-084]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2026-02-03"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1026"
+ },
+ {
+  "set_id": "SET-0027",
+  "outcome": "route_to_human",
+  "reason": [
+   "R2_qty[DS-MOUTRAJ-040]",
+   "route_to_human",
+   "qty diff 6.86% in (2%,10%]"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTRAJ-040]",
+    "route_to_human",
+    "qty diff 6.86% in (2%,10%]"
+   ],
+   [
+    "R2_qty[DS-CONFFRU-079]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-SPICCAT-133]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTRAJ-040]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFFRU-079]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-SPICCAT-133]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-07-28"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1027"
+ },
+ {
+  "set_id": "SET-0028",
+  "outcome": "route_to_human",
+  "reason": [
+   "R3_price[DS-CONFCHE-069]",
+   "route_to_human",
+   "unit price 7.19 != PO 6.8 -> pricing desk"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-CONFCHE-069]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFFRU-026]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-DAIRKSH-136]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-CONFCHE-069]",
+    "route_to_human",
+    "unit price 7.19 != PO 6.8 -> pricing desk"
+   ],
+   [
+    "R3_price[DS-CONFFRU-026]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-136]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-09-16"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1028"
+ },
+ {
+  "set_id": "SET-0029",
+  "outcome": "reject",
+  "reason": [
+   "R7_math",
+   "reject",
+   "grand_total 17433.0 != subtotal 14350.0 + GST 2583.0 (\u0394-500.00 > \u20b91)"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTTAN-085]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTTAN-085]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "reject",
+    "grand_total 17433.0 != subtotal 14350.0 + GST 2583.0 (\u0394-500.00 > \u20b91)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1029"
+ },
+ {
+  "set_id": "SET-0030",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SPICKEW-042]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SPICKEW-042]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-08-29"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1030"
+ },
+ {
+  "set_id": "SET-0031",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SPICCAT-130]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-BEVECAT-093]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SPICCAT-130]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-BEVECAT-093]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-12-28"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1031"
+ },
+ {
+  "set_id": "SET-0032",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-083]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-083]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2026-02-06"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1032"
+ },
+ {
+  "set_id": "SET-0033",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-MOUTRAJ-128]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-MOUTRAJ-128]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1033"
+ },
+ {
+  "set_id": "SET-0034",
+  "outcome": "route_to_human",
+  "reason": [
+   "R2_qty[DS-MOUTMAS-049]",
+   "route_to_human",
+   "qty diff 4.77% in (2%,10%]"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-BEVECAT-073]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-MOUTMAS-049]",
+    "route_to_human",
+    "qty diff 4.77% in (2%,10%]"
+   ],
+   [
+    "R3_price[DS-BEVECAT-073]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-MOUTMAS-049]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1034"
+ },
+ {
+  "set_id": "SET-0035",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-CONFFRU-026]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-MOUTMAS-091]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-DAIRKSH-115]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-CONFFRU-026]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-MOUTMAS-091]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-115]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-10-18"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1035"
+ },
+ {
+  "set_id": "SET-0036",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-CONFPULSE-001]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-CONFPULSE-001]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1036"
+ },
+ {
+  "set_id": "SET-0037",
+  "outcome": "route_to_human",
+  "reason": [
+   "R3_price[DS-BEVECAT-129]",
+   "route_to_human",
+   "unit price 8.38 != PO 7.8 -> pricing desk"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-CONFCHE-078]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-BEVECAT-129]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-MOUTTAN-085]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-CONFCHE-078]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-BEVECAT-129]",
+    "route_to_human",
+    "unit price 8.38 != PO 7.8 -> pricing desk"
+   ],
+   [
+    "R3_price[DS-MOUTTAN-085]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1037"
+ },
+ {
+  "set_id": "SET-0038",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SNACSNA-122]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-CONFLUV-053]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-BEVECAT-076]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SNACSNA-122]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-CONFLUV-053]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-BEVECAT-076]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1038"
+ },
+ {
+  "set_id": "SET-0039",
+  "outcome": "route_to_human",
+  "reason": [
+   "R2_qty[DS-DAIRKSH-084]",
+   "route_to_human",
+   "qty diff 2.98% in (2%,10%]"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-DAIRKSH-084]",
+    "route_to_human",
+    "qty diff 2.98% in (2%,10%]"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-084]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-12-06"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1039"
+ },
+ {
+  "set_id": "SET-0040",
+  "outcome": "auto_approve",
+  "reason": [
+   "all_pass",
+   "pass",
+   "all checks green"
+  ],
+  "checks": [
+   [
+    "R2_qty[DS-SPICKEW-095]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R2_qty[DS-DAIRKSH-136]",
+    "pass",
+    "0.00% within \u00b12% tolerance"
+   ],
+   [
+    "R3_price[DS-SPICKEW-095]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R3_price[DS-DAIRKSH-136]",
+    "pass",
+    "price matches PO"
+   ],
+   [
+    "R4_dates",
+    "pass",
+    "po <= grn <= invoice"
+   ],
+   [
+    "R5_coa",
+    "pass",
+    "COA valid till 2025-11-25"
+   ],
+   [
+    "R7_math",
+    "pass",
+    "totals tie within \u20b91 (\u0394+0.00)"
+   ]
+  ],
+  "confidence": 0.98,
+  "conf_gate": 0.803,
+  "invoice_no": "INV/25-26/1040"
+ }
+]

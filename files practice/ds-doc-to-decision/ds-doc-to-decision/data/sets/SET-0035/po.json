@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0035",
+ "po_date": "2025-06-29",
+ "buyer": {
+  "code": "DIST-EA-032",
+  "city": "Patna",
+  "state": "Bihar",
+  "gstin": "31SYNTH5443F1Z8"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-CONFFRU-026",
+   "description": "FRU Jelly (1 unit)",
+   "hsn": "1704",
+   "qty": 1200,
+   "unit_price": 0.68
+  },
+  {
+   "sku": "DS-MOUTMAS-091",
+   "description": "Mastaba Std (50g / 250ml)",
+   "hsn": "2106",
+   "qty": 900,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-DAIRKSH-115",
+   "description": "Ksheer FullCreamMilk (12g / 200ml)",
+   "hsn": "0403",
+   "qty": 72,
+   "unit_price": 9.6
+  }
+ ]
+}

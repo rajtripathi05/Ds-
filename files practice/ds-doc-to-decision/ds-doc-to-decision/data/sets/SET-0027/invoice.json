@@ -1,0 +1,56 @@
+{
+ "invoice_no": "INV/25-26/1027",
+ "invoice_date": "2025-01-11",
+ "po_no": "PO-2025-0027",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-WE-021",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "17SYNTH6609F1Z8"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTRAJ-040",
+   "description": "Rajnigandha Meetha (2g / 1 unit)",
+   "hsn": "2106",
+   "category": "MouthFreshener",
+   "qty": 1496,
+   "unit_price": 1.64
+  },
+  {
+   "sku": "DS-CONFFRU-079",
+   "description": "FRU Jelly (8g / 5ml)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 600,
+   "unit_price": 3.4
+  },
+  {
+   "sku": "DS-SPICCAT-133",
+   "description": "Catch ChilliPwd (500g)",
+   "hsn": "0910",
+   "category": "Spices",
+   "qty": 480,
+   "unit_price": 82.0
+  }
+ ],
+ "subtotal": 43853.44,
+ "gst": {
+  "igst": 7893.62
+ },
+ "grand_total": 51747.06,
+ "amount_in_words": "Rupees Fifty One Thousand Seven Hundred Forty Seven Only",
+ "coa": {
+  "coa_no": "COA-0027",
+  "issue_date": "2024-07-28",
+  "valid_till": "2025-07-28"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0040",
+ "po_date": "2025-08-16",
+ "buyer": {
+  "code": "DIST-WE-021",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "37SYNTH8965F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICKEW-095",
+   "description": "Kewal Std (200g / 1L)",
+   "hsn": "0910",
+   "qty": 288,
+   "unit_price": 41.0
+  },
+  {
+   "sku": "DS-DAIRKSH-136",
+   "description": "Ksheer Dahi (500ml)",
+   "hsn": "0403",
+   "qty": 48,
+   "unit_price": 24.0
+  }
+ ]
+}

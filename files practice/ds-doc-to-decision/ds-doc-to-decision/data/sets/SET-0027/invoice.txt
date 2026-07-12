@@ -1,0 +1,24 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1027               Date: 2025-01-11
+PO Ref: PO-2025-0027                     Buyer: DIST-WE-021 (Indore, Madhya Pradesh)
+Buyer GSTIN: 17SYNTH6609F1Z8
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-MOUTRAJ-040    Rajnigandha Meetha (2g / 1  2106      1496    1.64   2453.44
+DS-CONFFRU-079    FRU Jelly (8g / 5ml)        1704       600    3.40   2040.00
+DS-SPICCAT-133    Catch ChilliPwd (500g)      0910       480   82.00  39360.00
+------------------------------------------------------------------------------
+                                                            Subtotal  43853.44
+                                                            IGST 18%   7893.62
+                                                         GRAND TOTAL  51747.06
+Amount in words: Rupees Fifty One Thousand Seven Hundred Forty Seven Only
+COA: COA-0027  issued 2024-07-28  valid till 2025-07-28
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

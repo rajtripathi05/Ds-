@@ -1,0 +1,33 @@
+{
+ "horizon_weeks": 4,
+ "plan_lines": 866,
+ "total_ship_units": 3727912,
+ "total_ship_value_inr": 58045499.0,
+ "objective_margin_inr": 25459196.0,
+ "budget_inr": 77065846.0,
+ "budget_utilisation": 0.7575,
+ "capacity_utilisation": {
+  "Beverages": 0.579,
+  "Confectionery": 0.737,
+  "Dairy": 0.583,
+  "MouthFreshener": 0.532,
+  "Snacks": 0.525,
+  "Spices": 0.862
+ },
+ "BINDING_CONSTRAINT": "demand-bound (no cap binding)",
+ "shadow_price_margin_per_budget_rupee": 0.0,
+ "forward_risk_lines(cover<1wk)": 0,
+ "near_stockout_reconciliation": {
+  "latest_week": "2025-12-29",
+  "flags_in_data": 0,
+  "detector_hits": 0,
+  "exact_agreement": true
+ },
+ "stress_scenario": {
+  "budget_inr": 49622723.0,
+  "budget_utilisation": 1.0,
+  "BINDING_CONSTRAINT": "working-capital budget (\u20b949,622,723; 100.0% used)",
+  "shadow_price_margin_per_budget_rupee": 0.226,
+  "forward_risk_lines(cover<1wk)": 1
+ }
+}

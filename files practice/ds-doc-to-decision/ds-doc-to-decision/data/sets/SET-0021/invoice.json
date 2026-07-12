@@ -1,0 +1,44 @@
+{
+ "invoice_no": "INV/25-26/1021",
+ "invoice_date": "2025-06-05",
+ "po_no": "PO-2025-0021",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-049",
+  "city": "Shillong",
+  "state": "Meghalaya",
+  "gstin": "23SYNTH6855F1Z2"
+ },
+ "lines": [
+  {
+   "sku": "DS-SNACNOT-029",
+   "description": "NotJustNuts Almond (100g / 600ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 576,
+   "unit_price": 15.2
+  },
+  {
+   "sku": "DS-SNACSNA-110",
+   "description": "SnackFactory Namkeen (100g / 600ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 528,
+   "unit_price": 15.2
+  }
+ ],
+ "subtotal": 16780.8,
+ "gst": {
+  "igst": 3020.54
+ },
+ "grand_total": 19801.34,
+ "amount_in_words": "Rupees Nineteen Thousand Eight Hundred One Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

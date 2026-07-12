@@ -1,0 +1,14 @@
+set_id,discrepancy_type,detail
+SET-0002,qty_large,invoice qty +14.1% vs GRN on DS-SPICCAT-027
+SET-0004,expired_cert,COA expired 2024-12-18 before invoice date 2025-02-26
+SET-0006,missing_grn,no GRN exists for this PO
+SET-0009,duplicate_invoice,invoice number duplicates an earlier invoice
+SET-0018,price_mismatch,invoice unit price != PO price on DS-MOUTRAJ-104
+SET-0020,expired_cert,COA expired 2025-03-04 before invoice date 2025-04-04
+SET-0022,missing_grn,no GRN exists for this PO
+SET-0027,qty_small,invoice qty +6.8% vs GRN on DS-MOUTRAJ-040
+SET-0028,price_mismatch,invoice unit price != PO price on DS-CONFCHE-069
+SET-0029,math_error,invoice grand total exceeds line-sum+GST by Rs 500
+SET-0034,qty_small,invoice qty +4.8% vs GRN on DS-MOUTMAS-049
+SET-0037,price_mismatch,invoice unit price != PO price on DS-BEVECAT-129
+SET-0039,qty_small,invoice qty +3.2% vs GRN on DS-DAIRKSH-084

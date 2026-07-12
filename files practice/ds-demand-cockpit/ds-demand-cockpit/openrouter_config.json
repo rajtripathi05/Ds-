@@ -1,0 +1,6 @@
+{
+ "enabled": true,
+ "model": "openai/gpt-4o-mini",
+ "budget_usd": 5.0,
+ "max_tokens": 400
+}

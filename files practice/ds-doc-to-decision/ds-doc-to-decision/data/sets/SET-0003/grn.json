@@ -1,0 +1,12 @@
+{
+ "grn_no": "GRN-2025-0003",
+ "po_no": "PO-2025-0003",
+ "grn_date": "2025-02-02",
+ "receiver": "DIST-CE-056",
+ "lines": [
+  {
+   "sku": "DS-BEVECAT-022",
+   "qty": 72
+  }
+ ]
+}

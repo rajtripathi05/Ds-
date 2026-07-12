@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ds-doc-to-decision — Exception Queue</title>
+<style>
+:root{--ink:#1c1917;--ink2:#44403c;--mut:#78716c;--line:#e7e5e4;--bg:#faf9f7;--acc:#b3282d;--acc2:#8a1f23;--ok:#15803d;--vio:#7c3aed}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px}
+header{background:linear-gradient(120deg,#1c1917,#3b1d1e);color:#fafaf9;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+header b{font-size:16px} header .sub{font-size:11px;color:#d6d3d1}
+main{max-width:1100px;margin:0 auto;padding:16px 20px 50px}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:#fff;border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:9px;padding:8px 12px}
+.kpi b{display:block;font-size:20px}.kpi span{font-size:10.5px;color:var(--mut)}
+.card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:14px 16px;margin-bottom:14px}
+.card h3{font-size:12.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--acc2);margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;color:var(--mut);font-size:10.5px;text-transform:uppercase;border-bottom:2px solid var(--line);padding:5px 7px}
+td{border-bottom:1px solid var(--line);padding:6px 7px;vertical-align:middle}
+.code{font-weight:800;color:var(--acc2)}
+.age{display:inline-block;min-width:30px;text-align:center;border-radius:6px;font-weight:700;font-size:11px;padding:1px 5px}
+.age.ok{background:#dcfce7;color:var(--ok)} .age.warn{background:#ffedd5;color:#b45309} .age.bad{background:#fee2e2;color:#991b1b}
+button{border:0;border-radius:7px;padding:5px 12px;font-weight:700;cursor:pointer;font-family:inherit;font-size:12px}
+.approve{background:#dcfce7;color:var(--ok)} .reject{background:#fee2e2;color:#991b1b}
+.retune{background:var(--acc);color:#fff;padding:8px 16px;font-size:13px}
+.hist{font-size:12px;color:var(--ink2)}
+.audit{font-size:10.5px;color:var(--mut);white-space:pre-wrap;max-height:180px;overflow-y:auto;background:#fafaf9;border-radius:8px;padding:8px}
+</style>
+</head>
+<body>
+<header>
+  <div><b>ds-doc-to-decision</b> · exception queue<div class="sub">rules decide · humans own exceptions · every override teaches the gate · synthetic documents</div></div>
+  <div style="display:flex;align-items:center;gap:12px"><span id="llmPill" style="font-size:10.5px;color:#d6d3d1">·</span>
+  <button class="retune" id="retune">↺ Retune gate from reviews</button></div>
+</header>
+<main>
+  <div class="kpis" id="kpis"></div>
+  <div class="card"><h3>Exception queue (aging + reason codes)</h3>
+    <table><thead><tr><th>Set</th><th>Reason code</th><th>Named failing check</th><th>Conf (raw→cal)</th><th>Age</th><th></th></tr></thead>
+    <tbody id="qbody"></tbody></table>
+  </div>
+  <div class="card"><h3>Learning-loop history</h3><div class="hist" id="hist">no retunes yet</div></div>
+  <div class="card"><h3>Audit log (immutable, last 25)</h3><div class="audit" id="audit"></div></div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+async function load(){
+  const d = await (await fetch("/queue")).json();
+  const s = d.stats;
+  $("kpis").innerHTML = [
+    ["STP", (s.stp*100).toFixed(1)+"%", "auto-approved / total"],
+    ["Auto-approved", s.auto, "of "+s.total+" docs"],
+    ["In queue", s.queued, "awaiting human review"],
+    ["Rejected", s.rejected, "hard rule failures"],
+    ["Gate threshold", s.threshold, "calibrated confidence"],
+  ].map(k=>`<div class="kpi"><span>${k[0]}</span><b>${k[1]}</b><span>${k[2]}</span></div>`).join("");
+  $("qbody").innerHTML = d.queue.map(r=>{
+    const cls = r.aging_days>10?"bad":r.aging_days>5?"warn":"ok";
+    return `<tr><td><b>${r.set_id}</b></td><td class="code">${r.reason_code}</td>
+      <td>${r.reason}${r.plain?`<div style="font-size:11px;color:#7c3aed;margin-top:2px">\u2728 ${r.plain}</div>`:""}</td><td>${r.confidence} → ${r.conf_calibrated}</td>
+      <td><span class="age ${cls}">${r.aging_days}d</span></td>
+      <td><button class="approve" onclick="review('${r.set_id}','approve',${r.confidence})">✓ approve</button>
+          <button class="reject" onclick="review('${r.set_id}','override_reject',${r.confidence})">✗ reject</button></td></tr>`;
+  }).join("") || `<tr><td colspan="6" style="color:var(--mut)">queue empty — everything auto-decided</td></tr>`;
+  $("hist").innerHTML = d.history.length
+    ? d.history.map(h=>`[${h.ts}] threshold ${h.from_th} → <b>${h.to_th}</b> · STP now <b>${(h.stp*100).toFixed(1)}%</b>`).join("<br>")
+    : "no retunes yet — review some documents, then hit ↺";
+  const a = await (await fetch("/audit")).json();
+  $("audit").textContent = a.map(x=>`${x.ts} ${x.actor.padEnd(6)} ${x.set_id} ${x.outcome} ← ${x.reason[0]} #${x.hash}`).join("\n");
+}
+async function review(id, action, conf){
+  await fetch("/review", {method:"POST", body: JSON.stringify({set_id:id, action, confidence:conf})});
+  load();
+}
+$("retune").onclick = async ()=>{ await fetch("/retune",{method:"POST",body:"{}"}); load(); };
+(async()=>{try{const s=await (await fetch("/llm_status")).json();
+  document.getElementById("llmPill").textContent = s.active
+    ? `\u2728 AI explanations ON \u00b7 $${s.spent_usd.toFixed(4)}/$${s.budget_usd}` : "rules mode";}catch(e){}})();
+load();
+</script>
+</body>
+</html>

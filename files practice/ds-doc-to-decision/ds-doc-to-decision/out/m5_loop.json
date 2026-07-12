@@ -1,0 +1,38 @@
+[
+ {
+  "round": 0,
+  "threshold": 0.92,
+  "auto": 0,
+  "routed_for_conf": 27,
+  "stp": 0.0,
+  "auto_errors": 0,
+  "n_overrides": 27
+ },
+ {
+  "round": 1,
+  "threshold": 0.86,
+  "auto": 0,
+  "routed_for_conf": 27,
+  "stp": 0.0,
+  "auto_errors": 0,
+  "n_overrides": 54
+ },
+ {
+  "round": 2,
+  "threshold": 0.803,
+  "auto": 27,
+  "routed_for_conf": 0,
+  "stp": 0.675,
+  "auto_errors": 0,
+  "n_overrides": 54
+ },
+ {
+  "round": 3,
+  "threshold": 0.803,
+  "auto": 27,
+  "routed_for_conf": 0,
+  "stp": 0.675,
+  "auto_errors": 0,
+  "n_overrides": 54
+ }
+]

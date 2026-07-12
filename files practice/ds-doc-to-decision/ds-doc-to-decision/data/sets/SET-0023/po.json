@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0023",
+ "po_date": "2025-09-10",
+ "buyer": {
+  "code": "DIST-NO-006",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "gstin": "37SYNTH1549F1Z6"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-BEVECAT-093",
+   "description": "Catch Water (50g / 250ml)",
+   "hsn": "2202",
+   "qty": 120,
+   "unit_price": 7.8
+  },
+  {
+   "sku": "DS-BEVECAT-019",
+   "description": "Catch LimeJuice (600ml)",
+   "hsn": "2202",
+   "qty": 192,
+   "unit_price": 27.3
+  },
+  {
+   "sku": "DS-CONFCHI-111",
+   "description": "Chingles Mint (1 unit)",
+   "hsn": "1704",
+   "qty": 2600,
+   "unit_price": 0.68
+  }
+ ]
+}

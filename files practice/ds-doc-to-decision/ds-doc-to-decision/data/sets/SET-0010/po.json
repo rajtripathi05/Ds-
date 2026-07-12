@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0010",
+ "po_date": "2025-09-11",
+ "buyer": {
+  "code": "DIST-NO-005",
+  "city": "Delhi",
+  "state": "Delhi",
+  "gstin": "23SYNTH4384F1Z8"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-MOUTMAS-082",
+   "description": "Mastaba Std (25g)",
+   "hsn": "2106",
+   "qty": 1000,
+   "unit_price": 20.5
+  },
+  {
+   "sku": "DS-BEVECAT-119",
+   "description": "Catch MangoJuice (50g / 250ml)",
+   "hsn": "2202",
+   "qty": 216,
+   "unit_price": 7.8
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "po_no": "PO-2025-0015",
+ "po_date": "2025-09-09",
+ "buyer": {
+  "code": "DIST-EA-031",
+  "city": "Ranchi",
+  "state": "Jharkhand",
+  "gstin": "11SYNTH5346F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-067",
+   "description": "Ksheer Ghee (12g / 200ml)",
+   "hsn": "0403",
+   "qty": 312,
+   "unit_price": 9.6
+  },
+  {
+   "sku": "DS-DAIRKSH-120",
+   "description": "Ksheer FullCreamMilk (25g)",
+   "hsn": "0403",
+   "qty": 312,
+   "unit_price": 20.0
+  }
+ ]
+}

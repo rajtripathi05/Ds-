@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0028",
+ "po_date": "2025-01-01",
+ "buyer": {
+  "code": "DIST-WE-021",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "gstin": "27SYNTH6818F1Z5"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-CONFCHE-069",
+   "description": "Cherio Std (50g / 250ml)",
+   "hsn": "1704",
+   "qty": 1000,
+   "unit_price": 6.8
+  },
+  {
+   "sku": "DS-CONFFRU-026",
+   "description": "FRU Jelly (1 unit)",
+   "hsn": "1704",
+   "qty": 600,
+   "unit_price": 0.68
+  },
+  {
+   "sku": "DS-DAIRKSH-136",
+   "description": "Ksheer Dahi (500ml)",
+   "hsn": "0403",
+   "qty": 288,
+   "unit_price": 24.0
+  }
+ ]
+}

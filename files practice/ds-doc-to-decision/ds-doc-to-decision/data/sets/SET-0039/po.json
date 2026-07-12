@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0039",
+ "po_date": "2025-08-03",
+ "buyer": {
+  "code": "DIST-NO-052",
+  "city": "Agartala",
+  "state": "Tripura",
+  "gstin": "13SYNTH1522F1Z4"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-084",
+   "description": "Ksheer Whitener (500ml)",
+   "hsn": "0403",
+   "qty": 168,
+   "unit_price": 24.0
+  }
+ ]
+}

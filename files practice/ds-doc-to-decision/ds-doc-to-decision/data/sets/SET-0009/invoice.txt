@@ -1,0 +1,22 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1001               Date: 2025-09-21
+PO Ref: PO-2025-0009                     Buyer: DIST-CE-053 (Raipur, Chhattisgarh)
+Buyer GSTIN: 31SYNTH7970F1Z2
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-SNACSNA-097    SnackFactory Namkeen (200g  2008        96   38.00   3648.00
+DS-CONFPULSE-149  Pulse Blackcurrant (8g / 5m 1704      2200    0.68   1496.00
+------------------------------------------------------------------------------
+                                                            Subtotal   5144.00
+                                                            IGST 18%    925.92
+                                                         GRAND TOTAL   6069.92
+Amount in words: Rupees Six Thousand Seventy Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

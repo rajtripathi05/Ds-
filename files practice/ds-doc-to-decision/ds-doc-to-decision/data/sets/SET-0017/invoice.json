@@ -1,0 +1,40 @@
+{
+ "invoice_no": "INV/25-26/1017",
+ "invoice_date": "2025-04-03",
+ "po_no": "PO-2025-0017",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-NO-008",
+  "city": "Delhi",
+  "state": "Delhi",
+  "gstin": "35SYNTH5993F1Z3"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICKEW-042",
+   "description": "Kewal Std (8g / 5ml)",
+   "hsn": "0910",
+   "category": "Spices",
+   "qty": 96,
+   "unit_price": 4.1
+  }
+ ],
+ "subtotal": 393.6,
+ "gst": {
+  "igst": 70.85
+ },
+ "grand_total": 464.45,
+ "amount_in_words": "Rupees Four Hundred Sixty Four Only",
+ "coa": {
+  "coa_no": "COA-0017",
+  "issue_date": "2025-02-03",
+  "valid_till": "2026-02-03"
+ },
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

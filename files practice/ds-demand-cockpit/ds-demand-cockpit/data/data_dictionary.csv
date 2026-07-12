@@ -1,0 +1,33 @@
+table,field,type,meaning,provenance
+product_master,sku_code,STR,primary key DS-<CAT><BRD>-<NNN>,synthetic
+product_master,category,STR,6 grounded categories,grounded
+product_master,brand,STR,grounded DS Group brand (pack §1),grounded
+product_master,variant,STR,grounded flavour/variant (pack §1),grounded
+product_master,pack_size,STR,standard Indian LUP ladder,derived-from-grounded
+product_master,pack_unit,STR,unit/g/ml/L,derived-from-grounded
+product_master,mrp,FLOAT ₹,grounded magic price point (pack §2),grounded
+product_master,dist_price,FLOAT ₹,mrp*(1-dist_margin-ret_margin),derived-from-grounded
+product_master,launch_date,DATE,random pre-history; new launch pinned,synthetic
+product_master,abc_class,STR,A/B/C ~20/30/50 (Pareto),derived-from-grounded
+product_master,mts_mto,STR,make-to-stock/order,synthetic
+product_master,base_elasticity,FLOAT,own-price elasticity by category ±15%,derived-from-grounded
+product_master,is_intermittent,BOOL,long-tail Croston flag,derived-from-grounded
+location_master,distributor_code,STR,primary key DIST-<ZONE>-<NNN>,synthetic
+location_master,super_stockist,STR,SS-<ZONE>-<NN>,synthetic
+location_master,territory/city/state,STR,grounded India geo (pack §4),grounded
+location_master,zone,STR,"6 zones, count weighted to N+NE",derived-from-grounded
+location_master,channel,STR,GT/MT/Ecom ~80/13/7 (pack §3),grounded
+location_master,urban_rural,STR,~40%+ rural (pack §4),grounded
+location_master,region_weight,FLOAT,demand density (pack §4 footprint),derived-from-grounded
+location_master,golive,DATE,NE cohort live 2024-10-01 (break),synthetic
+calendar,date/iso_year/week/month,-,daily spine,synthetic
+calendar,is_festival/festival_name,-,real 2024-25 festival dates (pack §5),grounded
+calendar,season,STR,Winter/Summer/Monsoon/Autumn,derived-from-grounded
+promo_calendar,promo_id,STR,primary key,synthetic
+promo_calendar,type/depth_pct/mechanic,-,"consumer/trade/display, grounded depths",derived-from-grounded
+sales_secondary,date/sku/distributor,-,composite PK (fact table),synthetic
+sales_secondary,qty,INT,modelled weekly secondary off-take,derived-from-grounded
+sales_secondary,price_realized,FLOAT ₹,dist_price net of promo pass-through,derived-from-grounded
+sales_secondary,promo_id,STR|null,FK to promo_calendar,derived-from-grounded
+price_history,*,-,baseline + Rajnigandha hike (break),derived-from-grounded
+new_launch_analogs,*,-,cannibalization mapping,synthetic

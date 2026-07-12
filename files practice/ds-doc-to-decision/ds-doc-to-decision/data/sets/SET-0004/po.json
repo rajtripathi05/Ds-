@@ -1,0 +1,40 @@
+{
+ "po_no": "PO-2025-0004",
+ "po_date": "2025-02-22",
+ "buyer": {
+  "code": "DIST-NO-048",
+  "city": "Guwahati",
+  "state": "Assam",
+  "gstin": "16SYNTH8635F1Z3"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-DAIRKSH-023",
+   "description": "Ksheer Ghee (500ml)",
+   "hsn": "0403",
+   "qty": 240,
+   "unit_price": 24.0
+  },
+  {
+   "sku": "DS-SPICCAT-051",
+   "description": "Catch Turmeric (50g / 250ml)",
+   "hsn": "0910",
+   "qty": 240,
+   "unit_price": 8.2
+  },
+  {
+   "sku": "DS-SPICKEW-095",
+   "description": "Kewal Std (200g / 1L)",
+   "hsn": "0910",
+   "qty": 528,
+   "unit_price": 41.0
+  }
+ ]
+}

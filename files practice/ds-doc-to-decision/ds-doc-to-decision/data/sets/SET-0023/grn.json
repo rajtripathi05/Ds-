@@ -1,0 +1,20 @@
+{
+ "grn_no": "GRN-2025-0023",
+ "po_no": "PO-2025-0023",
+ "grn_date": "2025-09-14",
+ "receiver": "DIST-NO-006",
+ "lines": [
+  {
+   "sku": "DS-BEVECAT-093",
+   "qty": 120
+  },
+  {
+   "sku": "DS-BEVECAT-019",
+   "qty": 192
+  },
+  {
+   "sku": "DS-CONFCHI-111",
+   "qty": 2600
+  }
+ ]
+}

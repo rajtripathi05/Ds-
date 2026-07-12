@@ -1,0 +1,22 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1010               Date: 2025-09-16
+PO Ref: PO-2025-0010                     Buyer: DIST-NO-005 (Delhi, Delhi)
+Buyer GSTIN: 23SYNTH4384F1Z8
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-MOUTMAS-082    Mastaba Std (25g)           2106      1000   20.50  20500.00
+DS-BEVECAT-119    Catch MangoJuice (50g / 250 2202       216    7.80   1684.80
+------------------------------------------------------------------------------
+                                                            Subtotal  22184.80
+                                                            IGST 18%   3993.26
+                                                         GRAND TOTAL  26178.06
+Amount in words: Rupees Twenty Six Thousand One Hundred Seventy Eight Only
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demand Cockpit — plan what will sell</title>
+<style>
+/* ===== Clarity design system — large type, high contrast, big controls (accessible) ===== */
+:root{
+  --ink:#171412; --ink2:#403a35; --mut:#6c645c; --line:#e6e1db; --bg:#f7f4f0; --card:#ffffff;
+  --acc:#b3282d; --acc2:#8a1f23; --ok:#15803d; --okbg:#e7f6ec; --warn:#b45409; --vio:#6d28d9;
+  --focus:#1d4ed8; --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,h3{line-height:1.2}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+header.app{background:linear-gradient(120deg,#171412,#3b1d1e);color:#fff;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+header.app .ttl{font-size:22px;font-weight:800;letter-spacing:-.01em}
+header.app .sub{font-size:13.5px;color:#e7dcd6;margin-top:2px}
+.rolewrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.rolewrap .lbl{font-size:13px;color:#e7dcd6}
+.seg{display:inline-flex;background:rgba(255,255,255,.12);border-radius:999px;padding:4px}
+.seg button{appearance:none;border:0;background:transparent;color:#f3e9e5;font-weight:700;font-size:15px;padding:9px 18px;border-radius:999px;cursor:pointer;min-height:44px}
+.seg button.on{background:#fff;color:var(--acc2)}
+.pill{font-size:12.5px;color:#e7dcd6;background:rgba(255,255,255,.10);padding:6px 12px;border-radius:999px}
+a.plain{color:#ffd9db;font-weight:700;text-decoration:none;font-size:14.5px}
+a.plain:hover{text-decoration:underline}
+
+main{max-width:1280px;margin:0 auto;padding:20px 24px 70px}
+.help{background:#fffdf7;border:1px solid #f0e6cf;border-left:5px solid var(--warn);border-radius:var(--r);padding:14px 18px;margin-bottom:18px;display:flex;gap:14px;align-items:flex-start}
+.help b{font-size:16px}
+.help p{font-size:15px;color:var(--ink2);margin-top:2px}
+.help .x{margin-left:auto;border:0;background:#f2ece2;border-radius:8px;padding:8px 12px;font-weight:800;cursor:pointer;min-height:40px}
+
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px}
+@media(max-width:1050px){.kpis{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:var(--r);padding:14px 16px}
+.kpi b{display:block;font-size:26px;font-weight:800;letter-spacing:-.01em}
+.kpi span{font-size:13px;color:var(--mut);display:block}
+.kpi span.t{font-weight:700;color:var(--ink2);margin-bottom:4px;font-size:13.5px}
+
+.grid{display:grid;grid-template-columns:1.35fr 1fr;gap:18px}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin-bottom:18px}
+.card > h2{font-size:19px;font-weight:800;margin-bottom:4px}
+.card > .cap{font-size:14px;color:var(--mut);margin-bottom:12px}
+canvas{width:100%;height:auto;background:var(--card)}
+
+label.field{display:block;margin:16px 0}
+label.field .name{font-size:15.5px;font-weight:700;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+label.field .name output{color:var(--acc2);font-weight:800;font-size:16px}
+label.field .hint{font-size:13px;color:var(--mut);font-weight:400}
+select,input[type=text],input[type=search]{width:100%;border:2px solid var(--line);border-radius:10px;padding:11px 12px;font-family:inherit;font-size:16px;min-height:48px;background:#fff}
+select:hover{border-color:#cfc7bd}
+input[type=range]{width:100%;height:34px;accent-color:var(--acc);cursor:pointer}
+select[multiple]{min-height:120px}
+
+.btn{border:0;border-radius:12px;font-weight:800;cursor:pointer;font-family:inherit;min-height:52px;font-size:17px;padding:0 22px}
+.btn.primary{background:var(--acc);color:#fff}
+.btn.primary:hover{background:var(--acc2)}
+.btn.ghost{background:#f2ece4;color:var(--ink);border:1px solid var(--line);min-height:46px;font-size:15px;padding:0 16px}
+.btn.ghost:hover{background:#e9e1d6}
+.presets{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 4px}
+.presets button{background:#fff;border:2px solid var(--line);border-radius:999px;padding:10px 16px;font-weight:700;font-size:14.5px;cursor:pointer;min-height:46px}
+.presets button:hover{border-color:var(--acc);color:var(--acc2)}
+.presets .lead{align-self:center;font-size:14px;color:var(--mut);font-weight:700;margin-right:2px}
+
+.badge{display:inline-block;font-size:13px;font-weight:800;border-radius:999px;padding:5px 12px;background:var(--okbg);color:var(--ok)}
+.badge.warn{background:#fdecd8;color:var(--warn)}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px}
+.result-grid .big{font-size:34px;font-weight:800;letter-spacing:-.02em}
+.result-grid .t{font-size:13.5px;color:var(--mut)}
+.rowline{font-size:15.5px;margin:6px 0}
+.rowline b{font-weight:800}
+
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th{text-align:left;color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid var(--line);padding:8px 8px}
+td{border-bottom:1px solid var(--line);padding:9px 8px}
+.note{font-size:13.5px;color:var(--mut)}
+code{background:#f2ece4;border-radius:6px;padding:1px 6px;font-size:13px}
+body.ops .fin{display:none!important}
+.divider{height:1px;background:var(--line);margin:16px 0}
+.grouphdr{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--acc2);font-weight:800;margin:6px 0 2px}
+</style>
+</head>
+<body>
+<header class="app">
+  <div><div class="ttl">📈 Demand Cockpit</div><div class="sub">See what will sell — and safely test a change before you commit</div></div>
+  <div class="rolewrap">
+    <span id="llmPill" class="pill">·</span>
+    <span class="lbl">I am:</span>
+    <div class="seg"><button id="roleExec" class="on">Executive</button><button id="roleOps">Operations</button></div>
+    <a id="exportLink" class="plain" href="/export?role=exec">⬇ Download plan (Excel)</a>
+  </div>
+</header>
+<main>
+  <div class="help" id="helpBanner">
+    <div>
+      <b>New here? It takes 3 steps.</b>
+      <p>① Read the six numbers below — they show how good the plan is. ② Pick a preset or move a lever on the right. ③ Press <b>Run this scenario</b> and watch the result appear. Nothing you do here changes the real plan — it's a safe sandbox.</p>
+    </div>
+    <button class="x" onclick="this.parentElement.style.display='none'">Got it ✕</button>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <div>
+      <div class="card"><h2>How demand looks over time</h2>
+        <div class="cap">Dark line = what actually happened. Red line = the plan for the next 4 weeks. Dashed blue = your scenario (after you run one).</div>
+        <label class="field" style="margin-top:0"><span class="name">Show</span>
+          <select id="catSel"><option value="__nation__">Whole company (all categories)</option></select></label>
+        <canvas id="mainChart" width="760" height="300" aria-label="demand chart"></canvas>
+      </div>
+      <div class="card"><h2>New-launch stock build</h2>
+        <div class="cap">When a new product launches, orders run ahead of sales to fill the pipeline. Here that build is <b id="fillKpi">—</b>× in the first four weeks.</div>
+        <canvas id="launchChart" width="760" height="220" aria-label="launch pipeline chart"></canvas>
+      </div>
+      <div class="card"><h2>Which shops might run out</h2>
+        <div class="cap">Items the plan projects will have less than one week of stock cover.</div>
+        <table id="riskTable"><thead><tr><th>Product</th><th>Zone</th><th>Cover (weeks)</th><th>4-wk demand</th><th>On hand</th><th>To ship</th></tr></thead><tbody></tbody></table>
+        <div class="note" id="riskNote" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="border-top:4px solid var(--acc)">
+        <h2>Test a change</h2>
+        <div class="cap">Try one of these one-click scenarios, or set the levers yourself below. Every scenario is checked and re-planned before you see it — nothing skips the maths.</div>
+        <div class="presets" id="presets">
+          <span class="lead">Quick tests:</span>
+          <button data-preset="festival">🎇 Festival promo</button>
+          <button data-preset="pricerise">💰 Test a price rise</button>
+          <button data-preset="launch">🚀 New launch</button>
+          <button data-preset="tighten" class="fin">✂️ Tighten cash budget</button>
+        </div>
+
+        <div id="nlCard" style="display:none">
+          <div class="divider"></div>
+          <div class="grouphdr">Or describe it in words <span id="llmPillInline" class="note"></span></div>
+          <div style="display:flex;gap:10px;margin-top:6px">
+            <input id="nlText" type="text" placeholder="e.g. run a 20% promo on Confectionery for weeks 1–2 and cut the budget to 80%">
+            <button class="btn primary" id="nlRun" style="min-width:110px">Ask</button>
+          </div>
+          <div class="note" id="nlOut" style="margin-top:6px"></div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="grouphdr">Set it yourself</div>
+        <label class="field"><span class="name">Run a promo on</span>
+          <select id="wCat"></select></label>
+        <label class="field"><span class="name">Promo discount <output id="wDepthO">0%</output></span>
+          <input type="range" id="wDepth" min="0" max="30" value="0" step="5" aria-label="promo discount percent"></label>
+        <label class="field"><span class="name">Promo style</span>
+          <select id="wType"><option value="consumer">Consumer (shopper offer)</option><option value="trade">Trade (distributor deal)</option><option value="display">Display (in-store)</option></select></label>
+        <label class="field"><span class="name">Which weeks <span class="hint">(Ctrl-click for more)</span></span>
+          <select id="wWeeks" multiple size="4"><option value="1" selected>Week 1</option><option value="2" selected>Week 2</option><option value="3">Week 3</option><option value="4">Week 4</option></select></label>
+        <label class="field"><span class="name">Price change <output id="wPriceO">0%</output></span>
+          <input type="range" id="wPrice" min="-10" max="10" value="0" step="1" aria-label="price change percent"></label>
+        <label class="field"><span class="name">…applied to</span>
+          <select id="wPriceCat"></select></label>
+        <label class="field"><span class="name">New-product launch</span>
+          <select id="wLaunch"><option value="">None</option><option value="1">Launch in week 1</option><option value="2">Launch in week 2</option><option value="3">Launch in week 3</option></select></label>
+        <label class="field fin"><span class="name">Cash budget <output id="wBudgetO">1.00</output>× <span class="hint">(1.00 = normal; lower = tighter)</span></span>
+          <input type="range" id="wBudget" min="60" max="120" value="100" step="5" aria-label="cash budget multiplier"></label>
+
+        <button class="btn primary" id="runBtn" style="width:100%;margin-top:8px">▶ Run this scenario</button>
+        <div style="display:flex;gap:10px;margin-top:10px">
+          <input id="scenName" type="text" placeholder="name this scenario" style="flex:1">
+          <button class="btn ghost" id="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="card"><h2>What your scenario did <span id="solveMs" class="badge" style="display:none"></span></h2>
+        <p class="note" id="resultEmpty">Run a scenario above to see how sales, profit and stock-out risk change versus today's plan.</p>
+        <div id="resultWrap" style="display:none">
+          <div class="result-grid">
+            <div><div class="t">Change in sales volume</div><div class="big" id="dVol">—</div></div>
+            <div class="fin"><div class="t">Change in profit (₹)</div><div class="big" id="dMar">—</div></div>
+          </div>
+          <div class="rowline">What's limiting the plan: <b id="rBind">—</b></div>
+          <div class="rowline fin">Cash budget used: <b id="rUtil">—</b></div>
+          <div class="rowline">Shops at risk of running out: <b id="rRisk">—</b> · Maths checked: <span class="badge" id="rRec">tied ✓</span></div>
+        </div>
+      </div>
+
+      <div class="card"><h2>Compare two saved scenarios</h2>
+        <div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <select id="cmpA" style="flex:1;min-width:150px"></select>
+          <select id="cmpB" style="flex:1;min-width:150px"></select>
+          <button class="btn ghost" id="cmpBtn">Compare</button>
+        </div>
+        <table id="cmpTable" style="display:none"><thead><tr><th>Measure</th><th id="cmpAh"></th><th id="cmpBh"></th></tr></thead><tbody></tbody></table>
+        <div class="note" id="scenCount"></div>
+      </div>
+
+      <div class="card"><h2>How the forecast was built</h2>
+        <div id="quality"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+
+let ROLE = "exec", SNAP = null, lastResult = null, lastParams = null;
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const $ = id => document.getElementById(id);
+const fmt = n => n==null ? "—" : (+n).toLocaleString("en-IN");
+const pct = n => (n*100).toFixed(1) + "%";
+
+async function boot(){
+  SNAP = await (await fetch("/snapshot?role=" + ROLE)).json();
+  document.body.classList.toggle("ops", ROLE === "ops");
+  $("exportLink").href = "/export?role=" + ROLE;
+  renderKpis(); renderCharts(); renderRisk(); renderQuality(); fillSelectors(); loadScenarios();
+}
+function renderKpis(){
+  const k = SNAP.kpis, p = SNAP.plan || {};
+  const cards = [
+    ["Forecast error", pct(k.wmape_sku_champion), "half of the usual method (" + pct(k.wmape_sku_snaive) + ")"],
+    ["By category", pct(k.wmape_cat_champion), "vs usual " + pct(k.wmape_cat_snaive)],
+    ["Better than the plan target", (k.fva_vs_snaive_pp).toFixed(1) + " pts", "more accurate"],
+    ["New-launch stock build", k.pipeline_fill_first4wk + "×", "orders ahead of sales"],
+    ["Products planned", fmt(p.lines), (p.binding||"").split("(")[0].trim()],
+    ["Data health", badgePct(), "inputs clean & complete"],
+  ];
+  $("kpis").innerHTML = cards.map(c=>`<div class="kpi"><span class="t">${c[0]}</span><b>${c[1]}</b><span>${c[2]||""}</span></div>`).join("");
+}
+function badgePct(){
+  const b = SNAP.kpis.data_badges || {}; const v = Object.values(b);
+  return v.length ? Math.round(v.reduce((a,x)=>a+x,0)/v.length*1000)/10 + "%" : "—";
+}
+function line(ctx, xs, ys, color, dash){
+  ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.setLineDash(dash||[]);
+  ctx.beginPath(); ys.forEach((y,i)=>{ i?ctx.lineTo(xs[i],y):ctx.moveTo(xs[i],y) }); ctx.stroke(); ctx.setLineDash([]);
+}
+function drawSeries(cv, actual, fwd, fwd2){
+  const ctx = cv.getContext("2d"); ctx.clearRect(0,0,cv.width,cv.height);
+  const all = actual.concat(fwd||[], fwd2||[]).filter(v=>v!=null);
+  const mx = Math.max(...all)*1.08 || 1, n = actual.length + (fwd?fwd.length:0);
+  const X = i => 38 + i*(cv.width-50)/(n-1), Y = v => cv.height-24-(v/mx)*(cv.height-40);
+  ctx.strokeStyle="#e7e5e4"; ctx.beginPath();
+  for(let g=0; g<5; g++){ const y=Y(mx*g/4); ctx.moveTo(38,y); ctx.lineTo(cv.width-12,y); } ctx.stroke();
+  ctx.fillStyle="#78716c"; ctx.font="10px sans-serif";
+  for(let g=0; g<5; g++) ctx.fillText(fmt(Math.round(mx*g/4)), 2, Y(mx*g/4)+3);
+  line(ctx, actual.map((_,i)=>X(i)), actual.map(Y), "#44403c");
+  if(fwd){ const xs = fwd.map((_,i)=>X(actual.length-1+i+1)); 
+    line(ctx, [X(actual.length-1), ...xs], [Y(actual[actual.length-1]), ...fwd.map(Y)], "#b3282d");
+  }
+  if(fwd2){ const xs = fwd2.map((_,i)=>X(actual.length-1+i+1));
+    line(ctx, [X(actual.length-1), ...xs], [Y(actual[actual.length-1]), ...fwd2.map(Y)], "#1d4ed8", [5,4]);
+  }
+  ctx.fillStyle="#78716c";
+  ctx.fillText("— actual   — base plan" + (fwd2?"   ---- scenario":""), cv.width-230, 12);
+}
+function renderCharts(){
+  const sel = $("catSel").value || "__nation__";
+  const c = sel === "__nation__" ? SNAP.curves.nation : SNAP.curves.categories[sel];
+  const sc = lastResult ? (sel === "__nation__" ? lastResult.nation_fwd : (lastResult.fwd_by_category||{})[sel]) : null;
+  drawSeries($("mainChart"), c.actual, c.fwd, sc);
+  const L = SNAP.curves.launch;
+  const cv = $("launchChart"), ctx = cv.getContext("2d"); ctx.clearRect(0,0,cv.width,cv.height);
+  const mx = Math.max(...L.primary, ...L.secondary)*1.1 || 1;
+  const X = i => 38 + i*(cv.width-50)/(L.primary.length-1), Y = v => cv.height-20-(v/mx)*(cv.height-34);
+  line(ctx, L.primary.map((_,i)=>X(i)), L.primary.map(Y), "#b3282d");
+  line(ctx, L.secondary.map((_,i)=>X(i)), L.secondary.map(Y), "#44403c");
+  ctx.fillStyle="#78716c"; ctx.font="10px sans-serif"; ctx.fillText("— primary (red)  — secondary (dark)", cv.width-220, 12);
+  $("fillKpi").textContent = SNAP.kpis.pipeline_fill_first4wk;
+}
+function renderRisk(){
+  const rows = (SNAP.plan && SNAP.plan.forward_risk) || [];
+  $("riskTable").querySelector("tbody").innerHTML = rows.length
+    ? rows.map(r=>`<tr><td>${r.sku}</td><td>${r.zone}</td><td>${r.proj_cover_wk}</td><td>${fmt(r.d4)}</td><td>${fmt(r.opening)}</td><td>${fmt(r.ship)}</td></tr>`).join("")
+    : `<tr><td colspan="6" class="note">None under the base plan — order-up-to history keeps cover ≥ 1 week (near_stockout flags in data: ${SNAP.plan?.near_stockout_reconciliation?.flags_in_data ?? 0}; detector agrees exactly). Constrain the budget lever to surface risk.</td></tr>`;
+  $("riskNote").textContent = "Reconciliation vs data flags: exact (" +
+    (SNAP.plan?.near_stockout_reconciliation?.detector_hits ?? 0) + " = " +
+    (SNAP.plan?.near_stockout_reconciliation?.flags_in_data ?? 0) + ").";
+}
+function renderQuality(){
+  const k = SNAP.kpis;
+  const mix = Object.entries(k.champion_mix||{}).map(([m,n])=>`${m}:${n}`).join(" · ");
+  const el = (SNAP.elasticity && SNAP.elasticity.table) || [];
+  $("quality").innerHTML =
+    `<div class="note" style="margin-bottom:6px">Plain version: the system learned how much sales move when you change price (its guess vs the known answer — small error % = good), and which forecasting method won for each product.</div><div class="note">Champion mix (series-folds): ${mix}</div>
+     <table style="margin-top:6px"><thead><tr><th>category</th><th>elasticity true</th><th>recovered</th><th>err%</th></tr></thead><tbody>
+     ${el.map(r=>`<tr><td>${r.category}</td><td>${r.el_true}</td><td>${r.el_recovered}</td><td>${r.rel_err_pct}</td></tr>`).join("")}
+     </tbody></table>
+     <div class="note" style="margin-top:4px">Elasticities recovered from matched-control promo analysis (M3) — these power the what-if levers.</div>`;
+}
+function fillSelectors(){
+  const cats = Object.keys(SNAP.curves.categories);
+  $("catSel").innerHTML = '<option value="__nation__">Nation (all categories)</option>' + cats.map(c=>`<option>${c}</option>`).join("");
+  $("wCat").innerHTML = cats.map(c=>`<option>${c}</option>`).join("");
+  $("wPriceCat").innerHTML = cats.map(c=>`<option>${c}</option>`).join("");
+}
+function params(){
+  return {
+    promo: { category: $("wCat").value, depth: (+$("wDepth").value)/100, type: $("wType").value,
+             weeks: [...$("wWeeks").selectedOptions].map(o=>+o.value) },
+    price_pct: { [$("wPriceCat").value]: +$("wPrice").value },
+    launch_week: $("wLaunch").value || null,
+    budget_mult: (+$("wBudget").value)/100,
+  };
+}
+async function runScenario(){
+  lastParams = params();
+  const t0 = performance.now();
+  const res = await (await fetch("/whatif?role="+ROLE, {method:"POST", body: JSON.stringify(lastParams)})).json();
+  const wall = performance.now() - t0;
+  lastResult = res;
+  $("resultEmpty").style.display="none"; $("resultWrap").style.display="block";
+  $("solveMs").style.display="inline-block";
+  $("solveMs").textContent = `solved in ${Math.round(wall)} ms (server ${res.solve_ms} ms)`;
+  $("solveMs").className = "badge" + (wall < 2000 ? "" : " warn");
+  $("dVol").textContent = (res.delta_volume_pct>0?"+":"") + res.delta_volume_pct + "%";
+  if(res.objective_margin != null){
+    const d = res.objective_margin - res.base_objective_margin;
+    $("dMar").textContent = (d>=0?"+₹":"−₹") + fmt(Math.abs(d));
+  }
+  $("rBind").textContent = res.binding || "—";
+  if(res.budget_util != null) $("rUtil").textContent = pct(res.budget_util);
+  $("rRisk").textContent = res.risk_lines;
+  renderCharts();
+}
+async function saveScenario(){
+  if(!lastResult){ await runScenario(); }
+  const name = $("scenName").value || "scenario";
+  await fetch("/scenario", {method:"POST", body: JSON.stringify({name, params:lastParams, result:{
+    delta_volume_pct:lastResult.delta_volume_pct, binding:lastResult.binding,
+    objective_margin:lastResult.objective_margin, risk_lines:lastResult.risk_lines, solve_ms:lastResult.solve_ms}})});
+  loadScenarios();
+}
+async function loadScenarios(){
+  const list = await (await fetch("/scenarios?role="+ROLE)).json();
+  $("scenCount").textContent = list.length + " saved scenario(s) in out/scenarios/";
+  const opts = list.map(s=>`<option value="${s.id}">${s.id}</option>`).join("");
+  $("cmpA").innerHTML = opts; $("cmpB").innerHTML = opts;
+  if(list.length>1) $("cmpB").selectedIndex = list.length-1;
+  window._scen = Object.fromEntries(list.map(s=>[s.id, s]));
+}
+function compare(){
+  const a = window._scen[$("cmpA").value], b = window._scen[$("cmpB").value];
+  if(!a || !b) return;
+  $("cmpTable").style.display="table";
+  $("cmpAh").textContent = a.id.slice(16); $("cmpBh").textContent = b.id.slice(16);
+  const rows = [["Δ volume %", a.result?.delta_volume_pct, b.result?.delta_volume_pct],
+                ["binding", a.result?.binding, b.result?.binding],
+                ["margin objective ₹", a.result?.objective_margin, b.result?.objective_margin],
+                ["risk lines", a.result?.risk_lines, b.result?.risk_lines],
+                ["solve ms", a.result?.solve_ms, b.result?.solve_ms]];
+  $("cmpTable").querySelector("tbody").innerHTML =
+    rows.filter(r=>!(ROLE==="ops" && /margin/.test(r[0])))
+        .map(r=>`<tr><td>${r[0]}</td><td>${r[1]??"—"}</td><td>${r[2]??"—"}</td></tr>`).join("");
+}
+$("runBtn").onclick = runScenario;
+$("saveBtn").onclick = saveScenario;
+$("cmpBtn").onclick = compare;
+$("catSel").onchange = renderCharts;
+$("roleExec").onclick = ()=>{ROLE="exec";$("roleExec").classList.add("on");$("roleOps").classList.remove("on");lastResult=null;boot();};
+$("roleOps").onclick = ()=>{ROLE="ops";$("roleOps").classList.add("on");$("roleExec").classList.remove("on");lastResult=null;boot();};
+["wDepth","wPrice","wBudget"].forEach(id=>{ $(id).oninput = ()=>{ $("wDepthO").textContent=$("wDepth").value+"%"; $("wPriceO").textContent=$("wPrice").value+"%"; $("wBudgetO").textContent=((+$("wBudget").value)/100).toFixed(2); }; });
+(async()=>{try{const s=await (await fetch("/llm_status")).json();
+  if(s.active){document.getElementById("nlCard").style.display="block";
+    document.getElementById("llmPill").textContent=`\u2728 ${s.model} \u00b7 $${s.spent_usd.toFixed(4)}/$${s.budget_usd}`;}
+}catch(e){}})();
+$("nlRun").onclick=async()=>{
+  const t=$("nlText").value.trim(); if(!t)return;
+  $("nlOut").textContent="thinking\u2026";
+  const r=await (await fetch("/whatif_nl?role="+ROLE,{method:"POST",body:JSON.stringify({text:t})})).json();
+  if(r.error){$("nlOut").textContent="Could not parse that \u2014 try naming a category, depth and weeks.";return;}
+  lastResult=r; lastParams=r.parsed_params||{};
+  $("resultEmpty").style.display="none"; $("resultWrap").style.display="block";
+  $("solveMs").style.display="inline-block"; $("solveMs").textContent=`solved in ${r.solve_ms} ms (AI-parsed)`;
+  $("dVol").textContent=(r.delta_volume_pct>0?"+":"")+r.delta_volume_pct+"%";
+  if(r.objective_margin!=null){const d=r.objective_margin-r.base_objective_margin;$("dMar").textContent=(d>=0?"+\u20b9":"\u2212\u20b9")+fmt(Math.abs(d));}
+  $("rBind").textContent=r.binding||"\u2014"; if(r.budget_util!=null)$("rUtil").textContent=pct(r.budget_util);
+  $("rRisk").textContent=r.risk_lines;
+  $("nlOut").innerHTML=`parsed \u2192 <code>${esc(JSON.stringify(r.parsed_params))}</code>`;
+  renderCharts();
+};
+boot();
+
+
+/* ---- one-click presets (fill levers then run) ---- */
+function setSel(id,val){const el=$(id); if(el){el.value=val;}}
+function setWeeks(arr){[...$("wWeeks").options].forEach(o=>o.selected=arr.includes(+o.value));}
+function syncOutputs(){$("wDepthO").textContent=$("wDepth").value+"%";$("wPriceO").textContent=$("wPrice").value+"%";$("wBudgetO").textContent=((+$("wBudget").value)/100).toFixed(2);}
+const PRESETS={
+  festival:()=>{const c=[...$("wCat").options].map(o=>o.value); setSel("wCat", c.includes("Confectionery")?"Confectionery":c[0]); $("wDepth").value=25; setSel("wType","consumer"); setWeeks([1,2,3,4]); $("wPrice").value=0; setSel("wLaunch",""); $("wBudget").value=100;},
+  pricerise:()=>{const c=[...$("wPriceCat").options].map(o=>o.value); setSel("wPriceCat", c.includes("Beverages")?"Beverages":c[0]); $("wPrice").value=8; $("wDepth").value=0; setSel("wLaunch","");},
+  launch:()=>{setSel("wLaunch","1"); $("wDepth").value=0; $("wPrice").value=0;},
+  tighten:()=>{$("wBudget").value=70; $("wDepth").value=0; $("wPrice").value=0; setSel("wLaunch","");},
+};
+document.querySelectorAll("#presets button[data-preset]").forEach(b=>b.addEventListener("click",()=>{
+  (PRESETS[b.dataset.preset]||(()=>{}))(); syncOutputs(); runScenario();
+}));
+// mirror the header LLM pill into the NL card's inline note
+(function(){const src=$("llmPill"); const dst=$("llmPillInline"); if(src&&dst){new MutationObserver(()=>{dst.textContent=src.textContent.includes("ON")?src.textContent:"";}).observe(src,{childList:true,subtree:true,characterData:true});}})();
+
+</script>
+</body>
+</html>

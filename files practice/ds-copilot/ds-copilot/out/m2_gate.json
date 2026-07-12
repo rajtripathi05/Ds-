@@ -1,0 +1,36 @@
+{
+ "checks": [
+  [
+   "NL\u2192SQL runs for ops volumes",
+   true
+  ],
+  [
+   "LIMIT enforced in generated SQL",
+   true
+  ],
+  [
+   "ops margin metric refused w/ reason",
+   true
+  ],
+  [
+   "blocked column via raw SQL refused at driver",
+   true
+  ],
+  [
+   "blocked table attempt refused",
+   true
+  ],
+  [
+   "write attempt refused even for exec",
+   true
+  ],
+  [
+   "row limit appended when missing",
+   true
+  ],
+  [
+   "exec margin metric answers",
+   true
+  ]
+ ]
+}

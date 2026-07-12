@@ -1,0 +1,24 @@
+                                 TAX INVOICE                                  
+       SYNTHETIC DOCUMENT — portfolio test data, not a real tax invoice       
+------------------------------------------------------------------------------
+DS Foods (SYNTHETIC) Pvt Ltd
+Plot 12, Sector 67, Noida, Uttar Pradesh 201301
+GSTIN: 09SYNTH2345D1Z7   FSSAI: 10024999000123
+------------------------------------------------------------------------------
+Invoice No: INV/25-26/1008               Date: 2025-09-28
+PO Ref: PO-2025-0008                     Buyer: DIST-NO-011 (Gurugram, Haryana)
+Buyer GSTIN: 27SYNTH5705F1Z8
+------------------------------------------------------------------------------
+SKU               Description                 HSN        Qty    Rate    Amount
+DS-BEVECAT-093    Catch Water (50g / 250ml)   2202        48    7.80    374.40
+DS-DAIRKSH-033    Ksheer FlavMilk (25g)       0403       264   20.00   5280.00
+DS-SNACNOT-015    NotJustNuts TrailMix (50g / 2008       192    7.60   1459.20
+------------------------------------------------------------------------------
+                                                            Subtotal   7113.60
+                                                            IGST 18%   1280.45
+                                                         GRAND TOTAL   8394.05
+Amount in words: Rupees Eight Thousand Three Hundred Ninety Four Only
+COA: COA-0008  issued 2025-06-29  valid till 2026-06-29
+------------------------------------------------------------------------------
+E&OE. Payment per Trade Credit Policy. Subject to Noida jurisdiction.
+For DS Foods (SYNTHETIC) Pvt Ltd  —  Authorised Signatory

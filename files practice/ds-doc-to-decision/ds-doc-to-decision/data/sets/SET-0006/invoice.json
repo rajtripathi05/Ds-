@@ -1,0 +1,52 @@
+{
+ "invoice_no": "INV/25-26/1006",
+ "invoice_date": "2025-09-06",
+ "po_no": "PO-2025-0006",
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "buyer": {
+  "code": "DIST-EA-032",
+  "city": "Patna",
+  "state": "Bihar",
+  "gstin": "26SYNTH6765F1Z7"
+ },
+ "lines": [
+  {
+   "sku": "DS-SNACNOT-096",
+   "description": "NotJustNuts TrailMix (50g / 250ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 576,
+   "unit_price": 7.6
+  },
+  {
+   "sku": "DS-CONFPUL-012",
+   "description": "Pulse Guava (1 unit)",
+   "hsn": "1704",
+   "category": "Confectionery",
+   "qty": 400,
+   "unit_price": 0.68
+  },
+  {
+   "sku": "DS-SNACNOT-007",
+   "description": "NotJustNuts Cashew (100g / 600ml)",
+   "hsn": "2008",
+   "category": "Snacks",
+   "qty": 528,
+   "unit_price": 15.2
+  }
+ ],
+ "subtotal": 12675.2,
+ "gst": {
+  "igst": 2281.54
+ },
+ "grand_total": 14956.74,
+ "amount_in_words": "Rupees Fourteen Thousand Nine Hundred Fifty Seven Only",
+ "coa": null,
+ "note": "SYNTHETIC DOCUMENT \u2014 portfolio test data, not a real tax invoice"
+}

@@ -1,0 +1,26 @@
+{
+ "po_no": "PO-2025-0030",
+ "po_date": "2025-03-23",
+ "buyer": {
+  "code": "DIST-NO-050",
+  "city": "Guwahati",
+  "state": "Assam",
+  "gstin": "26SYNTH5111F1Z8"
+ },
+ "seller": {
+  "name": "DS Foods (SYNTHETIC) Pvt Ltd",
+  "addr": "Plot 12, Sector 67, Noida, Uttar Pradesh 201301",
+  "gstin": "09SYNTH2345D1Z7",
+  "fssai": "10024999000123",
+  "state": "Uttar Pradesh"
+ },
+ "lines": [
+  {
+   "sku": "DS-SPICKEW-042",
+   "description": "Kewal Std (8g / 5ml)",
+   "hsn": "0910",
+   "qty": 144,
+   "unit_price": 4.1
+  }
+ ]
+}
