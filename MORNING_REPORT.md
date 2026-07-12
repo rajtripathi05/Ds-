@@ -2,7 +2,7 @@
 _Both runs complete. Ladder finished; red-team and polish loops run to convergence. Everything below is openable from `2026-07-12-portfolio-home.html`._
 
 ## What got built (in order)
-1. **2026-07-12-ds-blueprint-v2.html** — the master interactive blueprint (v1 frozen untouched). Added overnight: prototype evidence cards in Cases 1–3 + P1–P3 register (S1/R0), live portfolio-ROI aggregator with scenario toggle & per-case checkboxes (R1), 20 red-team fixes (R0), V15–V18 new verified facts, E14, scope footnote.
+1. **2026-07-12-fmcg-blueprint.html** — the master interactive blueprint (v1 frozen untouched). Added overnight: prototype evidence cards in Cases 1–3 + P1–P3 register (S1/R0), live portfolio-ROI aggregator with scenario toggle & per-case checkboxes (R1), 20 red-team fixes (R0), V15–V18 new verified facts, E14, scope footnote.
 2. **2026-07-12-exec-onepager.md + .html** — the 3-minute CXO memo (R2).
 3. **2026-07-12-blueprint-deck.html** — 14-slide boardroom deck, same palette/typography, scores script-verified against the blueprint (R3).
 4. **2026-07-12-pitch-kit.md** — talk tracks, 12 objections (incl. all 5 you mandated), 3-minute demo script (R4).
@@ -27,12 +27,12 @@ Arithmetic: Case 6 hours (20,700→34,500 after distributor count verified), Cas
 - Estimates remain estimates until the week-1 data audit — the artifacts say this loudly on purpose.
 - Wikipedia's ₹5,500 cr (2023) vs FY25 ₹10,000 cr scope difference is footnoted (Tab 7); expect the question anyway.
 - Deck slide 6's matrix is a static snapshot at default weights (interactivity lives in the blueprint) — stated on the slide.
-- Prototype claims describe synthetic-data results only; anyone treating them as DS Group results should be corrected in the room.
+- Prototype claims describe synthetic-data results only; anyone treating them as the company results should be corrected in the room.
 
 ## What I'd do next with more time
 1. Wire the three prototype repos into the portfolio-home cards as clickable local links (paths differ per machine — left unlinked deliberately).
 2. A 5-minute screen-recorded demo following the pitch-kit script.
-3. Replace E1/E6/E8 with actuals the moment any DS Group data audit happens; re-run the aggregator and re-export the deck.
+3. Replace E1/E6/E8 with actuals the moment any company data audit happens; re-run the aggregator and re-export the deck.
 4. A Hindi one-pager variant for trade-facing conversations.
 
 ---

@@ -1,7 +1,7 @@
 # KICKOFF — ds-copilot (GOAT 2: Enterprise Agentic Copilot)
 
 You are my senior AI engineer. We are building "the company's second brain" for an FMCG major
-(DS Group theme): a role-scoped agentic copilot that answers from documents WITH citations and
+(FMCG theme): a role-scoped agentic copilot that answers from documents WITH citations and
 from a governed database WITH validated SQL — and can act behind approval.
 
 KEEP-ALIVE + PROGRESS (mandatory, non-negotiable): my screen turns off after 5

@@ -3,7 +3,7 @@
 P1 `2026-07-12-igl-to-fmcg-note.md` — NSU pattern → FMCG plant, positioned as Prototype #0,
 provenance-hedged because the real IGL CLAUDE.md is still the placeholder (GAPS G1).
 P2 `resume_pack.md` — 8 bullets (engineer + leadership flavours, every number file-quoted),
-120-word LinkedIn About, 200-word DS Group AGM cover note.
+120-word LinkedIn About, 200-word the company AGM cover note.
 P3 `DEMO_RUNBOOK.md` — pre-flight commands, 3-min and 10-min scripts with say/do lines,
 4-step fallback ladder, 10 hard Q&A (incl. "fake data?" and "did the AI build this?").
 P4 `github_checklist.md` — bundle→publish commands, README top-screen requirements, exclusions,

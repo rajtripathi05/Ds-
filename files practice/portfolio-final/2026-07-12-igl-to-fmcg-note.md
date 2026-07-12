@@ -1,6 +1,6 @@
 # From IGL's NSU digital twin to an FMCG plant — the bridge note (Prototype #0)
 **RAJ · 12 July 2026 · one page** · *All systems referenced here were built and measured on a
-synthetic test bed with planted ground truth; independent work, not affiliated with DS Group.*
+synthetic test bed with planted ground truth; independent work, not affiliated with the company.*
 
 > **Provenance note (honesty first):** the NSU CLAUDE.md was not present in `reference/` at
 > packaging time (see GAPS G1), so this note reconstructs the pattern from the IGL operating
@@ -42,6 +42,6 @@ Demand enters as the forecast spine (the cockpit), documents enter as governed d
 doc-robot), and people query it all through a role-scoped copilot — the twin is what joins them.
 
 ## Why this is Prototype #0
-The three DS-themed systems in this portfolio are not three ideas — they are the NSU pattern
+The three FMCG-themed systems in this portfolio are not three ideas — they are the NSU pattern
 applied three times: same laws, same discipline, same test-gated honesty. NSU is the industrial
 original; the FMCG trilogy is the evidence the pattern transfers.

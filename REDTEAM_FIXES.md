@@ -1,5 +1,5 @@
 # REDTEAM_FIXES.md — every finding and fix (overnight Run 2, R0)
-All fixes applied to `2026-07-12-ds-blueprint-v2.html`. v1 untouched (frozen baseline, contains the pre-fix state).
+All fixes applied to `2026-07-12-fmcg-blueprint.html`. v1 untouched (frozen baseline, contains the pre-fix state).
 
 ## A. Arithmetic (recomputed every ₹ line in all 8 ROI tables)
 | # | Location | Finding | Fix |

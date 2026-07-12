@@ -1,7 +1,7 @@
 # ds-copilot — Enterprise Agentic Copilot (rules mode, fully offline)
 *A role-scoped copilot that answers from a governed 24-doc corpus WITH citations and from a
 sqlite spine WITH validated SQL — deterministic (no LLM key needed), gated by a 25-question eval.*
-**Synthetic corpus & data; no DS Group internal information.**
+**Synthetic corpus & data; no company internal information.**
 
 ## The problem
 Company knowledge lives in policies nobody can find and databases nobody may touch. Generic

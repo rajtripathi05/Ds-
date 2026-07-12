@@ -2,7 +2,7 @@
 *Every number below is quoted from a results file in this portfolio (BACKTEST.md, EVAL_RESULTS.md,
 DECISIONS.md, CI_RESULTS.md, out/m5_loop.json, out/roi.json). Mandatory companion sentence
 wherever these bullets are pasted: "All three systems were built and measured on a synthetic
-test bed with planted ground truth; independent work, not affiliated with DS Group."*
+test bed with planted ground truth; independent work, not affiliated with the company."*
 
 ## 8 quantified bullets — engineer flavour (E) and leadership flavour (L)
 
@@ -70,12 +70,12 @@ automation that matched ground truth 40/40 while raising straight-through proces
 67.5% with zero errors — all on synthetic test beds with planted truth, all gate-tested in git.
 I like measured numbers, named constraints, and systems that refuse politely.
 
-## Cover note — DS Group AGM (AI/ML) role (200 words)
+## Cover note — the company AGM (AI/ML) role (200 words)
 Dear Hiring Team,
 
 I'm applying for the AGM role with something more concrete than enthusiasm: a role-specific
 portfolio I built independently to test whether I could do this job before asking you to bet on
-it. It contains a 30-use-case AI strategy for a company of DS Group's shape — every public fact
+it. It contains a 30-use-case AI strategy for a company of the company's shape — every public fact
 cited, every estimate labelled — and working prototypes of the three use cases I'd start with:
 a demand/S&OP cockpit (WMAPE 8.98% vs 18.27% baseline), a governed GenAI copilot with RAG and
 role-scoped SQL (25/25 eval, zero leaks, prompt-injection refused), and document automation
@@ -84,6 +84,6 @@ synthetic test beds with planted ground truth — I claim the methods and the en
 production results. My day job is digital-twin and analytics leadership at India Glycols, where
 the same laws — deterministic truth, human-in-the-loop, audit everything — run a real plant.
 I'd welcome the chance to walk you through a 10-minute live demo and the honest BLOCKERS files.
-This is independent work, not affiliated with DS Group.
+This is independent work, not affiliated with the company.
 
 Regards, RAJ

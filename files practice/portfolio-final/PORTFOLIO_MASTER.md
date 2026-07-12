@@ -1,11 +1,11 @@
 # PORTFOLIO MASTER INDEX — RAJ · 12 July 2026
 *One measured result per item. Honesty line for everything below: built and measured on a
-synthetic test bed with planted ground truth; independent work, not affiliated with DS Group.*
+synthetic test bed with planted ground truth; independent work, not affiliated with the company.*
 
 ## Strategy suite (../../Practice root)
 | Artifact | One measured/verified anchor |
 |---|---|
-| [Interactive blueprint](../../2026-07-12-ds-blueprint-v2.html) | 30 use cases scored; 19 VERIFIED public facts (all links re-fetched 12 Jul 2026); live ROI aggregator ₹9.7/17.9/26.2 cr scenarios |
+| [Interactive blueprint](../../2026-07-12-fmcg-blueprint.html) | 30 use cases scored; 19 VERIFIED public facts (all links re-fetched 12 Jul 2026); live ROI aggregator ₹9.7/17.9/26.2 cr scenarios |
 | [Boardroom deck](../../2026-07-12-blueprint-deck.html) | 14 slides; evidence slide quotes only gate-tested numbers |
 | [Executive one-pager](../../2026-07-12-exec-onepager.html) | 3-decision ask; Phase-0 ₹0.9–1.4 cr, gate-controlled |
 | [Pitch kit](../../2026-07-12-pitch-kit.md) | 12 CXO objections answered (incl. o9 overlap, DPDP) |

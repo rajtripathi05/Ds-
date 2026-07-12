@@ -5,7 +5,7 @@ Convention: [timestamp IST] step · % of ladder · next
 [2026-07-12 04:09 IST] v2 copy created
 [2026-07-12 04:11 IST] S1 evidence cards + arithmetic corrections applied to v2 · 8% · Next: verify v2, checkpoint
 [2026-07-12 04:11 IST] CHECKPOINT S1 complete: v2 verified (JS OK, structure OK), INDEX.md + MORNING_REPORT draft written · 15% · Next: S2 aggregator
-[2026-07-12 04:13 IST] R0: v2 renamed to 2026-07-12-ds-blueprint-v2.html; all 8 ROI tables recomputed & corrected (BC1 carry/cash, BC3 net 1.1, BC4 55cr top, BC5-8 nets, Tab-5 card, E13); scope footnote added · 25% · Next: re-verify V1-V14 links
+[2026-07-12 04:13 IST] R0: v2 renamed to 2026-07-12-fmcg-blueprint.html; all 8 ROI tables recomputed & corrected (BC1 carry/cash, BC3 net 1.1, BC4 55cr top, BC5-8 nets, Tab-5 card, E13); scope footnote added · 25% · Next: re-verify V1-V14 links
 [2026-07-12 04:18 IST] R0: citations re-verified by fetch (7 pages); V2/V8/V9/V13/V14 rewritten, V15-V18+E14 added, BC6 upgraded to verified 5,000 distributors, BC8 re-scoped to own units, roadmap/exec reconciled · 32% · Next: REDTEAM_FIXES.md + verify + R1 aggregator
 [2026-07-12 04:19 IST] R0 COMPLETE + REDTEAM_FIXES.md written (20 findings) · 35% · Next: R1 aggregator into v2
 [2026-07-12 04:21 IST] R1 COMPLETE: aggregator live (cons ₹9.7 / base ₹17.9 / aggr ₹26.2 cr net; build ₹1.95-3.15 cr; cash ₹30-67 cr), reconciled by script against Tab-5 card · 45% · Next: R2 one-pager

@@ -15,3 +15,9 @@ __pycache__/
 # openrouter_key.txt and paste your key there; it stays local.
 **/openrouter_key.txt
 .env
+
+# heavy local backups — not needed on GitHub/Netlify
+# (the .lock variant is a stale partial bundle from an interrupted
+#  `git bundle create`; *.gitbundle alone does not match it)
+*.gitbundle
+*.gitbundle.lock

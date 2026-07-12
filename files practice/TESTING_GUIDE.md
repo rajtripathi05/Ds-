@@ -7,7 +7,7 @@ First run may take 2–5 min; later runs ~10 seconds.*
 ---
 ## A · Strategy suite (no server needed — double-click the HTML files one folder up, in Practice)
 **A1 · 2026-07-12-portfolio-home.html** — start here; every card should open its artifact.
-**A2 · Blueprint (2026-07-12-ds-blueprint-v2.html)** — the deep one:
+**A2 · Blueprint (2026-07-12-fmcg-blueprint.html)** — the deep one:
 - [ ] Tab 2: type "vision" in the search box → table filters; click a row → 4 score rationales expand.
 - [ ] Tab 3: drag **Business Value to 55** → bubbles move, top-10 list re-ranks; press **Risk-averse** preset → HR screening (HR-1) sinks. Click any bubble → detail card; hit **▲/▼** on a score → "YOUR SCORES" badge appears and the whole portfolio re-ranks; click *reset to analyst scores*.
 - [ ] Tab 3 → copy the URL → paste in a new tab → your weights + tab restore (deep-link state).
@@ -58,4 +58,4 @@ robot `NO-PEEK GREEN`, `M3 GREEN (structured 40/40, planted 13/13, pdf 40/40)`, 
 - Anything else → each repo's BLOCKERS.md and MORNING_REPORT.md say what's expected vs known-limited.
 
 *Honesty line, always: built and measured on a synthetic test bed with planted ground truth;
-independent work, not affiliated with DS Group.*
+independent work, not affiliated with the company.*

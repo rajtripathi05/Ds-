@@ -2,7 +2,7 @@
 *Ingest messy distributor documents → extract with field-level confidence → let WRITTEN RULES
 decide (approve / route / reject) with the named failing check → calibrated confidence gate →
 exception queue whose overrides teach the gate. Fully offline; every number below measured.*
-**Synthetic documents; no DS Group data.**
+**Synthetic documents; no company data.**
 
 ## The problem
 3-way matching (PO ↔ GRN ↔ invoice) is high-volume, rule-bound, and leaky exactly because humans

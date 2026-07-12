@@ -1,7 +1,7 @@
 # ds-demand-cockpit — Demand-to-Shelf Brain
 *A working FMCG planning cockpit: hierarchical forecasting + causal trade-promo measurement + a
 constrained S&OP optimizer + a live what-if cockpit — built overnight, fully offline, every claim
-below measured by a test in this repo.* **Synthetic DS-themed data; no DS Group internal data.**
+below measured by a test in this repo.* **Synthetic FMCG-themed data; no company internal data.**
 
 ## The problem
 A ₹10,000-crore-scale FMCG network sells through thousands of distributor-week-SKU cells. Promos,

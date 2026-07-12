@@ -1,11 +1,11 @@
-# AI Transformation Blueprint — DS Group · Executive One-Pager
+# AI Transformation Blueprint — the company · Executive One-Pager
 **From:** RAJ (AGM — AI strategy portfolio) · **Date:** 12 July 2026 · **Read time:** 3 minutes
-**Companion artifacts:** interactive blueprint (`2026-07-12-ds-blueprint-v2.html`), boardroom deck, pitch kit
+**Companion artifacts:** interactive blueprint (`2026-07-12-fmcg-blueprint.html`), boardroom deck, pitch kit
 
 ---
 
 ## The thesis
-DS Group has publicly committed to doubling from ₹10,000+ crore (FY25, **VERIFIED**) to ₹20,000 crore by its centenary year 2029 (**VERIFIED**). That doubling will be won or lost in decisions made weekly across 5,000+ distributors, ~15 lakh directly-served outlets and 15+ own manufacturing sites (**VERIFIED**). AI's job here is not novelty — it is decision quality at that scale: forecast what the trade will pull, prove which rupee of trade spend works, and stop reading documents by hand. Management already names AI and automation as a growth enabler (**VERIFIED**).
+the company has publicly committed to doubling from ₹10,000+ crore (FY25, **VERIFIED**) to ₹20,000 crore by its centenary year 2029 (**VERIFIED**). That doubling will be won or lost in decisions made weekly across 5,000+ distributors, ~15 lakh directly-served outlets and 15+ own manufacturing sites (**VERIFIED**). AI's job here is not novelty — it is decision quality at that scale: forecast what the trade will pull, prove which rupee of trade spend works, and stop reading documents by hand. Management already names AI and automation as a growth enabler (**VERIFIED**).
 
 ## The three moves that matter first (all three exist as working prototypes)
 1. **Demand → Supply: a forecasting + S&OP what-if cockpit** that adds causal promo-ROI and constrained scenario simulation on top of the announced o9/PwC planning rollout (**VERIFIED**) — complement, not competitor. *Prototype: 297,610-row synthetic spine, reconciliation-gated what-ifs, 3.13× launch pipeline-fill reproduced.*
@@ -29,4 +29,4 @@ A standing AI Council; DPDP-aligned data classification and consent handling; du
 2. Grant a two-week data audit across DMS/ERP extracts to replace estimates with actuals and re-score the portfolio.
 3. Approve Phase 0: three shadow-mode pilots (copilot, document automation, demand cockpit) at **₹0.9–1.4 cr**, judged only against pre-agreed exit gates.
 
-*Method: every DS Group fact above is tagged VERIFIED against a cited public source (re-fetched 12 Jul 2026) or ESTIMATE with a stated basis; prototype metrics are from my built systems on synthetic data and say nothing about DS Group's internal results. Full registers: blueprint Tab 7.*
+*Method: every company fact above is tagged VERIFIED against a cited public source (re-fetched 12 Jul 2026) or ESTIMATE with a stated basis; prototype metrics are from my built systems on synthetic data and say nothing about the company's internal results. Full registers: blueprint Tab 7.*

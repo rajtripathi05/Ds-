@@ -1,0 +1,18 @@
+# Netlify config — static portfolio site served from the repo root.
+[build]
+  publish = "."
+  command = ""            # nothing to build; these are hand-written static files
+
+# Serve the landing page for any unknown path (soft 404). Real files always win,
+# so the blueprint/deck/one-pager and screenshots are served directly.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"

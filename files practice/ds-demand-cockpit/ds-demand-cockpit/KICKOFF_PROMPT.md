@@ -1,7 +1,7 @@
 # KICKOFF — ds-demand-cockpit (GOAT 1: Demand-to-Shelf Brain)
 
 You are my senior ML + platform engineer. We are building a GOAT-tier FMCG planning cockpit
-(DS Group theme: Pulse, Catch, Rajnigandha, Ksheer): hierarchical demand forecasting + causal
+(FMCG theme: Pulse, Catch, Rajnigandha, Ksheer): hierarchical demand forecasting + causal
 trade-promo uplift + a constrained S&OP optimizer + a live what-if cockpit.
 
 KEEP-ALIVE + PROGRESS (mandatory, non-negotiable): my screen turns off after 5

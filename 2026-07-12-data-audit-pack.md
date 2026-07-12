@@ -1,4 +1,4 @@
-# Week-1 Data Audit Pack — AI Transformation Blueprint · DS Group
+# Week-1 Data Audit Pack — AI Transformation Blueprint · the company
 **RAJ · 12 July 2026** · The execution bridge: every registered estimate (E1–E14) mapped to the exact extract that replaces it, its likely owner, an acceptance check, and the case numbers it re-bases. Goal: by day 10, the blueprint's aggregator runs on actuals, not assumptions.
 
 ## How to use

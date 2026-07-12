@@ -38,7 +38,7 @@ Repeat with `ds-copilot.gitbundle → governed-enterprise-copilot` and
 3. **The honesty line, verbatim:** "Built and measured on a synthetic test bed with planted
    ground truth — methods and engineering, not production results."
 4. **The independence line:** "Independent portfolio project — not affiliated with, or endorsed
-   by, DS Group. All domain facts from cited public sources."
+   by, the company. All domain facts from cited public sources."
 
 ## Exclude / check before push
 - [ ] `*.gitbundle` files (history is in git itself once cloned)

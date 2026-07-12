@@ -1,4 +1,4 @@
-# INDEX — AI Transformation Blueprint · DS Group (portfolio artifact set)
+# INDEX — AI Transformation Blueprint · FMCG (portfolio artifact set)
 _Final checkpoint: 2026-07-12 04:29 IST · Built across two overnight autonomous runs · Owner: RAJ_
 
 **Open first:** `2026-07-12-portfolio-home.html` (the landing page) → then the blueprint.
@@ -7,12 +7,12 @@ _Final checkpoint: 2026-07-12 04:29 IST · Built across two overnight autonomous
 | File | What it is |
 |------|------------|
 | **2026-07-12-portfolio-home.html** | ⭐ Landing page — links every artifact + case-study cards for the 3 built prototypes (problem → architecture → verified result → production scale) |
-| **2026-07-12-ds-blueprint-v2.html** | ⭐ Master artifact — 7 tabs: exec summary · 30 scored use cases (4 dims + rationale each) · interactive weight-slider prioritiser with quadrant re-plotting & detail drawers · top-8 one-page business cases with prototype evidence cards · **live portfolio-ROI aggregator** (conservative ₹9.7 / base ₹17.9 / aggressive ₹26.2 cr net/yr; per-case include/exclude) · 0-6-12 roadmap with exit gates · 5-pillar governance (DPDP/NIST/ISO-42001) · V1–V18 + E1–E14 + P1–P3 registers |
+| **2026-07-12-fmcg-blueprint.html** | ⭐ Master artifact — 7 tabs: exec summary · 30 scored use cases (4 dims + rationale each) · interactive weight-slider prioritiser with quadrant re-plotting & detail drawers · top-8 one-page business cases with prototype evidence cards · **live portfolio-ROI aggregator** (conservative ₹9.7 / base ₹17.9 / aggressive ₹26.2 cr net/yr; per-case include/exclude) · 0-6-12 roadmap with exit gates · 5-pillar governance (DPDP/NIST/ISO-42001) · V1–V18 + E1–E14 + P1–P3 registers |
 | **2026-07-12-blueprint-deck.html** | Boardroom deck — 14 slides, arrow-key/click nav, print-to-PDF clean; scores verified identical to blueprint |
 | **2026-07-12-exec-onepager.html / .md** | 3-minute CXO memo — thesis, 3 prototyped moves, honest economics, 3-decision ask |
 | **2026-07-12-pitch-kit.md** | 60-sec talk track per tab · 12 hardest CXO objections answered (o9 overlap, estimate scepticism, adoption, DPDP, AGM-vs-IT ownership…) · 3-minute demo script |
 | **2026-07-12-data-audit-pack.md** | Week-1 execution bridge — every estimate E1–E14 mapped to extract, owner, acceptance check and the cases it re-bases; model-card + decision-log templates |
-| DS-Group-AI-Transformation-Blueprint.html | v1 — frozen pre-audit baseline (kept per never-overwrite rule) |
+| fmcg-blueprint-early-draft.html | v1 — frozen pre-audit baseline (kept per never-overwrite rule) |
 
 ## Audit trail
 | File | What it is |

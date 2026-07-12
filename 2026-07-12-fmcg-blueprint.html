@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Transformation Blueprint — DS Group</title>
+<title>FMCG — AI Transformation Blueprint</title>
 <style>
   :root{
     --ink:#1c1917; --ink2:#44403c; --mut:#78716c; --line:#e7e5e4; --bg:#faf9f7; --card:#ffffff;
@@ -117,6 +117,22 @@
   .src-table a{color:var(--acc2); text-decoration:none; border-bottom:1px dotted var(--acc2)}
   footer{border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mut); font-size:12.5px}
 
+  .agg-scen{display:flex; gap:6px; flex-wrap:wrap; margin:10px 0}
+  .agg-scen button{border:1px solid var(--line); background:#f5f5f4; border-radius:8px; padding:6px 14px; font-size:12.5px; font-weight:700; cursor:pointer; font-family:inherit; color:var(--ink2)}
+  .agg-scen button.on{background:var(--acc2); color:#fff; border-color:var(--acc2)}
+  .agg-cases{display:grid; grid-template-columns:repeat(4,1fr); gap:4px 10px; font-size:12.3px; margin:8px 0 4px}
+  @media(max-width:900px){.agg-cases{grid-template-columns:repeat(2,1fr)}}
+  .agg-cases label{display:flex; gap:6px; align-items:flex-start; cursor:pointer; color:var(--ink2)}
+  .agg-out{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px}
+  @media(max-width:900px){.agg-out{grid-template-columns:1fr}}
+  .agg-out .kpi b{font-size:24px}
+  #aggSens li{font-size:12.6px; color:var(--ink2); margin:3px 0}
+  .tag.proto{background:#ede9fe; color:#5b21b6; border:1px solid #c4b5fd}
+  .evidence{background:#faf5ff; border:1px solid #ddd6fe; border-left:4px solid #7c3aed; border-radius:10px; padding:12px 16px; margin-top:14px}
+  .evidence b.ehead{display:block; font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:#5b21b6; margin-bottom:6px}
+  .evidence ul{padding-left:18px; margin:2px 0}
+  .evidence li{font-size:12.8px; color:var(--ink2); margin:3px 0}
+  .evidence .enote{font-size:11.8px; color:#7c3aed; font-style:italic; margin-top:6px}
   @media print{
     nav.tabs{display:none}
     section.tabpane{display:block !important; page-break-before:always}
@@ -131,14 +147,14 @@
 <header class="masthead">
   <div class="wrap">
     <div class="kicker">AI Transformation Blueprint · Prepared as a strategy &amp; build portfolio artifact</div>
-    <h1 class="title serif">Compounding the next ₹10,000 crore with AI:<br>a prioritised, governed blueprint for <span class="co">DS Group</span></h1>
-    <p class="subtitle">Thirty scored AI &amp; automation use cases across eight functions, an interactive prioritisation model, eight investment-grade business cases (three backed by working prototypes I have already built), a 0–6–12-month roadmap, and a governance framework. Every external fact is tagged <span class="tag ver">VERIFIED</span> with a source; every internal number is tagged <span class="tag est">ESTIMATE</span> with its basis — nothing about DS Group is invented.</p>
+    <h1 class="title serif">Compounding the next ₹10,000 crore with AI:<br>a prioritised, governed blueprint for <span class="co">The company</span></h1>
+    <p class="subtitle">Thirty scored AI &amp; automation use cases across eight functions, an interactive prioritisation model, eight investment-grade business cases (three backed by working prototypes I have already built), a 0–6–12-month roadmap, and a governance framework. Every external fact is tagged <span class="tag ver">VERIFIED</span> with a source; every internal number is tagged <span class="tag est">ESTIMATE</span> with its basis; every prototype claim is tagged <span class="tag built">PROTOTYPED</span> and cross-checked against the build specs — nothing about the company is invented.</p>
     <div class="mast-meta">
       <span>Prepared by RAJ · Chief AI Strategist lens</span>
       <span>Dated 12 July 2026</span>
       <span>30 use cases · 8 functions</span>
       <span>3 working prototypes mapped</span>
-      <span>Independent analysis — not affiliated with DS Group</span>
+      <span>Independent analysis — not affiliated with the company</span>
     </div>
   </div>
 </header>
@@ -158,27 +174,27 @@
 <!-- ============ TAB 1: EXECUTIVE SUMMARY ============ -->
 <section class="tabpane on" id="tab-exec">
   <h2 class="sec serif">Executive summary</h2>
-  <p class="lede">DS Group has publicly stated its intent to double from ₹10,000+ crore to ₹20,000 crore by 2029 <span class="tag ver">VERIFIED</span>. Doubling in four years at FMCG margins cannot come from distribution muscle alone — it requires compounding decision quality: forecasting what 3.5 million outlets will pull, spending trade and media where incrementality is proven, and removing manual document work from the order-to-cash and procure-to-pay spine. This blueprint proposes where AI earns its keep first, what it costs, and how to govern it.</p>
+  <p class="lede">The company has publicly stated its intent to double from ₹10,000+ crore to ₹20,000 crore by 2029 <span class="tag ver">VERIFIED</span>. Doubling in four years at FMCG margins cannot come from distribution muscle alone — it requires compounding decision quality: forecasting what 3.5 million outlets will pull, spending trade and media where incrementality is proven, and removing manual document work from the order-to-cash and procure-to-pay spine. This blueprint proposes where AI earns its keep first, what it costs, and how to govern it.</p>
 
-  <h3 class="sub">DS Group at a glance (public record)</h3>
+  <h3 class="sub">The company at a glance (public record)</h3>
   <div class="grid g4">
     <div class="kpi"><b>₹10,000+ cr</b><span>FY25 revenue <span class="tag ver">VERIFIED</span> — crossed the ₹10,000 cr mark in FY 2024-25</span></div>
-    <div class="kpi"><b>₹20,000 cr</b><span>2029 turnover target, backed by a stated ₹3,000 cr investment push <span class="tag ver">VERIFIED</span></span></div>
-    <div class="kpi"><b>35 lakh</b><span>retail outlets reached by its distribution network <span class="tag ver">VERIFIED</span></span></div>
-    <div class="kpi"><b>21 + 12 + 24</b><span>manufacturing units + agri sites + depots (Delhi, Noida, HP, Assam, Tripura) <span class="tag ver">VERIFIED</span></span></div>
+    <div class="kpi"><b>₹20,000 cr</b><span>turnover target by centenary year 2029; top-10 FMCG ambition <span class="tag ver">VERIFIED</span></span></div>
+    <div class="kpi"><b>35 lakh</b><span>outlets in total reach (~15 lakh served directly) via 5,000+ distributors &amp; 100–150+ super stockists <span class="tag ver">VERIFIED</span></span></div>
+    <div class="kpi"><b>15 sites · 5 states</b><span>manufacturing sites listed on the company page (UP, Haryana, Assam, Rajasthan, Tripura); wider "21-unit" claims are third-party <span class="tag ver">VERIFIED</span></span></div>
     <div class="kpi"><b>42% / 38%</b><span>FY25 revenue mix: F&amp;B 42%, mouth fresheners 38%; hospitality 3%; tobacco &lt;10% <span class="tag ver">VERIFIED</span></span></div>
     <div class="kpi"><b>16% CAGR</b><span>organic growth over the last 3 years <span class="tag ver">VERIFIED</span></span></div>
     <div class="kpi"><b>₹750 cr</b><span>Pulse candy FY25 consumer sales; 19% hard-boiled-candy share <span class="tag ver">VERIFIED</span></span></div>
-    <div class="kpi"><b>o9 Solutions</b><span>announced partner for AI-powered demand &amp; distribution planning <span class="tag ver">VERIFIED</span></span></div>
+    <div class="kpi"><b>o9 + PwC</b><span>AI planning platform partnership (Apr 2025): demand, supply &amp; S&amp;OP dashboards <span class="tag ver">VERIFIED</span></span></div>
   </div>
   <p style="font-size:12.5px; color:var(--mut); margin-top:10px">Headcount is <em>not</em> reliably public — third-party directories range from ~3,400 to “1,000–5,000+” — so every people-based model here uses a stated assumption (≈6,000 total, ≈3,000 knowledge/desk workers) tagged <span class="tag est">ESTIMATE</span> with sensitivity ranges. Full source list in Tab 7.</p>
 
   <h3 class="sub">The thesis in four sentences</h3>
   <div class="card">
     <p style="font-size:15px; color:var(--ink2)">
-      <b>1.</b> DS Group's advantage is physical reach (35 lakh outlets, 21 plants) — AI's job is to make every node of that reach decide better and cost less to serve.
-      <b>2.</b> The fastest compounding comes from three “decision spines”: <em>demand → supply</em> (forecast-led S&amp;OP), <em>knowledge → action</em> (a governed enterprise copilot), and <em>document → decision</em> (straight-through processing of invoices, claims and contracts) — I have working prototypes of all three, built on a synthetic DS-themed data spine (151 SKUs, 60 distributors, 297,610 sales rows).
-      <b>3.</b> Because DS Group has already committed to o9 for planning <span class="tag ver">VERIFIED</span>, the demand work is deliberately positioned as the <em>causal-promo and what-if layer</em> that complements a planning platform rather than competing with it.
+      <b>1.</b> The company's advantage is physical reach (35 lakh outlets' reach, 15 listed manufacturing sites, 5,000+ distributors) — AI's job is to make every node of that reach decide better and cost less to serve; management itself names AI and automation as a growth enabler <span class="tag ver">V16</span>.
+      <b>2.</b> The fastest compounding comes from three “decision spines”: <em>demand → supply</em> (forecast-led S&amp;OP), <em>knowledge → action</em> (a governed enterprise copilot), and <em>document → decision</em> (straight-through processing of invoices, claims and contracts) — I have working prototypes of all three, built on a synthetic FMCG-themed data spine (151 SKUs, 60 distributors, 297,610 sales rows).
+      <b>3.</b> Because the company has already committed to o9 for planning <span class="tag ver">VERIFIED</span>, the demand work is deliberately positioned as the <em>causal-promo and what-if layer</em> that complements a planning platform rather than competing with it.
       <b>4.</b> Governance is not an afterthought: a DPDP-aligned, human-in-the-loop operating model is specified before scale, because trust — with trade partners, employees and regulators — is the licence to automate.
     </p>
   </div>
@@ -197,11 +213,11 @@
       <tr><td><b>1</b></td><td>Demand Forecasting + S&amp;OP What-If Cockpit <span class="tag built">PROTOTYPE BUILT</span></td><td>Supply Chain</td><td style="color:var(--qw); font-weight:700">Quick Win</td><td>Largest ₹ lever; complements the announced o9 rollout with causal promo ROI and what-if simulation.</td></tr>
       <tr><td><b>2</b></td><td>Enterprise Knowledge Copilot (role-scoped RAG + governed SQL) <span class="tag built">PROTOTYPE BUILT</span></td><td>Legal / IT</td><td style="color:var(--qw); font-weight:700">Quick Win</td><td>One platform that also absorbs the HR-assistant and IT-helpdesk use cases; access control designed-in.</td></tr>
       <tr><td><b>3</b></td><td>Document-to-Decision Automation (invoices → claims → contracts) <span class="tag built">PROTOTYPE BUILT</span></td><td>Finance</td><td style="color:var(--qw); font-weight:700">Quick Win</td><td>Calibrated straight-through processing with a learning loop; extends to trade-scheme claims and contract review.</td></tr>
-      <tr><td><b>4</b></td><td>Multi-Echelon Inventory Optimisation</td><td>Supply Chain</td><td style="color:var(--qw); font-weight:700">Quick Win</td><td>Natural successor to the cockpit: converts better forecasts into working-capital release across 24 depots.</td></tr>
+      <tr><td><b>4</b></td><td>Multi-Echelon Inventory Optimisation</td><td>Supply Chain</td><td style="color:var(--qw); font-weight:700">Quick Win</td><td>Natural successor to the cockpit: converts better forecasts into working-capital release across the depot &amp; distributor network.</td></tr>
       <tr><td><b>5</b></td><td>GenAI Content Studio with Brand Guardrails</td><td>Marketing</td><td style="color:var(--qw); font-weight:700">Quick Win</td><td>Multilingual campaign volume for 15+ brands at a fraction of agency turnaround; approval workflow keeps brand safety.</td></tr>
       <tr><td><b>6</b></td><td>WhatsApp Distributor Ordering &amp; Status Bot</td><td>Customer Service</td><td style="color:var(--qw); font-weight:700">Quick Win</td><td>Meets the trade where it already is; deflects order-status calls and captures cleaner order data.</td></tr>
       <tr><td><b>7</b></td><td>Retail-Execution Vision (shelf-share photo audits)</td><td>Sales</td><td style="color:var(--sb); font-weight:700">Strategic Bet</td><td>Turns the 35-lakh-outlet reach into measured execution; data readiness must be built, hence a bet worth staging.</td></tr>
-      <tr><td><b>8</b></td><td>Vision QC on Packing Lines</td><td>Manufacturing</td><td style="color:var(--sb); font-weight:700">Strategic Bet</td><td>Food-safety-grade quality consistency across 21 plants; starts on two lines, scales on evidence.</td></tr>
+      <tr><td><b>8</b></td><td>Vision QC on Packing Lines</td><td>Manufacturing</td><td style="color:var(--sb); font-weight:700">Strategic Bet</td><td>Food-safety-grade quality consistency across own plants; starts on two lines, scales on evidence.</td></tr>
     </tbody>
   </table></div>
   <p style="font-size:12.5px; color:var(--mut); margin-top:8px">Selection rule: highest weighted score, subject to ≥5 functions covered and programme coherence — near-top scorers HR Policy Assistant and IT Service-Desk Automation are absorbed into Case 2 as copilot skins, Secondary-Sales Demand Sensing feeds Case 1, and Trade-Scheme Claims + Contract Intelligence are phases of Case 3. The interactive prioritiser (Tab 3) makes this trade-off inspectable.</p>
@@ -210,8 +226,8 @@
 <!-- ============ TAB 2: USE-CASE PORTFOLIO ============ -->
 <section class="tabpane" id="tab-portfolio">
   <h2 class="sec serif">The 30-use-case portfolio</h2>
-  <p class="lede">Each use case is scored 1–5 on four dimensions — higher is always better. <b>Business Value</b>: size of the ₹/strategic prize. <b>Feasibility</b>: technical + organisational buildability in 12 months. <b>Data Readiness</b>: whether the fuel exists today in usable form. <b>Risk posture</b>: 5 = low residual risk (regulatory, brand, safety) after controls; 1 = severe. Scores are my analyst judgment from public information and FMCG industry norms — DS Group's internal state may differ; the rubric is in Tab 7. Click any row for the four one-line rationales.</p>
-  <div class="controls" id="fnFilters"></div>
+  <p class="lede">Each use case is scored 1–5 on four dimensions — higher is always better. <b>Business Value</b>: size of the ₹/strategic prize. <b>Feasibility</b>: technical + organisational buildability in 12 months. <b>Data Readiness</b>: whether the fuel exists today in usable form. <b>Risk posture</b>: 5 = low residual risk (regulatory, brand, safety) after controls; 1 = severe. Scores are my analyst judgment from public information and FMCG industry norms — the company's internal state may differ; the rubric is in Tab 7. Click any row for the four one-line rationales.</p>
+  <div class="controls" id="fnFilters"><input id="ucSearch" type="search" placeholder="Search use cases…" style="border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:12.5px;font-family:inherit;min-width:190px"></div>
   <div class="card" style="padding:0; overflow-x:auto">
     <table id="ucTable">
       <thead><tr>
@@ -225,13 +241,13 @@
       <tbody id="ucBody"></tbody>
     </table>
   </div>
-  <p style="font-size:12.5px; color:var(--mut); margin-top:8px">“Weighted” uses the live weights from Tab 3 (default: Value 35 · Feasibility 25 · Data 25 · Risk 15). <span class="tag built">PROTOTYPE BUILT</span> marks the three systems I have already built end-to-end on a synthetic DS-themed data spine.</p>
+  <p style="font-size:12.5px; color:var(--mut); margin-top:8px">“Weighted” uses the live weights from Tab 3 (default: Value 35 · Feasibility 25 · Data 25 · Risk 15). <span class="tag built">PROTOTYPE BUILT</span> marks the three systems I have already built end-to-end on a synthetic FMCG-themed data spine.</p>
 </section>
 
 <!-- ============ TAB 3: INTERACTIVE PRIORITISER ============ -->
 <section class="tabpane" id="tab-matrix">
   <h2 class="sec serif">Interactive prioritisation matrix</h2>
-  <p class="lede">Drag the weights to match your investment philosophy and watch the portfolio re-sort itself. <b>Y-axis = Business Value</b> (the prize). <b>X-axis = Delivery Ease</b> — the weighted blend of Feasibility, Data Readiness and Risk posture. Bubble size = overall weighted priority. Quadrant boundaries sit at the scale midpoint (3.0). Click any bubble for its scorecard.</p>
+  <p class="lede">Drag the weights to match your investment philosophy and watch the portfolio re-sort itself. <b>Y-axis = Business Value</b> (the prize). <b>X-axis = Delivery Ease</b> — the weighted blend of Feasibility, Data Readiness and Risk posture. Bubble size = overall weighted priority. Quadrant boundaries sit at the scale midpoint (3.0). Click any bubble for its scorecard — and if you disagree with a score, adjust it right there (▲/▼): the whole portfolio re-ranks around <em>your</em> judgment, session-only, with analyst scores one reset away. Tab, weights and edits persist in the URL hash for shareable deep links (weights only).</p>
   <div class="matrix-layout">
     <div class="card">
       <h3 class="sub" style="margin-top:0">Dimension weights</h3>
@@ -258,7 +274,26 @@
 <!-- ============ TAB 4: TOP-8 BUSINESS CASES ============ -->
 <section class="tabpane" id="tab-cases">
   <h2 class="sec serif">One-page business cases — the top 8</h2>
-  <p class="lede">Each case states the problem, the data it needs, the approach, KPIs, an honest ₹-and-hours ROI model with every assumption labelled <span class="tag est">ESTIMATE</span> and its basis stated, a build-vs-buy call, and the risks. Cases 1–3 map to working prototypes I have already built end-to-end on a synthetic, DS-themed data spine (151 SKUs · 60 distributors · 297,610 secondary-sales rows · 2024–25 weekly), so the approach sections describe demonstrated capability, not aspiration. Cost anchor used throughout: blended internal build cost ₹8–10L per FTE-month including engineering, data and PM <sup class="e">E2</sup>.</p>
+  <p class="lede">Each case states the problem, the data it needs, the approach, KPIs, an honest ₹-and-hours ROI model with every assumption labelled <span class="tag est">ESTIMATE</span> and its basis stated, a build-vs-buy call, and the risks. Cases 1–3 map to working prototypes I have already built end-to-end on a synthetic, FMCG-themed data spine (151 SKUs · 60 distributors · 297,610 secondary-sales rows · 2024–25 weekly), so the approach sections describe demonstrated capability, not aspiration. Cost anchor used throughout: blended internal build cost ₹8–10L per FTE-month including engineering, data and PM <sup class="e">E2</sup>.</p>
+
+  <div class="card" style="margin-bottom:26px; border-left:4px solid var(--acc)">
+    <h3 class="sub" style="margin-top:0">Portfolio ROI aggregator — one number, honestly assembled</h3>
+    <p style="font-size:13px; color:var(--ink2)">Sums the eight case models below from a single data object (no hardcoded totals — the same ranges you can audit in each table). <b>Conservative</b> = low end of every benefit and high end of every cost; <b>Base</b> = midpoints; <b>Aggressive</b> = high benefits, low costs. Untick cases to see the portfolio without them. All figures <span class="tag est">ESTIMATE</span> by construction.</p>
+    <div class="agg-scen" id="aggScen">
+      <button data-s="cons" class="on">Conservative</button><button data-s="base">Base</button><button data-s="aggr">Aggressive</button>
+      <span style="margin-left:14px;font-size:12px;color:var(--ink2);display:inline-flex;align-items:center;gap:8px">CFO stress-test — haircut all benefits by <output id="hcO" style="font-weight:800;color:var(--acc2)">0%</output><input type="range" id="hc" min="0" max="50" value="0" step="5" style="width:130px;accent-color:var(--acc)"></span>
+    </div>
+    <div class="agg-cases" id="aggCases"></div>
+    <div class="agg-out">
+      <div class="kpi"><b id="aggNet">—</b><span>Net recurring benefit / yr (gross benefit − run cost)</span></div>
+      <div class="kpi"><b id="aggBuild">—</b><span>One-time build cost (payback <span id="aggPay">—</span>)</span></div>
+      <div class="kpi"><b id="aggCash">—</b><span>One-time working-capital release (Cases 1 + 4)</span></div>
+    </div>
+    <p style="font-size:12.3px; color:var(--mut); margin-top:8px" id="aggDetail"></p>
+    <h3 class="sub" style="font-size:14px">Top assumptions that move this number most (collapse them via the week-1 data audit)</h3>
+    <ol id="aggSens" style="padding-left:20px"></ol>
+    <p style="font-size:12px; color:var(--mut); margin-top:6px">Cross-cutting: E1/E2 loaded-cost and headcount assumptions carry ±50% sensitivity and scale every hours-based line (Cases 1, 2, 3, 6) proportionally; they shift the total by roughly ₹0.5–1.5 cr/yr between their extremes.</p>
+  </div>
 
   <!-- BC1 -->
   <div class="bc">
@@ -266,7 +301,7 @@
     <div class="bc-body"><div class="bc-grid">
       <div>
         <h5>Problem</h5>
-        <p>A ₹10,000-cr portfolio <span class="tag ver">V1</span> selling through 35 lakh outlets <span class="tag ver">V9</span> lives or dies on weekly SKU × geography forecasts. Promo-heavy categories (Pulse alone is ₹750 cr <span class="tag ver">V10</span>) make naive statistical forecasts systematically wrong around schemes and festivals; the cost shows up as stockouts on winners, write-offs on shelf-life stock, and trade spend whose true incrementality nobody can prove. DS Group has already partnered with o9 for demand &amp; distribution planning <span class="tag ver">V13</span> — so the opportunity is the <em>decision layer</em>: causal promo ROI, constrained what-if simulation, and forecast-value-add (FVA) discipline that a platform rollout does not deliver by itself.</p>
+        <p>A ₹10,000-cr portfolio <span class="tag ver">V1</span> selling through a 35-lakh-outlet reach (15 lakh direct) <span class="tag ver">V9</span> lives or dies on weekly SKU × geography forecasts. Promo-heavy categories (Pulse alone is ₹750 cr <span class="tag ver">V10</span>) make naive statistical forecasts systematically wrong around schemes and festivals; the cost shows up as stockouts on winners, write-offs on shelf-life stock, and trade spend whose true incrementality nobody can prove. The company has already partnered with o9 for demand &amp; distribution planning <span class="tag ver">V13</span> — so the opportunity is the <em>decision layer</em>: causal promo ROI, constrained what-if simulation, and forecast-value-add (FVA) discipline that a platform rollout does not deliver by itself.</p>
         <h5>Data needed</h5>
         <ul>
           <li>24 months secondary sales by SKU × distributor × week (DMS)</li>
@@ -275,6 +310,15 @@
         </ul>
         <h5>Approach (demonstrated in prototype)</h5>
         <p>Hierarchical engine: AutoETS baseline + LightGBM challenger with price/promo/festival features, Croston/TSB for intermittent SKUs; rolling-origin backtests (WMAPE, bias) gated to beat naive seasonal at SKU <em>and</em> category level. MinT reconciliation so SKU→brand→category→zone totals tie exactly. Causal promo uplift from matched non-promo controls — incrementality, not correlation — priced into ₹ ROI per promo. A constrained optimizer trades service level vs working capital vs trade spend and names the binding constraint. Planners use a what-if cockpit (promo depth/dates, price, launch timing); every scenario is validated by the deterministic reconcile-and-optimize step before it can apply. Messy-data resilience layer: warn + fallback + completeness badge, never a silent failure.</p>
+        <div class="evidence"><b class="ehead">Evidence — PROTOTYPED · internal synthetic data (ds-demand-cockpit)</b>
+          <ul>
+            <li><b>297,610-row</b> secondary-sales spine: 151 SKUs × 60 distributors, weekly 2024→2025, deterministic seed 42 — plus deliberately corrupted <i>*_messy</i> variants with every planted defect enumerated in a manifest.</li>
+            <li><b>Hand-verified golden thread:</b> canonical trace test asserts factored price×qty ties exactly to stored line values; golden inventory walk asserts closing = opening + in − out, never negative, across 377,442 distributor-inventory rows.</li>
+            <li><b>3.13× launch pipeline-fill</b> reproduced on the new-launch analog SKU (DS-CONFPULSE-149) — order-up-to logic with case multiples, exactly the pattern a Pulse-style launch creates.</li>
+            <li><b>Gated milestones:</b> forecasts must beat naive seasonal WMAPE at SKU <i>and</i> category level; causal promo module must recover the generative elasticities within tolerance before ROI is displayed.</li>
+          </ul>
+          <div class="enote">Demonstrates architecture, tests and method on synthetic data — these are not the company results.</div>
+        </div>
       </div>
       <div>
         <h5>KPIs</h5>
@@ -287,13 +331,13 @@
         <h5>ROI model — pilot scope: 2 categories ≈ ₹800 cr revenue slice <sup class="e">E11</sup></h5>
         <table class="roi-table"><thead><tr><th>Line</th><th>₹ / hours</th><th>Basis (all ESTIMATE)</th></tr></thead><tbody>
           <tr><td>Lost-sales recovery</td><td><b>₹1.6–4.0 cr/yr</b></td><td>0.2–0.5% of slice; conservative end of FMCG forecasting-program benchmarks <sup class="e">E3</sup></td></tr>
-          <tr><td>Carrying-cost saving</td><td><b>₹0.7–1.2 cr/yr</b></td><td>8–12% FG-inventory cut on 30–45 days cover (₹66–99 cr) × 10–12% carrying cost <sup class="e">E4</sup></td></tr>
+          <tr><td>Carrying-cost saving</td><td><b>₹0.5–1.4 cr/yr</b></td><td>8–12% cut on FG cover of ₹66–99 cr (30–45 days of the ₹800 cr slice) releases ₹5.3–11.8 cr × 10–12% carrying cost <sup class="e">E4</sup></td></tr>
           <tr><td>Planner time released</td><td><b>≈4,600 hr ≈ ₹0.28 cr/yr</b></td><td>20 planners <sup class="e">E1</sup> × 5 hr/wk × 46 wk @ ₹600/hr loaded <sup class="e">E2</sup></td></tr>
-          <tr><td>One-time cash release</td><td><b>₹7–10 cr</b></td><td>the inventory reduction itself, one-time working-capital effect <sup class="e">E4</sup></td></tr>
+          <tr><td>One-time cash release</td><td><b>₹5–12 cr</b></td><td>the 8–12% inventory reduction itself (₹5.3–11.8 cr), one-time working-capital effect <sup class="e">E4</sup></td></tr>
           <tr><td>Build cost</td><td><b>₹0.4–0.6 cr one-time</b></td><td>5–7 FTE-months on existing prototype base <sup class="e">E2</sup></td></tr>
           <tr><td>Run cost</td><td><b>₹0.10–0.18 cr/yr</b></td><td>compute + data pipelines; open-source stack, no per-seat licences</td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> ₹2.6–5.5 cr/yr recurring on a ₹0.4–0.6 cr build → <b>payback 2–4 months</b> after go-live; ~10× annual ROI at midpoint. Every number scales roughly linearly with scope widening beyond the 2-category pilot.</div>
+        <div class="verdict"><b>Net:</b> ₹2.3–5.6 cr/yr recurring net of run costs (benefits ₹2.4–5.7 cr − run ₹0.10–0.18 cr) on a ₹0.4–0.6 cr build → <b>payback 2–4 months</b> after go-live; ~8–10× annual ROI at midpoint. Every number scales roughly linearly with scope widening beyond the 2-category pilot.</div>
         <h5>Build vs buy</h5>
         <p><b>Hybrid.</b> Treat o9 as the planning platform of record <span class="tag ver">V13</span>; build the causal-uplift, FVA and what-if layer in-house on open-source (statsforecast, LightGBM) where the IP is DS-specific elasticities. Do not duplicate master-data or supply planning inside a home-grown tool.</p>
         <h5>Risks</h5>
@@ -313,7 +357,7 @@
     <div class="bc-body"><div class="bc-grid">
       <div>
         <h5>Problem</h5>
-        <p>A multi-business group (7 verticals <span class="tag ver">V7</span>, 21 plants + 24 depots <span class="tag ver">V8</span>) accumulates policies, SOPs, circulars and tribal knowledge faster than people can find them. Answers arrive by asking colleagues; data questions queue behind analysts; sensitive figures (margins, pricing) must never leak to the wrong role. Generic chatbots fail exactly here — the hard part is governance, not chat.</p>
+        <p>A multi-business group (8 verticals <span class="tag ver">V7</span>, 15+ manufacturing sites across five states <span class="tag ver">V8</span>) accumulates policies, SOPs, circulars and tribal knowledge faster than people can find them. Answers arrive by asking colleagues; data questions queue behind analysts; sensitive figures (margins, pricing) must never leak to the wrong role. Generic chatbots fail exactly here — the hard part is governance, not chat.</p>
         <h5>Data needed</h5>
         <ul>
           <li>Policy/SOP/circular corpus with owner + effective-date + access tags</li>
@@ -322,6 +366,15 @@
         </ul>
         <h5>Approach (demonstrated in prototype)</h5>
         <p>Grounded-and-cited RAG: every answer carries doc citations; no citation → the copilot says so rather than claiming. Version conflicts resolved by effective date (newer policy wins — demonstrated on a planted 2023-vs-2025 leave-policy pair). Text-to-SQL generates <em>only</em> against a governed semantic layer; every query is validated (read-only, allowed tables/columns, row limits) before execution. Role scoping is enforced twice — at retrieval via access tags and at SQL via column policy — so the same question yields different, correctly-scoped answers for an operations user vs an exec. Guardrails: PII refusal, prompt-injection defence, out-of-scope refusal — all part of a 25-question eval harness that gates every release.</p>
+        <div class="evidence"><b class="ehead">Evidence — PROTOTYPED · internal synthetic data (ds-copilot)</b>
+          <ul>
+            <li><b>24-document governed corpus</b> with front-matter access tags (all | exec_only), including two exec-only files (margin memo, ROI note) that must never reach an operations role.</li>
+            <li><b>25-question eval set</b> with ground truth and expected behaviours: answer, answer-newer-version, multi-doc synthesis, buried-detail recall (21-day expense window; 30-day claim + ±2% tolerance), role-split answers, refusals, and a prompt-injection test (RF-02).</li>
+            <li><b>Planted traps passed by design:</b> a 2023-vs-2025 leave-policy version conflict (newer must win) and a near-duplicate travel-policy/FAQ pair.</li>
+            <li><b>Governed SQL:</b> text-to-SQL only against a YAML semantic layer over the 297,610-row sales table; price/margin/cost columns exec-scoped; every query validated read-only with table/column allow-lists before execution.</li>
+          </ul>
+          <div class="enote">Demonstrates the governance shell — citations, role-scoping, injection defence — on synthetic data; not the company content.</div>
+        </div>
       </div>
       <div>
         <h5>KPIs</h5>
@@ -339,7 +392,7 @@
           <tr><td>Build cost</td><td><b>₹0.3–0.5 cr one-time</b></td><td>4–6 FTE-months on prototype base <sup class="e">E2</sup>; corpus curation is the real work</td></tr>
           <tr><td>Run cost</td><td><b>₹0.2–0.35 cr/yr</b></td><td>LLM API + infra at current market pricing <sup class="e">E10</sup></td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> ₹0.9–1.5 cr/yr against ₹0.2–0.35 cr run → <b>payback 6–12 months at 40% adoption; breakeven at ~15% adoption.</b> Honest caveat: time-saved ROI only materialises if managers redeploy the time — the harder, undeniable benefits are the leak-proof access model and ticket deflection.</div>
+        <div class="verdict"><b>Net:</b> ₹0.9–1.7 cr/yr against ₹0.2–0.35 cr run → <b>payback 6–12 months at 40% adoption; breakeven at ~15% adoption.</b> Honest caveat: time-saved ROI only materialises if managers redeploy the time — the harder, undeniable benefits are the leak-proof access model and ticket deflection.</div>
         <h5>Build vs buy</h5>
         <p><b>Buy the model, build the governance shell.</b> Frontier LLMs via API; M365-Copilot-class tools cover documents but not role-scoped SQL over DMS/ERP marts with a validated semantic layer — that shell is the durable, DS-specific IP and the prototype already implements it.</p>
         <h5>Risks</h5>
@@ -359,7 +412,7 @@
     <div class="bc-body"><div class="bc-grid">
       <div>
         <h5>Problem</h5>
-        <p>Every distributor and vendor interaction generates documents — POs, GRNs, invoices, COAs, trade-scheme claims — that people read, match and re-key. Manual 3-way matching is slow and leaky: duplicate invoice numbers, arithmetic errors, expired COAs and out-of-tolerance quantities slip through precisely because volume is high and each document looks routine. At ₹10,000-cr scale <span class="tag ver">V1</span> with 21 plants and 24 depots <span class="tag ver">V8</span>, single-digit-basis-point leakage is crores.</p>
+        <p>Every distributor and vendor interaction generates documents — POs, GRNs, invoices, COAs, trade-scheme claims — that people read, match and re-key. Manual 3-way matching is slow and leaky: duplicate invoice numbers, arithmetic errors, expired COAs and out-of-tolerance quantities slip through precisely because volume is high and each document looks routine. At ₹10,000-cr scale <span class="tag ver">V1</span> with a multi-site, multi-entity footprint <span class="tag ver">V8</span>, single-digit-basis-point leakage is crores.</p>
         <h5>Data needed</h5>
         <ul>
           <li>PO / GRN / invoice sets from ERP + scanned/PDF variants; vendor &amp; SKU masters</li>
@@ -368,6 +421,15 @@
         </ul>
         <h5>Approach (demonstrated in prototype)</h5>
         <p>Extraction (pdfplumber-first, LLM/vision fallback) with field-level confidence — but <b>rules are truth</b>: a deterministic match engine implementing the written tolerances decides approve / route / reject, with a human-readable reason naming the exact failing check. A calibrated confidence gate sends only high-confidence documents straight through; everything else lands in a human queue. Every override is logged and re-tunes thresholds — the prototype demonstrates straight-through rate climbing across simulated override rounds. Never a silent post: unreadable documents are flagged and routed, never dropped. Validated on 40 document sets with 13 planted discrepancies (qty breaches, price mismatches, missing GRN, expired COA, duplicate invoice, arithmetic error) — all caught.</p>
+        <div class="evidence"><b class="ehead">Evidence — PROTOTYPED · internal synthetic data (ds-doc-to-decision)</b>
+          <ul>
+            <li><b>40 PO/GRN/invoice document sets</b> (SET-0001…0040) spine-consistent with the same SKU/distributor masters — including OCR-ready PDF renders with GST math, amount-in-words and COA lines, and two sets with deliberately missing GRNs.</li>
+            <li><b>13 planted discrepancies</b>: qty breaches inside and outside the ±2% tolerance, price mismatch, missing GRN, expired COA, duplicate invoice number (SET-0001↔SET-0009), arithmetic error — every one logged in a manifest.</li>
+            <li><b>40/40 ground-truth labels</b> (27 auto-approve / 8 route-to-human / 5 reject) independently re-derived from the written matching rules with <b>zero mismatches</b> — the rules file, not the model, is the decision truth.</li>
+            <li><b>Cross-system consistency:</b> tolerances mirror the copilot corpus policies (±2% qty, 12-month COA validity) — one policy spine across prototypes.</li>
+          </ul>
+          <div class="enote">Demonstrates extraction→match→decide with calibrated gating on synthetic documents — not the company transactions.</div>
+        </div>
       </div>
       <div>
         <h5>KPIs</h5>
@@ -385,7 +447,7 @@
           <tr><td>Build cost</td><td><b>₹0.25–0.4 cr one-time</b></td><td>3–5 FTE-months on prototype base <sup class="e">E2</sup></td></tr>
           <tr><td>Run cost</td><td><b>₹0.08–0.15 cr/yr</b></td><td>OCR/LLM API + infra <sup class="e">E10</sup></td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> ₹1.3–3.6 cr/yr against ₹0.25–0.4 cr build → <b>payback 3–8 months.</b> The hours line alone nearly carries the run cost; leakage capture is the upside case and is stated as a range because it depends on today's (unknown) control quality.</div>
+        <div class="verdict"><b>Net:</b> ₹1.1–3.6 cr/yr net of run costs (benefits ₹1.26–3.65 cr − run ₹0.08–0.15 cr) against a ₹0.25–0.4 cr build → <b>payback 3–8 months.</b> The hours line alone nearly carries the run cost; leakage capture is the upside case and is stated as a range because it depends on today's (unknown) control quality.</div>
         <h5>Build vs buy</h5>
         <p><b>Hybrid.</b> Mature IDP vendors can supply extraction; the decision layer — DS-specific rules, tolerances, confidence calibration, ERP posting and the learning loop — should be owned. If procurement prefers speed, buy extraction as an API and keep the rules engine in-house (that is exactly how the prototype is factored).</p>
         <h5>Risks</h5>
@@ -404,7 +466,7 @@
     <div class="bc-body"><div class="bc-grid">
       <div>
         <h5>Problem</h5>
-        <p>Safety stocks across 21 plants → 24 depots → distributors <span class="tag ver">V8</span> are typically set by rules of thumb, so the network carries too much of the wrong stock and too little of the right stock — expensive in a portfolio that includes shelf-life-sensitive dairy (Ksheer) and heat-sensitive confectionery <span class="tag ver">V6</span>.</p>
+        <p>Safety stocks across plants → depots → 5,000+ distributors <span class="tag ver">V8, V9</span> are typically set by rules of thumb, so the network carries too much of the wrong stock and too little of the right stock — expensive in a portfolio that includes shelf-life-sensitive dairy (Ksheer) and heat-sensitive confectionery <span class="tag ver">V6</span>.</p>
         <h5>Data needed</h5><ul><li>Forecast distributions (not just point forecasts) from Case 1</li><li>Depot/distributor stock &amp; in-transit, lead times, MOQs/case multiples, shelf-life by SKU</li><li>Service-level policy by channel; cost of capital</li></ul>
         <h5>Approach</h5>
         <p>Probabilistic safety-stock optimisation per SKU × node fed by cockpit forecast quantiles; service-level tiers by SKU class; redeployment recommendations for slow stock before expiry; weekly plan published through the same what-if cockpit so planners see cash vs service trade-offs explicitly.</p>
@@ -413,12 +475,12 @@
         <h5>KPIs</h5><ul><li>Days of cover by node vs target; fill rate / case-fill</li><li>Write-offs &amp; near-expiry redeployments; working capital released</li></ul>
         <h5>ROI model — scoped to ~₹3,000 cr F&amp;B + confectionery revenue <sup class="e">E11</sup></h5>
         <table class="roi-table"><tbody>
-          <tr><td>One-time cash release</td><td><b>₹25–60 cr</b></td><td>10–15% cut on FG+depot inventory of ₹250–400 cr (30–45 days cover) <sup class="e">E4</sup></td></tr>
-          <tr><td>Carrying-cost saving</td><td><b>₹2.5–7 cr/yr</b></td><td>10–12% carrying cost on released capital <sup class="e">E4</sup></td></tr>
+          <tr><td>One-time cash release</td><td><b>₹25–55 cr</b></td><td>10–15% cut on FG+depot inventory of ₹247–370 cr (30–45 days of ₹3,000 cr scoped revenue) <sup class="e">E4</sup></td></tr>
+          <tr><td>Carrying-cost saving</td><td><b>₹2.5–6.6 cr/yr</b></td><td>10–12% carrying cost on the ₹25–55 cr released capital <sup class="e">E4</sup></td></tr>
           <tr><td>Write-off reduction</td><td><b>₹0.5–1.5 cr/yr</b></td><td>20–30% cut on shelf-life write-offs assumed at 0.1–0.2% of scoped revenue <sup class="e">E11</sup></td></tr>
           <tr><td>Build + run</td><td><b>₹0.3–0.5 cr + ₹0.1 cr/yr</b></td><td>4–5 FTE-months <sup class="e">E2</sup>; shares Case-1 pipelines</td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> ₹3–8.5 cr/yr recurring + a one-time cash release an order of magnitude above cost. <b>Sequenced after Case 1</b> because quantile forecasts are its fuel.</div>
+        <div class="verdict"><b>Net:</b> ₹2.9–8.0 cr/yr recurring net of run (benefits ₹3.0–8.1 cr − run ₹0.08–0.12 cr) + a one-time cash release an order of magnitude above cost. <b>Sequenced after Case 1</b> because quantile forecasts are its fuel.</div>
         <h5>Build vs buy</h5><p><b>Build</b> on the Case-1 stack; evaluate the o9 module <span class="tag ver">V13</span> for network-level supply planning and keep SKU×node safety-stock science in-house.</p>
         <h5>Risks</h5><ul><li>Garbage-in from distributor stock data → completeness badges gate recommendations</li><li>Service-level dips during transition → phase by category, shadow first</li></ul>
         <p class="falsify">Falsifier: pilot category fails to hold fill rate while cutting ≥8% inventory in 12 weeks → recalibrate before widening.</p>
@@ -445,7 +507,7 @@
           <tr><td>Speed value</td><td><b>qualitative</b></td><td>more festival windows hit per year; deliberately not monetised</td></tr>
           <tr><td>Build + run</td><td><b>₹0.15–0.25 cr + ₹0.1–0.2 cr/yr</b></td><td>2–3 FTE-months for guardrail framework <sup class="e">E2</sup>; API costs <sup class="e">E10</sup></td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> pays back in &lt;6 months at the low end of the range; the strategic value is campaign velocity across 15+ brands.</div>
+        <div class="verdict"><b>Net:</b> ₹0.8–2.8 cr/yr net of run (benefit ₹1–3 cr − run ₹0.1–0.2 cr) on a ₹0.15–0.25 cr build → payback &lt;4 months even at the low end; the strategic value is campaign velocity across 15+ brands.</div>
         <h5>Build vs buy</h5><p><b>Buy generation, build guardrails.</b> Foundation models + off-the-shelf creative tools; the brand-safety compilation layer and approval workflow are the in-house asset.</p>
         <h5>Risks</h5><ul><li>Brand safety / ASCI &amp; category advertising rules → mandatory human approval, audit trail of every shipped asset</li><li>IP &amp; likeness issues → licensed-asset-only generation policy</li><li>Homogenised creative → studio handles adaptation volume; agencies keep big ideas</li></ul>
         <p class="falsify">Falsifier: first-pass brand approval &lt;70% after 6 weeks of tuning → the guardrail spec, not the model, is wrong; fix before scaling seats.</p>
@@ -459,7 +521,7 @@
     <div class="bc-body"><div class="bc-grid">
       <div>
         <h5>Problem</h5>
-        <p>Distributors and stockists servicing 35 lakh outlets <span class="tag ver">V9</span> chase order status, scheme balances, invoice copies and credit notes by phoning sales officers and telecallers — high-frequency, low-complexity contacts that interrupt selling time and arrive in exactly the channel India's trade already lives in: WhatsApp.</p>
+        <p>A verified trade network of 5,000+ distributors and 100–150+ super stockists <span class="tag ver">V9</span> chases order status, scheme balances, invoice copies and credit notes by phoning sales officers and telecallers — high-frequency, low-complexity contacts that interrupt selling time and arrive in exactly the channel India's trade already lives in: WhatsApp.</p>
         <h5>Data needed</h5><ul><li>Distributor master + mobile registry; order/dispatch/invoice status APIs from ERP/DMS</li><li>Scheme terms &amp; balances; FAQ corpus; escalation routing rules</li></ul>
         <h5>Approach</h5>
         <p>WhatsApp Business API bot, LLM-powered but transaction-grounded: intents for order placement (validated against SKU/case rules), status, scheme balance, document copies; anything ambiguous or commercial (pricing disputes, returns) hands off to a human with full context. Hindi + English first, then regional languages. Every conversation logged; order capture feeds cleaner demand signal to Case 1.</p>
@@ -468,11 +530,11 @@
         <h5>KPIs</h5><ul><li>Containment (bot-resolved) rate; order-entry error rate; CSAT of trade partners</li><li>Telecaller/sales-officer hours released; order digitisation %</li></ul>
         <h5>ROI model</h5>
         <table class="roi-table"><tbody>
-          <tr><td>Call handling deflected</td><td><b>≈27,000 hr ≈ ₹1.1 cr/yr</b></td><td>3,000 trade partners <sup class="e">E8</sup> × 3 contacts/wk × 6 min × 50% containment @ ₹400/hr <sup class="e">E2</sup></td></tr>
+          <tr><td>Call handling deflected</td><td><b>≈34,500 hr ≈ ₹1.38 cr/yr</b></td><td>5,000+ distributors <span class="tag ver">V9</span> × 3 contacts/wk × 6 min × 46 wk × 50% containment @ ₹400/hr (frequency &amp; containment remain estimates <sup class="e">E8,E2</sup>)</td></tr>
           <tr><td>Order-error reduction</td><td><b>₹0.3–0.8 cr/yr</b></td><td>fewer wrong-SKU/qty shipments; 0.1–0.3% of bot-captured order value <sup class="e">E8</sup></td></tr>
           <tr><td>Build + run</td><td><b>₹0.2–0.35 cr + ₹0.1–0.15 cr/yr</b></td><td>3–4 FTE-months <sup class="e">E2</sup>; WhatsApp API conversation fees <sup class="e">E10</sup></td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> ₹1.4–1.9 cr/yr against ₹0.2–0.35 cr build → <b>payback ~3–6 months</b>, plus a structurally cleaner order signal for forecasting.</div>
+        <div class="verdict"><b>Net:</b> ₹1.5–2.1 cr/yr net of run (benefits ₹1.68–2.18 cr − run ₹0.10–0.15 cr) against a ₹0.2–0.35 cr build → <b>payback ~1–3 months</b>, plus a structurally cleaner order signal for forecasting.</div>
         <h5>Build vs buy</h5><p><b>Buy the channel (BSP platform), build the brains</b> — intent design, ERP grounding and guardrails in-house so the bot never invents a price or a scheme.</p>
         <h5>Risks</h5><ul><li>Field-force channel anxiety → bot handles status/admin, officers keep relationships &amp; sell-in</li><li>Wrong answers on money matters → transaction intents are template-grounded, never free-generated</li><li>Adoption → launch with invoice-copy + status (highest-pain, zero-risk intents)</li></ul>
         <p class="falsify">Falsifier: &lt;30% of pilot distributors using it weekly by week 8 → the intent set is wrong; rework before scale.</p>
@@ -486,10 +548,10 @@
     <div class="bc-body"><div class="bc-grid">
       <div>
         <h5>Problem</h5>
-        <p>Reach of 35 lakh outlets <span class="tag ver">V9</span> is only an asset if execution — availability, share of shelf, visibility compliance — is real at the last metre. Today that truth arrives through self-reported checklists and sampled third-party audits: slow, expensive, and easy to game.</p>
+        <p>A reach of 35 lakh outlets — ~15 lakh of them served directly <span class="tag ver">V9</span> — is only an asset if execution (availability, share of shelf, visibility compliance) is real at the last metre; the direct universe is where photo-audit discipline is enforceable. Today that truth arrives through self-reported checklists and sampled third-party audits: slow, expensive, and easy to game.</p>
         <h5>Data needed</h5><ul><li>Geotagged shelf photos from the field app (the discipline to capture them is the real build)</li><li>SKU visual library / planograms; outlet master; visibility-spend contracts</li></ul>
         <h5>Approach</h5>
-        <p>Field officers photograph fixtures during beats; vision models detect SKUs and compute share-of-shelf, out-of-stock and planogram/paid-visibility compliance; scores flow back as next-visit actions and roll up to distributor/zone dashboards. Start in 2 cities × ~25k outlets with a top-SKU subset; expand only when photo-capture compliance holds ≥80%.</p>
+        <p>Field officers photograph fixtures during beats; vision models detect SKUs and compute share-of-shelf, out-of-stock and planogram/paid-visibility compliance; scores flow back as next-visit actions and roll up to distributor/zone dashboards. Start in 2 cities × ~25k outlets with a top-SKU subset; expand only when photo-capture compliance holds ≥80%. Peer-proof that this works at Indian-retail scale: HUL's Envision processes ~2.5 crore shelf images a month for exactly these use cases <span class="tag ver">V19</span>.</p>
       </div>
       <div>
         <h5>KPIs</h5><ul><li>Photo-capture compliance; detection precision/recall vs human audit</li><li>Out-of-stock rate on top SKUs; share-of-shelf trend; paid-visibility compliance %</li></ul>
@@ -500,7 +562,7 @@
           <tr><td>Visibility-spend accountability</td><td><b>qualitative→₹</b></td><td>paid placements verified before release of spend</td></tr>
           <tr><td>Build/subscribe + run</td><td><b>₹0.4–0.7 cr yr-1</b></td><td>retail-vision SaaS per-photo pricing or in-house model + app work <sup class="e">E9,E10</sup></td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> roughly breakeven at pilot scale — <b>the bet is the scaled economics</b> (model cost amortises across outlets while uplift scales with coverage). Stage-gate it; do not skip the pilot.</div>
+        <div class="verdict"><b>Net:</b> −₹0.05 to +₹1.3 cr/yr at pilot scale (benefits ₹0.65–1.7 cr − yr-1 cost ₹0.4–0.7 cr) — roughly breakeven, and <b>the bet is the scaled economics</b> (model cost amortises across outlets while uplift scales with coverage). Stage-gate it; do not skip the pilot.</div>
         <h5>Build vs buy</h5><p><b>Buy first.</b> Indian retail-vision SaaS is mature; switch to in-house only if per-photo economics break at scale. Own the outlet master and the action workflow regardless.</p>
         <h5>Risks</h5><ul><li>Photo discipline collapses → incentive-link capture compliance, keep capture &lt;30 s</li><li>Gaming (staged photos) → geotag + timestamp + randomised re-audit</li><li>Privacy: bystanders in frames → on-device blurring policy (Governance, DPDP)</li></ul>
         <p class="falsify">Falsifier: detection F1 &lt;0.85 vs human audit, or capture compliance &lt;60%, at week 12 → pause; fix incentives/UX, not the model.</p>
@@ -514,10 +576,10 @@
     <div class="bc-body"><div class="bc-grid">
       <div>
         <h5>Problem</h5>
-        <p>Across 21 plants <span class="tag ver">V8</span> making food and mouth-freshener products, packaging defects — seal integrity, fill level, misprinted/illegible date codes, label placement — are caught by sampled human inspection. Escapes become consumer complaints and, in the worst case, food-safety incidents; over-rejection becomes waste. Consistency, not headcount, is the gap.</p>
+        <p>Across 15+ own manufacturing sites <span class="tag ver">V8</span> making food and mouth-freshener products, packaging defects — seal integrity, fill level, misprinted/illegible date codes, label placement — are caught by sampled human inspection. Escapes become consumer complaints and, in the worst case, food-safety incidents; over-rejection becomes waste. Consistency, not headcount, is the gap.</p>
         <h5>Data needed</h5><ul><li>Line camera feeds (new hardware on 2 pilot lines); labelled defect image sets built during shadow phase</li><li>Rework/rejection logs, complaint categories tied to packaging</li></ul>
         <h5>Approach</h5>
-        <p>Edge cameras + lightweight vision models per defect class on two pilot lines (one confectionery, one mouth-freshener), run in <b>shadow mode</b> against human QC until precision/recall is proven, then gate to reject-with-human-review, then auto-reject for high-confidence classes only. Defect Pareto feeds maintenance and material-supplier actions.</p>
+        <p>Edge cameras + lightweight vision models per defect class on two pilot lines in <b>own</b> units (one mouth-freshener, one spices/foods line — confectionery manufacturing is largely third-party <span class="tag ver">V18</span>), run in <b>shadow mode</b> against human QC until precision/recall is proven, then gate to reject-with-human-review, then auto-reject for high-confidence classes only. Defect Pareto feeds maintenance and material-supplier actions.</p>
       </div>
       <div>
         <h5>KPIs</h5><ul><li>Defect escape rate (complaints per million units); false-reject rate</li><li>Line waste %; time-to-detect a drifting defect pattern</li></ul>
@@ -528,7 +590,7 @@
           <tr><td>Hardware + build</td><td><b>₹0.35–0.55 cr one-time</b></td><td>cameras/edge ₹15–25L per line + 2–3 FTE-months models <sup class="e">E2,E9</sup></td></tr>
           <tr><td>Run</td><td><b>₹0.05–0.08 cr/yr</b></td><td>maintenance + retraining</td></tr>
         </tbody></table>
-        <div class="verdict"><b>Net:</b> ~12–24 month payback at pilot scale — justified as a bet because the real prize is <b>food-safety-grade consistency</b> and a template that replicates across 21 plants once proven.</div>
+        <div class="verdict"><b>Net:</b> ₹0.32–1.05 cr/yr net of run (benefits ₹0.4–1.1 cr − run ₹0.05–0.08 cr) against ₹0.35–0.55 cr one-time → <b>~4–20 month payback</b> at pilot scale — justified as a bet because the real prize is <b>food-safety-grade consistency</b> and a template that replicates across the own-plant network (and co-packers by contract) once proven.</div>
         <h5>Build vs buy</h5><p><b>Hybrid:</b> industrial vision vendors for camera/optics integration; keep defect models and the shadow-mode evaluation harness in-house so lines aren't locked to one vendor's cloud.</p>
         <h5>Risks</h5><ul><li>False rejects slow lines → shadow mode first, class-by-class gating, line-stop authority stays human</li><li>Lighting/product-variant drift → scheduled retraining, drift monitors</li><li>Union/operator concern → framed and staffed as inspector-assist, not replacement</li></ul>
         <p class="falsify">Falsifier: precision &lt;98% on auto-reject classes in shadow mode by week 10 → stay in assist mode; do not automate rejection.</p>
@@ -578,12 +640,12 @@
       <li><b>Copilot:</b> approval-gated <em>actions</em> (raise ticket, draft claim response) — the assist→act boundary crossed only per the HITL tier policy.</li>
       <li><b>Institutionalise:</b> quarterly model-risk review to the AI Council; portfolio re-scored with live weights (Tab 3 becomes a standing artefact); AI academy wave 2; next-year portfolio refresh from the remaining 22 use cases.</li>
     </ul>
-    <div class="gate"><b>Exit gate (month 12):</b> ≥₹6 cr annualised measured benefit across live systems <sup class="e">E13</sup> · zero Sev-1 AI incidents · 100% of automated decisions carrying audit-grade logs · documented model cards for every production model. Budget: ₹2.0–3.0 cr <sup class="e">E2</sup>.</div>
+    <div class="gate"><b>Exit gate (month 12):</b> ≥₹6 cr annualised measured benefit (gross of run costs) across live systems <sup class="e">E13</sup> · zero Sev-1 AI incidents · 100% of automated decisions carrying audit-grade logs · documented model cards for every production model. Budget: ₹2.0–3.0 cr <sup class="e">E2</sup>.</div>
   </div>
 
   <div class="card" style="margin-top:6px">
     <b>12-month economics, stated honestly:</b>
-    <p style="font-size:13.5px; color:var(--ink2); margin-top:6px">Total spend ₹4.1–6.2 cr <sup class="e">E2</sup> vs measured annualised benefit target ≥₹6 cr by month 12 <sup class="e">E13</sup>, with modelled potential of ₹8–17 cr/yr recurring (sum of Cases 1–6 midpoints) plus ₹32–70 cr one-time working-capital release (Cases 1+4) — <em>modelled, not promised</em>: every constituent assumption is in Tab 7 and should be re-based on the week-1 data audit. Against a stated ₹3,000 cr investment programme <span class="tag ver">V2</span>, this is a &lt;0.2% allocation with compounding returns.</p>
+    <p style="font-size:13.5px; color:var(--ink2); margin-top:6px">Total spend ₹4.1–6.2 cr <sup class="e">E2</sup> vs measured annualised benefit target ≥₹6 cr (gross) by month 12 <sup class="e">E13</sup>, with a modelled net-recurring range of ₹9.7 cr (conservative) / ₹17.9 cr (base) / ₹26.2 cr (aggressive) across all 8 cases plus ₹30–67 cr one-time working-capital release (Cases 1+4) — figures reproduced live in the Portfolio ROI aggregator (Tab 4) — <em>modelled, not promised</em>: every constituent assumption is in Tab 7 and should be re-based on the week-1 data audit. Against the group's stated doubling ambition and publicly announced investment lines (₹1,000 cr in hospitality alone <span class="tag ver">V2</span>), this is a rounding-error allocation with compounding returns.</p>
   </div>
 </section>
 
@@ -665,30 +727,35 @@
 <!-- ============ TAB 7: SOURCES & METHOD ============ -->
 <section class="tabpane" id="tab-sources">
   <h2 class="sec serif">Sources, estimates &amp; method</h2>
-  <p class="lede">Research-analyst discipline: every DS Group fact used anywhere in this blueprint appears below as <span class="tag ver">VERIFIED</span> with its public source (accessed 12 July 2026), and every assumed number appears in the <span class="tag est">ESTIMATE</span> register with its basis. If a number is not in one of these two tables, it should not be trusted — and it should not be in this document.</p>
+  <p class="lede">Research-analyst discipline: every company fact used anywhere in this blueprint appears below as <span class="tag ver">VERIFIED</span> with its public source (accessed 12 July 2026), and every assumed number appears in the <span class="tag est">ESTIMATE</span> register with its basis. If a number is not in one of these two tables, it should not be trusted — and it should not be in this document.</p>
 
-  <h3 class="sub">Verified facts (V1–V14)</h3>
+  <h3 class="sub">Verified facts (V1–V19) — all links re-fetched 12 Jul 2026</h3>
   <div class="card" style="padding:0; overflow-x:auto"><table class="src-table">
     <thead><tr><th>ID</th><th>Fact</th><th>Source</th></tr></thead>
     <tbody>
       <tr><td><b>V1</b></td><td>Revenue crossed ₹10,000 crore in FY 2024-25; among India's top-15 FMCG companies</td><td><a href="https://www.business-standard.com/content/press-releases-ani/ds-group-achieves-landmark-revenue-of-inr-10-000-crore-f-b-the-largest-contributor-125052900795_1.html">Business Standard (ANI PR)</a>, <a href="https://www.storyboard18.com/how-it-works/ds-group-revenue-surpasses-rs10000-crore-in-fy25-63002.htm">Storyboard18</a></td></tr>
-      <tr><td><b>V2</b></td><td>Target ₹20,000 crore turnover by 2029 with a ₹3,000 crore investment push</td><td><a href="https://www.business-standard.com/companies/news/ds-group-hits-10-000-cr-revenue-mark-sets-sights-on-20-000-cr-by-2029-125042300632_1.html">Business Standard</a>, <a href="https://agronfoodprocessing.com/ds-group-targets-rs-20000-cr-turnover-by-2029-with-rs-3000-cr-investment-push/">Agro &amp; Food Processing</a></td></tr>
+      <tr><td><b>V2</b></td><td>Target ₹20,000 crore by centenary year 2029; ambition to enter India's top-10 FMCG; ₹1,000 cr hospitality investment (10–12 hotels in 3–4 yrs) and ₹300 cr FY26 branding spend announced. <em>(A wider "₹3,000 cr investment push" figure appears in secondary coverage — not re-verifiable, treat as reported only.)</em></td><td><a href="https://www.business-standard.com/companies/news/ds-group-hits-10-000-cr-revenue-mark-sets-sights-on-20-000-cr-by-2029-125042300632_1.html">Business Standard (re-fetched 12 Jul 2026)</a></td></tr>
       <tr><td><b>V3</b></td><td>FY25 revenue mix: F&amp;B 42%, Mouth Fresheners 38%, Hospitality 3%, tobacco &lt;10%</td><td><a href="https://www.storyboard18.com/how-it-works/ds-group-revenue-surpasses-rs10000-crore-in-fy25-63002.htm">Storyboard18</a></td></tr>
       <tr><td><b>V4</b></td><td>~16% revenue CAGR over the last 3 years, organic</td><td><a href="https://www.storyboard18.com/how-it-works/ds-group-revenue-surpasses-rs10000-crore-in-fy25-63002.htm">Storyboard18</a></td></tr>
-      <tr><td><b>V5</b></td><td>Founded 1929; privately held; headquartered in Noida, UP</td><td><a href="https://en.wikipedia.org/wiki/Dharampal_Satyapal_Group">Wikipedia</a>, <a href="https://www.dsgroup.com/">dsgroup.com</a></td></tr>
-      <tr><td><b>V6</b></td><td>Brand portfolio includes Rajnigandha, Catch, Pulse, Pass Pass, Ksheer, LuvIt, Chingles, Le Marché, L'Opera, Birthright, Ovino, Society of Salad, Namah, Silver Pearls</td><td><a href="https://www.dsgroup.com/">dsgroup.com</a>, <a href="https://bestmediainfo.com/mediainfo/mediainfo-marketing/ds-groups-fmcg-push-to-reshape-its-brand-dna-tobacco-share-set-to-decline-8995743">BestMediaInfo</a></td></tr>
-      <tr><td><b>V7</b></td><td>Business verticals: Mouth Fresheners, Food &amp; Beverage, Confectionery, Hospitality, Agri, Luxury Retail, Tobacco</td><td><a href="https://www.dsgroup.com/our-businesses">dsgroup.com/our-businesses</a></td></tr>
-      <tr><td><b>V8</b></td><td>21 manufacturing units, 12 agri sites, 24 depots across Delhi, Noida, Himachal Pradesh, Assam, Tripura</td><td><a href="https://www.dsgroup.com/contact-us/manufacturing-plants/">dsgroup.com/manufacturing-plants</a></td></tr>
-      <tr><td><b>V9</b></td><td>Distribution network reach of over 35 lakh (3.5 million) outlets across India</td><td><a href="https://www.business-standard.com/content/press-releases-ani/ds-group-s-pulse-candy-becomes-a-inr-750-crore-consumer-brand-125070700988_1.html">Business Standard (ANI PR)</a></td></tr>
-      <tr><td><b>V10</b></td><td>Pulse candy: ₹750+ crore consumer sales FY25; 19% hard-boiled-candy share; 15% 3-yr CAGR vs 9% category; largest-distributed HBC in India</td><td><a href="https://www.dsgroup.com/media-center/ds_groups_pulse_candy_becomes_a_rs_750_crore_consumer_brand">DS Group media centre</a>, <a href="https://mediabrief.com/pulse-candy-rs750-crore-sales-ds-group/">MediaBrief</a></td></tr>
+      <tr><td><b>V5</b></td><td>Founded 1929; privately held; headquartered in Noida, UP</td><td><a href="https://en.wikipedia.org/wiki/the company_Satyapal_Group">Wikipedia</a>, <a href="https://www.dsgroup.com/">dsgroup.com</a></td></tr>
+      <tr><td><b>V6</b></td><td>Brand portfolio (per company site nav, fetched): Catch, Kewal, Not Just Nuts, Pulse Natkaare, Snack Factory, Liquid Life (F&amp;B); Pass Pass, Pulse, Rajnigandha Pearls, Golmol, Chingles, LuvIt, Cherio, Oval, FRU (confectionery); Rajnigandha, Tansen, BABA (mouth fresheners/tobacco); Ksheer, Ovino (dairy); Le Marché, L'Opéra, Ben's Cookies (luxury retail); Birthright (agri); Namah + partner-flag hotels (hospitality)</td><td><a href="https://www.dsgroup.com/">dsgroup.com (re-fetched 12 Jul 2026)</a></td></tr>
+      <tr><td><b>V7</b></td><td>Eight named business verticals per company site: Food &amp; Beverages, Confectionery, Mouth Fresheners, Hospitality &amp; Hotels, Dairy, Luxury Retail/Restaurants &amp; Cafés, Agri, Tobacco — plus Others (packaging, infrastructure, rubber thread)</td><td><a href="https://www.dsgroup.com/our-businesses">dsgroup.com/our-businesses (re-fetched 12 Jul 2026)</a></td></tr>
+      <tr><td><b>V8</b></td><td>15 manufacturing sites listed on the company page across 5 states — Assam (pan masala, dairy, flexible packaging, corrugated box), Haryana (2 pan masala + cattle farm), Rajasthan (dairy), Tripura (rubber thread), UP/Noida-Greater Noida (2 pan masala, spices, foods, 2 silver-foil). <em>(A widely-repeated "21 units, 12 agri sites, 24 depots" claim comes from third-party directories, not the company site — demoted to estimate E14.)</em></td><td><a href="https://www.dsgroup.com/contact-us/manufacturing-plants/">dsgroup.com/manufacturing-plants (re-fetched 12 Jul 2026)</a></td></tr>
+      <tr><td><b>V9</b></td><td>Distribution: 5,000+ distributors and 100–150+ super stockists (sources differ: o9 PR says "more than 100", DS PR says "more than 150") reaching ~15 lakh outlets directly and 35 lakh+ in total (direct + indirect); "reach of over 35 lakh outlets" also quoted by the Vice Chairman</td><td><a href="https://www.business-standard.com/content/press-releases-ani/ds-group-achieves-landmark-revenue-of-inr-10-000-crore-f-b-the-largest-contributor-125052900795_1.html">BS (DS PR, re-fetched)</a>, <a href="https://o9solutions.com/news/o9-partners-with-ds-group-to-augment-digital-transformation">o9 PR (re-fetched)</a>, <a href="https://www.dsgroup.com/media-center/ds_groups_pulse_candy_becomes_a_rs_750_crore_consumer_brand">DS media centre (re-fetched)</a></td></tr>
+      <tr><td><b>V10</b></td><td>Pulse candy: ₹750+ crore consumer sales FY25; 19% hard-boiled-candy share; 15% 3-yr CAGR vs 9% category; largest-distributed HBC in India</td><td><a href="https://www.dsgroup.com/media-center/ds_groups_pulse_candy_becomes_a_rs_750_crore_consumer_brand">The company media centre</a>, <a href="https://mediabrief.com/pulse-candy-rs750-crore-sales-ds-group/">MediaBrief</a></td></tr>
       <tr><td><b>V11</b></td><td>Confectionery business crossed ₹1,000 crore in FY24; ₹5,000 crore 5-year ambition</td><td><a href="https://www.business-standard.com/companies/news/ds-group-targets-rs-5-000-cr-revenue-from-confectionery-business-in-5-years-124052201392_1.html">Business Standard</a></td></tr>
       <tr><td><b>V12</b></td><td>Catch (spices) has crossed ₹1,000 crore revenue</td><td><a href="https://www.business-standard.com/companies/news/ds-group-targets-rs-5-000-cr-revenue-from-confectionery-business-in-5-years-124052201392_1.html">Business Standard</a></td></tr>
-      <tr><td><b>V13</b></td><td>Strategic collaboration with o9 Solutions for AI-powered demand &amp; distribution planning across key verticals</td><td><a href="https://o9solutions.com/news/o9-partners-with-ds-group-to-augment-digital-transformation">o9solutions.com</a></td></tr>
-      <tr><td><b>V14</b></td><td>Pulse expected to become a ₹1,000 crore brand within ~2 years (by ~2027)</td><td><a href="https://upstox.com/news/business-news/latest-updates/pulse-candy-set-to-become-1-000-crore-brand-by-2027-ds-group/article-176144/">Upstox</a>, <a href="https://www.outlookbusiness.com/corporate/ds-group-expects-pulse-candy-to-become-rs-1000-crore-brand-in-2-yrs-vc-rajiv-kumar">Outlook Business</a></td></tr>
+      <tr><td><b>V13</b></td><td>Strategic collaboration with o9 Solutions (announced 16 Apr 2025) covering demand forecasting, supply planning and S&amp;OP dashboards across key divisions; implementation partner PwC India; milestone-driven rollout</td><td><a href="https://o9solutions.com/news/o9-partners-with-ds-group-to-augment-digital-transformation">o9solutions.com (re-fetched 12 Jul 2026)</a></td></tr>
+      <tr><td><b>V14</b></td><td><em>REPORTED (downgraded — pages not re-fetched):</em> Pulse expected to become a ₹1,000 crore brand within ~2 years, per secondary coverage of VC remarks. Treat as directional only; not used in any calculation.</td><td><a href="https://upstox.com/news/business-news/latest-updates/pulse-candy-set-to-become-1-000-crore-brand-by-2027-ds-group/article-176144/">Upstox</a>, <a href="https://www.outlookbusiness.com/corporate/ds-group-expects-pulse-candy-to-become-rs-1000-crore-brand-in-2-yrs-vc-rajiv-kumar">Outlook Business</a></td></tr>
+          <tr><td><b>V15</b></td><td>F&amp;B segment 3-yr CAGR of 19%</td><td><a href="https://www.business-standard.com/content/press-releases-ani/ds-group-achieves-landmark-revenue-of-inr-10-000-crore-f-b-the-largest-contributor-125052900795_1.html">BS (DS PR, re-fetched 12 Jul 2026)</a></td></tr>
+      <tr><td><b>V16</b></td><td>The company itself cites "continuing to focus on artificial intelligence, automation and other future-focused technologies" as a growth enabler</td><td><a href="https://www.business-standard.com/content/press-releases-ani/ds-group-achieves-landmark-revenue-of-inr-10-000-crore-f-b-the-largest-contributor-125052900795_1.html">BS (DS PR, re-fetched)</a>, <a href="https://www.storyboard18.com/how-it-works/ds-group-revenue-surpasses-rs10000-crore-in-fy25-63002.htm">Storyboard18 (re-fetched)</a></td></tr>
+      <tr><td><b>V17</b></td><td>Second-largest player in Indian non-chocolate confectionery; largest in Indian ethnic confectionery (with Pass Pass + Silver Pearls); Pulse contributes ~45% of the confectionery segment (FY24)</td><td><a href="https://www.business-standard.com/content/press-releases-ani/ds-group-achieves-landmark-revenue-of-inr-10-000-crore-f-b-the-largest-contributor-125052900795_1.html">BS (DS PR)</a>, <a href="https://www.business-standard.com/companies/news/ds-group-targets-rs-5-000-cr-revenue-from-confectionery-business-in-5-years-124052201392_1.html">BS May-2024 (re-fetched)</a></td></tr>
+      <tr><td><b>V18</b></td><td>Confectionery manufacturing is outsourced to third-party manufacturers (per VC interview, May 2024); own manufacturing is concentrated in North India + Assam/Tripura</td><td><a href="https://www.business-standard.com/companies/news/ds-group-targets-rs-5-000-cr-revenue-from-confectionery-business-in-5-years-124052201392_1.html">BS May-2024 (re-fetched)</a>, <a href="https://www.business-standard.com/companies/news/ds-group-hits-10-000-cr-revenue-mark-sets-sights-on-20-000-cr-by-2029-125042300632_1.html">BS Apr-2025 (re-fetched)</a></td></tr>
+      <tr><td><b>V19</b></td><td>Peer evidence (HUL, from its own newsroom, 30 Jul 2025): Shikhar is India's largest eB2B retailer platform with GenAI ad creation (1 lakh+ AI-generated ads); <b>Envision image-recognition processes ~2.5 crore shelf images/month</b> for on-shelf availability, merchandising and competitive intelligence; an AI "Nerve Center" unifies Plan-Source-Make-Deliver</td><td><a href="https://www.hul.co.in/news/news-search/2025/how-ai-is-powering-huls-consumer-customer-and-operational-ecosystems/">hul.co.in (re-fetched 12 Jul 2026)</a></td></tr>
     </tbody>
   </table></div>
 
-  <h3 class="sub">Estimate register (E1–E13) — every assumed number, with its basis</h3>
+  <h3 class="sub">Estimate register (E1–E14) — every assumed number, with its basis</h3>
   <div class="card" style="padding:0; overflow-x:auto"><table class="src-table">
     <thead><tr><th>ID</th><th>Assumption</th><th>Basis — and how to replace it with fact</th></tr></thead>
     <tbody>
@@ -699,14 +766,26 @@
       <tr><td><b>E5</b></td><td>Trade spend ≈8–12% of branded revenue</td><td>Indian FMCG norm range; used only to size claim-leakage base.</td></tr>
       <tr><td><b>E6</b></td><td>~70k AP invoices + trade-claim documents/yr; 12 min average manual handling; 65–80% STP achievable</td><td>Scale-typical for ₹10k-cr multi-unit FMCG; STP range from IDP industry norms and the prototype's learning-loop trajectory. Replace with ERP document counts, week 1.</td></tr>
       <tr><td><b>E7</b></td><td>External content production spend ₹15–25 cr/yr; 30–50% is adaptation-type work</td><td>0.15–0.25% of revenue on production (not media) — agency-industry norm for multi-brand FMCG.</td></tr>
-      <tr><td><b>E8</b></td><td>≈3,000 active distributors/stockists; 3 admin contacts/wk each; 0.1–0.3% order-error value</td><td>Inferred from 35-lakh-outlet reach (V9) at typical outlet-per-distributor ratios; replace with DMS master count.</td></tr>
+      <tr><td><b>E8</b></td><td>Distributor count is now VERIFIED at 5,000+ (V9) — no longer an estimate. Still estimated: 3 admin contacts/wk per distributor, 6 min per contact, 50% bot containment, 0.1–0.3% order-error value</td><td>Contact frequency from FMCG telecaller norms; replace with call-log actuals, week 1.</td></tr>
       <tr><td><b>E9</b></td><td>Shelf-vision pilot: 25k outlets ≈ ₹150 cr covered revenue, 0.3–0.8% execution uplift · Vision QC: ₹100 cr pilot-line throughput, 0.3–0.8pp waste gain</td><td>Retail-execution and industrial-vision case-study norm ranges applied to deliberately small pilot scopes.</td></tr>
       <tr><td><b>E10</b></td><td>LLM/OCR API + infra run-costs as stated per case</td><td>Current market API pricing at projected volumes; ±40% sensitivity.</td></tr>
       <tr><td><b>E11</b></td><td>Pilot revenue slices: 2 categories ≈ ₹800 cr; scoped F&amp;B + confectionery ≈ ₹3,000 cr; write-offs 0.1–0.2% of scoped revenue</td><td>Derived from V1 × V3 mix with conservative category shares; replace with divisional P&amp;L.</td></tr>
       <tr><td><b>E12</b></td><td>Copilot: 40% weekly adoption; 30 min/wk search time saved; ~20k HR/IT tickets/yr; ~40 ad-hoc analyst pulls/wk</td><td>Enterprise-copilot adoption literature midpoints, halved for conservatism; ticket volume scale-typical. Breakeven shown at 15% adoption.</td></tr>
-      <tr><td><b>E13</b></td><td>Month-12 target: ≥₹6 cr annualised measured benefit</td><td>Sum of the conservative ends of Cases 1, 2, 3 and 6 only — Cases 4, 5, 7, 8 treated as upside. A target, not a forecast.</td></tr>
+      <tr><td><b>E13</b></td><td>Month-12 target: ≥₹6 cr annualised measured benefit</td><td>Sum of conservative-end gross benefits of Cases 1, 2, 3 and 6 (2.38 + 1.27 + 1.26 + 1.68 = ₹6.6 cr; ₹5.9 cr net of run costs); gate set at ₹6 cr gross measured benefit. Cases 4, 5, 7, 8 treated as upside. A target, not a forecast.</td></tr>
+          <tr><td><b>E14</b></td><td>"21 manufacturing units, 12 agri sites, 24 depots" (third-party directory claim)</td><td>Appears in aggregator/directory listings but NOT on the company's own manufacturing page (which lists 15 sites — V8). Retained only as an upper-bound indication of physical footprint; superseded by V8 wherever used.</td></tr>
     </tbody>
   </table></div>
+
+  <h3 class="sub">Prototype evidence register (P1–P3)</h3>
+  <div class="card" style="padding:0; overflow-x:auto"><table class="src-table">
+    <thead><tr><th>ID</th><th>Prototype</th><th>Verified evidence (cross-checked against repo kickoff/spec documents, 12 Jul 2026)</th></tr></thead>
+    <tbody>
+      <tr><td><b>P1</b></td><td>ds-demand-cockpit</td><td>297,610-row synthetic secondary-sales spine (151 SKUs × 60 distributors, seed 42); golden-thread and inventory-walk canonical tests; 3.13× launch pipeline-fill on DS-CONFPULSE-149; planted messy-data defect manifest; WMAPE-vs-naive and elasticity-recovery gates.</td></tr>
+      <tr><td><b>P2</b></td><td>ds-copilot</td><td>24-doc corpus with access tags incl. 2 exec-only docs; 25-question eval with role-split, version-conflict, buried-detail, refusal and prompt-injection (RF-02) cases; YAML semantic layer with exec-scoped columns and validated read-only SQL.</td></tr>
+      <tr><td><b>P3</b></td><td>ds-doc-to-decision</td><td>40 PO/GRN/invoice sets with OCR-ready PDFs; 13 planted discrepancies; 40/40 ground-truth labels (27/8/5) re-derived from written matching rules with zero mismatches; ±2% qty and 12-month COA tolerances shared with P2's policy corpus.</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:12.5px; color:var(--mut); margin:8px 0 18px">PROTOTYPED is a deliberately separate class from VERIFIED: these facts are true of my built systems on synthetic data, and say nothing about the company's systems or results.</p>
 
   <h3 class="sub">Scoring rubric (used in Tabs 2–3)</h3>
   <div class="grid g4">
@@ -715,12 +794,13 @@
     <div class="card"><b>Data Readiness</b><p style="font-size:12.8px; color:var(--ink2); margin-top:6px">5 = data exists, clean, accessible · 3 = exists but fragmented/messy · 1 = must be newly instrumented (sensors, photos, labels).</p></div>
     <div class="card"><b>Risk posture</b><p style="font-size:12.8px; color:var(--ink2); margin-top:6px">5 = low residual risk after standard controls · 3 = manageable with HITL + audit · 1 = severe regulatory/brand/safety exposure. Higher = safer, so all four dimensions point the same way.</p></div>
   </div>
-  <p style="font-size:12.5px; color:var(--mut); margin-top:12px"><b>Method &amp; honesty notes.</b> Scores are one analyst's judgment from public information and FMCG industry norms — they encode no non-public knowledge of DS Group and should be re-scored in week 1 against the data audit. The three prototype systems were built on a fully synthetic, DS-<em>themed</em> dataset (151 SKUs, 60 distributors, 297,610 secondary-sales rows, deterministic seed) — they demonstrate architecture and method, not DS Group results. Employee counts, document volumes, planner counts, spend ratios: all estimates as registered above. This document is an independent portfolio artifact and implies no affiliation with, or endorsement by, DS Group.</p>
+  <p style="font-size:12.5px; color:var(--mut); margin-top:12px"><b>Scope note on revenue figures.</b> Older third-party profiles (Wikipedia's infobox citing Forbes India, 2023 — re-verified 12 Jul 2026) show the company revenue around ₹5,500 crore; the FY25 ₹10,000+ crore figure (V1) is the group's own announcement. The gap reflects timing and entity/consolidation scope differences across sources, not a restatement — this blueprint consistently uses the FY25 announced figure and flags it whenever it anchors an estimate.</p>
+  <p style="font-size:12.5px; color:var(--mut); margin-top:12px"><b>Method &amp; honesty notes.</b> Scores are one analyst's judgment from public information and FMCG industry norms — they encode no non-public knowledge of the company and should be re-scored in week 1 against the data audit. The three prototype systems were built on a fully synthetic, DS-<em>themed</em> dataset (151 SKUs, 60 distributors, 297,610 secondary-sales rows, deterministic seed) — they demonstrate architecture and method, not the company results. Employee counts, document volumes, planner counts, spend ratios: all estimates as registered above. This document is an independent portfolio artifact and implies no affiliation with, or endorsement by, the company.</p>
 </section>
 
 </div></main>
 
-<footer><div class="wrap">Prepared by RAJ as an independent portfolio artifact. All DS Group facts are from cited public sources; all internal figures are labelled estimates with stated bases. Not affiliated with, or endorsed by, Dharampal Satyapal Group.</div></footer>
+<footer><div class="wrap">Prepared by RAJ as an independent portfolio artifact. All the company facts are from cited public sources; all internal figures are labelled estimates with stated bases. Not affiliated with, or endorsed by, the company.</div></footer>
 
 <script>
 /* ================= DATA: 30 use cases =================
@@ -747,7 +827,7 @@ const UC = [
  {id:"SL-1", fn:"Sales", name:"Secondary-sales demand sensing", desc:"Weekly sell-through nowcasts by SKU × distributor from DMS signals — the demand feed for Case 1.",
   v:5, f:3, d:3, r:4,
   rv:"Sell-through truth drives every downstream ₹ decision across a 35-lakh-outlet network (V9).",
-  rf:"Standard ML, but DMS heterogeneity across 3,000+ distributors (E8) is the grind.",
+  rf:"Standard ML, but DMS heterogeneity across 5,000+ distributors (V9) is the grind.",
   rd:"Secondary data exists in DMS but with gaps/lags — the prototype's resilience layer exists for exactly this.",
   rr:"Internal decision support; wrong forecasts are caught by the reconciliation gate."},
  {id:"SL-2", fn:"Sales", name:"Retail-execution vision (shelf-share audits)", desc:"SKU detection on field photos: share-of-shelf, OOS, planogram & paid-visibility compliance.",
@@ -840,7 +920,7 @@ const UC = [
   rf:"Science is standard; depends on Case 1's quantile forecasts and node data quality.",
   rd:"Depot stock is known; distributor stock quality varies — completeness badges gate it.",
   rr:"Recommendations phased by category with fill-rate guardrails."},
- {id:"SC-3", fn:"Supply Chain", name:"Freight & load optimisation", desc:"Load building, carrier mix and route consolidation across 24 depots (V8).",
+ {id:"SC-3", fn:"Supply Chain", name:"Freight & load optimisation", desc:"Load building, carrier mix and route consolidation across the depot network (E14).",
   v:4, f:3, d:3, r:4,
   rv:"3–7% of a large freight bill is recurring crores.",
   rf:"Mature OR problem; TMS data discipline is the constraint.",
@@ -854,7 +934,7 @@ const UC = [
   rr:"Bad signals could time purchases badly — advisory bands only, never auto-orders."},
  {id:"MF-1", fn:"Manufacturing", name:"Vision QC on packing lines", desc:"Seal integrity, fill level, label/date-code checks at line speed (Case 8).",
   v:4, f:3, d:2, r:4,
-  rv:"Food-safety-grade consistency; complaint and rework reduction across 21 plants eventually.",
+  rv:"Food-safety-grade consistency; complaint and rework reduction across own plants, then licensed to co-packers.",
   rf:"Proven industrial pattern but needs camera hardware and per-line tuning.",
   rd:"No labelled defect images today — shadow phase builds the dataset.",
   rr:"Shadow→assist→auto-reject per class; human line-stop authority retained."},
@@ -864,7 +944,7 @@ const UC = [
   rf:"Needs sensor retrofits and 12+ months of failure history — long runway to value.",
   rd:"Maintenance logs are typically unstructured; sensor coverage partial.",
   rr:"Worst case is a wasted inspection — inherently safe recommendations."},
- {id:"MF-3", fn:"Manufacturing", name:"Energy optimisation", desc:"Consumption anomaly detection and setpoint recommendations across 21 plants (V8).",
+ {id:"MF-3", fn:"Manufacturing", name:"Energy optimisation", desc:"Consumption anomaly detection and setpoint recommendations across the manufacturing network (V8).",
   v:3, f:3, d:2, r:4,
   rv:"Single-digit % energy savings — real but bounded ₹.",
   rf:"Meter-level analytics standard; utility-system heterogeneity slows rollout.",
@@ -936,12 +1016,16 @@ const filtersEl = document.getElementById("fnFilters");
 FNS.forEach(f=>{ const b=document.createElement("button"); b.className="f"+(f===fnFilter?" on":""); b.textContent=f;
   b.onclick=()=>{fnFilter=f; document.querySelectorAll("#fnFilters .f").forEach(x=>x.classList.toggle("on",x.textContent===f)); renderTable();};
   filtersEl.appendChild(b); });
+const ucSearchEl=document.getElementById("ucSearch");
+if(ucSearchEl)ucSearchEl.addEventListener("input",()=>{ucQuery=ucSearchEl.value.trim().toLowerCase();renderTable();});
 document.querySelectorAll("#ucTable th[data-sort]").forEach(th=>th.addEventListener("click",()=>{
   const k=th.dataset.sort; sortDir = (sortKey===k)? -sortDir : -1; sortKey=k; renderTable(); }));
 
+let ucQuery="";
 function renderTable(){
   const body=document.getElementById("ucBody"); body.innerHTML="";
   let rows=UC.filter(u=>fnFilter==="All"||u.fn===fnFilter);
+  if(ucQuery)rows=rows.filter(u=>(u.id+" "+u.name+" "+u.desc+" "+u.fn).toLowerCase().includes(ucQuery));
   rows=rows.slice().sort((a,b)=>{ const va=sortKey==="p"?priority(a):a[sortKey], vb=sortKey==="p"?priority(b):b[sortKey]; return (va-vb)*(-sortDir)*-1; });
   rows.forEach(u=>{
     const tr=document.createElement("tr"); tr.className="uc-row";
@@ -1029,15 +1113,29 @@ function refresh(){
   renderTable();
 }
 
+const PRISTINE={}; UC.forEach(u=>PRISTINE[u.id]={v:u.v,f:u.f,d:u.d,r:u.r});
+const isMod=u=>{const p=PRISTINE[u.id];return p.v!==u.v||p.f!==u.f||p.d!==u.d||p.r!==u.r};
+function bump(id,dim,dv){
+  const u=UC.find(x=>x.id===id); if(!u)return;
+  u[dim]=Math.max(1,Math.min(5,u[dim]+dv));
+  refresh(); showDetail(u);
+}
+function resetUC(id){
+  const u=UC.find(x=>x.id===id); if(!u)return;
+  Object.assign(u,PRISTINE[id]); refresh(); showDetail(u);
+}
+const step=(u,dim)=>`<span style="white-space:nowrap"><button onclick="bump('${u.id}','${dim}',-1)" style="border:1px solid var(--line);background:#fff;border-radius:5px;width:20px;cursor:pointer;font-family:inherit">−</button> <button onclick="bump('${u.id}','${dim}',1)" style="border:1px solid var(--line);background:#fff;border-radius:5px;width:20px;cursor:pointer;font-family:inherit">+</button></span>`;
 function showDetail(u){
   const p=document.getElementById("detailPanel"); p.style.display="block";
-  p.innerHTML=`<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><b style="font-size:15px">${u.id} · ${esc(u.name)} ${u.star?'<span class="tag built">PROTOTYPE BUILT</span>':""}</b><span class="fn-chip">${u.fn}</span></div>
+  p.innerHTML=`<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><b style="font-size:15px">${u.id} · ${esc(u.name)} ${u.star?'<span class="tag built">PROTOTYPE BUILT</span>':""} ${isMod(u)?'<span class="tag est">YOUR SCORES</span>':""}</b><span class="fn-chip">${u.fn}</span></div>
   <p style="font-size:13px;color:var(--mut);margin:4px 0 8px">${esc(u.desc)}${BC_MAP[u.id]?` — see Business Case ${BC_MAP[u.id]} (Tab 4).`:""}</p>
-  <div class="rat"><b>Value ${pill(u.v)}</b> ${esc(u.rv)}</div>
-  <div class="rat"><b>Feasibility ${pill(u.f)}</b> ${esc(u.rf)}</div>
-  <div class="rat"><b>Data ${pill(u.d)}</b> ${esc(u.rd)}</div>
-  <div class="rat"><b>Risk ${pill(u.r)}</b> ${esc(u.rr)}</div>
-  <div class="rat" style="margin-top:6px">Current weights → priority <b>${priority(u).toFixed(2)}</b>, delivery ease <b>${ease(u).toFixed(2)}</b>, quadrant <b style="color:${QMETA[quad(u)].cc}">${QMETA[quad(u)].n}</b></div>`;
+  <div class="rat"><b>Value ${pill(u.v)}</b> ${step(u,"v")} ${esc(u.rv)}</div>
+  <div class="rat"><b>Feasibility ${pill(u.f)}</b> ${step(u,"f")} ${esc(u.rf)}</div>
+  <div class="rat"><b>Data ${pill(u.d)}</b> ${step(u,"d")} ${esc(u.rd)}</div>
+  <div class="rat"><b>Risk ${pill(u.r)}</b> ${step(u,"r")} ${esc(u.rr)}</div>
+  <div class="rat" style="margin-top:6px">Current weights → priority <b>${priority(u).toFixed(2)}</b>, delivery ease <b>${ease(u).toFixed(2)}</b>, quadrant <b style="color:${QMETA[quad(u)].cc}">${QMETA[quad(u)].n}</b>
+  ${isMod(u)?` · <a href="javascript:void(0)" onclick="resetUC('${u.id}')" style="color:var(--acc2)">reset to analyst scores</a>`:""}</div>
+  <p style="font-size:11px;color:var(--mut);margin-top:6px">Score edits are session-only and never alter the case ROI models (scores rank; the ₹ models stand on their own bases). Rationale text describes the analyst score.</p>`;
 }
 
 /* ---------- Sliders & presets ---------- */
@@ -1051,7 +1149,77 @@ document.querySelectorAll(".preset-row button").forEach(b=>b.addEventListener("c
   refresh();
 }));
 
-buildScatter(); refresh();
+/* ---------- Portfolio ROI aggregator (R1) ----------
+   Single source of truth: PORT. bLo/bHi = gross annual benefit (₹ cr); rLo/rHi = run cost/yr;
+   kLo/kHi = one-time build; cashLo/cashHi = one-time working-capital release. */
+const PORT=[
+ {bc:1,n:"Demand/S&OP cockpit",bLo:2.38,bHi:5.68,rLo:0.10,rHi:0.18,kLo:0.40,kHi:0.60,cashLo:5,cashHi:12,drv:"E3 forecast-uplift range + E4 inventory norms + E11 slice size"},
+ {bc:2,n:"Enterprise copilot",bLo:1.27,bHi:1.89,rLo:0.20,rHi:0.35,kLo:0.30,kHi:0.50,cashLo:0,cashHi:0,drv:"E12 adoption rate + E1 headcount"},
+ {bc:3,n:"Document-to-decision",bLo:1.26,bHi:3.65,rLo:0.08,rHi:0.15,kLo:0.25,kHi:0.40,cashLo:0,cashHi:0,drv:"E6 doc volumes + E5 trade-spend leakage base"},
+ {bc:4,n:"Inventory optimisation",bLo:3.00,bHi:8.10,rLo:0.08,rHi:0.12,kLo:0.30,kHi:0.50,cashLo:25,cashHi:55,drv:"E4 days-of-cover & carrying-cost norms"},
+ {bc:5,n:"Content studio",bLo:1.00,bHi:3.00,rLo:0.10,rHi:0.20,kLo:0.15,kHi:0.25,cashLo:0,cashHi:0,drv:"E7 addressable production spend"},
+ {bc:6,n:"WhatsApp trade bot",bLo:1.68,bHi:2.18,rLo:0.10,rHi:0.15,kLo:0.20,kHi:0.35,cashLo:0,cashHi:0,drv:"E8 contact frequency & containment (count verified V9)"},
+ {bc:7,n:"Shelf vision (bet)",bLo:0.65,bHi:1.70,rLo:0.40,rHi:0.70,kLo:0,kHi:0,cashLo:0,cashHi:0,drv:"E9 execution uplift & photo compliance"},
+ {bc:8,n:"Vision QC (bet)",bLo:0.40,bHi:1.10,rLo:0.05,rHi:0.08,kLo:0.35,kHi:0.55,cashLo:0,cashHi:0,drv:"E9 defect/waste rates"}
+];
+let AGG={scen:"cons",on:new Set(PORT.map(x=>x.bc)),hc:0};
+const mid=(a,b)=>(a+b)/2;
+function aggPick(x){
+  if(AGG.scen==="cons")return{b:x.bLo,r:x.rHi,k:x.kHi,c:x.cashLo};
+  if(AGG.scen==="aggr")return{b:x.bHi,r:x.rLo,k:x.kLo,c:x.cashHi};
+  return{b:mid(x.bLo,x.bHi),r:mid(x.rLo,x.rHi),k:mid(x.kLo,x.kHi),c:mid(x.cashLo,x.cashHi)};
+}
+function aggCalc(){
+  let B=0,R=0,K=0,C=0;
+  PORT.filter(x=>AGG.on.has(x.bc)).forEach(x=>{const p=aggPick(x);B+=p.b*(1-AGG.hc/100);R+=p.r;K+=p.k;C+=p.c*(1-AGG.hc/100);});
+  return{B,R,K,C,net:B-R};
+}
+function aggRender(){
+  const t=aggCalc();
+  document.getElementById("aggNet").textContent="₹"+t.net.toFixed(1)+" cr";
+  document.getElementById("aggBuild").textContent="₹"+t.K.toFixed(1)+" cr";
+  document.getElementById("aggPay").textContent=t.net>0?Math.round(t.K/t.net*12)+" mo":"—";
+  document.getElementById("aggCash").textContent="₹"+Math.round(t.C)+" cr";
+  document.getElementById("aggDetail").textContent=`Gross benefit ₹${t.B.toFixed(1)} cr/yr − run costs ₹${t.R.toFixed(1)} cr/yr = net ₹${t.net.toFixed(1)} cr/yr across ${AGG.on.size} of 8 cases (${AGG.scen==="cons"?"conservative":AGG.scen==="base"?"base":"aggressive"} scenario${AGG.hc?", after a "+AGG.hc+"% across-the-board benefit haircut":""}). Month-12 measured-benefit gate (₹6 cr gross, E13) sits below even the conservative gross of the four Phase-0/1 cases.`;
+  const sens=PORT.filter(x=>AGG.on.has(x.bc)).map(x=>({n:`Case ${x.bc} — ${x.n}`,spread:(x.bHi-x.bLo)+(x.rHi-x.rLo),drv:x.drv})).sort((a,b)=>b.spread-a.spread).slice(0,5);
+  document.getElementById("aggSens").innerHTML=sens.map(x=>`<li><b>${x.n}</b>: ±₹${(x.spread/2).toFixed(1)} cr swing around its midpoint — driven by ${x.drv}</li>`).join("");
+}
+document.querySelectorAll("#aggScen button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#aggScen button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); AGG.scen=b.dataset.s; aggRender();
+}));
+const hcEl=document.getElementById("hc");
+if(hcEl)hcEl.addEventListener("input",()=>{AGG.hc=+hcEl.value;document.getElementById("hcO").textContent=hcEl.value+"%";aggRender();});
+const aggCasesEl=document.getElementById("aggCases");
+PORT.forEach(x=>{
+  const l=document.createElement("label");
+  l.innerHTML=`<input type="checkbox" checked data-bc="${x.bc}"> ${x.bc}. ${x.n}`;
+  l.querySelector("input").addEventListener("change",e=>{
+    e.target.checked?AGG.on.add(x.bc):AGG.on.delete(x.bc); aggRender();
+  });
+  aggCasesEl.appendChild(l);
+});
+aggRender();
+
+/* ---------- URL-hash deep links: tab + weights ---------- */
+function writeHash(){
+  try{const t=document.querySelector("nav.tabs button.on").dataset.tab;
+    history.replaceState(null,"","#t="+t+"&w="+[W.v,W.f,W.d,W.r].join(","));}catch(e){}
+}
+function readHash(){
+  try{
+    const h=(location.hash||"").slice(1); if(!h)return;
+    const q={}; h.split("&").forEach(kv=>{const [k,v]=kv.split("=");q[k]=v;});
+    if(q.w){const [v,f,d,r]=q.w.split(",").map(Number);
+      if([v,f,d,r].every(x=>x>=0&&x<=60)){W={v,f,d,r};
+        [["wv",v],["wf",f],["wd",d],["wr",r]].forEach(([id,val])=>{const el=document.getElementById(id);if(el){el.value=val;document.getElementById(id+"O").textContent=val;}});}}
+    if(q.t){const b=document.querySelector(`nav.tabs button[data-tab="${q.t}"]`); if(b)b.click();}
+  }catch(e){}
+}
+document.querySelectorAll("nav.tabs button").forEach(b=>b.addEventListener("click",writeHash));
+[["wv"],["wf"],["wd"],["wr"]].forEach(([id])=>{const el=document.getElementById(id);if(el)el.addEventListener("change",writeHash);});
+
+buildScatter(); readHash(); refresh();
 </script>
 </body>
 </html>

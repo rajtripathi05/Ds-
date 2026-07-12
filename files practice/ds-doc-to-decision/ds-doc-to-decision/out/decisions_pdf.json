@@ -1,11 +1,11 @@
 [
  {
   "set_id": "SET-0001",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -30,7 +30,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1001"
  },
  {
@@ -89,16 +89,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1002"
  },
  {
   "set_id": "SET-0003",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -123,7 +123,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1003"
  },
  {
@@ -182,16 +182,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1004"
  },
  {
   "set_id": "SET-0005",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -231,7 +231,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1005"
  },
  {
@@ -270,16 +270,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1006"
  },
  {
   "set_id": "SET-0007",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -319,16 +319,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1007"
  },
  {
   "set_id": "SET-0008",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -378,7 +378,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1008"
  },
  {
@@ -427,16 +427,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1001"
  },
  {
   "set_id": "SET-0010",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -471,16 +471,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1010"
  },
  {
   "set_id": "SET-0011",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -505,16 +505,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1011"
  },
  {
   "set_id": "SET-0012",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -549,16 +549,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1012"
  },
  {
   "set_id": "SET-0013",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -583,16 +583,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1013"
  },
  {
   "set_id": "SET-0014",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -632,16 +632,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1014"
  },
  {
   "set_id": "SET-0015",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -681,16 +681,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1015"
  },
  {
   "set_id": "SET-0016",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -725,16 +725,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1016"
  },
  {
   "set_id": "SET-0017",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -764,7 +764,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1017"
  },
  {
@@ -808,16 +808,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1018"
  },
  {
   "set_id": "SET-0019",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -862,7 +862,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1019"
  },
  {
@@ -901,16 +901,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1020"
  },
  {
   "set_id": "SET-0021",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -945,7 +945,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1021"
  },
  {
@@ -989,16 +989,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1022"
  },
  {
   "set_id": "SET-0023",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1043,16 +1043,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1023"
  },
  {
   "set_id": "SET-0024",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1097,16 +1097,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1024"
  },
  {
   "set_id": "SET-0025",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1156,16 +1156,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1025"
  },
  {
   "set_id": "SET-0026",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1195,7 +1195,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1026"
  },
  {
@@ -1254,7 +1254,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1027"
  },
  {
@@ -1313,7 +1313,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1028"
  },
  {
@@ -1347,16 +1347,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1029"
  },
  {
   "set_id": "SET-0030",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1386,16 +1386,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1030"
  },
  {
   "set_id": "SET-0031",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1435,16 +1435,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1031"
  },
  {
   "set_id": "SET-0032",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1474,16 +1474,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1032"
  },
  {
   "set_id": "SET-0033",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1508,7 +1508,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1033"
  },
  {
@@ -1552,16 +1552,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1034"
  },
  {
   "set_id": "SET-0035",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1611,16 +1611,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1035"
  },
  {
   "set_id": "SET-0036",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1645,7 +1645,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1036"
  },
  {
@@ -1699,16 +1699,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1037"
  },
  {
   "set_id": "SET-0038",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1753,7 +1753,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1038"
  },
  {
@@ -1792,16 +1792,16 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1039"
  },
  {
   "set_id": "SET-0040",
-  "outcome": "route_to_human",
+  "outcome": "auto_approve",
   "reason": [
-   "R8_confidence",
-   "route_to_human",
-   "all checks pass but doc confidence 0.80 < threshold 0.92"
+   "all_pass",
+   "pass",
+   "all checks green"
   ],
   "checks": [
    [
@@ -1841,7 +1841,7 @@
    ]
   ],
   "confidence": 0.98,
-  "conf_gate": 0.803,
+  "conf_gate": 0.98,
   "invoice_no": "INV/25-26/1040"
  }
 ]

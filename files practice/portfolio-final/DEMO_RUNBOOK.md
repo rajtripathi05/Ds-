@@ -82,7 +82,7 @@ with zero auto-errors. Every action lands in a hashed audit log."
 8. **"What breaks first in production?"** Data plumbing: DMS heterogeneity for the cockpit,
    corpus curation for the copilot, scan quality for the robot. That's why each roadmap phase
    starts with a data audit and shadow mode, and why every case carries a pre-agreed falsifier.
-9. **"Why should DS Group care when o9+PwC is already deployed?"** The blueprint treats o9 as
+9. **"Why should the company care when o9+PwC is already deployed?"** The blueprint treats o9 as
    the platform of record. The cockpit demonstrates the layers a platform doesn't give you —
    causal promo ROI vs YOUR ground truth, reconciliation-gated what-ifs, FVA discipline — and
    the other two systems aren't planning tools at all.

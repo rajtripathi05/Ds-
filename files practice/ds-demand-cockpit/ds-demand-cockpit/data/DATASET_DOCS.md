@@ -1,9 +1,9 @@
-# DS Group FMCG Synthetic Dataset — Documentation
+# FMCG Synthetic Dataset — Documentation
 
-**Prompt B deliverable** of the DS Group AI-portfolio synthetic-data suite (GOAT 1: demand
+**Prompt B deliverable** of the company AI-portfolio synthetic-data suite (GOAT 1: demand
 forecasting + S&OP + trade-promotion cockpit). Regenerate any time with `generate_ds.py`.
 
-> **Not DS Group internal data.** Brand/category/price/geography/seasonality *structure* is grounded
+> **Not the company internal data.** Brand/category/price/geography/seasonality *structure* is grounded
 > in public facts (annual coverage, company site, trade press — see the grounding pack). Every actual
 > value is synthetic. Provenance is tagged per field in `data_dictionary.csv`.
 
@@ -46,7 +46,7 @@ Snacks −1.3 (each ±15% per SKU).
 
 ## Planted realism (so it exercises a real pipeline)
 - **Structural break 1 — distribution expansion:** 8 Northeast (Assam) distributors go live only on
-  **2024-10-01**; no rows before that → a genuine zone-level step change. Matches DS Group's verified
+  **2024-10-01**; no rows before that → a genuine zone-level step change. Matches the company's verified
   Northeast strength.
 - **Structural break 2 — price change:** an A-class Rajnigandha SKU takes an MRP hike on **2025-01-01**;
   via elasticity −0.9 the volume steps down and stays down (logged in `price_history.csv`).
