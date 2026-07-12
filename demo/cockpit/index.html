@@ -222,9 +222,12 @@ function sim(){
   let v;
   const dMarPct= baseMar? (newMar-baseMar)/baseMar*100 : 0;
   if(dp===0&&sh===0){v=`Baseline — move a slider to test a change. <b>${cat}</b> is ${el>=1?'elastic':'inelastic'} (${el.toFixed(2)}).`;}
-  else if(dp>0 && el>=1){v=`Raising ${cat} price <b>+${dp}%</b> loses about <b>${Math.round((1-qMult/(1+sh/100))*100)}%</b> of volume because it's elastic (${el.toFixed(2)}). ${dMarPct>=0?'Margin still holds':'Margin <b>falls</b>'} — ${m?'':'Δ '+INR(newMar-baseMar)+'/week'}.`;}
-  else if(dp>0 && el<1){v=`${cat} is inelastic (${el.toFixed(2)}) — a <b>+${dp}%</b> price rise keeps most volume and ${dMarPct>=0?'<b>lifts</b> margin':'moves margin'} ${m?'':INR(newMar-baseMar)+'/week'}. A candidate for pricing power.`;}
-  else if(dp<0){v=`Cutting price <b>${dp}%</b> adds volume via elasticity ${el.toFixed(2)}, ${dMarPct>=0?'and margin still grows':'but margin <b>gives way</b>'} ${m?'':'('+INR(newMar-baseMar)+'/week)'}. Only worth it if the volume pays for the discount.`;}
+  // Operations (m) sees no ₹ figures — and no margin *direction* either, since the
+  // sign of the margin move is itself a margin disclosure. Each branch therefore ends
+  // the sentence cleanly rather than leaving a dangling "— ." where the value was.
+  else if(dp>0 && el>=1){v=`Raising ${cat} price <b>+${dp}%</b> loses about <b>${Math.round((1-qMult/(1+sh/100))*100)}%</b> of volume because it's elastic (${el.toFixed(2)}).${m?'':` ${dMarPct>=0?'Margin still holds':'Margin <b>falls</b>'} — Δ ${INR(newMar-baseMar)}/week.`}`;}
+  else if(dp>0 && el<1){v=`${cat} is inelastic (${el.toFixed(2)}) — a <b>+${dp}%</b> price rise keeps most volume${m?'':` and ${dMarPct>=0?'<b>lifts</b> margin':'moves margin'} ${INR(newMar-baseMar)}/week`}. A candidate for pricing power.`;}
+  else if(dp<0){v=`Cutting price <b>${dp}%</b> adds volume via elasticity ${el.toFixed(2)}${m?'':`, ${dMarPct>=0?'and margin still grows':'but margin <b>gives way</b>'} (${INR(newMar-baseMar)}/week)`}. Only worth it if the volume pays for the discount.`;}
   else{v=`Demand shock <b>${sh>0?'+':''}${sh}%</b> applied. Volume ${sh>=0?'up':'down'} to ${Math.round(newU).toLocaleString('en-IN')}/week.`;}
   document.getElementById('verdict').innerHTML=v;
 }

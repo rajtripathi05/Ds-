@@ -135,7 +135,7 @@ function renderAnswer(id,rerender){
      ${refuse?'<span class="tagr">🔒 Refused for '+roleName()+'</span><br>':''}
      ${esc(a.answer||'(no answer)')}
      ${cites?`<div class="cites">${cites}</div>`:''}
-     ${q.ground_truth?`<div class="gtline">✔ <b>Verified against source:</b> ${esc(q.ground_truth)}</div>`:''}
+     ${(!refuse && q.ground_truth)?`<div class="gtline">✔ <b>Verified against source:</b> ${esc(q.ground_truth)}</div>`:''}
      ${hits?`<details class="trace"><summary>How it found this — top matches</summary>${hits}</details>`:''}
    </div>`;
   document.getElementById('slot').innerHTML=html;
