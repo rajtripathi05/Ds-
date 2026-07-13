@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DS Group — Production What-If Cockpit</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+:root{--ink:#171412;--ink2:#403a35;--mut:#726a62;--line:#e7e2db;--bg:#f4f1ec;--card:#fff;--acc:#b3282d;--acc2:#8a1f23;--ok:#15803d;--okbg:#e9f6ee;--warn:#b45309;--warnbg:#fff3e6;--rej:#9f1239;--rejbg:#fdeef1;--vio:#6d28d9;--blue:#1d4ed8;--gold:#c99a2e;--shadow:0 1px 3px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+*{box-sizing:border-box;margin:0;padding:0}html{font-size:16px}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.serif{font-family:Georgia,'Times New Roman',serif}
+.top{position:sticky;top:0;z-index:30;background:linear-gradient(135deg,#1c1917,#2a2420);color:#f3ede9;display:flex;align-items:center;gap:12px;padding:10px 16px;flex-wrap:wrap}
+.top h1{font-size:15.5px;font-weight:800;display:flex;gap:8px;align-items:center}.top .dot{font-size:19px}.sp{flex:1}
+.mini{background:#ffffff12;border:1px solid #ffffff2e;color:#fff;font:inherit;font-size:12px;font-weight:700;padding:7px 11px;border-radius:8px;cursor:pointer}
+.role{display:flex;border:1px solid #ffffff33;border-radius:999px;overflow:hidden}
+.role button{border:0;background:none;font:inherit;font-size:12px;font-weight:700;padding:7px 12px;cursor:pointer;color:#e7dcd6;min-height:34px}.role button.on{background:#fff;color:#171412}
+.tabs{display:flex;gap:1px;background:#211c19;padding:0 10px;overflow-x:auto;position:sticky;top:50px;z-index:29}
+.tabs button{border:0;background:none;color:#b8aeaa;font:inherit;font-size:12.5px;font-weight:700;padding:11px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tabs button.on{color:#fff;border-bottom-color:var(--acc)}.tabs button .b{background:var(--acc);color:#fff;border-radius:999px;font-size:9.5px;padding:0 6px;margin-left:4px}
+main{max-width:1180px;margin:0 auto;padding:18px 16px 90px}.pane{display:none}.pane.on{display:block}
+h2{font-size:20px;letter-spacing:-.01em;margin-bottom:3px}.sub{color:var(--ink2);font-size:13.5px;margin-bottom:15px;max-width:82ch}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:16px}@media(max-width:820px){.kpis{grid-template-columns:1fr 1fr}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 15px;box-shadow:var(--shadow);border-top:4px solid var(--acc)}
+.kpi.ok{border-top-color:var(--ok)}.kpi.warn{border-top-color:var(--warn)}.kpi.rej{border-top-color:var(--rej)}.kpi.vio{border-top-color:var(--vio)}
+.kpi .l{font-size:11px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.kpi .n{font-size:25px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;margin:4px 0 1px}.kpi .s{font-size:12px;color:var(--ink2)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:19px;box-shadow:var(--shadow);margin-bottom:16px}
+.card h3{font-size:15.5px;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}th{text-align:right;padding:7px 9px;border-bottom:2px solid var(--line);font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--mut)}
+th:first-child,td:first-child{text-align:left}td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}td.l{text-align:left}td.cat{font-weight:700;font-variant-numeric:normal}
+.pill{font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:999px}.pill.g{background:var(--okbg);color:var(--ok)}.pill.a{background:var(--warnbg);color:var(--warn)}.pill.r{background:var(--rejbg);color:var(--rej)}
+.lever{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 17px;box-shadow:var(--shadow);margin-bottom:15px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.lever label{font-size:12.5px;font-weight:700}.lever .val{color:var(--acc2)}
+input[type=range]{vertical-align:middle}select,input[type=range]{font:inherit}
+select{padding:8px 10px;border:1.5px solid var(--line);border-radius:9px;min-height:40px}
+.lock{background:#f4f2ef;color:var(--mut);border:1px dashed #cfc7bd;border-radius:7px;padding:2px 8px;font-size:11.5px;font-weight:700}
+.alert{display:flex;gap:10px;padding:10px 13px;border-radius:10px;margin-bottom:7px;font-size:13px}.alert.r{background:var(--rejbg)}.alert.a{background:var(--warnbg)}.alert.g{background:var(--okbg)}
+.load{max-width:620px;margin:60px auto;text-align:center}.load .card{text-align:left}
+.foot{text-align:center;color:var(--mut);font-size:11.5px;margin-top:22px}
+.heat{display:inline-block;min-width:44px;padding:3px 6px;border-radius:6px;font-weight:700;font-size:11.5px}
+.banner{border-radius:10px;padding:9px 13px;font-size:13px;margin-bottom:13px;display:none}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1><span class="dot">🏭</span> DS Group · Production What-If Cockpit <span class="lock" style="background:#ffffff1f;color:#e7dcd6;border-color:#ffffff33">synthetic</span></h1>
+  <div class="sp"></div>
+  <button class="mini" onclick="document.getElementById('wb').click()">⬆ Workbook</button>
+  <input id="wb" type="file" accept=".xlsx,.xls" style="display:none" onchange="loadWB(event)">
+  <div class="role" role="group"><button id="rOps" class="on" onclick="setRole('ops')">Operations</button><button id="rExec" onclick="setRole('exec')">Executive</button></div>
+</div>
+<div class="tabs" id="tabs"></div>
+<main>
+  <div class="banner" id="banner"></div>
+  <div id="app" style="display:none">
+    <div class="pane on" id="p-overview"></div>
+    <div class="pane" id="p-demand"></div>
+    <div class="pane" id="p-req"></div>
+    <div class="pane" id="p-proc"></div>
+    <div class="pane" id="p-cap"></div>
+    <div class="pane" id="p-econ"></div>
+    <div class="pane" id="p-val"></div>
+  </div>
+  <div class="load" id="load">
+    <h2 class="serif">Loading the plant master…</h2>
+    <div class="card" id="loaderr" style="display:none">
+      <h3>Serve this folder to load the data</h3>
+      <p style="font-size:13.5px;color:var(--ink2)">Browsers block reading a local JSON from <code>file://</code>. Two easy options:</p>
+      <pre style="background:#1c1917;color:#e7ddd7;border-radius:10px;padding:12px;font-size:12.5px;margin:10px 0;overflow:auto">cd ds-production
+python -m http.server 8000
+# then open http://localhost:8000/ds-production-cockpit.html</pre>
+      <p style="font-size:13.5px;color:var(--ink2)">…or just <b>upload the workbook</b> (⬆ top-right): <code>DS_GROUP_MASTER_MOCK_DATA_v2.xlsx</code>.</p>
+    </div>
+  </div>
+  <div class="foot">Deterministic MRP engine · AI proposes, engine validates · synthetic DS-branded data · connect an AI copilot with 🤖 (bottom-right)</div>
+</main>
+<script defer src="../demo/ai.js"></script>
+<script>window.FMCGAI_HINT="DS Group Production What-If Cockpit — a plant MRP/scheduling control room. It nets demand vs stock, explodes a multi-level BOM to raw-material needs, plans procurement (POs, shortages, expedites), and checks line capacity/feasibility. Answer about materials, shortages, POs, lines, and OTIF.";
+window.FMCGAI_CONTEXT=function(){try{return JSON.stringify(planSummary());}catch(e){return document.body.innerText.slice(0,4000);}};</script>
+<script>
+var M=null, role='ops', tab='overview', whatif={demandPct:0, offline:''};
+var TABS=[["overview","Overview"],["demand","Demand"],["req","Requirements"],["proc","Procurement"],["cap","Capacity"],["econ","Economics"],["val","Validation"]];
+function money(){return role==='exec';}
+function fmtK(n){n=+n||0;var a=Math.abs(n);if(a>=1e7)return (n/1e7).toFixed(2)+' Cr';if(a>=1e5)return (n/1e5).toFixed(2)+' L';return Math.round(n).toLocaleString('en-IN');}
+function INR(n){return '₹'+fmtK(n);}
+function esc(s){return (s||'').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+// ---------------- ENGINE ----------------
+function solve(){
+  var demMult=1+(whatif.demandPct||0)/100, offline=whatif.offline;
+  var demSum={},due={}; (M.demand||[]).forEach(function(d){if(!d.m)return;var q=(+d.q||0)*demMult;demSum[d.m]=(demSum[d.m]||0)+q;if(!due[d.m]||d.due<due[d.m])due[d.m]=d.due;});
+  var net={}; Object.keys(demSum).forEach(function(m){net[m]=Math.max(0,demSum[m]-((M.stock||{})[m]||0));});
+  var pmap={}; (M.bom||[]).forEach(function(b){(pmap[b.p]=pmap[b.p]||[]).push(b);});
+  var rmById={}; (M.rm||[]).forEach(function(r){rmById[r.c]=r;});
+  var prodQty={},gross={};
+  function explode(mat,q,depth){ if(q<=0||depth>7)return; prodQty[mat]=(prodQty[mat]||0)+q; var comps=pmap[mat]; if(!comps)return;
+    comps.forEach(function(b){ if(b.c===mat)return; var req=q/((+b.bq)||1)*((+b.qp)||0);
+      if(rmById[b.c] && !pmap[b.c]) gross[b.c]=(gross[b.c]||0)+req; else explode(b.c,req,depth+1); }); }
+  Object.keys(net).forEach(function(m){ if(net[m]>0) explode(m,net[m],0); });
+  // MRP
+  var poBy={}; (M.open_po||[]).forEach(function(p){poBy[p.c]=(poBy[p.c]||0)+(+p.q||0);});
+  var mrp=[],procCost=0,shortCount=0;
+  (M.rm||[]).forEach(function(r){ var g=gross[r.c]||0; var avail=(+r.s||0)+(poBy[r.c]||0); var netReq=Math.max(0,g-avail);
+    var planned=0,cost=0,expedite=false; if(netReq>0){var om=+r.om||1,moq=+r.moq||0; planned=Math.max(moq,Math.ceil(netReq/om)*om); cost=planned*(+r.pr||0); procCost+=cost; shortCount++; expedite=(+r.li||0)>30 && r.ty==='ROH';}
+    mrp.push({c:r.c,d:r.d,cat:r.cat,gross:g,avail:avail,net:netReq,planned:planned,cost:cost,expedite:expedite,lead:(+r.li||0)>(+r.ld||0)&&r.ty==='ROH'?(+r.li):(+r.ld||0)}); });
+  mrp.sort(function(a,b){return b.net-a.net;});
+  // capacity
+  var bById={}; (M.batch||[]).forEach(function(b){bById[b.m]=b;});
+  var pById={}; (M.products||[]).forEach(function(p){pById[p.c]=p;});
+  var rById={}; (M.resources||[]).forEach(function(x){rById[x.c]=x;});
+  var horizon=+((M.params||{})["Planning Horizon Days"]|| (M.params||{})["Planning Horiz..."] || 90)||90;
+  var lineLoad={},lineMat={};
+  Object.keys(prodQty).forEach(function(m){var b=bById[m],p=pById[m]; if(!b||!p||!p.ln)return; var batches=Math.ceil(prodQty[m]/((+b.bs)||1)); var hrs=batches*((+b.bct)||0); lineLoad[p.ln]=(lineLoad[p.ln]||0)+hrs; (lineMat[p.ln]=lineMat[p.ln]||[]).push({m:m,batches:batches,hrs:hrs});});
+  var lines=[]; Object.keys(lineLoad).forEach(function(ln){var r=rById[ln]; var hpd=+((r||{}).hpd)||24; var maint=+((r||{}).mnt)||0; var off=offline===ln; var avail=off?0.001:Math.max(1,(horizon*6/7-maint)*hpd); lines.push({ln:ln,d:(r||{}).d||ln,load:lineLoad[ln],avail:avail,util:lineLoad[ln]/avail,off:off});});
+  lines.sort(function(a,b){return b.util-a.util;});
+  var binding=lines[0];
+  // feasibility / OTIF
+  var atRisk=0,totalD=0,riskMats=[];
+  var lineUtil={}; lines.forEach(function(l){lineUtil[l.ln]=l.util;});
+  Object.keys(demSum).forEach(function(m){ totalD+=demSum[m]; var p=pById[m]; var ln=p&&p.ln; var over=ln&&lineUtil[ln]>1.02; if(over){atRisk+=demSum[m]; riskMats.push(m);} });
+  var otif=totalD?Math.max(0,1-atRisk/totalD):1;
+  // economics
+  var revenue=0,marginV=0; Object.keys(demSum).forEach(function(m){var p=pById[m]; if(p&&p.pr){var served=demSum[m]-(riskMats.indexOf(m)>=0?demSum[m]*0.3:0); revenue+=served*(+p.pr||0); marginV+=served*(+p.pr||0)*((+p.mg||40)/100);}});
+  var penalty=0; (M.demand||[]).forEach(function(d){ if(riskMats.indexOf(d.m)>=0) penalty+=(+d.pen||0)*7; });
+  return {net:net,demSum:demSum,gross:gross,mrp:mrp,procCost:procCost,shortCount:shortCount,lines:lines,binding:binding,lineMat:lineMat,otif:otif,totalD:totalD,revenue:revenue,margin:marginV,penalty:penalty,horizon:horizon,riskMats:riskMats};
+}
+var S=null;
+function resolve(){S=solve();render();}
+function planSummary(){var s=S||solve();return {otif_pct:+(s.otif*100).toFixed(1),binding_line:s.binding?s.binding.ln+" @ "+(s.binding.util*100).toFixed(0)+"%":null,rm_shortages:s.shortCount,procurement_cr:money()?+(s.procCost/1e7).toFixed(2):"hidden",expedites:s.mrp.filter(function(x){return x.expedite&&x.net>0;}).map(function(x){return x.c;}).slice(0,8),demand_kg:Math.round(s.totalD)};}
+
+// ---------------- RENDER ----------------
+function setRole(r){role=r;document.getElementById('rOps').classList.toggle('on',r==='ops');document.getElementById('rExec').classList.toggle('on',r==='exec');render();}
+function setTab(t){tab=t;document.querySelectorAll('.tabs button').forEach(function(b){b.classList.toggle('on',b.dataset.t===t);});document.querySelectorAll('.pane').forEach(function(p){p.classList.toggle('on',p.id==='p-'+t);});render();}
+function heat(u){return 'background:rgba('+(140+Math.min(1,u)*60)+','+Math.round(150*(1-Math.min(1,u))+90)+',90,.18);color:'+(u>0.95?'var(--rej)':u>0.8?'var(--warn)':'var(--ok)');}
+function renderTabs(){var bad=S.shortCount+(S.binding&&S.binding.util>1.02?1:0);document.getElementById('tabs').innerHTML=TABS.map(function(t){return '<button data-t="'+t[0]+'" class="'+(t[0]===tab?'on':'')+'" onclick="setTab(\''+t[0]+'\')">'+t[1]+(t[0]==='overview'&&bad?'<span class="b">'+bad+'</span>':'')+'</button>';}).join('');}
+function render(){
+  if(!M)return; S=solve(); var m=money();
+  renderTabs();
+  var otifCls=S.otif>=0.95?'ok':S.otif>=0.9?'warn':'rej';
+  document.getElementById('p-overview').innerHTML=
+   '<h2 class="serif">Overview</h2><div class="sub">Nets demand vs stock, explodes the multi-level BOM to raw-material needs, plans procurement, and checks line capacity — re-solving on every lever.</div>'+
+   '<div class="kpis">'+
+   '<div class="kpi '+otifCls+'"><div class="l">Projected OTIF</div><div class="n">'+(S.otif*100).toFixed(1)+'%</div><div class="s">'+fmtK(S.totalD)+' kg demand</div></div>'+
+   '<div class="kpi '+(S.shortCount?'rej':'ok')+'"><div class="l">RM shortages</div><div class="n">'+S.shortCount+'</div><div class="s">materials to buy</div></div>'+
+   '<div class="kpi vio"><div class="l">Binding line</div><div class="n" style="font-size:18px;line-height:1.3">'+(S.binding?S.binding.ln:'—')+'</div><div class="s">'+(S.binding?(S.binding.util*100).toFixed(0)+'% loaded':'—')+'</div></div>'+
+   '<div class="kpi '+(m?'':'')+'"><div class="l">Procurement ₹</div><div class="n">'+(m?INR(S.procCost):'🔒')+'</div><div class="s">'+(m?'to cover the plan':'Executive only')+'</div></div>'+
+   '</div>'+
+   '<div class="lever"><div><label>Demand what-if <span class="val" id="dv">'+(whatif.demandPct>0?'+':'')+whatif.demandPct+'%</span></label><br><input type="range" min="-30" max="40" value="'+whatif.demandPct+'" oninput="whatif.demandPct=+this.value;document.getElementById(\'dv\').textContent=(this.value>0?\'+\':\'\')+this.value+\'%\';resolve()" style="width:220px"></div>'+
+   '<div><label>Take a line offline</label><br><select onchange="whatif.offline=this.value;resolve()"><option value="">— none —</option>'+S.lines.map(function(l){return '<option value="'+l.ln+'"'+(whatif.offline===l.ln?' selected':'')+'>'+l.ln+' · '+esc(l.d)+'</option>';}).join('')+'</select></div>'+
+   '<button class="mini" style="background:#faf8f5;color:var(--ink);border:1px solid var(--line)" onclick="whatif={demandPct:0,offline:\'\'};resolve()">↺ Reset</button></div>'+
+   '<div class="card"><h3>Alerts</h3>'+alerts(S).map(function(a){return '<div class="alert '+a[0]+'">'+a[1]+'</div>';}).join('')+'</div>';
+  // DEMAND
+  document.getElementById('p-demand').innerHTML='<h2 class="serif">Demand plan</h2><div class="sub">Firm orders + forecast, netted against on-hand stock.</div><div class="card"><table><thead><tr><th>Material</th><th>Firm+Forecast (kg)</th><th>Stock (kg)</th><th>Net to make (kg)</th><th>Priority</th></tr></thead><tbody>'+
+   Object.keys(S.demSum).sort(function(a,b){return S.demSum[b]-S.demSum[a];}).slice(0,40).map(function(mm){var pr=(M.demand.find(function(d){return d.m===mm;})||{}).pri;return '<tr><td class="cat">'+esc(mm)+'</td><td>'+fmtK(S.demSum[mm])+'</td><td>'+fmtK((M.stock||{})[mm]||0)+'</td><td><b>'+fmtK(S.net[mm]||0)+'</b></td><td>'+(pr?('<span class="pill '+(pr==1?'r':pr==2?'a':'g')+'">P'+pr+'</span>'):'—')+'</td></tr>';}).join('')+'</tbody></table></div>';
+  // REQUIREMENTS
+  document.getElementById('p-req').innerHTML='<h2 class="serif">Component requirements</h2><div class="sub">Gross raw-material &amp; packaging needs from the multi-level BOM explosion, netted against stock + open POs.</div><div class="card"><table><thead><tr><th>Component</th><th>Type</th><th>Gross need</th><th>Available</th><th>Net req</th><th>Status</th></tr></thead><tbody>'+
+   S.mrp.filter(function(x){return x.gross>0;}).slice(0,50).map(function(x){return '<tr><td class="cat">'+esc(x.d)+'</td><td>'+esc(x.cat||'')+'</td><td>'+fmtK(x.gross)+'</td><td>'+fmtK(x.avail)+'</td><td>'+(x.net>0?'<b style=color:var(--rej)>'+fmtK(x.net)+'</b>':'—')+'</td><td><span class="pill '+(x.net>0?'r':'g')+'">'+(x.net>0?'short':'ok')+'</span></td></tr>';}).join('')+'</tbody></table></div>';
+  // PROCUREMENT
+  var exp=S.mrp.filter(function(x){return x.net>0;});
+  document.getElementById('p-proc').innerHTML='<h2 class="serif">Procurement plan (MRP)</h2><div class="sub">Planned purchase orders to cover net shortages — rounded to MOQ / order-multiple, with lead-time and expedite flags.</div>'+
+   '<div class="card"><h3>'+exp.length+' planned POs '+(m?'· '+INR(S.procCost)+' total':'')+'</h3><table><thead><tr><th>Component</th><th>Net req</th><th>Planned qty</th><th>Lead days</th><th class="mc">Cost</th><th>Flag</th></tr></thead><tbody>'+
+   exp.slice(0,50).map(function(x){return '<tr><td class="cat">'+esc(x.d)+'</td><td>'+fmtK(x.net)+'</td><td><b>'+fmtK(x.planned)+'</b></td><td>'+x.lead+'</td><td>'+(m?INR(x.cost):'<span class="lock">🔒</span>')+'</td><td>'+(x.expedite?'<span class="pill r">⚡ expedite</span>':'<span class="pill g">plan</span>')+'</td></tr>';}).join('')+'</tbody></table>'+(exp.length?'':'<div style="color:var(--ok)">✓ No shortages — stock + open POs cover the plan.</div>')+'</div>';
+  // CAPACITY
+  document.getElementById('p-cap').innerHTML='<h2 class="serif">Line capacity &amp; feasibility</h2><div class="sub">Batch hours required per line vs available hours over the '+S.horizon+'-day horizon (shift calendar + maintenance).</div><div class="card"><table><thead><tr><th>Line</th><th>Load (hrs)</th><th>Available (hrs)</th><th>Utilisation</th><th>Status</th></tr></thead><tbody>'+
+   S.lines.map(function(l){return '<tr><td class="cat">'+l.ln+' · '+esc(l.d)+'</td><td>'+fmtK(l.load)+'</td><td>'+(l.off?'<b style=color:var(--rej)>OFFLINE</b>':fmtK(l.avail))+'</td><td><span class="heat" style="'+heat(l.util)+'">'+(l.util*100).toFixed(0)+'%</span></td><td><span class="pill '+(l.util>1.02?'r':l.util>0.9?'a':'g')+'">'+(l.util>1.02?'over':l.util>0.9?'tight':'ok')+'</span></td></tr>';}).join('')+'</tbody></table>'+
+   '<div style="font-size:13px;color:var(--ink2);margin-top:10px">Binding line: <b>'+(S.binding?S.binding.ln:'—')+'</b>. Alternate lines and washing-changeover sequencing come in the scheduling module.</div></div>';
+  // ECON
+  document.getElementById('p-econ').innerHTML='<h2 class="serif">Economics '+(m?'':'<span class="lock">🔒 Executive only</span>')+'</h2><div class="sub">'+(m?'Plan revenue, margin, procurement spend and OTIF-penalty exposure.':'Sign in as Executive to view. Operations sees no ₹.')+'</div>'+
+   (m?'<div class="kpis"><div class="kpi ok"><div class="l">Plan revenue</div><div class="n">'+INR(S.revenue)+'</div><div class="s">served demand × price</div></div><div class="kpi"><div class="l">Gross margin</div><div class="n">'+INR(S.margin)+'</div><div class="s">'+(S.revenue?(S.margin/S.revenue*100).toFixed(0):0)+'%</div></div><div class="kpi vio"><div class="l">Procurement spend</div><div class="n">'+INR(S.procCost)+'</div><div class="s">planned POs</div></div><div class="kpi rej"><div class="l">OTIF penalty exposure</div><div class="n">'+INR(S.penalty)+'</div><div class="s">at-risk lines × penalty × 7d</div></div></div>':'');
+  // VALIDATION
+  document.getElementById('p-val').innerHTML='<h2 class="serif">Validation</h2><div class="sub">The engine is deterministic and never throws; the AI copilot only proposes.</div><div class="card"><h3>Engine invariants</h3><div style="font-size:13px;color:var(--ink2);line-height:1.9">• BOM explosion is multi-level with cycle protection (depth cap 7).<br>• Net requirement = gross − stock − open POs, never negative.<br>• Planned qty rounds up to MOQ and order-multiple.<br>• Every ₹ is withheld from Operations.<br>• Missing batch/line data falls back gracefully; no crash.</div></div><div class="card"><h3>Data loaded</h3><div style="font-size:13px;color:var(--ink2)">'+(M.products||[]).length+' materials · '+(M.bom||[]).length+' BOM lines · '+(M.rm||[]).length+' raw/packaging · '+(M.resources||[]).length+' lines · '+(M.demand||[]).length+' demand lines.</div></div>';
+}
+function alerts(S){var a=[];var exp=S.mrp.filter(function(x){return x.expedite&&x.net>0;});
+  if(exp.length)a.push(['r','⚡ '+exp.length+' long-lead imports need expediting: '+exp.slice(0,3).map(function(x){return esc(x.d);}).join(', ')+'.']);
+  if(S.binding&&S.binding.util>1.02)a.push(['r','⛔ '+S.binding.ln+' is over capacity at '+(S.binding.util*100).toFixed(0)+'% — output at risk.']);
+  else if(S.binding&&S.binding.util>0.9)a.push(['a','⚙️ '+S.binding.ln+' running hot at '+(S.binding.util*100).toFixed(0)+'%.']);
+  if(S.shortCount)a.push(['a','🟠 '+S.shortCount+' raw/packaging materials fall short — see Procurement.']);
+  if(!a.length)a.push(['g','✅ Plan is feasible: stock+POs cover materials and no line is over capacity.']);
+  return a;}
+
+// ---------------- LOAD ----------------
+function boot(){ fetch('ds_master_min.json').then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){M=j;ready();}).catch(function(){document.getElementById('loaderr').style.display='block';}); }
+function ready(){document.getElementById('load').style.display='none';document.getElementById('app').style.display='block';resolve();}
+function banner(h,warn){var b=document.getElementById('banner');b.innerHTML=h;b.style.display='block';b.style.background=warn?'var(--rejbg)':'var(--okbg)';b.style.color=warn?'#881337':'#14532d';setTimeout(function(){b.style.display='none';},5000);}
+function loadWB(ev){var f=ev.target.files[0];if(!f)return;var rd=new FileReader();rd.onload=function(e){try{
+  var wb=XLSX.read(e.target.result,{type:'binary'});function sh(n){var k=wb.SheetNames.find(function(x){return x.indexOf(n)>-1;});return k?XLSX.utils.sheet_to_json(wb.Sheets[k],{defval:null}):[];}
+  function col(r,pats){for(var k in r){for(var i=0;i<pats.length;i++){if(k.toLowerCase().indexOf(pats[i])>-1)return r[k];}}return null;}
+  var P=sh('Products').map(function(r){return {c:col(r,['material code']),d:String(col(r,['description'])||'').slice(0,34),t:col(r,['material type']),r:col(r,['role']),pk:col(r,['pack size']),ln:col(r,['primary line']),sg:col(r,['segment']),pr:col(r,['selling price']),mg:col(r,['margin'])};});
+  var D=sh('Demand').map(function(r){return {m:col(r,['material code']),ty:col(r,['demand type']),q:col(r,['quantity']),due:String(col(r,['due date'])||'').slice(0,10),pri:col(r,['priority']),pen:col(r,['penalty'])};});
+  var B=sh('BOM').map(function(r){return {p:col(r,['parent']),c:col(r,['component code']),cd:String(col(r,['component description'])||'').slice(0,24),ct:col(r,['component type']),bq:col(r,['base quantity']),qp:col(r,['qty per base','component qty']),u:col(r,['uom']),lv:col(r,['level'])};});
+  var R=sh('RM_PM').map(function(r){return {c:col(r,['component code']),d:String(col(r,['description'])||'').slice(0,26),cat:col(r,['category']),s:col(r,['current stock']),moq:col(r,['moq']),om:col(r,['order multiple']),ld:col(r,['domestic lead']),li:col(r,['imports lead']),pr:col(r,['unit price']),ty:col(r,['type'])};});
+  var RS=sh('Resources').map(function(r){return {c:col(r,['resource code']),d:String(col(r,['description'])||'').slice(0,24),cat:col(r,['category']),hpd:col(r,['available hours']),alt:col(r,['alternate']),mnt:col(r,['maint'])};});
+  var BT=sh('Batch').map(function(r){return {m:col(r,['material']),bs:col(r,['batch size']),bct:col(r,['bct']),sl:col(r,['shelf']),y:col(r,['yield'])};});
+  var PO=sh('Open_PO').map(function(r){return {c:col(r,['component code']),q:col(r,['open po qty']),a:String(col(r,['arrival'])||'').slice(0,10),src:col(r,['sourcing'])};});
+  var stRows=sh('Stock'),ST={};stRows.forEach(function(r){var mc=col(r,['material code']),u=col(r,['unrestricted'])||0;if(mc)ST[mc]=(ST[mc]||0)+(+u||0);});
+  var PM=sh('Planning_Params'),PP={};PM.forEach(function(r){PP[String(col(r,['parameter']))]=col(r,['value']);});
+  M={company:'DS Group (uploaded)',products:P,demand:D,bom:B,rm:R,resources:RS,batch:BT,open_po:PO,stock:ST,params:PP,washleg:(M&&M.washleg)||{}};
+  ready();banner('Loaded <b>'+f.name+'</b> — '+P.length+' materials, '+B.length+' BOM lines. Re-solved.');
+}catch(err){banner('⚠ Could not read that workbook ('+err.message+').',true);}};rd.readAsBinaryString(f);}
+boot();
+</script>
+</body>
+</html>
