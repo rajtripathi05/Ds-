@@ -85,6 +85,29 @@ svg{display:block;max-width:100%}
 .toggle input{width:16px;height:16px}
 .dist{display:flex;align-items:flex-end;gap:2px;height:90px;margin-top:8px}
 .dist .b{flex:1;background:var(--acc);border-radius:2px 2px 0 0;min-height:2px;opacity:.85}
+
+.aipill{border:1px solid #ffffff33;background:#ffffff12;color:#e7dcd6;font:inherit;font-size:12px;font-weight:700;padding:7px 11px;border-radius:999px;cursor:pointer;display:inline-flex;gap:5px;align-items:center}
+.aipill.on{background:#123b25;color:#7ee2a8;border-color:#1c5c3a}
+.aipill:hover{filter:brightness(1.15)}
+.modal{position:fixed;inset:0;background:rgba(23,20,18,.55);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:20px;z-index:60}
+.modal.on{display:flex}
+.msheet{background:#fff;border-radius:18px;max-width:520px;width:100%;padding:24px 26px;box-shadow:0 24px 70px rgba(0,0,0,.35);animation:pop .18s ease}
+@keyframes pop{from{transform:translateY(8px) scale(.98);opacity:.6}to{transform:none;opacity:1}}
+.msheet h3{font-size:19px;margin-bottom:4px}
+.msheet .x{float:right;border:0;background:#f4f2ef;border-radius:9px;width:38px;height:38px;font-size:19px;cursor:pointer}
+.msheet label{display:block;font-size:12.5px;font-weight:700;margin:14px 0 5px}
+.msheet input,.msheet select{width:100%;font:inherit;font-size:14px;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;min-height:46px}
+.msheet .note{font-size:12px;color:var(--ink2);background:#faf8f5;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:9px;padding:11px 13px;margin-top:14px;line-height:1.5}
+.msheet .rowb{display:flex;gap:10px;margin-top:16px}
+.msheet .rowb button{flex:1;border:0;font:inherit;font-weight:800;padding:12px;border-radius:11px;cursor:pointer;min-height:46px}
+.msheet .save{background:var(--acc);color:#fff}.msheet .save:hover{background:var(--acc2)}
+.msheet .ghost{background:#f4f2ef;color:var(--ink)}.msheet .ghost:hover{background:#ece7e1}
+.think{color:var(--vio);font-weight:700}.think:after{content:'';animation:dots 1.2s steps(4,end) infinite}
+@keyframes dots{0%{content:''}25%{content:'.'}50%{content:'..'}75%{content:'...'}}
+.pane.on{animation:fade .22s ease}
+@keyframes fade{from{opacity:.35;transform:translateY(4px)}to{opacity:1;transform:none}}
+.kpi,.card,.demo{transition:box-shadow .15s, transform .15s}
+
 </style>
 </head>
 <body>
@@ -97,6 +120,7 @@ svg{display:block;max-width:100%}
   <button class="mini" onclick="document.getElementById('wb').click()">⬆ Workbook</button>
   <input id="wb" type="file" accept=".xlsx,.xls,.csv" style="display:none" onchange="loadWorkbook(event)">
   <button class="mini" onclick="downloadTemplate()">⬇ Template</button>
+  <button class="aipill" id="aipill" onclick="openSettings()" title="Connect an AI copilot (OpenRouter)">🤖 AI off</button>
   <div class="role" role="group" aria-label="Role">
     <button id="rOps" class="on" onclick="setRole('ops')">Operations</button>
     <button id="rExec" onclick="setRole('exec')">Executive</button>
@@ -437,7 +461,7 @@ function renderScenarios(S,m){
 }
 function renderCopilot(){
   document.getElementById('p-copilot').innerHTML=`
-    <h2 class="serif">AI Copilot</h2><div class="sub">Plain-English what-ifs → validated intents the engine re-solves. Works with no API key; invalid instructions change nothing.</div>
+    <h2 class="serif">AI Copilot</h2><div class="sub">Plain-English what-ifs → validated intents the engine re-solves. Works with no key; connect <b>OpenRouter</b> (🤖 top-right) for free-form language &amp; plan Q&amp;A.</div>
     <div class="chat"><div class="chatlog" id="chatlog">${chatlog||'<div class="bub a">Try a command, or ask me to run risk / optimise / convene the war room. I only propose what the deterministic engine can validate.</div>'}</div>
       <form class="chatin" onsubmit="ask(event)"><input id="cmd" placeholder="e.g. increase Carbonated demand 20%, then run risk"><button>Run</button></form></div>
     <div class="ex">
@@ -447,6 +471,7 @@ function renderCopilot(){
       <button onclick="quick('optimise for margin')">optimise for margin</button>
       <button onclick="quick('convene the war room')">convene the war room</button>
       <button onclick="quick('reset')">reset</button></div>
+    <div class="ex" style="margin-top:7px"><span style="font-size:11.5px;color:var(--mut);align-self:center;font-weight:700">AI (needs 🤖):</span><button onclick="aiBrief()">📋 Executive brief</button><button onclick="aiAutoPlan()">🎯 Auto-plan to target</button><button onclick="aiEmail()">✉️ Draft S&amp;OP email</button></div>
     <div style="font-size:12px;color:var(--mut);margin-top:11px">Active intents: <b>${intents.length}</b>${intents.length?' · <a href="#" onclick="resetAll();return false">clear</a>':''}</div>`;
 }
 
@@ -471,7 +496,7 @@ function pushChat(u,a){chatlog+=`<div class="bub u">${esc(u)}</div><div class="b
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function catMatch(t){t=(t||'').toLowerCase();var best=null;(MASTER.categories||[]).forEach(function(c){if(t.includes(c.name.toLowerCase()))best=c.name;});if(best)return best;(MASTER.categories||[]).forEach(function(c){var toks=c.name.toLowerCase().replace(/[^a-z0-9]+/g,' ').split(' ').filter(function(w){return w.length>3;});if(toks.some(function(w){return t.includes(w);}))best=best||c.name;});return best;}
 function narr(){const S=solve(MASTER);let s=`OTIF <b>${pctFill(S.otif)}</b> (target ${S.target}%); binding <b>${S.binding?S.binding.name:'—'}</b>`;if(money())s+=`; at risk <b>${INRcr(S.totRisk)}</b>`;const sh=S.cats.filter(c=>c.totShort>0).map(c=>c.name);s+=sh.length?`; shortfalls: ${sh.join(', ')}.`:'; no shortfalls.';return s;}
-function ask(e){e.preventDefault();const t=(document.getElementById('cmd').value||'').trim();if(!t)return;const low=t.toLowerCase();let a,m2;
+function ask(e){e.preventDefault();const t=(document.getElementById('cmd').value||'').trim();if(!t)return;if(window.AI&&AI.on){document.getElementById('cmd').value='';handleLLM(t);return;}const low=t.toLowerCase();let a,m2;
   if(/\breset|clear\b/.test(low)){resetAll();pushChat(t,'<b>Reset.</b> All what-ifs cleared.');document.getElementById('cmd').value='';return;}
   else if(/run.*(risk|simulation|monte)/.test(low)){const mc=montecarlo(MASTER,800);a=`<b>Monte-Carlo (800 runs):</b> OTIF P10 <b>${pctFill(mc.p10)}</b> · P50 ${pctFill(mc.p50)} · P90 ${pctFill(mc.p90)}; P(meet ${mc.target}%) <b>${(mc.pMeet*100).toFixed(0)}%</b>${money()?`; revenue-at-risk P90 ${INRL(mc.riskP90)}`:''}. See the Risk tab.`;setTab('risk');}
   else if(/optimi[sz]e|better plan|best plan/.test(low)){const obj=/margin/.test(low)?'margin':/risk/.test(low)?'risk':'otif';const before=solve(MASTER);runOptimize(obj);const after=solve(MASTER);a=`<b>Optimiser (${obj}):</b> OTIF ${pctFill(before.otif)} → <b>${pctFill(after.otif)}</b>. Allocated the capex budget to the highest-return categories. ${narr()}`;}
@@ -503,7 +528,101 @@ function loadWorkbook(ev){const f=ev.target.files[0];if(!f)return;const rd=new F
 function banner(html,warn){const b=document.getElementById('banner');b.innerHTML=html;b.style.display='block';b.style.background=warn?'var(--rejbg)':'var(--okbg)';b.style.color=warn?'#881337':'#14532d';setTimeout(()=>{b.style.display='none'},5500);}
 function downloadTemplate(){const head=['Category',...(MASTER.months||['M1','M2','M3','M4','M5','M6']),'Price','Cost','Capacity','Inventory','Elasticity'];const rows=[head.join(',')];(MASTER.categories||[]).forEach(c=>rows.push([c.name,...c.demand,c.price,c.unit_cost,c.capacity_per_month,c.inventory_cases,c.elasticity||1].join(',')));const blob=new Blob([rows.join('\n')],{type:'text/csv'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='fmcg-cockpit-template.csv';a.click();}
 
-renderTabs();render();
+
+// ===================== OPENROUTER AI LAYER (client-side, user's own key) =====================
+var AI=(window.AI=window.AI||{on:false,key:"",model:"openai/gpt-4o-mini",calls:0,tokens:0});
+function initAI(){try{var k=localStorage.getItem("fmcg_or_key");AI.key=k||"";AI.model=localStorage.getItem("fmcg_or_model")||"openai/gpt-4o-mini";AI.on=!!k;AI.calls=+(localStorage.getItem("fmcg_or_calls")||0);AI.tokens=+(localStorage.getItem("fmcg_or_tokens")||0);}catch(e){}updateAIpill();}
+function updateAIpill(){var p=document.getElementById("aipill");if(p){p.className="aipill"+(AI.on?" on":"");p.innerHTML=AI.on?"🤖 AI on":"🤖 AI off";}}
+function openSettings(){var m=document.getElementById("aimodal");m.classList.add("on");document.getElementById("aikey").value=AI.key;document.getElementById("aimodel").value=AI.model;document.getElementById("aiusage").textContent=AI.calls?(" · "+AI.calls+" calls · ~"+AI.tokens+" tokens used in this browser"):"";}
+function closeSettings(){document.getElementById("aimodal").classList.remove("on");}
+function saveSettings(){var k=document.getElementById("aikey").value.trim();AI.key=k;AI.model=document.getElementById("aimodel").value;AI.on=!!k;try{if(k)localStorage.setItem("fmcg_or_key",k);else localStorage.removeItem("fmcg_or_key");localStorage.setItem("fmcg_or_model",AI.model);}catch(e){}updateAIpill();closeSettings();if(AI.on)banner("🤖 AI copilot connected ("+AI.model+"). Your key stays in this browser.");}
+function clearKey(){document.getElementById("aikey").value="";AI.key="";AI.on=false;try{localStorage.removeItem("fmcg_or_key");}catch(e){}updateAIpill();banner("AI key cleared from this browser.");}
+async function testAI(){var st=document.getElementById("aitest");st.textContent="testing…";try{await callOpenRouter("Reply with the single word OK.",{});st.textContent="✓ connected — model responded.";}catch(e){st.textContent="✗ "+e.message;}}
+function planContext(){var S=solve(MASTER);return {otif_pct:+(S.otif*100).toFixed(1),otif_target:S.target,binding_constraint:S.binding&&S.binding.name,revenue_cr:money()?+(S.totRev/1e7).toFixed(0):"hidden",categories:S.cats.map(function(c){return {name:c.name,fill_pct:+(c.fill*100).toFixed(0),shortfall_cases:c.totShort,capacity_util_pct:+(c.avgUtil*100).toFixed(0)};})};}
+async function callOpenRouter(userText,ctx){
+  if(!AI.key)throw new Error("no key set");
+  var cats=(MASTER.categories||[]).map(function(c){return c.name;});
+  var sys="You are the planning copilot for an FMCG S&OP cockpit. Interpret the user's instruction or question. Current plan JSON: "+JSON.stringify(ctx)+". You may propose ONE change via these actions: 'demand' (change a category's demand, value=percent + or -), 'capacity' (change capacity, value=percent), 'order' (add an extra order, value=number of cases), 'otif' (set OTIF target, value=percent 50-100), 'reset' (clear all changes), or 'none' for a pure question. Category MUST be exactly one of: "+JSON.stringify(cats)+". Respond with ONLY compact JSON, no prose: {\"action\":\"...\",\"category\":\"...\",\"value\":<number>,\"reply\":\"<one concise sentence for the user>\"}.";
+  var res=await fetch("https://openrouter.ai/api/v1/chat/completions",{method:"POST",headers:{"Authorization":"Bearer "+AI.key,"Content-Type":"application/json","X-Title":"FMCG Cockpit"},body:JSON.stringify({model:AI.model,messages:[{role:"system",content:sys}].concat((typeof aiHistory!=="undefined"?aiHistory:[]).slice(-6)).concat([{role:"user",content:userText}]),temperature:0.2,max_tokens:240})});
+  if(!res.ok){var tx=await res.text();throw new Error("HTTP "+res.status+" "+tx.slice(0,90));}
+  var j=await res.json();
+  AI.calls++;AI.tokens+=(j.usage&&j.usage.total_tokens)||0;try{localStorage.setItem("fmcg_or_calls",AI.calls);localStorage.setItem("fmcg_or_tokens",AI.tokens);}catch(e){}
+  var txt=(j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content)||"";
+  var mm=txt.match(/\{[\s\S]*\}/);if(!mm)return {action:"none",reply:txt||"(no reply)"};
+  try{return JSON.parse(mm[0]);}catch(e){return {action:"none",reply:txt};}
+}
+async function handleLLM(text){
+  pushChat(text,'<span class="think">🤖 thinking</span>');
+  try{
+    var out=await callOpenRouter(text,planContext());try{aiHistory.push({role:"user",content:text});aiHistory.push({role:"assistant",content:(out.reply||"")+" "+JSON.stringify({action:out.action,category:out.category,value:out.value})});if(aiHistory.length>12)aiHistory=aiHistory.slice(-12);}catch(_e){}
+    var cat=out.category?(catMatch(out.category)||out.category):null;var applied="";
+    if(out.action==="demand"&&cat){pushIntent({t:"demand",cat:cat,pct:+out.value||0});applied="Applied: "+cat+" demand "+((+out.value>=0?"+":"")+(+out.value||0))+"%. ";}
+    else if(out.action==="capacity"&&cat){pushIntent({t:"capacity",cat:cat,pct:+out.value||0});applied="Applied: "+cat+" capacity "+((+out.value>=0?"+":"")+(+out.value||0))+"%. ";}
+    else if(out.action==="order"&&cat){pushIntent({t:"order",cat:cat,qty:+out.value||0});applied="Applied: +"+fmt(+out.value||0)+" order on "+cat+". ";}
+    else if(out.action==="otif"){MASTER.params.otif_target=Math.min(100,Math.max(50,+out.value||95));resolve();applied="OTIF target → "+MASTER.params.otif_target+"%. ";}
+    else if(out.action==="reset"){resetAll();applied="Reset all what-ifs. ";}
+    replaceThinking("<b>🤖 AI</b> "+esc(out.reply||"")+(applied?" <span style=color:var(--mut)>"+applied+"</span>"+narr():""));
+  }catch(e){replaceThinking("⚠ AI unavailable ("+esc(e.message)+"). Falling back to the rules parser.");document.getElementById("cmd").value=text;ask({preventDefault:function(){}});}
+}
+function replaceThinking(h){chatlog=chatlog.replace(/<span class="think">[\s\S]*?<\/span>/,h);var l=document.getElementById("chatlog");if(l){l.innerHTML=chatlog;l.scrollTop=l.scrollHeight;}render();}
+
+
+var aiHistory=[];
+async function orFetch(messages,maxTok){
+  if(!AI.key)throw new Error("no key set");
+  var res=await fetch("https://openrouter.ai/api/v1/chat/completions",{method:"POST",headers:{"Authorization":"Bearer "+AI.key,"Content-Type":"application/json","X-Title":"FMCG Cockpit"},body:JSON.stringify({model:AI.model,messages:messages,temperature:0.3,max_tokens:maxTok||400})});
+  if(!res.ok){var t=await res.text();throw new Error("HTTP "+res.status+" "+t.slice(0,90));}
+  var j=await res.json();AI.calls++;AI.tokens+=(j.usage&&j.usage.total_tokens)||0;try{localStorage.setItem("fmcg_or_calls",AI.calls);localStorage.setItem("fmcg_or_tokens",AI.tokens);}catch(e){}
+  return (j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content)||"";
+}
+async function llmText(sys,user,maxTok){return await orFetch([{role:"system",content:sys},{role:"user",content:user}],maxTok);}
+function needAI(){if(!AI.on){openSettings();banner("Connect an AI copilot first — paste your OpenRouter key (🤖 top-right).",true);return false;}return true;}
+async function aiBrief(){if(!needAI())return;setTab("copilot");pushChat("Give me an executive briefing of the plan",'<span class="think">🤖 writing the brief</span>');try{var t=await llmText("You are a supply-chain analyst briefing FMCG leadership. Be concise, specific and numeric; no preamble.","Write a 5-6 sentence executive briefing of this S&OP plan: OTIF vs target, the binding constraint and why, the biggest risks, and the top 2 actions. Plan JSON: "+JSON.stringify(planContext()),380);replaceThinking("<b>🤖 Executive brief</b><br>"+esc(t).replace(/\n/g,"<br>"));}catch(e){replaceThinking("⚠ "+esc(e.message));}}
+async function aiAutoPlan(){if(!needAI())return;setTab("copilot");pushChat("Auto-plan: get me to the OTIF target with least disruption",'<span class="think">🤖 planning</span>');try{
+  var cats=(MASTER.categories||[]).map(function(c){return c.name;});
+  var sys="You are an S&OP optimiser. Propose up to 4 concrete actions to reach the OTIF target with least disruption. Action types: demand(value=percent),capacity(value=percent),order(value=cases),otif(value=percent). category MUST be exactly one of "+JSON.stringify(cats)+". Respond ONLY compact JSON, no prose: {\"actions\":[{\"action\":\"...\",\"category\":\"...\",\"value\":<number>}],\"reply\":\"<one sentence>\"}.";
+  var raw=await llmText(sys,"Plan JSON: "+JSON.stringify(planContext()),300);var mm=raw.match(/\{[\s\S]*\}/);var out=mm?JSON.parse(mm[0]):{actions:[]};
+  var before=solve(MASTER).otif;var n=0;
+  (out.actions||[]).forEach(function(a){var cat=a.category?(catMatch(a.category)||a.category):null;
+    if(a.action==="demand"&&cat){intents.push({t:"demand",cat:cat,pct:+a.value||0});n++;}
+    else if(a.action==="capacity"&&cat){intents.push({t:"capacity",cat:cat,pct:+a.value||0});n++;}
+    else if(a.action==="order"&&cat){intents.push({t:"order",cat:cat,qty:+a.value||0});n++;}
+    else if(a.action==="otif"){MASTER.params.otif_target=Math.min(100,Math.max(50,+a.value||95));n++;}});
+  redoStack=[];resolve();var after=solve(MASTER).otif;
+  replaceThinking("<b>🤖 Auto-plan</b> "+esc(out.reply||"")+" — applied "+n+" action"+(n===1?"":"s")+"; OTIF "+pctFill(before)+" → <b>"+pctFill(after)+"</b>. "+narr());
+}catch(e){replaceThinking("⚠ "+esc(e.message));}}
+async function aiEmail(){if(!needAI())return;var m=document.getElementById("emailmodal");document.getElementById("emailbody").value="Writing…";m.classList.add("on");try{var t=await llmText("You write clear, concise internal business emails. Output plain text with a Subject line.","Draft a short S&OP review email to leadership summarising this plan: OTIF vs target, binding constraint, key risks, and decisions needed. Plan JSON: "+JSON.stringify(planContext()),440);document.getElementById("emailbody").value=t;}catch(e){document.getElementById("emailbody").value="⚠ "+e.message;}}
+function copyEmail(){var t=document.getElementById("emailbody");t.select();try{document.execCommand("copy");banner("Email draft copied to clipboard.");}catch(e){}}
+
+renderTabs();render();initAI();
 </script>
+<div class="modal" id="aimodal" onclick="if(event.target===this)closeSettings()">
+  <div class="msheet">
+    <button class="x" onclick="closeSettings()" aria-label="Close">×</button>
+    <h3>🤖 Connect an AI copilot</h3>
+    <div style="font-size:13.5px;color:var(--ink2)">Paste your own <b>OpenRouter</b> key so the copilot understands free-form language and answers questions about the plan. The deterministic engine still validates every change — the AI only <i>proposes</i>.</div>
+    <label for="aikey">OpenRouter API key</label>
+    <input id="aikey" type="password" placeholder="sk-or-v1-…" autocomplete="off" spellcheck="false">
+    <label for="aimodel">Model</label>
+    <select id="aimodel">
+      <option value="openai/gpt-4o-mini">openai/gpt-4o-mini — cheap &amp; reliable</option>
+      <option value="deepseek/deepseek-chat">deepseek/deepseek-chat — cheapest</option>
+      <option value="google/gemini-flash-1.5">google/gemini-flash-1.5</option>
+      <option value="anthropic/claude-3.5-haiku">anthropic/claude-3.5-haiku</option>
+    </select>
+    <div class="note">🔒 <b>Your key never leaves this browser</b> except to call OpenRouter over HTTPS — it is stored in this browser's localStorage, never sent to this site's server and never committed to the repo. Avoid on a shared computer. <span id="aiusage"></span></div>
+    <div class="rowb"><button class="save" onclick="saveSettings()">Save &amp; connect</button><button class="ghost" onclick="testAI()">Test</button><button class="ghost" onclick="clearKey()">Clear</button></div>
+    <div id="aitest" style="font-size:12.5px;color:var(--mut);margin-top:9px"></div>
+    <div style="font-size:11.5px;color:var(--mut);margin-top:8px">Get a key at openrouter.ai/keys · a few paise per command on the cheap models.</div>
+  </div>
+</div>
+<div class="modal" id="emailmodal" onclick="if(event.target===this)this.classList.remove('on')">
+  <div class="msheet" style="max-width:640px">
+    <button class="x" onclick="document.getElementById('emailmodal').classList.remove('on')" aria-label="Close">×</button>
+    <h3>✉️ S&amp;OP review email — AI draft</h3>
+    <textarea id="emailbody" style="width:100%;min-height:280px;font:inherit;font-size:13.5px;line-height:1.5;padding:12px;border:1.5px solid var(--line);border-radius:10px;margin-top:10px"></textarea>
+    <div class="rowb"><button class="save" onclick="copyEmail()">Copy to clipboard</button><button class="ghost" onclick="document.getElementById('emailmodal').classList.remove('on')">Close</button></div>
+  </div>
+</div>
 </body>
 </html>
