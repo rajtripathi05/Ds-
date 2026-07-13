@@ -133,7 +133,7 @@ def gen_sales():
     week_dates=cal["week_start"].values
     cat_season={cat:_season(prof,cal) for cat,(_,_,_,prof) in CATS.items()}
     # ---- promotions: build events, and per-sku weekly depth + id arrays ----
-    promo_events=[]; sku_depth={s:np.zeros(WEEKS) for s in prod["sku"]}; sku_pid={s:np.array([""]*WEEKS,dtype=object) for s in prod["sku"]}
+    promo_events=[]; sku_depth={s:np.zeros(WEEKS) for s in prod["sku"]}; sku_pid={s:np.array([""]*WEEKS,dtype=object) for s in prod["sku"]}; sku_ptype={s:np.array([""]*WEEKS,dtype=object) for s in prod["sku"]}
     pid=0
     for _ in range(170):
         pid+=1; PID=f"PROMO-{pid:04d}"
@@ -142,7 +142,7 @@ def gen_sales():
         depth=float(random.choice([0.05,0.08,0.10,0.12,0.15,0.20,0.25]))
         ptype=random.choice(["trade","consumer","festival"])
         for w in range(start,min(WEEKS,start+dur)):
-            sku_depth[sku["sku"]][w]=depth; sku_pid[sku["sku"]][w]=PID
+            sku_depth[sku["sku"]][w]=depth; sku_pid[sku["sku"]][w]=PID; sku_ptype[sku["sku"]][w]=ptype
         promo_events.append([PID,sku["sku"],sku["category"],ptype,depth,
                              week_dates[start],int(dur),
                              round(float(sku["mrp"])*depth*float(rng.uniform(2000,60000)),0)])
@@ -158,22 +158,35 @@ def gen_sales():
     sku_pop={r.sku: float(np.clip(rng.lognormal(0,0.6),0.2,5)) for r in prod_idx.itertuples()}
     sku_meta={r.sku:(r.brand,r.category,float(r.mrp),float(r.unit_cost),CATS[r.category][2]) for r in prod_idx.itertuples()}
     all_units=[];all_dist=[];all_zone=[];all_state=[];all_sku=[];all_cat=[];all_brand=[];all_price=[];all_rev=[];all_pflag=[];all_pid=[]
+    all_out=[];all_fac=[];all_ad=[];all_seas=[];all_ptype=[];all_pdepth=[]   # NEW demand drivers
     for d in dist.itertuples():
         ncarry=int(rng.integers(20,60))
         carried=prod_idx.sample(ncarry,random_state=int(rng.integers(0,1e9)))
         for r in carried.itertuples():
             brand,cat,mrp,cost,el=sku_meta[r.sku]
-            base=6.0*sku_pop[r.sku]*d.size_index
+            base=5.6*sku_pop[r.sku]*d.size_index
             trend=1+float(rng.normal(0.04,0.10))*np.arange(WEEKS)/52.0
-            season=cat_season[cat]
-            depth=sku_depth[r.sku]; pids=sku_pid[r.sku]
+            season=cat_season[cat]                          # explicit seasonal_index
+            depth=sku_depth[r.sku]; pids=sku_pid[r.sku]; ptypes=sku_ptype[r.sku]
             promo_mult=1+el*depth*3.0                       # uplift via true elasticity
             noise=rng.lognormal(0,0.18,WEEKS)
             launch_mask=np.ones(WEEKS)
             if isinstance(r.launch_week,str) and r.launch_week:
                 lw=cal.index[cal["week_start"]==r.launch_week]
                 if len(lw): launch_mask[:int(lw[0])]=0.0     # zero before launch
-            units=base*trend*season*promo_mult*noise*launch_mask
+            # ---- demand drivers (distribution / merchandising / media) ----
+            outlets0=float(np.clip(rng.normal(420*sku_pop[r.sku]*d.size_index,90),15,6000))
+            num_outlets=np.clip(np.round(outlets0*(1+rng.normal(0,0.05,WEEKS))),8,None).astype(int)
+            facings0=int(np.clip(round(1+sku_pop[r.sku]*1.3),1,8))
+            shelf_facings=np.full(WEEKS,facings0)
+            if rng.random()<0.3:                             # ~30% of SKUs get a facing change mid-horizon
+                ch=int(rng.integers(WEEKS//3,2*WEEKS//3)); shelf_facings[ch:]=int(np.clip(facings0+rng.choice([-1,1,2]),1,8))
+            camp=rng.random(WEEKS)<0.22                      # advertising campaign weeks
+            ad_spend=np.where(camp,rng.uniform(8000,90000,WEEKS),rng.uniform(0,1500,WEEKS)).round(0)
+            dist_mult=(num_outlets/outlets0)**0.6            # distribution elasticity ~0.6 (within-series)
+            facing_mult=(shelf_facings/facings0)**0.30       # facing elasticity ~0.30
+            ad_mult=1+0.12*np.log1p(ad_spend/8000.0)         # ad response, diminishing returns
+            units=base*trend*season*promo_mult*noise*launch_mask*dist_mult*facing_mult*ad_mult
             # occasional stockouts
             so=rng.random(WEEKS)<0.03; units[so]*=rng.uniform(0,0.2,so.sum())
             units=np.round(np.clip(units,0,None)).astype(int)
@@ -183,6 +196,8 @@ def gen_sales():
             all_dist.append(np.full(WEEKS,d.distributor_code)); all_zone.append(np.full(WEEKS,d.zone)); all_state.append(np.full(WEEKS,d.state))
             all_sku.append(np.full(WEEKS,r.sku)); all_cat.append(np.full(WEEKS,cat)); all_brand.append(np.full(WEEKS,brand))
             all_pflag.append((depth>0).astype(int)); all_pid.append(pids)
+            all_out.append(num_outlets); all_fac.append(shelf_facings); all_ad.append(ad_spend)
+            all_seas.append(np.round(season,3)); all_ptype.append(ptypes); all_pdepth.append(np.round(depth,3))
     n_series=len(all_units)
     df=pd.DataFrame({
         "week_start":np.tile(week_dates,n_series),
@@ -197,10 +212,36 @@ def gen_sales():
         "revenue":np.concatenate(all_rev),
         "promo_flag":np.concatenate(all_pflag),
         "promo_id":np.concatenate(all_pid),
+        "promo_type":np.concatenate(all_ptype),
+        "promo_depth":np.concatenate(all_pdepth),
+        "num_outlets":np.concatenate(all_out),
+        "shelf_facings":np.concatenate(all_fac),
+        "ad_spend":np.concatenate(all_ad),
+        "seasonal_index":np.concatenate(all_seas),
     })
     # drop all-zero pre-launch rows to keep file realistic & lean
     df=df[df["units"]>0].reset_index(drop=True)
     df.to_csv(P("sales","sales_secondary.csv"),index=False)
+    # ground-truth demand-driver coefficients (for validating a forecaster)
+    P("ground_truth","demand_drivers.md").write_text(
+"""# Demand drivers — planted ground truth (sales_secondary.csv)
+
+`units` (the TARGET) is generated as a product of these drivers. A good demand
+model should recover each direction and rough strength:
+
+| Driver (column) | Effect on units | Planted form |
+|---|---|---|
+| `unit_price` / `promo_depth` | price down -> units up | price elasticity per category (see promo_true_elasticities.csv); promo uplift = 1 + elasticity x depth x 3 |
+| `promo_flag` / `promo_type` | promo weeks lift demand | trade/consumer/festival mechanic active |
+| `num_outlets` (distribution) | more outlets -> more units | multiplier (num_outlets / baseline)^0.6, and baseline outlets scale with SKU popularity x distributor size |
+| `shelf_facings` | more facings -> more units | multiplier (facings / baseline)^0.30 |
+| `ad_spend` | more spend -> more units (diminishing) | multiplier 1 + 0.12 x ln(1 + ad_spend/8000) |
+| `seasonal_index` | 1.0 = average; >1 peak | category seasonal profile (summer/winter/festive) |
+| trend | mild per-SKU growth/decline | 1 + N(0.04, 0.10) x week/52 |
+
+Product hierarchy = sku -> brand -> category; time = weekly `week_start`.
+Use these only to validate a model — never as features beyond the columns themselves.
+""",encoding="utf-8")
 
     # sales targets (monthly by zone x category = actual*factor)
     dm=df.copy(); dm["month"]=dm["week_start"].str.slice(0,7)

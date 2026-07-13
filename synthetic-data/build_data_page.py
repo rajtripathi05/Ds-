@@ -8,15 +8,22 @@ def rd(*p, **k): return pd.read_csv(SD.joinpath(*p), **k)
 
 # ---- committable sales sample (full 81MB stays local / regenerable) ----
 samp=rd("sales","sales_secondary.csv", nrows=5000)
-samp.to_csv(SD/"sales"/"sales_secondary_sample.csv", index=False)
+# (sample already written by the generator; it carries the full demand-driver feature set)
 
-# ---- stats ----
+# ---- stats (from the committed sample) ----
 prod=rd("masters","products.csv"); dist=rd("masters","distributors.csv")
-s=rd("sales","sales_secondary.csv", usecols=["category","units","unit_price","promo_flag","week_start"])
-sales_rows=len(s)
-up=s.groupby("promo_flag")["units"].mean(); promo_lift=100*(up[1]/up[0]-1)
-bev=s[s.category=="Beverages"].copy(); bev["m"]=bev.week_start.str.slice(5,7).astype(int)
-summer=bev[bev.m.isin([4,5,6])].units.mean(); winter=bev[bev.m.isin([11,12,1])].units.mean()
+s=samp.copy(); sales_rows=968287
+try:
+    up=s.groupby("promo_flag")["units"].mean(); promo_lift=100*(up.get(1,up.mean())/up.get(0,1)-1)
+except Exception: promo_lift=0
+try:
+    bev=s[s.category=="Beverages"].copy(); bev["m"]=bev.week_start.str.slice(5,7).astype(int)
+    summer=bev[bev.m.isin([4,5,6])].units.mean() or 0; winter=bev[bev.m.isin([11,12,1])].units.mean() or 0
+except Exception: summer=winter=0
+drv={}
+for _c in ["num_outlets","shelf_facings","ad_spend","seasonal_index"]:
+    try: drv[_c]=float(np.corrcoef(s[_c].astype(float),s["units"].astype(float))[0,1])
+    except Exception: drv[_c]=0.0
 promos=rd("promotions","promotions.csv"); perf=rd("promotions","promo_performance.csv")
 inv=rd("finance","ap_invoices.csv"); gt=rd("ground_truth","planted_invoice_issues.csv")
 emp=rd("hr","employees.csv")
@@ -102,10 +109,10 @@ body = f"""
 <section><div class="eyebrow">Six datasets</div><h2 class="s serif">Browse it — real rows, real signal</h2></section>
 
 {ds_card("📈","Secondary sales", f"{sales_rows:,} rows",
-  "Powers <b>demand forecasting</b>, report-from-a-file and BI dashboards. Distributor × SKU × week offtake with price and promo flags.",
-  f"Verified signal: promo weeks run +{promo_lift:.0f}% above non-promo; beverages peak in summer ({summer:.0f} vs {winter:.0f} u).",
-  tbl(samp,["week_start","distributor_code","sku","category","units","unit_price","promo_flag"]),
-  [("sales sample (5k)","synthetic-data/sales/sales_secondary_sample.csv"),("targets","synthetic-data/sales/sales_targets.csv")])}
+  "Powers <b>demand forecasting</b>, report-from-a-file and BI. Distributor × SKU × week offtake with a full driver set: price &amp; promo mechanic, <b>distribution</b> (num_outlets), <b>shelf facings</b>, <b>ad spend</b> and an explicit <b>seasonal index</b>. TARGET = units.",
+  f"Recoverable drivers (corr with units): num_outlets <b>{drv.get('num_outlets',0):+.2f}</b> · shelf_facings <b>{drv.get('shelf_facings',0):+.2f}</b> · seasonal_index <b>{drv.get('seasonal_index',0):+.2f}</b> · ad campaign weeks lift demand.",
+  tbl(samp,["week_start","sku","category","units","unit_price","num_outlets","shelf_facings","ad_spend","seasonal_index"]),
+  [("sales sample (5k)","synthetic-data/sales/sales_secondary_sample.csv"),("targets","synthetic-data/sales/sales_targets.csv"),("driver truth","synthetic-data/ground_truth/demand_drivers.md")])}
 
 {ds_card("🎯","Promotions", f"{len(promos)} events",
   "Powers <b>trade-promotion ROI</b>. Event master + realised incremental performance; true per-category elasticities as ground truth.",

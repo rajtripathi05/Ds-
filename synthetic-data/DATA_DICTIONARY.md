@@ -9,7 +9,14 @@ All files are CSV unless noted. Row counts are for `SEED=42`.
 **plants.csv** (15) — `plant_code, plant_name, city, state, primary_category, daily_capacity_k_units, gstin`.
 
 ## sales/
-**sales_secondary.csv** (~926,947) — `week_start, distributor_code, zone, state, sku, brand, category, units, unit_price, revenue, promo_flag, promo_id`. Distributor×SKU×week offtake. `unit_price` reflects promo discount; `revenue = units × unit_price`. **This is the forecasting/BI workhorse.**
+**sales_secondary.csv** (~968,287) — Distributor×SKU×week offtake. **The forecasting/BI workhorse**, now with a full demand-driver feature set:
+- *time + hierarchy:* `week_start`, `sku → brand → category`, `zone`, `state`
+- *price + promo mechanic:* `unit_price` (reflects promo discount), `promo_flag`, `promo_id`, `promo_type` (trade/consumer/festival), `promo_depth`
+- *distribution:* `num_outlets` (retail outlets stocking the SKU — the strongest driver, corr ≈ +0.85)
+- *merchandising:* `shelf_facings` (1–8; corr ≈ +0.55)
+- *media:* `ad_spend` (per SKU/zone/week; campaign weeks lift demand ≈ +20%)
+- *seasonality:* `seasonal_index` (1.0 = average, explicit multiplier)
+- *TARGET:* `units` (and `revenue = units × unit_price`)
 **sales_targets.csv** (840) — `month, zone, category, actual_revenue, target_revenue`. Monthly target-vs-actual.
 
 ## promotions/
@@ -41,4 +48,4 @@ Match truth: `ground_truth/resume_jd_truth.csv` — `resume_id, best_match_jd, t
 **qa_examples.csv** (13) — `question, expected_doc, answer`. A starter eval set for a policy chatbot.
 
 ## ground_truth/
-`promo_true_elasticities.csv` (6) · `planted_invoice_issues.csv` (659) · `attrition_drivers.md` · `resume_jd_truth.csv` (60). **Validation only.**
+`promo_true_elasticities.csv` (6) · `demand_drivers.md` (the planted coefficient/direction for every demand driver above) · `planted_invoice_issues.csv` (659) · `attrition_drivers.md` · `resume_jd_truth.csv` (60). **Validation only.**

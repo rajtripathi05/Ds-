@@ -1,11 +1,11 @@
 [
  {
   "set_id": "SET-0001",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -94,11 +94,11 @@
  },
  {
   "set_id": "SET-0003",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -187,11 +187,11 @@
  },
  {
   "set_id": "SET-0005",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -275,11 +275,11 @@
  },
  {
   "set_id": "SET-0007",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -324,11 +324,11 @@
  },
  {
   "set_id": "SET-0008",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -432,11 +432,11 @@
  },
  {
   "set_id": "SET-0010",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -476,11 +476,11 @@
  },
  {
   "set_id": "SET-0011",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -510,11 +510,11 @@
  },
  {
   "set_id": "SET-0012",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -554,11 +554,11 @@
  },
  {
   "set_id": "SET-0013",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -588,11 +588,11 @@
  },
  {
   "set_id": "SET-0014",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -637,11 +637,11 @@
  },
  {
   "set_id": "SET-0015",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -686,11 +686,11 @@
  },
  {
   "set_id": "SET-0016",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -730,11 +730,11 @@
  },
  {
   "set_id": "SET-0017",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -813,11 +813,11 @@
  },
  {
   "set_id": "SET-0019",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -906,11 +906,11 @@
  },
  {
   "set_id": "SET-0021",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -994,11 +994,11 @@
  },
  {
   "set_id": "SET-0023",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1048,11 +1048,11 @@
  },
  {
   "set_id": "SET-0024",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1102,11 +1102,11 @@
  },
  {
   "set_id": "SET-0025",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1161,11 +1161,11 @@
  },
  {
   "set_id": "SET-0026",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1352,11 +1352,11 @@
  },
  {
   "set_id": "SET-0030",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1391,11 +1391,11 @@
  },
  {
   "set_id": "SET-0031",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1440,11 +1440,11 @@
  },
  {
   "set_id": "SET-0032",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1479,11 +1479,11 @@
  },
  {
   "set_id": "SET-0033",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1557,11 +1557,11 @@
  },
  {
   "set_id": "SET-0035",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1616,11 +1616,11 @@
  },
  {
   "set_id": "SET-0036",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1704,11 +1704,11 @@
  },
  {
   "set_id": "SET-0038",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
@@ -1797,11 +1797,11 @@
  },
  {
   "set_id": "SET-0040",
-  "outcome": "auto_approve",
+  "outcome": "route_to_human",
   "reason": [
-   "all_pass",
-   "pass",
-   "all checks green"
+   "R8_confidence",
+   "route_to_human",
+   "all checks pass but doc confidence 0.80 < threshold 0.92"
   ],
   "checks": [
    [
