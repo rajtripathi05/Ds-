@@ -63,6 +63,8 @@ details.trace summary{cursor:pointer;font-weight:700;color:var(--ink2)}
 .doc .x{float:right;border:0;background:#f4f2ef;border-radius:9px;width:40px;height:40px;font-size:20px;cursor:pointer}
 .foot{grid-column:1/-1;text-align:center;color:var(--mut);font-size:12.5px;margin-top:8px}
 </style>
+<script defer src="../ai.js"></script>
+<script>window.FMCGAI_HINT="Company Assistant demo — a role-aware assistant over 24 company policy/SOP documents. Answer with the specific figure and name the source document.";window.FMCGAI_CONTEXT=function(){try{return Object.keys(CORP).map(function(k){return CORP[k].title+" ["+k+"]: "+CORP[k].text.slice(0,380);}).join("\n\n").slice(0,7000);}catch(e){return document.body.innerText.slice(0,4000);}};</script>
 </head>
 <body>
 <div class="top">
@@ -171,5 +173,4 @@ function closeDoc(){document.getElementById('modal').classList.remove('on');}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDoc();});
 renderChips();renderRolebar();
 </script>
-</body>
-</html>
+</b
