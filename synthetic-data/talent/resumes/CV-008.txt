@@ -1,0 +1,17 @@
+Sanjay Yadav
+Chennai, India | sanjay@example.com | +91-8351330451
+
+SUMMARY
+Data Analyst with 2 years of experience in consumer goods. Known for ownership.
+
+SKILLS
+Python, Power BI, ETL, statistics, OCR, Power Automate
+
+EXPERIENCE
+- Sr. Data Executive, Metro Snacks (2018-2023)
+    Delivered quality through statistics and ETL.
+- Data Officer, Orbit Beverages (2019-2023)
+    Delivered productivity through Python and OCR.
+
+EDUCATION
+B.Tech, Computer Science

@@ -1,0 +1,17 @@
+Ishaan Chauhan
+Bengaluru, India | ishaan@example.com | +91-8693470282
+
+SUMMARY
+Maintenance Engineer with 10 years of experience in FMCG. Known for stakeholder management.
+
+SKILLS
+mechanical, TPM, preventive maintenance, breakdown analysis, PLC
+
+EXPERIENCE
+- Maintenance Executive, Acme Foods (2020-2023)
+    Delivered quality through TPM and breakdown analysis.
+- Jr. Maintenance Specialist, Metro Snacks (2020-2023)
+    Delivered quality through mechanical and breakdown analysis.
+
+EDUCATION
+M.Sc Statistics

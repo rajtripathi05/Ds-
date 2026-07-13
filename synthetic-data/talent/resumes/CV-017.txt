@@ -1,0 +1,17 @@
+Rohan Khan
+Chennai, India | rohan@example.com | +91-9716543341
+
+SUMMARY
+ML Engineer with 9 years of experience in manufacturing. Known for delivery focus.
+
+SKILLS
+model deployment, NLP, MLOps, machine learning, TensorFlow, vector databases, scikit-learn, Python
+
+EXPERIENCE
+- Sr. ML Associate, Metro Snacks (2019-present)
+    Delivered growth through model deployment and machine learning.
+- Sr. ML Officer, Orbit Beverages (2024-2023)
+    Delivered quality through Python and scikit-learn.
+
+EDUCATION
+MCA

@@ -1,0 +1,17 @@
+Vihaan Ahmed
+Bengaluru, India | vihaan@example.com | +91-8207284047
+
+SUMMARY
+ML Engineer with 9 years of experience in FMCG. Known for ownership.
+
+SKILLS
+model deployment, scikit-learn, TensorFlow, NLP, OCR, workflow design
+
+EXPERIENCE
+- Sr. ML Associate, Metro Snacks (2023-2023)
+    Delivered cost savings through scikit-learn and scikit-learn.
+- ML Officer, Orbit Beverages (2021-present)
+    Delivered quality through NLP and scikit-learn.
+
+EDUCATION
+LLB

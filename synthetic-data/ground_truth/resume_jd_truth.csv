@@ -1,0 +1,61 @@
+resume_id,best_match_jd,target_role,match_label,skill_overlap
+CV-001,JD-02,ML Engineer,weak,0.12
+CV-002,JD-06,Plant QA Executive,weak,0.14
+CV-003,JD-03,RPA Developer,strong,0.86
+CV-004,JD-11,Legal Counsel,weak,0.17
+CV-005,JD-04,Field Sales Officer,strong,0.71
+CV-006,JD-04,Field Sales Officer,strong,0.71
+CV-007,JD-02,ML Engineer,medium,0.5
+CV-008,JD-01,Data Analyst,medium,0.5
+CV-009,JD-10,Supply Planner,medium,0.5
+CV-010,JD-11,Legal Counsel,weak,0.17
+CV-011,JD-03,RPA Developer,weak,0.14
+CV-012,JD-09,Maintenance Engineer,weak,0.17
+CV-013,JD-03,RPA Developer,weak,0.14
+CV-014,JD-06,Plant QA Executive,medium,0.43
+CV-015,JD-09,Maintenance Engineer,strong,0.83
+CV-016,JD-05,Brand Manager,medium,0.5
+CV-017,JD-02,ML Engineer,strong,1.0
+CV-018,JD-05,Brand Manager,medium,0.5
+CV-019,JD-01,Data Analyst,strong,0.75
+CV-020,JD-09,Maintenance Engineer,strong,0.83
+CV-021,JD-11,Legal Counsel,medium,0.5
+CV-022,JD-12,IT Support Engineer,medium,0.5
+CV-023,JD-11,Legal Counsel,weak,0.17
+CV-024,JD-12,IT Support Engineer,strong,1.0
+CV-025,JD-12,IT Support Engineer,medium,0.5
+CV-026,JD-01,Data Analyst,strong,0.88
+CV-027,JD-09,Maintenance Engineer,weak,0.17
+CV-028,JD-08,HRBP,medium,0.5
+CV-029,JD-12,IT Support Engineer,medium,0.5
+CV-030,JD-02,ML Engineer,strong,1.0
+CV-031,JD-05,Brand Manager,medium,0.5
+CV-032,JD-08,HRBP,medium,0.5
+CV-033,JD-04,Field Sales Officer,medium,0.43
+CV-034,JD-08,HRBP,medium,0.5
+CV-035,JD-06,Plant QA Executive,strong,0.71
+CV-036,JD-08,HRBP,strong,1.0
+CV-037,JD-11,Legal Counsel,weak,0.17
+CV-038,JD-12,IT Support Engineer,strong,1.0
+CV-039,JD-11,Legal Counsel,strong,1.0
+CV-040,JD-12,IT Support Engineer,medium,0.5
+CV-041,JD-04,Field Sales Officer,medium,0.43
+CV-042,JD-06,Plant QA Executive,weak,0.14
+CV-043,JD-09,Maintenance Engineer,strong,1.0
+CV-044,JD-07,Finance Executive,medium,0.43
+CV-045,JD-05,Brand Manager,strong,0.83
+CV-046,JD-03,RPA Developer,strong,0.86
+CV-047,JD-04,Field Sales Officer,medium,0.43
+CV-048,JD-01,Data Analyst,strong,1.0
+CV-049,JD-02,ML Engineer,strong,0.62
+CV-050,JD-08,HRBP,strong,1.0
+CV-051,JD-08,HRBP,weak,0.17
+CV-052,JD-12,IT Support Engineer,strong,0.83
+CV-053,JD-03,RPA Developer,weak,0.14
+CV-054,JD-06,Plant QA Executive,medium,0.43
+CV-055,JD-02,ML Engineer,strong,0.75
+CV-056,JD-05,Brand Manager,medium,0.5
+CV-057,JD-11,Legal Counsel,strong,0.83
+CV-058,JD-12,IT Support Engineer,strong,1.0
+CV-059,JD-12,IT Support Engineer,weak,0.17
+CV-060,JD-08,HRBP,medium,0.5

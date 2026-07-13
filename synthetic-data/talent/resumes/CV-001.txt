@@ -1,0 +1,17 @@
+Meera Naidu
+Pune, India | meera@example.com | +91-8963649498
+
+SUMMARY
+ML Engineer with 6 years of experience in IT services. Known for stakeholder management.
+
+SKILLS
+invoice processing, GST, TDS, Tally, Python
+
+EXPERIENCE
+- Sr. ML Officer, Zenith Retail (2022-2023)
+    Delivered quality through Python and GST.
+- Sr. ML Associate, Sunrise FMCG (2024-2023)
+    Delivered cost savings through GST and invoice processing.
+
+EDUCATION
+B.Com

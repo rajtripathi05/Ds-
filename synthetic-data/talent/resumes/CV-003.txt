@@ -1,0 +1,17 @@
+Sneha Das
+Pune, India | sneha@example.com | +91-8579397805
+
+SUMMARY
+RPA Developer with 10 years of experience in consumer goods. Known for ownership.
+
+SKILLS
+Power Automate, exception handling, VBA, process automation, OCR, workflow design
+
+EXPERIENCE
+- Jr. RPA Executive, Orbit Beverages (2022-2023)
+    Delivered cost savings through Power Automate and Power Automate.
+- RPA Executive, Metro Snacks (2022-present)
+    Delivered growth through process automation and OCR.
+
+EDUCATION
+MBA, Marketing

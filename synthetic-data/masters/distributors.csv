@@ -1,0 +1,221 @@
+distributor_code,distributor_name,zone,state,town_class,size_index,gstin,onboarded_date,credit_limit_inr
+DIST-0001,Rohan Rao Distributors,Central,Chhattisgarh,Tier-2,0.943,07SYN1464D1Z7,2019-05-23,4906219
+DIST-0002,Karan Verma Distributors,North,Uttarakhand,Tier-2,0.477,30SYN3589A1Z7,2021-08-30,568990
+DIST-0003,Farhan Mukherjee Distributors,North,Uttarakhand,Tier-1,1.455,35SYN9349A1Z1,2018-05-06,4276801
+DIST-0004,Diya Gupta Distributors,Central,Madhya Pradesh,Metro,1.942,26SYN5018D1Z0,2020-05-01,1248375
+DIST-0005,Manish Patel Distributors,West,Maharashtra,Metro,1.968,21SYN6669B1Z0,2017-11-05,2409269
+DIST-0006,Navya Rao Distributors,West,Rajasthan,Tier-2,0.477,07SYN1477D1Z1,2023-02-08,1572566
+DIST-0007,Ishaan Ahmed Distributors,East,Bihar,Tier-2,1.495,20SYN9820H1Z6,2019-05-10,2693772
+DIST-0008,Aarav Banerjee Distributors,East,West Bengal,Metro,0.594,03SYN1039B1Z0,2021-10-28,4455484
+DIST-0009,Imran Shah Distributors,Central,Madhya Pradesh,Tier-1,0.4,16SYN2557F1Z3,2022-08-18,3920189
+DIST-0010,Neha Mehta Distributors,North,Uttar Pradesh,Tier-1,0.586,08SYN6327H1Z4,2019-10-15,3985180
+DIST-0011,Sunita Malhotra Distributors,Central,Chhattisgarh,Metro,0.91,32SYN6151E1Z4,2022-04-17,1466960
+DIST-0012,Navya Iyer Distributors,North,Uttar Pradesh,Metro,0.842,35SYN4764C1Z5,2019-10-27,3588946
+DIST-0013,Rajesh Rao Distributors,East,Assam,Tier-2,0.847,17SYN9464D1Z1,2022-04-09,2469794
+DIST-0014,Navya Yadav Distributors,East,Bihar,Metro,1.191,19SYN9222B1Z4,2022-05-23,860322
+DIST-0015,Aditya Sharma Distributors,West,Rajasthan,Tier-2,1.035,35SYN3502C1Z0,2021-04-15,3189080
+DIST-0016,Kavya Naidu Distributors,East,Odisha,Rural,1.181,16SYN4606A1Z5,2017-02-01,2235511
+DIST-0017,Rohan Naidu Distributors,North,Delhi,Metro,0.659,31SYN2958F1Z8,2019-07-02,3127394
+DIST-0018,Deepak Nair Distributors,Central,Madhya Pradesh,Metro,0.795,13SYN3687E1Z3,2020-03-14,2528423
+DIST-0019,Priya Rao Distributors,East,West Bengal,Tier-1,1.738,05SYN6151B1Z3,2019-08-23,3071657
+DIST-0020,Sunita Deshpande Distributors,East,Bihar,Tier-1,0.867,26SYN6283D1Z5,2019-04-28,1786206
+DIST-0021,Vikram Sharma Distributors,South,Tamil Nadu,Tier-1,0.844,13SYN5941F1Z1,2020-06-27,2789419
+DIST-0022,Myra Reddy Distributors,West,Gujarat,Metro,3.665,23SYN9654G1Z4,2018-02-11,3762516
+DIST-0023,Aarohi Rao Distributors,North,Haryana,Rural,1.047,06SYN9288F1Z7,2020-01-13,3746942
+DIST-0024,Aarohi Sharma Distributors,East,Odisha,Tier-1,0.677,20SYN3213G1Z2,2019-12-08,4235697
+DIST-0025,Arjun Joshi Distributors,East,Assam,Tier-2,1.395,32SYN8577F1Z7,2022-11-09,664931
+DIST-0026,Karan Singh Distributors,Central,Chhattisgarh,Metro,1.255,11SYN5387B1Z1,2018-08-09,1775298
+DIST-0027,Sneha Shah Distributors,East,Odisha,Metro,0.4,33SYN1132B1Z3,2017-12-30,3618974
+DIST-0028,Priya Deshpande Distributors,Central,Chhattisgarh,Tier-2,1.978,31SYN7381G1Z1,2021-09-12,3123949
+DIST-0029,Pooja Yadav Distributors,Central,Madhya Pradesh,Tier-1,0.472,19SYN4283E1Z4,2017-03-03,660069
+DIST-0030,Aarav Mukherjee Distributors,North,Haryana,Tier-1,1.243,36SYN4819F1Z2,2018-05-09,3532025
+DIST-0031,Amit Menon Distributors,West,Maharashtra,Tier-2,0.458,28SYN4490B1Z8,2019-03-03,1868053
+DIST-0032,Vikram Singh Distributors,East,Assam,Rural,1.485,02SYN7807E1Z4,2020-04-07,1069631
+DIST-0033,Aadhya Bose Distributors,Central,Madhya Pradesh,Rural,0.709,16SYN8525C1Z8,2016-12-22,4802656
+DIST-0034,Sanjay Naidu Distributors,Central,Chhattisgarh,Metro,0.642,21SYN8213E1Z8,2019-02-08,965500
+DIST-0035,Deepak Malhotra Distributors,East,Odisha,Tier-2,2.018,31SYN4532H1Z2,2022-09-13,4226645
+DIST-0036,Saanvi Mukherjee Distributors,West,Goa,Rural,1.138,28SYN5316C1Z4,2017-06-02,1008162
+DIST-0037,Imran Ahmed Distributors,North,Punjab,Tier-2,0.625,10SYN9163B1Z8,2022-12-04,3270831
+DIST-0038,Aarohi Malhotra Distributors,South,Telangana,Tier-1,1.375,10SYN2749C1Z4,2016-12-08,3056292
+DIST-0039,Anika Chatterjee Distributors,North,Delhi,Metro,0.302,02SYN1756H1Z2,2021-09-02,4250723
+DIST-0040,Pooja Chatterjee Distributors,West,Gujarat,Rural,1.132,31SYN6005D1Z5,2020-08-23,3449955
+DIST-0041,Reyansh Joshi Distributors,South,Karnataka,Rural,0.923,23SYN1522D1Z6,2020-11-23,3795236
+DIST-0042,Vihaan Naidu Distributors,South,Kerala,Tier-1,1.393,20SYN9381B1Z7,2021-02-13,2568090
+DIST-0043,Meera Ahmed Distributors,West,Gujarat,Tier-2,1.16,26SYN8667H1Z3,2020-01-10,2325064
+DIST-0044,Simran Banerjee Distributors,Central,Chhattisgarh,Tier-1,0.686,33SYN2081H1Z7,2020-10-14,1900776
+DIST-0045,Anika Kapoor Distributors,West,Rajasthan,Tier-2,0.641,02SYN4586H1Z8,2017-06-06,3256204
+DIST-0046,Kavya Gupta Distributors,South,Telangana,Tier-2,0.682,24SYN1076D1Z3,2021-03-19,1200534
+DIST-0047,Rahul Yadav Distributors,East,Assam,Metro,0.923,23SYN9346C1Z6,2020-05-20,2275260
+DIST-0048,Pooja Kulkarni Distributors,South,Tamil Nadu,Tier-1,0.485,12SYN6098D1Z0,2020-08-03,1606703
+DIST-0049,Vikram Singh Distributors,North,Haryana,Rural,0.638,20SYN6703G1Z6,2017-01-08,4072984
+DIST-0050,Vikram Das Distributors,North,Uttar Pradesh,Metro,1.866,23SYN9861G1Z6,2019-02-08,4545640
+DIST-0051,Priya Mehta Distributors,West,Maharashtra,Rural,0.3,11SYN9667G1Z5,2018-04-13,2465467
+DIST-0052,Zoya Patel Distributors,Central,Madhya Pradesh,Tier-2,1.429,32SYN5563G1Z6,2018-02-09,2368416
+DIST-0053,Pooja Singh Distributors,West,Maharashtra,Rural,0.658,35SYN6886C1Z3,2017-02-05,804089
+DIST-0054,Sunita Naidu Distributors,West,Gujarat,Metro,1.133,36SYN8392G1Z6,2017-02-04,3824922
+DIST-0055,Sai Khan Distributors,Central,Madhya Pradesh,Rural,0.809,02SYN2114C1Z2,2022-12-12,2688444
+DIST-0056,Vihaan Shah Distributors,West,Gujarat,Rural,0.771,29SYN8874F1Z8,2017-10-16,2485375
+DIST-0057,Rahul Singh Distributors,South,Kerala,Rural,0.412,10SYN4703E1Z0,2018-03-17,3354234
+DIST-0058,Sai Chatterjee Distributors,West,Rajasthan,Metro,0.731,04SYN5863A1Z7,2021-07-12,4646097
+DIST-0059,Arjun Joshi Distributors,East,Odisha,Metro,1.464,10SYN1332A1Z0,2020-11-09,4779819
+DIST-0060,Vivaan Menon Distributors,South,Tamil Nadu,Tier-1,0.596,03SYN9383D1Z6,2018-05-27,3652313
+DIST-0061,Krishna Pillai Distributors,South,Kerala,Tier-1,1.25,02SYN8788H1Z6,2018-07-20,2149151
+DIST-0062,Ananya Menon Distributors,East,Assam,Metro,1.128,30SYN9169C1Z2,2022-07-25,3222919
+DIST-0063,Sneha Sharma Distributors,East,West Bengal,Tier-2,0.802,17SYN1040G1Z8,2019-12-19,1535993
+DIST-0064,Arjun Pillai Distributors,West,Gujarat,Tier-1,1.266,25SYN7836B1Z3,2018-10-19,4509483
+DIST-0065,Manish Malhotra Distributors,East,West Bengal,Metro,1.976,10SYN3138F1Z3,2017-11-01,2763706
+DIST-0066,Neha Gupta Distributors,Central,Chhattisgarh,Tier-2,3.577,14SYN9121A1Z2,2018-09-26,3074505
+DIST-0067,Reyansh Bose Distributors,West,Goa,Tier-2,0.856,06SYN3473H1Z4,2017-08-15,4371805
+DIST-0068,Diya Deshpande Distributors,South,Kerala,Tier-2,1.336,08SYN7074H1Z3,2020-05-16,3672903
+DIST-0069,Sneha Shah Distributors,West,Goa,Tier-2,1.418,20SYN9987D1Z5,2021-05-04,3943851
+DIST-0070,Kavya Patel Distributors,North,Punjab,Rural,0.931,16SYN2073G1Z5,2022-01-11,4988626
+DIST-0071,Zoya Chauhan Distributors,East,West Bengal,Tier-2,0.53,27SYN6356C1Z0,2020-09-25,2630267
+DIST-0072,Priya Malhotra Distributors,West,Gujarat,Tier-2,2.519,34SYN4096F1Z1,2022-07-23,2017278
+DIST-0073,Simran Sharma Distributors,East,Assam,Tier-1,0.576,14SYN2817B1Z4,2023-02-04,1718519
+DIST-0074,Zoya Naidu Distributors,South,Kerala,Tier-1,1.093,17SYN8925H1Z3,2020-05-16,2275794
+DIST-0075,Vivaan Gupta Distributors,West,Goa,Tier-2,0.429,35SYN7766D1Z4,2019-10-20,4908397
+DIST-0076,Riya Ahmed Distributors,West,Gujarat,Tier-2,0.96,11SYN4476H1Z2,2019-09-04,1829110
+DIST-0077,Deepak Deshpande Distributors,Central,Chhattisgarh,Tier-2,1.273,12SYN5765F1Z8,2018-07-13,1313448
+DIST-0078,Riya Shah Distributors,West,Rajasthan,Tier-1,1.146,22SYN1225B1Z2,2017-10-28,1434448
+DIST-0079,Krishna Deshpande Distributors,South,Telangana,Tier-1,1.519,08SYN2398D1Z3,2017-09-13,307214
+DIST-0080,Myra Deshpande Distributors,South,Kerala,Tier-2,1.234,11SYN3255B1Z7,2019-07-10,3983973
+DIST-0081,Aarohi Kaur Distributors,South,Telangana,Tier-1,1.504,32SYN5285E1Z8,2016-12-10,3068400
+DIST-0082,Ishaan Shah Distributors,North,Uttarakhand,Metro,0.804,25SYN5232A1Z1,2022-02-16,2942202
+DIST-0083,Ishaan Khan Distributors,Central,Chhattisgarh,Rural,2.115,16SYN6875B1Z2,2017-03-10,3963872
+DIST-0084,Kiara Chatterjee Distributors,North,Uttarakhand,Rural,0.884,19SYN2256H1Z0,2017-04-19,4810940
+DIST-0085,Vihaan Shah Distributors,East,Odisha,Rural,0.661,12SYN1369B1Z0,2021-08-28,2989066
+DIST-0086,Zoya Gupta Distributors,North,Haryana,Metro,0.633,04SYN3374C1Z4,2018-03-25,1769078
+DIST-0087,Sai Patel Distributors,South,Telangana,Metro,0.885,31SYN2004G1Z5,2020-10-13,3954330
+DIST-0088,Ayesha Das Distributors,Central,Madhya Pradesh,Rural,0.614,04SYN5043H1Z1,2017-01-19,1719736
+DIST-0089,Riya Pillai Distributors,East,Bihar,Metro,0.895,10SYN4749B1Z1,2023-03-13,1662966
+DIST-0090,Navya Ahmed Distributors,South,Tamil Nadu,Metro,0.596,05SYN2462C1Z0,2022-07-04,2688386
+DIST-0091,Simran Gupta Distributors,South,Tamil Nadu,Tier-1,0.544,03SYN3997A1Z3,2020-06-27,2890443
+DIST-0092,Rajesh Chatterjee Distributors,West,Goa,Tier-2,0.6,29SYN5767A1Z2,2021-10-06,1815705
+DIST-0093,Kiara Kulkarni Distributors,South,Telangana,Rural,0.32,33SYN5318B1Z7,2018-11-26,1866756
+DIST-0094,Sneha Ahmed Distributors,South,Telangana,Tier-1,1.152,09SYN3221G1Z8,2020-03-01,528275
+DIST-0095,Aarohi Khan Distributors,North,Uttarakhand,Tier-1,0.571,32SYN7403E1Z1,2022-04-04,3136894
+DIST-0096,Vihaan Reddy Distributors,South,Karnataka,Tier-2,0.91,03SYN1185E1Z8,2022-08-22,343520
+DIST-0097,Meera Kulkarni Distributors,West,Maharashtra,Tier-2,1.475,30SYN1281G1Z1,2022-07-05,3619435
+DIST-0098,Kavya Gupta Distributors,East,Bihar,Metro,1.65,23SYN1799G1Z5,2021-10-02,3073918
+DIST-0099,Vivaan Gupta Distributors,East,Assam,Tier-1,0.395,19SYN1042A1Z2,2017-10-31,2806279
+DIST-0100,Diya Chatterjee Distributors,East,West Bengal,Rural,1.295,23SYN9069E1Z6,2016-12-09,4320810
+DIST-0101,Zoya Gupta Distributors,South,Kerala,Rural,1.006,10SYN9268F1Z5,2020-05-05,4850828
+DIST-0102,Rahul Ahmed Distributors,West,Rajasthan,Metro,2.441,23SYN1714C1Z3,2018-08-01,4121848
+DIST-0103,Zoya Mehta Distributors,East,Bihar,Rural,1.533,21SYN8192A1Z1,2019-06-04,1693281
+DIST-0104,Rahul Shah Distributors,West,Maharashtra,Tier-2,1.374,09SYN6720B1Z2,2018-01-08,667109
+DIST-0105,Karan Banerjee Distributors,West,Maharashtra,Rural,1.186,27SYN4117A1Z3,2023-02-01,3599870
+DIST-0106,Sunita Joshi Distributors,South,Telangana,Rural,0.527,07SYN8606H1Z6,2021-04-22,3771327
+DIST-0107,Myra Naidu Distributors,North,Uttar Pradesh,Tier-1,1.973,06SYN9009E1Z1,2019-06-20,1410518
+DIST-0108,Krishna Sharma Distributors,West,Goa,Tier-1,1.107,06SYN7031C1Z6,2022-10-29,1112836
+DIST-0109,Simran Bose Distributors,East,West Bengal,Metro,1.031,06SYN9924D1Z2,2023-03-07,4643580
+DIST-0110,Krishna Khan Distributors,North,Haryana,Tier-1,2.457,02SYN6199H1Z5,2020-10-05,896476
+DIST-0111,Vikram Kapoor Distributors,East,Assam,Rural,1.132,05SYN8922H1Z3,2019-10-30,1077402
+DIST-0112,Simran Nair Distributors,South,Kerala,Rural,0.927,23SYN7493D1Z0,2020-05-22,3094467
+DIST-0113,Arjun Shah Distributors,Central,Madhya Pradesh,Rural,1.291,14SYN6971F1Z8,2017-12-09,1191899
+DIST-0114,Aarav Mehta Distributors,Central,Chhattisgarh,Tier-2,1.645,02SYN2406H1Z2,2017-11-13,4407275
+DIST-0115,Karan Chatterjee Distributors,South,Kerala,Tier-2,1.02,23SYN6496F1Z1,2019-09-20,2768705
+DIST-0116,Meera Mishra Distributors,Central,Chhattisgarh,Tier-2,1.209,15SYN5793D1Z6,2018-05-26,2964607
+DIST-0117,Aarohi Chauhan Distributors,South,Kerala,Rural,0.936,27SYN9849A1Z1,2020-07-25,4643865
+DIST-0118,Pooja Das Distributors,East,Bihar,Tier-1,0.904,20SYN1316H1Z7,2020-12-12,2745081
+DIST-0119,Imran Pillai Distributors,North,Uttar Pradesh,Tier-2,0.777,34SYN1846B1Z6,2017-08-08,3389835
+DIST-0120,Ayesha Mishra Distributors,West,Maharashtra,Rural,1.13,15SYN5218A1Z1,2020-12-09,4819283
+DIST-0121,Rohan Gupta Distributors,South,Kerala,Rural,0.786,25SYN2795E1Z8,2017-10-18,4922591
+DIST-0122,Sai Chauhan Distributors,East,Bihar,Tier-2,0.559,33SYN4083G1Z4,2017-08-31,3747426
+DIST-0123,Karan Verma Distributors,East,Bihar,Metro,1.015,24SYN4411D1Z3,2019-12-13,717229
+DIST-0124,Sai Bose Distributors,East,Odisha,Metro,0.3,27SYN5804B1Z7,2017-03-23,2978688
+DIST-0125,Riya Yadav Distributors,West,Gujarat,Metro,0.569,29SYN9134A1Z6,2017-10-03,4347637
+DIST-0126,Kiara Kaur Distributors,East,West Bengal,Tier-2,0.849,29SYN1029G1Z1,2020-06-28,3794921
+DIST-0127,Ayesha Bose Distributors,South,Tamil Nadu,Tier-1,0.845,09SYN9812C1Z8,2020-10-30,4083432
+DIST-0128,Sunita Chauhan Distributors,South,Karnataka,Rural,0.954,27SYN6658D1Z3,2019-04-05,1799922
+DIST-0129,Aarohi Banerjee Distributors,West,Gujarat,Tier-2,4.0,21SYN6228H1Z3,2020-08-17,347902
+DIST-0130,Meera Yadav Distributors,East,West Bengal,Tier-2,0.835,23SYN5538C1Z4,2022-10-12,1224688
+DIST-0131,Priya Pillai Distributors,North,Haryana,Tier-2,1.016,14SYN4546G1Z6,2022-05-19,1861619
+DIST-0132,Riya Rao Distributors,East,Bihar,Rural,1.237,07SYN1420H1Z3,2023-01-21,4788022
+DIST-0133,Pooja Pillai Distributors,North,Uttar Pradesh,Tier-2,0.612,08SYN1890E1Z4,2018-06-17,3045787
+DIST-0134,Sanjay Shah Distributors,East,West Bengal,Metro,0.707,32SYN5301A1Z1,2017-01-23,1173100
+DIST-0135,Kiara Joshi Distributors,Central,Chhattisgarh,Tier-1,0.816,03SYN5215F1Z4,2021-07-28,901451
+DIST-0136,Sunita Shah Distributors,South,Tamil Nadu,Tier-1,0.604,03SYN1808B1Z8,2021-08-31,3366840
+DIST-0137,Kavya Verma Distributors,North,Punjab,Tier-2,0.388,32SYN1996C1Z2,2021-08-13,936447
+DIST-0138,Rahul Deshpande Distributors,North,Punjab,Rural,0.95,12SYN3714C1Z7,2018-05-04,4537716
+DIST-0139,Karan Yadav Distributors,South,Tamil Nadu,Tier-2,1.606,23SYN9840E1Z3,2017-03-16,3066446
+DIST-0140,Farhan Malhotra Distributors,South,Telangana,Tier-2,1.155,04SYN9470F1Z2,2021-10-21,2898621
+DIST-0141,Arjun Nair Distributors,North,Haryana,Tier-1,0.3,30SYN8611G1Z6,2019-04-28,2192021
+DIST-0142,Sai Malhotra Distributors,Central,Chhattisgarh,Rural,0.815,20SYN1736A1Z2,2020-05-06,1053466
+DIST-0143,Meera Kaur Distributors,East,West Bengal,Tier-2,1.69,15SYN6257G1Z4,2018-07-30,3777117
+DIST-0144,Aarohi Chatterjee Distributors,East,West Bengal,Metro,0.464,12SYN8516F1Z3,2022-07-04,3872070
+DIST-0145,Arjun Khan Distributors,Central,Madhya Pradesh,Rural,0.929,03SYN2861E1Z5,2017-04-11,2219845
+DIST-0146,Ishaan Verma Distributors,West,Maharashtra,Metro,0.893,06SYN7539E1Z0,2020-10-12,1543337
+DIST-0147,Reyansh Patel Distributors,West,Maharashtra,Tier-1,0.584,23SYN2615G1Z5,2020-08-07,588940
+DIST-0148,Karan Bose Distributors,West,Rajasthan,Tier-1,0.733,17SYN8910G1Z6,2022-05-12,4301272
+DIST-0149,Sunita Bose Distributors,North,Haryana,Tier-2,2.051,20SYN5777A1Z6,2021-08-22,1865515
+DIST-0150,Kavya Banerjee Distributors,East,Odisha,Tier-1,0.853,10SYN1328F1Z8,2022-09-27,4473547
+DIST-0151,Karan Yadav Distributors,North,Punjab,Tier-2,0.751,13SYN5658A1Z2,2020-02-12,2422341
+DIST-0152,Aadhya Iyer Distributors,West,Rajasthan,Rural,1.23,20SYN8428B1Z3,2020-12-05,919247
+DIST-0153,Vihaan Malhotra Distributors,South,Karnataka,Tier-2,1.003,08SYN9569D1Z0,2020-03-03,4221211
+DIST-0154,Arjun Kapoor Distributors,South,Tamil Nadu,Tier-1,1.167,35SYN4352D1Z4,2017-02-28,1276271
+DIST-0155,Rohan Malhotra Distributors,South,Telangana,Metro,0.957,32SYN1270E1Z3,2022-06-16,1038242
+DIST-0156,Karan Shah Distributors,South,Tamil Nadu,Tier-1,1.558,34SYN9237B1Z5,2022-10-02,2485566
+DIST-0157,Aarav Kaur Distributors,North,Uttar Pradesh,Tier-1,1.156,20SYN5786F1Z5,2022-01-10,4246517
+DIST-0158,Navya Verma Distributors,North,Uttar Pradesh,Tier-1,1.211,36SYN8351G1Z6,2020-11-13,2503168
+DIST-0159,Arjun Chatterjee Distributors,Central,Madhya Pradesh,Rural,1.253,31SYN9285F1Z6,2021-01-20,2928009
+DIST-0160,Kavya Mukherjee Distributors,Central,Madhya Pradesh,Tier-1,1.984,03SYN1513A1Z7,2019-01-24,3226731
+DIST-0161,Meera Khan Distributors,Central,Chhattisgarh,Metro,0.999,24SYN8141A1Z7,2021-11-14,1290006
+DIST-0162,Deepak Ahmed Distributors,West,Goa,Metro,0.606,34SYN3584H1Z5,2018-06-16,310851
+DIST-0163,Sai Singh Distributors,West,Maharashtra,Tier-1,0.505,11SYN3527B1Z7,2022-10-25,2168349
+DIST-0164,Sunita Khan Distributors,South,Telangana,Tier-2,1.017,18SYN4906G1Z1,2018-03-31,3271729
+DIST-0165,Meera Mukherjee Distributors,Central,Chhattisgarh,Rural,1.118,07SYN9295B1Z5,2021-03-12,2245504
+DIST-0166,Saanvi Bose Distributors,North,Uttarakhand,Rural,1.737,27SYN3725D1Z5,2019-01-23,3118568
+DIST-0167,Meera Das Distributors,West,Rajasthan,Rural,1.248,23SYN9549B1Z4,2021-01-17,2912227
+DIST-0168,Rahul Ahmed Distributors,East,Bihar,Tier-2,1.445,08SYN9874F1Z7,2019-07-13,489192
+DIST-0169,Arjun Gupta Distributors,South,Kerala,Metro,0.496,12SYN9031B1Z6,2018-06-26,1605439
+DIST-0170,Neha Malhotra Distributors,West,Maharashtra,Tier-1,0.86,36SYN7757A1Z5,2022-02-13,1721657
+DIST-0171,Krishna Bose Distributors,Central,Chhattisgarh,Tier-2,2.095,27SYN4296G1Z6,2018-07-22,2152841
+DIST-0172,Rajesh Mehta Distributors,North,Punjab,Tier-2,1.193,16SYN2345B1Z6,2019-06-29,2691990
+DIST-0173,Rohan Ahmed Distributors,Central,Madhya Pradesh,Rural,1.068,13SYN4773D1Z1,2019-02-17,2192755
+DIST-0174,Simran Kaur Distributors,North,Punjab,Metro,0.813,13SYN5178E1Z3,2021-07-30,891292
+DIST-0175,Deepak Chauhan Distributors,Central,Madhya Pradesh,Metro,1.185,13SYN7006E1Z1,2019-01-29,3745410
+DIST-0176,Myra Kulkarni Distributors,North,Uttar Pradesh,Tier-2,1.209,25SYN8985F1Z2,2018-02-19,1229706
+DIST-0177,Diya Chauhan Distributors,East,West Bengal,Tier-1,0.779,34SYN8744G1Z6,2021-08-26,4592089
+DIST-0178,Vivaan Gupta Distributors,North,Uttar Pradesh,Tier-1,1.026,25SYN8839G1Z2,2018-05-20,951676
+DIST-0179,Amit Reddy Distributors,West,Goa,Tier-2,1.363,11SYN7071E1Z8,2017-06-22,3785286
+DIST-0180,Vihaan Nair Distributors,East,West Bengal,Tier-1,1.361,09SYN5913A1Z6,2018-05-13,4778735
+DIST-0181,Kavya Ahmed Distributors,North,Punjab,Rural,0.336,28SYN3295H1Z2,2019-04-08,601403
+DIST-0182,Vikram Shah Distributors,Central,Chhattisgarh,Tier-1,1.811,13SYN5674B1Z3,2020-06-07,3521510
+DIST-0183,Krishna Mehta Distributors,East,Bihar,Rural,1.275,20SYN4600E1Z6,2017-09-11,4823507
+DIST-0184,Sanjay Menon Distributors,North,Uttar Pradesh,Metro,0.757,23SYN2587A1Z8,2017-11-14,4313726
+DIST-0185,Saanvi Joshi Distributors,South,Telangana,Tier-1,0.62,31SYN5900E1Z6,2020-02-14,2381019
+DIST-0186,Krishna Sharma Distributors,East,Assam,Rural,0.683,24SYN8281G1Z2,2020-09-01,4589557
+DIST-0187,Pooja Naidu Distributors,South,Tamil Nadu,Tier-1,1.312,13SYN8589F1Z8,2017-01-17,398246
+DIST-0188,Aditya Bose Distributors,North,Haryana,Metro,0.903,28SYN3098H1Z6,2022-07-17,2558855
+DIST-0189,Manish Bose Distributors,North,Punjab,Rural,0.502,26SYN3161G1Z5,2019-02-22,3278841
+DIST-0190,Sanjay Sharma Distributors,East,West Bengal,Tier-2,1.061,12SYN5155C1Z5,2020-12-03,2226917
+DIST-0191,Neha Gupta Distributors,Central,Chhattisgarh,Rural,2.069,25SYN8343B1Z2,2017-10-14,2983597
+DIST-0192,Sneha Das Distributors,South,Kerala,Metro,0.97,07SYN1352G1Z3,2020-05-05,4048300
+DIST-0193,Aarohi Singh Distributors,East,Assam,Tier-1,2.06,10SYN2244B1Z6,2018-05-01,3143087
+DIST-0194,Ayesha Mukherjee Distributors,Central,Madhya Pradesh,Tier-1,0.892,06SYN5054F1Z8,2021-05-27,1205176
+DIST-0195,Anika Iyer Distributors,East,Odisha,Tier-1,1.12,02SYN4804E1Z3,2019-04-21,4425353
+DIST-0196,Rajesh Nair Distributors,South,Tamil Nadu,Metro,2.05,34SYN6693C1Z0,2017-04-18,948588
+DIST-0197,Manish Joshi Distributors,West,Goa,Rural,1.241,10SYN3435F1Z4,2017-08-19,1350935
+DIST-0198,Kavya Gupta Distributors,East,Odisha,Rural,0.497,25SYN7397H1Z7,2019-08-01,1128874
+DIST-0199,Sneha Verma Distributors,East,Assam,Tier-2,0.871,19SYN5969B1Z2,2020-01-20,1686871
+DIST-0200,Kavya Verma Distributors,East,Bihar,Metro,1.094,26SYN1011F1Z8,2023-01-21,4997282
+DIST-0201,Sai Menon Distributors,East,West Bengal,Rural,0.967,05SYN1856H1Z6,2018-08-15,855712
+DIST-0202,Kavya Mishra Distributors,Central,Madhya Pradesh,Tier-1,1.861,36SYN3672F1Z4,2022-01-31,2296451
+DIST-0203,Imran Nair Distributors,Central,Chhattisgarh,Metro,1.349,14SYN7049H1Z6,2020-12-24,1821607
+DIST-0204,Sai Mukherjee Distributors,North,Punjab,Tier-1,0.508,29SYN9154A1Z7,2017-04-23,2258330
+DIST-0205,Kavya Mukherjee Distributors,South,Kerala,Tier-1,1.522,10SYN7738F1Z6,2018-02-27,1086737
+DIST-0206,Pooja Bose Distributors,East,Assam,Tier-2,0.887,19SYN3406A1Z1,2019-08-14,4431623
+DIST-0207,Amit Iyer Distributors,East,West Bengal,Rural,1.763,13SYN2381E1Z2,2019-11-05,1618687
+DIST-0208,Amit Gupta Distributors,East,Odisha,Tier-1,1.253,04SYN3040F1Z0,2022-08-29,2350688
+DIST-0209,Ishaan Menon Distributors,East,Bihar,Metro,0.889,05SYN1313E1Z3,2019-02-05,3809642
+DIST-0210,Amit Kapoor Distributors,Central,Chhattisgarh,Tier-1,0.952,30SYN1237B1Z1,2022-10-18,4345764
+DIST-0211,Vivaan Kaur Distributors,West,Rajasthan,Tier-2,0.639,21SYN5849C1Z4,2018-01-17,504210
+DIST-0212,Zoya Rao Distributors,South,Telangana,Tier-1,0.921,05SYN5909C1Z6,2019-07-04,1510024
+DIST-0213,Kiara Chauhan Distributors,South,Karnataka,Metro,1.019,09SYN5537A1Z4,2018-06-25,3657465
+DIST-0214,Rajesh Das Distributors,East,Odisha,Tier-1,0.314,18SYN4703C1Z1,2019-04-08,1279382
+DIST-0215,Kavya Verma Distributors,South,Tamil Nadu,Rural,1.007,35SYN2070F1Z6,2022-08-31,1885063
+DIST-0216,Sunita Mehta Distributors,South,Kerala,Rural,1.664,08SYN1395D1Z7,2022-10-27,2172981
+DIST-0217,Riya Malhotra Distributors,Central,Madhya Pradesh,Rural,1.618,31SYN2234D1Z8,2019-02-02,1143970
+DIST-0218,Meera Joshi Distributors,East,Bihar,Tier-2,1.057,17SYN2652G1Z7,2017-03-16,4885299
+DIST-0219,Ananya Kapoor Distributors,Central,Chhattisgarh,Tier-1,0.3,17SYN2730C1Z5,2021-10-25,2523830
+DIST-0220,Farhan Chauhan Distributors,East,West Bengal,Tier-2,0.88,24SYN3266B1Z6,2023-03-02,2962177

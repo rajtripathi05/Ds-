@@ -1,0 +1,17 @@
+Reyansh Ahmed
+Chennai, India | reyansh@example.com | +91-8514980550
+
+SUMMARY
+IT Support Engineer with 5 years of experience in FMCG. Known for analytical rigour.
+
+SKILLS
+Windows, Active Directory, troubleshooting, FSSAI, HACCP
+
+EXPERIENCE
+- Jr. IT Specialist, Acme Foods (2021-2023)
+    Delivered productivity through Windows and FSSAI.
+- Sr. IT Executive, Horizon Ingredients (2018-present)
+    Delivered quality through Active Directory and Active Directory.
+
+EDUCATION
+B.Tech Electronics

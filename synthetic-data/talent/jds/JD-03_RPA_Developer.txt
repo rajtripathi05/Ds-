@@ -1,0 +1,21 @@
+JOB DESCRIPTION — RPA Developer
+Requisition: JD-03   |   Location: Hyderabad   |   Experience: 3-6 years
+
+About the role:
+Northwind FMCG (Synthetic) is hiring a RPA Developer to strengthen our Sales team.
+
+Key responsibilities:
+- Own and deliver outcomes in the RPA Developer function across our FMCG business.
+- Collaborate with cross-functional teams (business, IT, vendors) to ship measurable impact.
+- Bring rigour, documentation and a business-first mindset.
+
+Required skills:
+- UiPath
+- Power Automate
+- process automation
+- OCR
+- VBA
+- workflow design
+- exception handling
+
+Preferred: prior FMCG / manufacturing exposure; strong communication; ownership.

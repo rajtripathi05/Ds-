@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DS Group · AI + Automation — Production Roadmap (what real integration unlocks)</title>
+<style>
+:root{--ink:#171412;--ink2:#3f3a34;--mut:#6f675e;--line:#e7e2db;--bg:#f5f2ee;--card:#fff;--acc:#b3282d;--acc2:#8a1f23;--gold:#c99a2e;--ok:#15803d;--okbg:#e9f6ee;--vio:#6d28d9;--viobg:#f4f0fd;--blue:#1d4ed8;--bluebg:#eef3ff;--warn:#b45309;--focus:#1d4ed8;--shadow:0 1px 3px rgba(0,0,0,.05),0 10px 30px rgba(0,0,0,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16.5px;scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.serif{font-family:Georgia,'Times New Roman',serif}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
+a{color:var(--acc2)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.03em;padding:2px 8px;border-radius:999px;vertical-align:1px}
+.ver{background:#dcfce7;color:var(--ok);border:1px solid #86efac}
+.est{background:#ffedd5;color:var(--warn);border:1px solid #fdba74}
+.proto{background:var(--viobg);color:#5b21b6;border:1px solid #c4b5fd}
+/* nav */
+nav{position:sticky;top:0;z-index:40;background:rgba(245,242,238,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1160px;margin:0 auto;padding:11px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav .brand{font-weight:800;font-size:15px;display:flex;gap:8px;align-items:center}
+nav .brand .m{width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;display:grid;place-items:center;font-size:13px}
+nav a.l{margin-left:0;font-size:13.5px;text-decoration:none;color:var(--ink2);font-weight:600}
+nav a.l:hover{color:var(--acc)}
+nav .sp{margin-left:auto}
+@media(max-width:760px){nav a.l{display:none}}
+/* hero */
+.hero{background:radial-gradient(1100px 460px at 72% -10%,#3b1d1e 0,transparent 60%),linear-gradient(160deg,#1c1917,#241f1c 55%,#2c1a1b);color:#faf7f4;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff0a 1px,transparent 1px),linear-gradient(90deg,#ffffff0a 1px,transparent 1px);background-size:46px 46px;-webkit-mask:radial-gradient(680px 380px at 62% 0,#000,transparent 76%);mask:radial-gradient(680px 380px at 62% 0,#000,transparent 76%)}
+.hero .in{position:relative;padding:58px 0 46px}
+.kick{letter-spacing:.18em;text-transform:uppercase;font-size:11.5px;color:#f6c9cb;font-weight:800}
+.hero h1{font-size:clamp(30px,4.8vw,50px);line-height:1.07;letter-spacing:-.022em;margin:12px 0 0;max-width:20ch}
+.hero h1 .co{color:#f6c9cb}
+.hero p{margin-top:16px;color:#e6dcd6;max-width:70ch;font-size:16.5px}
+.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.fchip{font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;background:#ffffff12;border:1px solid #ffffff26;color:#f0e7e2}
+.fchip b{color:#fff}
+/* sections */
+section{padding:56px 0}
+.eyebrow{letter-spacing:.15em;text-transform:uppercase;font-size:11.5px;color:var(--acc2);font-weight:800}
+h2.s{font-size:clamp(24px,3.2vw,34px);letter-spacing:-.02em;line-height:1.12;margin:9px 0 8px}
+.lede{color:var(--ink2);font-size:16px;max-width:74ch}
+/* integration stack */
+.stack{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+@media(max-width:900px){.stack{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.stack{grid-template-columns:1fr}}
+.layer{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);border-top:4px solid var(--acc)}
+.layer h3{font-size:16px;display:flex;gap:8px;align-items:center}
+.layer .sub{font-size:12px;color:var(--mut);margin:2px 0 12px}
+.layer ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.layer li{font-size:13px;color:var(--ink2);padding-left:16px;position:relative;line-height:1.4}
+.layer li:before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:var(--acc)}
+.layer .conn{font-size:11.5px;color:var(--mut);font-weight:700}
+/* prototype -> production */
+.p2p{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+@media(max-width:900px){.p2p{grid-template-columns:1fr}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.pcard .hd{padding:18px 20px;border-bottom:1px solid var(--line)}
+.pcard .hd .ic{font-size:26px}
+.pcard h3{font-size:19px;margin-top:6px}
+.pcard .cols{display:grid;grid-template-columns:1fr 1fr}
+.pcard .col{padding:16px 18px}
+.pcard .col.now{background:#faf8f5;border-right:1px solid var(--line)}
+.pcard .col h4{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin-bottom:8px}
+.pcard .col.now h4{color:var(--vio)}.pcard .col.prod h4{color:var(--ok)}
+.pcard .col li{font-size:12.7px;color:var(--ink2);margin:0 0 7px 15px;line-height:1.4}
+.pcard .plug{padding:12px 18px;border-top:1px dashed var(--line);font-size:12px;color:var(--mut)}
+.pcard .plug b{color:var(--ink)}
+/* use-case matrix */
+.filters{margin-top:24px;display:flex;flex-direction:column;gap:10px}
+.frow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.frow .lab{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);margin-right:4px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;font:inherit;font-size:13px;font-weight:600;padding:8px 14px;cursor:pointer;color:var(--ink2);min-height:38px}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.count{font-size:13px;color:var(--mut);margin:16px 0 4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:980px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+.uc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 17px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px}
+.uc .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.uc h4{font-size:15px;line-height:1.25;letter-spacing:-.01em}
+.uc .fb{font-size:10px;font-weight:800;padding:2px 7px;border-radius:6px;white-space:nowrap}
+.uc .by{font-size:12.5px;color:var(--ink2)}
+.uc .by b{color:var(--ink);font-weight:700}
+.uc .meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.badge{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid transparent}
+.b-proto{background:var(--viobg);color:#5b21b6;border-color:#c4b5fd}
+.b-ext{background:var(--bluebg);color:var(--blue);border-color:#bcd0ff}
+.b-new{background:#f3f0ec;color:var(--mut);border-color:#e0d8ce}
+.fe{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.fe.H .dot{background:var(--ok)}.fe.M .dot{background:var(--gold)}.fe.L .dot{background:var(--acc)}
+.jd{font-size:10.5px;font-weight:800;color:var(--mut);background:#f3f0ec;border-radius:6px;padding:2px 7px}
+/* JD map */
+.jdmap{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+@media(max-width:820px){.jdmap{grid-template-columns:1fr}}
+.jc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);border-left:4px solid var(--acc)}
+.jc .n{font-size:11px;font-weight:800;color:var(--acc2);letter-spacing:.04em}
+.jc h4{font-size:16px;margin:3px 0 7px}
+.jc p{font-size:13.3px;color:var(--ink2)}
+.jc .ev{margin-top:9px;font-size:12px;color:var(--mut)}
+.jc .ev b{color:var(--ok)}
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+@media(max-width:900px){.tl{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.tl{grid-template-columns:1fr}}
+.ph{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.ph .w{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--ink);border-radius:999px;padding:3px 11px;display:inline-block}
+.ph h4{font-size:15px;margin:11px 0 8px}
+.ph li{font-size:12.6px;color:var(--ink2);margin:0 0 6px 15px;line-height:1.35}
+.ph.p0 .w{background:var(--ok)}.ph.p1 .w{background:var(--blue)}.ph.p2 .w{background:var(--vio)}.ph.p3 .w{background:var(--acc)}
+/* callout / governance */
+.call{background:#1c1917;color:#e7ddd7;border-radius:18px;padding:26px 28px;margin-top:26px}
+.call h3{color:#fff;font-size:18px;margin-bottom:8px}
+.call .g{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px}
+@media(max-width:760px){.call .g{grid-template-columns:1fr}}
+.call li{font-size:13px;margin:0 0 7px 16px;color:#cfc5be}
+.note{font-size:12.5px;color:var(--mut);background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:14px 16px;margin-top:22px}
+footer{padding:34px 0;text-align:center;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin-top:14px;align-items:center}
+</style>
+</head>
+<body>
+<nav><div class="in">
+  <div class="brand"><span class="m">▲</span> DS Group · AI &amp; Automation Roadmap</div>
+  <span class="sp"></span>
+  <a class="l" href="#stack">Integrations</a>
+  <a class="l" href="#p2p">Prototypes→Prod</a>
+  <a class="l" href="#matrix">Use-case matrix</a>
+  <a class="l" href="#jd">Role map</a>
+  <a class="l" href="#seq">Sequence</a>
+</div></nav>
+
+<header class="hero"><div class="wrap in">
+  <div class="kick">From three working prototypes to an enterprise AI capability</div>
+  <h1 class="serif">What becomes possible the moment the demos meet <span class="co">DS Group's real systems</span>.</h1>
+  <p>The three prototypes run today on synthetic data with deterministic cores. This is the map of what each real integration — a warehouse, an ERP, an HRMS, an LLM API, an OCR engine, an RPA orchestrator, a camera — turns them into, plus the new use-cases those connections unlock across every function. Structured to mirror the AGM (Data Analytics, AI &amp; Automation) mandate.</p>
+  <div class="facts">
+    <span class="fchip">Worked against public facts: <b>₹10,000 cr+</b> FMCG</span>
+    <span class="fchip"><b>5,000+</b> distributors · <b>~15 lakh</b> outlets</span>
+    <span class="fchip"><b>15+</b> plants</span>
+    <span class="fchip">o9 + PwC planning programme announced</span>
+    <span class="fchip">Pulse · Catch · Rajnigandha · Ksheer</span>
+  </div>
+  <div class="legend" style="color:#cbbfb8">
+    <span><span class="tag ver">VERIFIED</span> public fact</span>
+    <span><span class="tag proto">PROTOTYPED</span> built &amp; measured</span>
+    <span><span class="tag est">OPPORTUNITY</span> needs data validation</span>
+  </div>
+</div></header>
+
+<!-- INTEGRATION STACK -->
+<section id="stack"><div class="wrap">
+  <div class="eyebrow">The four layers you connect</div>
+  <h2 class="s serif">A good API or database doesn't add a feature — it unlocks a layer</h2>
+  <p class="lede">Each layer below is a class of integration. Wire it in once and dozens of use-cases light up on top of it. This is the "AI solution architecture" the role calls for — data sources, APIs, warehouses, applications and UIs, with governance through the middle.</p>
+  <div class="stack">
+    <div class="layer">
+      <h3>🗄️ Data &amp; systems of record</h3>
+      <div class="sub">The ground truth AI reasons over</div>
+      <ul>
+        <li><b>SAP / Oracle ERP</b> → primary sales, AP, production orders, GL</li>
+        <li><b>Distributor Mgmt System</b> (Bizom/FieldAssist-class) → secondary sales, beat, outlet stock</li>
+        <li><b>PeopleStrong HRMS</b> → people, payroll, attendance</li>
+        <li><b>Snowflake / Databricks</b> → the governed analytics + feature store</li>
+        <li><b>MES / IoT</b> at plants → line telemetry, OEE, quality</li>
+      </ul>
+      <div class="conn">Unlocks: real forecasts, live KPIs, one version of truth</div>
+    </div>
+    <div class="layer">
+      <h3>🧠 Model &amp; intelligence</h3>
+      <div class="sub">Where prediction and language live</div>
+      <ul>
+        <li><b>Azure OpenAI / Claude / Gemini API</b> → reasoning + generation</li>
+        <li><b>Vector DB</b> (Azure AI Search / pgvector / Pinecone) → RAG memory</li>
+        <li><b>ML models</b> → forecasting, attrition, propensity, anomaly</li>
+        <li><b>OCR / Document AI</b> (Azure DI, Google Doc AI, Nanonets) → read any PDF/scan</li>
+        <li><b>Computer vision</b> → packaging QC, shelf, safety</li>
+      </ul>
+      <div class="conn">Unlocks: copilots, STP, vision QC, predictions</div>
+    </div>
+    <div class="layer">
+      <h3>⚙️ Automation &amp; orchestration</h3>
+      <div class="sub">Where decisions become actions</div>
+      <ul>
+        <li><b>UiPath / Power Automate</b> → move data, post to SAP, route exceptions</li>
+        <li><b>Workflow / BPM</b> → approvals, SLAs, human-in-the-loop</li>
+        <li><b>Agentic orchestrator</b> → plan → call tools → act w/ approval</li>
+        <li><b>Webhooks / event bus</b> → real-time triggers</li>
+      </ul>
+      <div class="conn">Unlocks: straight-through processing, hands-off workflows</div>
+    </div>
+    <div class="layer">
+      <h3>📊 Experience &amp; governance</h3>
+      <div class="sub">Where people meet it — safely</div>
+      <ul>
+        <li><b>Tableau / Power BI</b> → dashboards &amp; self-serve BI</li>
+        <li><b>Teams / WhatsApp / email</b> → AI in the flow of work</li>
+        <li><b>MLOps</b> (Azure ML / MLflow) → registry, drift, retrain</li>
+        <li><b>Access control + DPDP</b> → role scope, PII, audit logs, model cards</li>
+      </ul>
+      <div class="conn">Unlocks: adoption, trust, compliance, scale</div>
+    </div>
+  </div>
+  <div class="note"><b>External-signal APIs multiply all of this:</b> weather (IMD/OpenWeather) and festival calendars for Pulse/Catch demand; commodity &amp; mandi prices (menthol, betel nut, sugar, dairy) for input-cost and margin models; <b>quick-commerce feeds (Blinkit, Zepto, Swiggy Instamart)</b> and e-commerce (Amazon/Flipkart) for real-time offtake and availability; GST e-invoice / e-way-bill and credit-bureau APIs for compliance and distributor credit risk.</div>
+</div></section>
+
+<!-- PROTOTYPE -> PRODUCTION -->
+<section id="p2p" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <div class="eyebrow">The three you can already click</div>
+  <h2 class="s serif">Each prototype is a production system waiting for a data cable</h2>
+  <p class="lede">The hard part — the engine, the reconciliation, the citation guard, the calibrated confidence — is built and tested. Connecting real systems is what turns each demo into an operating capability.</p>
+  <div class="p2p">
+    <div class="pcard">
+      <div class="hd"><div class="ic">📈</div><h3 class="serif">Demand Cockpit</h3></div>
+      <div class="cols">
+        <div class="col now"><h4>Today (prototype)</h4><ul>
+          <li>Synthetic 297k-row sales spine</li>
+          <li>WMAPE 9.0% vs 18.3% <span class="tag proto">measured</span></li>
+          <li>What-if via recovered elasticities</li>
+        </ul></div>
+        <div class="col prod"><h4>Connected to DS systems</h4><ul>
+          <li>Distributor-level demand sensing per SKU×beat</li>
+          <li>Feeds / complements the <b>o9</b> plan with causal + what-if layers</li>
+          <li>Quick-commerce signals → daily replenishment</li>
+          <li>Auto S&amp;OP on real plant capacity (MES)</li>
+        </ul></div>
+      </div>
+      <div class="plug">Plug in: <b>DMS + SAP + Snowflake + weather/festival + Blinkit/Zepto APIs</b></div>
+    </div>
+    <div class="pcard">
+      <div class="hd"><div class="ic">💬</div><h3 class="serif">Company Assistant</h3></div>
+      <div class="cols">
+        <div class="col now"><h4>Today (prototype)</h4><ul>
+          <li>24-doc corpus, cited answers</li>
+          <li>25/25 eval · 0 role leaks <span class="tag proto">measured</span></li>
+          <li>Dual-layer access control</li>
+        </ul></div>
+        <div class="col prod"><h4>Connected to DS systems</h4><ul>
+          <li>RAG over live SOPs/circulars (SharePoint/DMS)</li>
+          <li>HR copilot on <b>PeopleStrong</b> (leave, payroll, policy)</li>
+          <li>Governed NL→SQL self-serve BI on Snowflake</li>
+          <li>Auto-generated sales/finance flash reports</li>
+        </ul></div>
+      </div>
+      <div class="plug">Plug in: <b>Vector DB + Azure OpenAI/Claude + Snowflake + HRMS + Teams/WhatsApp</b></div>
+    </div>
+    <div class="pcard">
+      <div class="hd"><div class="ic">🧾</div><h3 class="serif">Invoice Checker</h3></div>
+      <div class="cols">
+        <div class="col now"><h4>Today (prototype)</h4><ul>
+          <li>40 sets, 3-way match rules</li>
+          <li>40/40 + 13/13 planted · 67.5% auto <span class="tag proto">measured</span></li>
+          <li>Calibrated confidence, learning loop</li>
+        </ul></div>
+        <div class="col prod"><h4>Connected to DS systems</h4><ul>
+          <li>AP straight-through processing into <b>SAP</b></li>
+          <li><b>Trade-promotion claim settlement</b> (top FMCG pain)</li>
+          <li>OCR for scanned/unstructured invoices</li>
+          <li>GST/e-way validation; exception queue to humans</li>
+        </ul></div>
+      </div>
+      <div class="plug">Plug in: <b>SAP AP + Azure Document Intelligence + UiPath/Power Automate + GST APIs</b></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- USE-CASE MATRIX -->
+<section id="matrix"><div class="wrap">
+  <div class="eyebrow">Every possibility, filterable</div>
+  <h2 class="s serif">The use-case surface — ~35 opportunities across every function</h2>
+  <p class="lede">Filter by business function or by how close it is to shipping. Each card names the integration that unlocks it, the data it needs, a feasibility read, and which JD responsibility it satisfies. Value-quantified cases live in the interactive blueprint; here the discipline is feasibility × data-availability, not invented rupees.</p>
+
+  <div class="filters">
+    <div class="frow" id="fFunc"><span class="lab">Function</span></div>
+    <div class="frow" id="fStatus"><span class="lab">Readiness</span></div>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+  <div class="legend">
+    <span class="fe H"><span class="dot"></span>High feasibility</span>
+    <span class="fe M"><span class="dot"></span>Medium</span>
+    <span class="fe L"><span class="dot"></span>Longer build</span>
+    <span><span class="badge b-proto">Prototyped</span> already built</span>
+    <span><span class="badge b-ext">Extends</span> a prototype</span>
+    <span><span class="badge b-new">New</span> net-new</span>
+  </div>
+</div></section>
+
+<!-- JD MAP -->
+<section id="jd" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <div class="eyebrow">Role fit</div>
+  <h2 class="s serif">The eight AGM responsibilities — and what already answers each</h2>
+  <p class="lede">The job description maps almost one-to-one onto work that exists or is one integration away.</p>
+  <div class="jdmap" id="jdmap"></div>
+</div></section>
+
+<!-- SEQUENCE -->
+<section id="seq"><div class="wrap">
+  <div class="eyebrow">Sequenced for DS Group</div>
+  <h2 class="s serif">A 12-month path that earns the right to scale</h2>
+  <p class="lede">Fastest, safest value first; nothing automates until it beats the incumbent process in a measured shadow run.</p>
+  <div class="tl">
+    <div class="ph p0">
+      <span class="w">Month 0–1 · Foundations</span>
+      <h4>See &amp; secure</h4>
+      <ul>
+        <li>Stand up the AI Council + DPDP data-classification</li>
+        <li>Read-only connectors: SAP, DMS, PeopleStrong, Snowflake</li>
+        <li>Week-1 data audit → replace estimates with actuals</li>
+        <li>Deploy the assistant on a small live SOP corpus (shadow)</li>
+      </ul>
+    </div>
+    <div class="ph p1">
+      <span class="w">Month 2–4 · Quick wins</span>
+      <h4>Cash &amp; hours</h4>
+      <ul>
+        <li>AP straight-through processing (SAP + OCR)</li>
+        <li>Trade-promotion claim automation pilot</li>
+        <li>HR policy copilot + self-serve sales BI</li>
+        <li>Demand sensing on 2 categories vs o9 baseline</li>
+      </ul>
+    </div>
+    <div class="ph p2">
+      <span class="w">Month 5–8 · Scale</span>
+      <h4>Predict &amp; see</h4>
+      <ul>
+        <li>Attrition prediction (HR) + resume↔JD matching</li>
+        <li>Vision QC on one flagship packaging line</li>
+        <li>Quick-commerce demand + availability integration</li>
+        <li>MLOps: registry, drift monitors, model cards</li>
+      </ul>
+    </div>
+    <div class="ph p3">
+      <span class="w">Month 9–12 · Compound</span>
+      <h4>Agentic &amp; frontier</h4>
+      <ul>
+        <li>Agentic sales copilot (next-best-action per distributor)</li>
+        <li>Contract intelligence + legal triage</li>
+        <li>Content studio for marketing w/ brand guardrails</li>
+        <li>Voice/WhatsApp field-force assistant (multilingual)</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- GOVERNANCE + FRONTIER -->
+<section style="padding-top:14px"><div class="wrap">
+  <div class="call">
+    <h3>Governance is the enabler, not the brake</h3>
+    <div class="g">
+      <div>
+        <ul>
+          <li><b>DPDP Act 2023</b> alignment: consent, purpose limitation, data minimisation for HR/consumer data.</li>
+          <li><b>Dual-layer access control</b> — retrieval tags + SQL column policy — already demonstrated in the assistant.</li>
+          <li>Three human-in-the-loop tiers; promotion only on measured error rates.</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Model cards, drift monitors, immutable decision logs — the invoice checker already logs every override.</li>
+          <li>Prompt-injection &amp; hallucination guards; "no citation, no claim."</li>
+          <li>Annual independent audit of anything that acts autonomously.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="note"><b>Honest framing:</b> every DS Group figure here is a <span class="tag ver">VERIFIED</span> public fact; internal processes (claim volumes, AP headcount, line defect rates) are reasonable <span class="tag est">OPPORTUNITY</span> assumptions to be confirmed in the week-1 data audit. Prototype metrics are <span class="tag proto">PROTOTYPED</span> on synthetic data and say nothing about DS Group's actual results. This document is independent role-preparation analysis, not affiliated with or endorsed by the company.</div>
+</div></section>
+
+<footer><div class="wrap">Prepared by RAJ · AI &amp; Automation production roadmap · independent analysis · 2026</div></footer>
+
+<script>
+const UC=[
+ // Sales & Distribution
+ {f:"Sales & Distribution",t:"Distributor×SKU demand sensing",by:"DMS + Snowflake + ERP",d:"secondary + primary sales history",fe:"M",s:"proto",jd:2},
+ {f:"Sales & Distribution",t:"Governed self-serve analytics (ask your data)",by:"Snowflake semantic layer + LLM",d:"warehouse + column policy",fe:"H",s:"proto",jd:4},
+ {f:"Sales & Distribution",t:"Next-best-action sales copilot",by:"CRM/DMS + LLM",d:"distributor ledgers, offtake",fe:"M",s:"new",jd:6},
+ {f:"Sales & Distribution",t:"Distributor credit-risk scoring",by:"ERP ledger + credit-bureau API",d:"payment history, exposure",fe:"M",s:"new",jd:2},
+ {f:"Sales & Distribution",t:"Quick-commerce demand & availability",by:"Blinkit/Zepto/Instamart APIs",d:"platform offtake + stock",fe:"M",s:"new",jd:4},
+ {f:"Sales & Distribution",t:"Beat / route optimisation",by:"DMS + geo",d:"outlet geo, visit logs",fe:"M",s:"new",jd:2},
+ // Marketing
+ {f:"Marketing",t:"Trade-promotion ROI (causal)",by:"promo data + ML",d:"TPR spend, matched controls",fe:"M",s:"proto",jd:2},
+ {f:"Marketing",t:"Gen-AI content studio (brand-guarded)",by:"LLM + brand guidelines",d:"brand kit, past creatives",fe:"H",s:"new",jd:6},
+ {f:"Marketing",t:"Social listening & sentiment",by:"social APIs + NLP",d:"mentions, reviews",fe:"H",s:"new",jd:4},
+ {f:"Marketing",t:"Personalised D2C / CRM journeys",by:"CDP + LLM",d:"consumer profiles, consent",fe:"M",s:"new",jd:6},
+ // Finance
+ {f:"Finance",t:"AP straight-through processing",by:"SAP AP + OCR + RPA",d:"invoices, POs, GRNs",fe:"H",s:"proto",jd:5},
+ {f:"Finance",t:"Trade-promotion claim settlement",by:"claims + rules + OCR",d:"scheme master, claim docs",fe:"M",s:"ext",jd:5},
+ {f:"Finance",t:"Duplicate / anomalous spend detection",by:"ERP + anomaly ML",d:"AP + GL transactions",fe:"H",s:"ext",jd:2},
+ {f:"Finance",t:"Cash-flow & working-capital forecast",by:"ERP + ML",d:"AR/AP, inventory",fe:"M",s:"new",jd:4},
+ {f:"Finance",t:"Automated management reporting",by:"Snowflake + LLM narrative",d:"finance marts",fe:"H",s:"proto",jd:5},
+ // Supply Chain / Manufacturing
+ {f:"Supply Chain",t:"Constrained S&OP optimiser (live capacity)",by:"o9 + MES + ERP",d:"capacity, cost, demand",fe:"M",s:"proto",jd:2},
+ {f:"Supply Chain",t:"Inventory-norm & working-capital release",by:"ERP + DMS",d:"channel + plant stock",fe:"M",s:"proto",jd:2},
+ {f:"Supply Chain",t:"New-product launch forecasting (analogs)",by:"DMS + ML",d:"analog launches",fe:"M",s:"ext",jd:2},
+ {f:"Manufacturing",t:"Vision QC on packaging lines",by:"cameras + computer vision",d:"labelled defect images",fe:"M",s:"new",jd:6},
+ {f:"Manufacturing",t:"Predictive maintenance",by:"IoT/MES + ML",d:"sensor + downtime logs",fe:"L",s:"new",jd:6},
+ {f:"Manufacturing",t:"OEE & downtime analytics",by:"MES + BI",d:"line telemetry",fe:"M",s:"new",jd:4},
+ {f:"Manufacturing",t:"Warehouse damage / carton-count vision",by:"CV at dispatch",d:"dock camera feeds",fe:"M",s:"new",jd:6},
+ // HR
+ {f:"HR",t:"Attrition / flight-risk prediction",by:"PeopleStrong HRMS + ML",d:"tenure, comp, engagement",fe:"M",s:"new",jd:2},
+ {f:"HR",t:"HR policy chatbot",by:"HRMS + vector DB + LLM",d:"policies, leave/payroll",fe:"H",s:"ext",jd:2},
+ {f:"HR",t:"Resume ↔ JD matching",by:"ATS + embeddings",d:"resumes, job specs",fe:"H",s:"new",jd:2},
+ {f:"HR",t:"Employee onboarding automation",by:"HRMS + RPA",d:"joining workflows",fe:"M",s:"new",jd:5},
+ {f:"HR",t:"Workforce & comp analytics",by:"HRMS + BI",d:"headcount, comp bands",fe:"H",s:"new",jd:4},
+ // Customer Service
+ {f:"Customer Service",t:"Distributor / consumer helpdesk copilot",by:"tickets + RAG",d:"ticket history, KB",fe:"H",s:"ext",jd:1},
+ {f:"Customer Service",t:"Voice IVR deflection",by:"voice AI + NLU",d:"call intents, KB",fe:"M",s:"new",jd:6},
+ {f:"Customer Service",t:"Complaint triage & routing",by:"NLP classifier",d:"complaint logs",fe:"H",s:"new",jd:5},
+ // Legal
+ {f:"Legal",t:"Contract intelligence & obligation extraction",by:"DMS + Document AI",d:"contract repository",fe:"M",s:"ext",jd:6},
+ {f:"Legal",t:"NDA / contract triage",by:"LLM + playbook",d:"standard positions",fe:"H",s:"new",jd:6},
+ {f:"Legal",t:"Renewal & obligation alerts",by:"CLM + workflow",d:"contract metadata",fe:"H",s:"new",jd:5},
+ // IT / Platform / Retail
+ {f:"IT / Platform",t:"Enterprise knowledge search",by:"all sources + RAG",d:"docs across systems",fe:"H",s:"proto",jd:1},
+ {f:"IT / Platform",t:"IT helpdesk copilot / ticket automation",by:"ITSM + LLM",d:"tickets, runbooks",fe:"H",s:"new",jd:5},
+ {f:"IT / Platform",t:"MLOps platform & model registry",by:"Azure ML / MLflow",d:"models, pipelines",fe:"M",s:"new",jd:3},
+ {f:"IT / Platform",t:"AI governance & model-card registry",by:"policy + tooling",d:"model inventory",fe:"H",s:"proto",jd:3},
+ {f:"Retail Execution",t:"Shelf vision / planogram compliance",by:"field app + CV",d:"shelf photos, planograms",fe:"M",s:"new",jd:6},
+ {f:"Retail Execution",t:"Price & competitor audit from photos",by:"CV + OCR",d:"field images",fe:"M",s:"new",jd:4},
+];
+const SLABEL={proto:["Prototyped","b-proto"],ext:["Extends","b-ext"],new:["New","b-new"]};
+const funcs=["All",...[...new Set(UC.map(u=>u.f))]];
+const stats=[["All","all"],["Prototyped","proto"],["Extends a prototype","ext"],["New","new"]];
+let curF="All",curS="all";
+function chips(){
+  document.getElementById("fFunc").insertAdjacentHTML("beforeend",funcs.map(f=>`<button class="chip ${f===curF?'on':''}" onclick="setF('${f.replace(/'/g,"\\'")}')">${f}</button>`).join(""));
+  document.getElementById("fStatus").insertAdjacentHTML("beforeend",stats.map(([l,v])=>`<button class="chip ${v===curS?'on':''}" onclick="setS('${v}')">${l}</button>`).join(""));
+}
+function setF(f){curF=f;document.querySelectorAll("#fFunc .chip").forEach(c=>c.classList.toggle("on",c.textContent===f));render();}
+function setS(s){curS=s;document.querySelectorAll("#fStatus .chip").forEach((c,i)=>c.classList.toggle("on",stats[i][1]===s));render();}
+function render(){
+  const items=UC.filter(u=>(curF==="All"||u.f===curF)&&(curS==="all"||u.s===curS));
+  document.getElementById("count").textContent=`Showing ${items.length} of ${UC.length} use-cases`;
+  document.getElementById("grid").innerHTML=items.map(u=>{
+    const [sl,sc]=SLABEL[u.s];
+    return `<div class="uc">
+      <div class="top"><h4>${u.t}</h4><span class="badge ${sc}">${sl}</span></div>
+      <div class="by"><b>Unlocked by:</b> ${u.by}</div>
+      <div class="by" style="color:var(--mut)"><b style="color:var(--ink2)">Data:</b> ${u.d}</div>
+      <div class="meta">
+        <span class="badge" style="background:#f3f0ec;color:var(--ink2);border-color:#e0d8ce">${u.f}</span>
+        <span class="fe ${u.fe}"><span class="dot"></span>${u.fe==='H'?'High':u.fe==='M'?'Medium':'Longer'}</span>
+        <span class="jd">JD §${u.jd}</span>
+      </div>
+    </div>`;}).join("");
+}
+const JD=[
+ ["1","AI/ML Strategy & Use-Case Development","The 30-use-case scored blueprint, this integration roadmap, and a phased adoption framework are exactly this deliverable.","<b>Built:</b> interactive blueprint + prioritiser"],
+ ["2","ML Model Development & Deployment","Demand forecasting is prototyped and measured; attrition, sales prediction, segmentation and anomaly detection are scoped on the same MLOps spine.","<b>Measured:</b> WMAPE 9.0% vs 18.3%"],
+ ["3","Solution Architecture, Integration & Governance","The four-layer stack (ERP/HRMS/CRM/SAP/Snowflake/Tableau + APIs + MLOps) with dual-layer access control and DPDP alignment.","<b>Demonstrated:</b> role-scoped access, audit logs"],
+ ["4","Data Analytics & AI-Driven Insights","Governed NL→SQL self-serve BI, KPI definition, dashboards, and data-quality/MDM discipline on the warehouse.","<b>Prototyped:</b> cited answers + auto-charts"],
+ ["5","RPA & Intelligent Automation","Invoice STP, trade-claim settlement, onboarding and report generation — rules + OCR + UiPath/Power Automate with ROI tracking.","<b>Measured:</b> 67.5% auto-clear, 0 wrong approvals"],
+ ["6","Advanced Technology & Innovation","Computer vision QC, document AI, voice, agentic AI and a PoC→production pipeline; the three prototypes are reusable frameworks.","<b>Pattern:</b> offline-first, test-gated PoCs"],
+ ["7","Project Management & Business Delivery","BRDs, ROI models, phase gates and a week-1 data-audit pack that re-bases every estimate against actuals.","<b>Built:</b> data-audit pack + roadmap"],
+ ["8","Team Leadership & Capability Building","A pod model — ML engineers, data analysts, RPA developers — with reusable templates, model cards and knowledge-sharing.","<b>Basis:</b> documented, reproducible builds"],
+];
+document.getElementById("jdmap").innerHTML=JD.map(([n,t,p,e])=>
+ `<div class="jc"><div class="n">JD RESPONSIBILITY ${n}</div><h4>${t}</h4><p>${p}</p><div class="ev">${e}</div></div>`).join("");
+chips();render();
+</script>
+</body>
+</html>

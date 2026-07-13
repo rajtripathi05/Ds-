@@ -1,0 +1,22 @@
+JOB DESCRIPTION — Data Analyst
+Requisition: JD-01   |   Location: Noida   |   Experience: 3-6 years
+
+About the role:
+Northwind FMCG (Synthetic) is hiring a Data Analyst to strengthen our Corporate team.
+
+Key responsibilities:
+- Own and deliver outcomes in the Data Analyst function across our FMCG business.
+- Collaborate with cross-functional teams (business, IT, vendors) to ship measurable impact.
+- Bring rigour, documentation and a business-first mindset.
+
+Required skills:
+- SQL
+- Power BI
+- Tableau
+- Python
+- Excel
+- statistics
+- data visualization
+- ETL
+
+Preferred: prior FMCG / manufacturing exposure; strong communication; ownership.

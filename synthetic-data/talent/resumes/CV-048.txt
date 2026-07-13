@@ -1,0 +1,17 @@
+Kiara Iyer
+Mumbai, India | kiara@example.com | +91-9051066724
+
+SUMMARY
+Data Analyst with 7 years of experience in manufacturing. Known for stakeholder management.
+
+SKILLS
+Power BI, data visualization, Tableau, Excel, Python, statistics, ETL, SQL
+
+EXPERIENCE
+- Data Associate, Peak Dairy (2019-2022)
+    Delivered growth through statistics and data visualization.
+- Data Associate, Sunrise FMCG (2021-2022)
+    Delivered growth through data visualization and ETL.
+
+EDUCATION
+B.Com

@@ -1,0 +1,16 @@
+plant_code,plant_name,city,state,primary_category,daily_capacity_k_units,gstin
+PLNT-01,Noida Plant,Noida,Uttar Pradesh,Spices,385,27SYN5957B1Z3
+PLNT-02,Kanpur Plant,Kanpur,Uttar Pradesh,Beverages,422,27SYN4338B1Z6
+PLNT-03,Rudrapur Plant,Rudrapur,Uttarakhand,MouthFreshener,258,27SYN1239E1Z4
+PLNT-04,Guwahati Plant,Guwahati,Assam,Dairy,72,27SYN9377C1Z5
+PLNT-05,Indore Plant,Indore,Madhya Pradesh,Dairy,217,27SYN5375B1Z5
+PLNT-06,Nagpur Plant,Nagpur,Maharashtra,MouthFreshener,167,27SYN3595H1Z3
+PLNT-07,Pune Plant,Pune,Maharashtra,Beverages,166,27SYN7820A1Z0
+PLNT-08,Ahmedabad Plant,Ahmedabad,Gujarat,Dairy,421,27SYN4136A1Z5
+PLNT-09,Jaipur Plant,Jaipur,Rajasthan,Dairy,120,27SYN4467F1Z6
+PLNT-10,Ludhiana Plant,Ludhiana,Punjab,MouthFreshener,171,27SYN2190G1Z4
+PLNT-11,Hyderabad Plant,Hyderabad,Telangana,Confectionery,123,27SYN3832F1Z4
+PLNT-12,Bengaluru Plant,Bengaluru,Karnataka,MouthFreshener,303,27SYN6753A1Z6
+PLNT-13,Chennai Plant,Chennai,Tamil Nadu,Beverages,429,27SYN1594B1Z3
+PLNT-14,Kolkata Plant,Kolkata,West Bengal,Spices,50,27SYN1084F1Z1
+PLNT-15,Cuttack Plant,Cuttack,Odisha,MouthFreshener,319,27SYN9049C1Z6

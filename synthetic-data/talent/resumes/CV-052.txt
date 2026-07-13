@@ -1,0 +1,17 @@
+Sanjay Nair
+Noida, India | sanjay@example.com | +91-9292697224
+
+SUMMARY
+IT Support Engineer with 7 years of experience in IT services. Known for analytical rigour.
+
+SKILLS
+networking, helpdesk, Windows, Active Directory, ticketing
+
+EXPERIENCE
+- Sr. IT Specialist, Delta Trading (2021-2022)
+    Delivered quality through helpdesk and ticketing.
+- Sr. IT Officer, Delta Trading (2020-present)
+    Delivered quality through Windows and helpdesk.
+
+EDUCATION
+M.Sc Statistics

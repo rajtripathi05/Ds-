@@ -1,0 +1,17 @@
+Diya Verma
+Mumbai, India | diya@example.com | +91-8485172972
+
+SUMMARY
+HRBP with 3 years of experience in IT services. Known for stakeholder management.
+
+SKILLS
+NLP, vector databases, Python, MLOps, payroll
+
+EXPERIENCE
+- HRBP Officer, Vertex Foods (2022-2022)
+    Delivered productivity through Python and Python.
+- Jr. HRBP Officer, Metro Snacks (2024-2023)
+    Delivered cost savings through Python and NLP.
+
+EDUCATION
+B.Tech Mechanical

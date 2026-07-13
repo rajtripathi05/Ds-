@@ -1,0 +1,17 @@
+Simran Kaur
+Chennai, India | simran@example.com | +91-9566935324
+
+SUMMARY
+IT Support Engineer with 10 years of experience in consumer goods. Known for analytical rigour.
+
+SKILLS
+helpdesk, Active Directory, ticketing, troubleshooting, networking, Windows
+
+EXPERIENCE
+- Sr. IT Officer, Acme Foods (2020-2022)
+    Delivered cost savings through troubleshooting and ticketing.
+- Jr. IT Officer, Peak Dairy (2018-2022)
+    Delivered productivity through troubleshooting and helpdesk.
+
+EDUCATION
+MBA, Marketing

@@ -1,0 +1,17 @@
+Farhan Chatterjee
+Chennai, India | farhan@example.com | +91-9414610662
+
+SUMMARY
+Data Analyst with 6 years of experience in FMCG. Known for analytical rigour.
+
+SKILLS
+Tableau, statistics, Python, SQL, Excel, ETL, Power BI
+
+EXPERIENCE
+- Data Specialist, Orbit Beverages (2018-2023)
+    Delivered growth through Tableau and Power BI.
+- Sr. Data Officer, Vertex Foods (2018-2022)
+    Delivered cost savings through statistics and statistics.
+
+EDUCATION
+MBA, Marketing

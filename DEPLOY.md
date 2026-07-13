@@ -12,12 +12,17 @@
 | `demo/cockpit/index.html` | **Playable** — price/demand sliders recompute via real elasticities; role gate hides ₹ |
 | `demo/assistant/index.html` | **Playable** — 25 real cited answers; flip role → confidential Qs refuse vs answer; open sources |
 | `demo/invoice/index.html` | **Playable** — work the review queue, approve/reject, answer key revealed |
+| `data.html` | **Browse the dataset** — 6 datasets, ~978k rows, real preview tables + downloads |
 | `2026-07-12-*.html` | Blueprint, board deck, one-pager, portfolio home |
 | `showcase.html` | Screenshots + one-command local run for the **full** Python systems |
 
 The full Python systems (with the LP solver, SQLite DB and test gates) still run locally via `files practice/START_ALL.bat`; the browser demos show the decision surface, the local apps run the complete engine.
 
 `netlify.toml` sets `publish = "."`, an empty build command, a soft-404 fallback to `index.html` (real files/dirs always win, so `demo/*` resolve directly), and basic security headers.
+
+## The synthetic dataset (integrated)
+`synthetic-data/` is one seeded fictional FMCG company feeding every "implement-now" use-case (sales, promotions, AP invoices, HR/attrition, resumes+JDs, knowledge corpus) — each with planted signal + ground truth. It's surfaced on the site at **`data.html`** (linked from the landing page) with real preview tables and downloads.
+**Deploy hygiene:** the full **81 MB** `synthetic-data/sales/sales_secondary.csv` is **git-ignored** (too big for GitHub/Netlify) and is regenerable via `generate_all.py`; a committed **5,000-row sample** (`sales_secondary_sample.csv`) backs the hosted page. All other datasets (~4 MB total) are committed.
 
 ## Publish it (one block — run in the repo root)
 ```bash
@@ -27,7 +32,7 @@ cd "C:\Users\ai\OneDrive - INDIA GLYCOLS LIMITED\Desktop\claude cowork playgroun
 git rm --cached --ignore-unmatch "files practice/ds-demand-cockpit/ds-demand-cockpit/ds-cockpit.gitbundle" "files practice/ds-copilot/ds-copilot/ds-copilot.gitbundle" "files practice/ds-doc-to-decision/ds-doc-to-decision/ds-doc-to-decision.gitbundle"
 
 git add -A
-git commit -m "De-brand to FMCG; next-level README; add index.html + netlify.toml; accessible UI redesign; optional AI layer"
+git commit -m "Integrate synthetic dataset (data.html + committed sample); demo logic/UI fixes; playable demos + landing"
 git push
 ```
 If your Netlify site is connected to this GitHub repo, the push auto-deploys and **https://fmcgai.netlify.app/** will show the new landing page within a minute.

@@ -21,3 +21,7 @@ __pycache__/
 #  `git bundle create`; *.gitbundle alone does not match it)
 *.gitbundle
 *.gitbundle.lock
+
+# heavy synthetic data — the full 81 MB sales file is regenerable via generate_all.py;
+# a 5,000-row sample (sales_secondary_sample.csv) is committed for the hosted data page.
+synthetic-data/sales/sales_secondary.csv

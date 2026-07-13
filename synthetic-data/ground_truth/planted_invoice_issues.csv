@@ -1,0 +1,660 @@
+invoice_no,issue_type,detail
+INV/000008,date_anomaly,invoice dated before PO
+INV/000011,qty_variance,GRN qty -15.0% vs invoice
+INV/000016,missing_grn,no GRN — goods not received
+INV/000026,missing_grn,no GRN — goods not received
+INV/000032,qty_variance,GRN qty -15.0% vs invoice
+INV/000038,price_mismatch,invoice rate 16.9% above PO
+INV/000042,missing_grn,no GRN — goods not received
+INV/000061,tax_error,GST charged 18% vs correct 18%
+INV/000063,price_mismatch,invoice rate 12.4% above PO
+INV/000075,qty_variance,GRN qty -15.0% vs invoice
+INV/000079,missing_grn,no GRN — goods not received
+INV/000091,duplicate,duplicate
+INV/000091-D,duplicate,duplicate of INV/000091
+INV/000099,date_anomaly,invoice dated before PO
+INV/000113,duplicate,duplicate
+INV/000113-D,duplicate,duplicate of INV/000113
+INV/000120,qty_variance,GRN qty -15.0% vs invoice
+INV/000161,duplicate,duplicate
+INV/000161-D,duplicate,duplicate of INV/000161
+INV/000165,gstin_invalid,malformed GSTIN
+INV/000170,duplicate,duplicate
+INV/000170-D,duplicate,duplicate of INV/000170
+INV/000173,missing_grn,no GRN — goods not received
+INV/000174,price_mismatch,invoice rate 7.3% above PO
+INV/000175,duplicate,duplicate
+INV/000175-D,duplicate,duplicate of INV/000175
+INV/000181,gstin_invalid,malformed GSTIN
+INV/000188,duplicate,duplicate
+INV/000188-D,duplicate,duplicate of INV/000188
+INV/000201,gstin_invalid,malformed GSTIN
+INV/000220,duplicate,duplicate
+INV/000220-D,duplicate,duplicate of INV/000220
+INV/000226,date_anomaly,invoice dated before PO
+INV/000228,price_mismatch,invoice rate 14.8% above PO
+INV/000229,gstin_invalid,malformed GSTIN
+INV/000237,date_anomaly,invoice dated before PO
+INV/000239,gstin_invalid,malformed GSTIN
+INV/000244,qty_variance,GRN qty -15.0% vs invoice
+INV/000256,qty_variance,GRN qty 20.0% vs invoice
+INV/000263,tax_error,GST charged 12% vs correct 18%
+INV/000275,qty_variance,GRN qty 20.0% vs invoice
+INV/000279,date_anomaly,invoice dated before PO
+INV/000288,price_mismatch,invoice rate 13.0% above PO
+INV/000304,date_anomaly,invoice dated before PO
+INV/000309,duplicate,duplicate
+INV/000309-D,duplicate,duplicate of INV/000309
+INV/000330,tax_error,GST charged 5% vs correct 18%
+INV/000334,qty_variance,GRN qty -20.0% vs invoice
+INV/000351,qty_variance,GRN qty -15.0% vs invoice
+INV/000359,missing_grn,no GRN — goods not received
+INV/000373,missing_grn,no GRN — goods not received
+INV/000379,price_mismatch,invoice rate 16.4% above PO
+INV/000381,price_mismatch,invoice rate 24.7% above PO
+INV/000399,missing_grn,no GRN — goods not received
+INV/000413,gstin_invalid,malformed GSTIN
+INV/000420,gstin_invalid,malformed GSTIN
+INV/000422,gstin_invalid,malformed GSTIN
+INV/000426,qty_variance,GRN qty 15.0% vs invoice
+INV/000434,price_mismatch,invoice rate 23.6% above PO
+INV/000435,price_mismatch,invoice rate 10.5% above PO
+INV/000448,price_mismatch,invoice rate 21.9% above PO
+INV/000449,missing_grn,no GRN — goods not received
+INV/000451,duplicate,duplicate
+INV/000451-D,duplicate,duplicate of INV/000451
+INV/000471,date_anomaly,invoice dated before PO
+INV/000493,qty_variance,GRN qty 20.0% vs invoice
+INV/000498,gstin_invalid,malformed GSTIN
+INV/000506,date_anomaly,invoice dated before PO
+INV/000519,tax_error,GST charged 5% vs correct 12%
+INV/000543,tax_error,GST charged 18% vs correct 5%
+INV/000547,gstin_invalid,malformed GSTIN
+INV/000566,duplicate,duplicate
+INV/000566-D,duplicate,duplicate of INV/000566
+INV/000568,tax_error,GST charged 12% vs correct 18%
+INV/000573,qty_variance,GRN qty -20.0% vs invoice
+INV/000585,missing_grn,no GRN — goods not received
+INV/000608,qty_variance,GRN qty 20.0% vs invoice
+INV/000610,price_mismatch,invoice rate 17.1% above PO
+INV/000618,missing_grn,no GRN — goods not received
+INV/000622,missing_grn,no GRN — goods not received
+INV/000631,gstin_invalid,malformed GSTIN
+INV/000638,qty_variance,GRN qty 15.0% vs invoice
+INV/000657,price_mismatch,invoice rate 17.0% above PO
+INV/000660,duplicate,duplicate
+INV/000660-D,duplicate,duplicate of INV/000660
+INV/000666,qty_variance,GRN qty 20.0% vs invoice
+INV/000688,price_mismatch,invoice rate 15.1% above PO
+INV/000691,date_anomaly,invoice dated before PO
+INV/000697,qty_variance,GRN qty -15.0% vs invoice
+INV/000719,missing_grn,no GRN — goods not received
+INV/000726,date_anomaly,invoice dated before PO
+INV/000727,tax_error,GST charged 5% vs correct 5%
+INV/000748,qty_variance,GRN qty 15.0% vs invoice
+INV/000754,duplicate,duplicate
+INV/000754-D,duplicate,duplicate of INV/000754
+INV/000760,missing_grn,no GRN — goods not received
+INV/000794,qty_variance,GRN qty -20.0% vs invoice
+INV/000801,qty_variance,GRN qty -20.0% vs invoice
+INV/000805,qty_variance,GRN qty 20.0% vs invoice
+INV/000811,gstin_invalid,malformed GSTIN
+INV/000816,duplicate,duplicate
+INV/000816-D,duplicate,duplicate of INV/000816
+INV/000835,date_anomaly,invoice dated before PO
+INV/000838,qty_variance,GRN qty -15.0% vs invoice
+INV/000860,duplicate,duplicate
+INV/000860-D,duplicate,duplicate of INV/000860
+INV/000869,qty_variance,GRN qty -15.0% vs invoice
+INV/000876,duplicate,duplicate
+INV/000876-D,duplicate,duplicate of INV/000876
+INV/000884,duplicate,duplicate
+INV/000884-D,duplicate,duplicate of INV/000884
+INV/000903,duplicate,duplicate
+INV/000903-D,duplicate,duplicate of INV/000903
+INV/000914,date_anomaly,invoice dated before PO
+INV/000915,duplicate,duplicate
+INV/000915-D,duplicate,duplicate of INV/000915
+INV/000919,gstin_invalid,malformed GSTIN
+INV/000927,price_mismatch,invoice rate 9.7% above PO
+INV/000933,qty_variance,GRN qty -15.0% vs invoice
+INV/000968,price_mismatch,invoice rate 13.4% above PO
+INV/000992,price_mismatch,invoice rate 6.2% above PO
+INV/000994,gstin_invalid,malformed GSTIN
+INV/001007,tax_error,GST charged 12% vs correct 12%
+INV/001016,price_mismatch,invoice rate 10.8% above PO
+INV/001018,date_anomaly,invoice dated before PO
+INV/001026,gstin_invalid,malformed GSTIN
+INV/001027,gstin_invalid,malformed GSTIN
+INV/001048,duplicate,duplicate
+INV/001048-D,duplicate,duplicate of INV/001048
+INV/001053,price_mismatch,invoice rate 4.9% above PO
+INV/001056,missing_grn,no GRN — goods not received
+INV/001084,duplicate,duplicate
+INV/001084-D,duplicate,duplicate of INV/001084
+INV/001098,duplicate,duplicate
+INV/001098-D,duplicate,duplicate of INV/001098
+INV/001115,qty_variance,GRN qty 20.0% vs invoice
+INV/001117,tax_error,GST charged 12% vs correct 18%
+INV/001118,missing_grn,no GRN — goods not received
+INV/001133,tax_error,GST charged 5% vs correct 18%
+INV/001135,price_mismatch,invoice rate 7.2% above PO
+INV/001138,missing_grn,no GRN — goods not received
+INV/001142,qty_variance,GRN qty 15.0% vs invoice
+INV/001158,duplicate,duplicate
+INV/001158-D,duplicate,duplicate of INV/001158
+INV/001159,gstin_invalid,malformed GSTIN
+INV/001160,tax_error,GST charged 12% vs correct 18%
+INV/001170,gstin_invalid,malformed GSTIN
+INV/001193,price_mismatch,invoice rate 14.5% above PO
+INV/001205,qty_variance,GRN qty -15.0% vs invoice
+INV/001208,gstin_invalid,malformed GSTIN
+INV/001219,tax_error,GST charged 18% vs correct 12%
+INV/001230,gstin_invalid,malformed GSTIN
+INV/001252,missing_grn,no GRN — goods not received
+INV/001253,date_anomaly,invoice dated before PO
+INV/001257,qty_variance,GRN qty 20.0% vs invoice
+INV/001258,tax_error,GST charged 18% vs correct 12%
+INV/001275,tax_error,GST charged 18% vs correct 18%
+INV/001289,tax_error,GST charged 18% vs correct 12%
+INV/001297,tax_error,GST charged 5% vs correct 5%
+INV/001298,qty_variance,GRN qty 15.0% vs invoice
+INV/001301,gstin_invalid,malformed GSTIN
+INV/001306,tax_error,GST charged 12% vs correct 18%
+INV/001308,qty_variance,GRN qty -15.0% vs invoice
+INV/001311,missing_grn,no GRN — goods not received
+INV/001314,qty_variance,GRN qty -20.0% vs invoice
+INV/001320,missing_grn,no GRN — goods not received
+INV/001333,date_anomaly,invoice dated before PO
+INV/001338,date_anomaly,invoice dated before PO
+INV/001363,duplicate,duplicate
+INV/001363-D,duplicate,duplicate of INV/001363
+INV/001366,date_anomaly,invoice dated before PO
+INV/001369,price_mismatch,invoice rate 24.0% above PO
+INV/001371,duplicate,duplicate
+INV/001371-D,duplicate,duplicate of INV/001371
+INV/001375,date_anomaly,invoice dated before PO
+INV/001378,duplicate,duplicate
+INV/001378-D,duplicate,duplicate of INV/001378
+INV/001379,price_mismatch,invoice rate 12.2% above PO
+INV/001384,price_mismatch,invoice rate 24.7% above PO
+INV/001393,date_anomaly,invoice dated before PO
+INV/001400,date_anomaly,invoice dated before PO
+INV/001402,price_mismatch,invoice rate 6.7% above PO
+INV/001403,price_mismatch,invoice rate 19.2% above PO
+INV/001407,date_anomaly,invoice dated before PO
+INV/001459,missing_grn,no GRN — goods not received
+INV/001462,tax_error,GST charged 12% vs correct 18%
+INV/001501,price_mismatch,invoice rate 12.9% above PO
+INV/001503,gstin_invalid,malformed GSTIN
+INV/001510,duplicate,duplicate
+INV/001510-D,duplicate,duplicate of INV/001510
+INV/001519,missing_grn,no GRN — goods not received
+INV/001534,price_mismatch,invoice rate 7.1% above PO
+INV/001551,missing_grn,no GRN — goods not received
+INV/001558,tax_error,GST charged 5% vs correct 12%
+INV/001559,missing_grn,no GRN — goods not received
+INV/001568,date_anomaly,invoice dated before PO
+INV/001579,gstin_invalid,malformed GSTIN
+INV/001584,missing_grn,no GRN — goods not received
+INV/001591,price_mismatch,invoice rate 7.1% above PO
+INV/001592,date_anomaly,invoice dated before PO
+INV/001629,qty_variance,GRN qty -20.0% vs invoice
+INV/001637,duplicate,duplicate
+INV/001637-D,duplicate,duplicate of INV/001637
+INV/001654,tax_error,GST charged 5% vs correct 18%
+INV/001658,duplicate,duplicate
+INV/001658-D,duplicate,duplicate of INV/001658
+INV/001661,date_anomaly,invoice dated before PO
+INV/001668,gstin_invalid,malformed GSTIN
+INV/001680,missing_grn,no GRN — goods not received
+INV/001692,missing_grn,no GRN — goods not received
+INV/001693,duplicate,duplicate
+INV/001693-D,duplicate,duplicate of INV/001693
+INV/001712,qty_variance,GRN qty -15.0% vs invoice
+INV/001723,tax_error,GST charged 5% vs correct 5%
+INV/001737,tax_error,GST charged 18% vs correct 18%
+INV/001741,duplicate,duplicate
+INV/001741-D,duplicate,duplicate of INV/001741
+INV/001743,missing_grn,no GRN — goods not received
+INV/001748,gstin_invalid,malformed GSTIN
+INV/001750,gstin_invalid,malformed GSTIN
+INV/001756,duplicate,duplicate
+INV/001756-D,duplicate,duplicate of INV/001756
+INV/001764,price_mismatch,invoice rate 11.7% above PO
+INV/001769,date_anomaly,invoice dated before PO
+INV/001770,gstin_invalid,malformed GSTIN
+INV/001773,qty_variance,GRN qty 20.0% vs invoice
+INV/001776,gstin_invalid,malformed GSTIN
+INV/001783,gstin_invalid,malformed GSTIN
+INV/001831,price_mismatch,invoice rate 18.8% above PO
+INV/001834,tax_error,GST charged 18% vs correct 12%
+INV/001835,price_mismatch,invoice rate 19.5% above PO
+INV/001848,qty_variance,GRN qty -15.0% vs invoice
+INV/001859,gstin_invalid,malformed GSTIN
+INV/001863,qty_variance,GRN qty -15.0% vs invoice
+INV/001874,qty_variance,GRN qty 20.0% vs invoice
+INV/001875,date_anomaly,invoice dated before PO
+INV/001878,qty_variance,GRN qty -15.0% vs invoice
+INV/001890,duplicate,duplicate
+INV/001890-D,duplicate,duplicate of INV/001890
+INV/001897,duplicate,duplicate
+INV/001897-D,duplicate,duplicate of INV/001897
+INV/001899,gstin_invalid,malformed GSTIN
+INV/001916,qty_variance,GRN qty -15.0% vs invoice
+INV/001930,qty_variance,GRN qty 20.0% vs invoice
+INV/001931,price_mismatch,invoice rate 13.0% above PO
+INV/001939,tax_error,GST charged 18% vs correct 18%
+INV/001956,gstin_invalid,malformed GSTIN
+INV/001974,qty_variance,GRN qty -15.0% vs invoice
+INV/001978,gstin_invalid,malformed GSTIN
+INV/001991,duplicate,duplicate
+INV/001991-D,duplicate,duplicate of INV/001991
+INV/001998,missing_grn,no GRN — goods not received
+INV/002009,price_mismatch,invoice rate 18.2% above PO
+INV/002011,tax_error,GST charged 12% vs correct 12%
+INV/002014,missing_grn,no GRN — goods not received
+INV/002025,date_anomaly,invoice dated before PO
+INV/002037,tax_error,GST charged 18% vs correct 12%
+INV/002039,date_anomaly,invoice dated before PO
+INV/002040,price_mismatch,invoice rate 14.7% above PO
+INV/002048,price_mismatch,invoice rate 13.0% above PO
+INV/002058,duplicate,duplicate
+INV/002058-D,duplicate,duplicate of INV/002058
+INV/002086,missing_grn,no GRN — goods not received
+INV/002107,gstin_invalid,malformed GSTIN
+INV/002113,duplicate,duplicate
+INV/002113-D,duplicate,duplicate of INV/002113
+INV/002114,tax_error,GST charged 5% vs correct 12%
+INV/002127,duplicate,duplicate
+INV/002127-D,duplicate,duplicate of INV/002127
+INV/002142,date_anomaly,invoice dated before PO
+INV/002152,missing_grn,no GRN — goods not received
+INV/002154,tax_error,GST charged 5% vs correct 12%
+INV/002156,qty_variance,GRN qty -20.0% vs invoice
+INV/002160,missing_grn,no GRN — goods not received
+INV/002165,gstin_invalid,malformed GSTIN
+INV/002171,gstin_invalid,malformed GSTIN
+INV/002175,price_mismatch,invoice rate 24.2% above PO
+INV/002197,tax_error,GST charged 5% vs correct 18%
+INV/002203,qty_variance,GRN qty -15.0% vs invoice
+INV/002229,tax_error,GST charged 5% vs correct 5%
+INV/002240,price_mismatch,invoice rate 16.0% above PO
+INV/002246,gstin_invalid,malformed GSTIN
+INV/002247,date_anomaly,invoice dated before PO
+INV/002250,date_anomaly,invoice dated before PO
+INV/002268,gstin_invalid,malformed GSTIN
+INV/002276,duplicate,duplicate
+INV/002276-D,duplicate,duplicate of INV/002276
+INV/002300,qty_variance,GRN qty -15.0% vs invoice
+INV/002308,duplicate,duplicate
+INV/002308-D,duplicate,duplicate of INV/002308
+INV/002309,tax_error,GST charged 5% vs correct 12%
+INV/002339,duplicate,duplicate
+INV/002339-D,duplicate,duplicate of INV/002339
+INV/002345,missing_grn,no GRN — goods not received
+INV/002349,price_mismatch,invoice rate 9.7% above PO
+INV/002356,price_mismatch,invoice rate 21.8% above PO
+INV/002367,qty_variance,GRN qty -20.0% vs invoice
+INV/002370,tax_error,GST charged 18% vs correct 12%
+INV/002378,duplicate,duplicate
+INV/002378-D,duplicate,duplicate of INV/002378
+INV/002423,tax_error,GST charged 5% vs correct 5%
+INV/002427,missing_grn,no GRN — goods not received
+INV/002438,date_anomaly,invoice dated before PO
+INV/002445,duplicate,duplicate
+INV/002445-D,duplicate,duplicate of INV/002445
+INV/002460,duplicate,duplicate
+INV/002460-D,duplicate,duplicate of INV/002460
+INV/002465,gstin_invalid,malformed GSTIN
+INV/002472,date_anomaly,invoice dated before PO
+INV/002495,date_anomaly,invoice dated before PO
+INV/002498,date_anomaly,invoice dated before PO
+INV/002514,qty_variance,GRN qty 15.0% vs invoice
+INV/002521,qty_variance,GRN qty -20.0% vs invoice
+INV/002523,duplicate,duplicate
+INV/002523-D,duplicate,duplicate of INV/002523
+INV/002528,gstin_invalid,malformed GSTIN
+INV/002531,missing_grn,no GRN — goods not received
+INV/002541,date_anomaly,invoice dated before PO
+INV/002543,duplicate,duplicate
+INV/002543-D,duplicate,duplicate of INV/002543
+INV/002544,tax_error,GST charged 18% vs correct 12%
+INV/002560,missing_grn,no GRN — goods not received
+INV/002566,tax_error,GST charged 18% vs correct 12%
+INV/002573,date_anomaly,invoice dated before PO
+INV/002594,tax_error,GST charged 18% vs correct 5%
+INV/002596,qty_variance,GRN qty -15.0% vs invoice
+INV/002625,gstin_invalid,malformed GSTIN
+INV/002628,duplicate,duplicate
+INV/002628-D,duplicate,duplicate of INV/002628
+INV/002642,qty_variance,GRN qty -15.0% vs invoice
+INV/002647,date_anomaly,invoice dated before PO
+INV/002652,gstin_invalid,malformed GSTIN
+INV/002681,date_anomaly,invoice dated before PO
+INV/002686,date_anomaly,invoice dated before PO
+INV/002688,date_anomaly,invoice dated before PO
+INV/002695,price_mismatch,invoice rate 19.4% above PO
+INV/002708,price_mismatch,invoice rate 8.5% above PO
+INV/002730,missing_grn,no GRN — goods not received
+INV/002734,gstin_invalid,malformed GSTIN
+INV/002742,tax_error,GST charged 12% vs correct 5%
+INV/002749,qty_variance,GRN qty 20.0% vs invoice
+INV/002754,qty_variance,GRN qty 15.0% vs invoice
+INV/002759,date_anomaly,invoice dated before PO
+INV/002763,qty_variance,GRN qty -20.0% vs invoice
+INV/002772,duplicate,duplicate
+INV/002772-D,duplicate,duplicate of INV/002772
+INV/002783,duplicate,duplicate
+INV/002783-D,duplicate,duplicate of INV/002783
+INV/002787,qty_variance,GRN qty 20.0% vs invoice
+INV/002791,tax_error,GST charged 5% vs correct 5%
+INV/002792,tax_error,GST charged 5% vs correct 5%
+INV/002793,date_anomaly,invoice dated before PO
+INV/002803,price_mismatch,invoice rate 15.2% above PO
+INV/002808,missing_grn,no GRN — goods not received
+INV/002820,gstin_invalid,malformed GSTIN
+INV/002834,date_anomaly,invoice dated before PO
+INV/002837,date_anomaly,invoice dated before PO
+INV/002841,qty_variance,GRN qty -20.0% vs invoice
+INV/002844,gstin_invalid,malformed GSTIN
+INV/002853,tax_error,GST charged 18% vs correct 12%
+INV/002859,gstin_invalid,malformed GSTIN
+INV/002862,tax_error,GST charged 5% vs correct 18%
+INV/002864,missing_grn,no GRN — goods not received
+INV/002891,qty_variance,GRN qty -15.0% vs invoice
+INV/002892,missing_grn,no GRN — goods not received
+INV/002899,price_mismatch,invoice rate 7.4% above PO
+INV/002908,price_mismatch,invoice rate 19.4% above PO
+INV/002910,date_anomaly,invoice dated before PO
+INV/002919,duplicate,duplicate
+INV/002919-D,duplicate,duplicate of INV/002919
+INV/002924,missing_grn,no GRN — goods not received
+INV/002929,duplicate,duplicate
+INV/002929-D,duplicate,duplicate of INV/002929
+INV/002930,missing_grn,no GRN — goods not received
+INV/002931,tax_error,GST charged 12% vs correct 12%
+INV/002936,duplicate,duplicate
+INV/002936-D,duplicate,duplicate of INV/002936
+INV/002945,tax_error,GST charged 5% vs correct 18%
+INV/002951,qty_variance,GRN qty 15.0% vs invoice
+INV/002955,duplicate,duplicate
+INV/002955-D,duplicate,duplicate of INV/002955
+INV/002957,missing_grn,no GRN — goods not received
+INV/002963,duplicate,duplicate
+INV/002963-D,duplicate,duplicate of INV/002963
+INV/002965,gstin_invalid,malformed GSTIN
+INV/002986,price_mismatch,invoice rate 4.5% above PO
+INV/002988,gstin_invalid,malformed GSTIN
+INV/003015,date_anomaly,invoice dated before PO
+INV/003050,tax_error,GST charged 18% vs correct 12%
+INV/003054,duplicate,duplicate
+INV/003054-D,duplicate,duplicate of INV/003054
+INV/003058,gstin_invalid,malformed GSTIN
+INV/003061,missing_grn,no GRN — goods not received
+INV/003062,tax_error,GST charged 18% vs correct 18%
+INV/003069,tax_error,GST charged 5% vs correct 5%
+INV/003079,duplicate,duplicate
+INV/003079-D,duplicate,duplicate of INV/003079
+INV/003080,price_mismatch,invoice rate 22.3% above PO
+INV/003084,date_anomaly,invoice dated before PO
+INV/003086,gstin_invalid,malformed GSTIN
+INV/003098,missing_grn,no GRN — goods not received
+INV/003103,duplicate,duplicate
+INV/003103-D,duplicate,duplicate of INV/003103
+INV/003112,date_anomaly,invoice dated before PO
+INV/003115,gstin_invalid,malformed GSTIN
+INV/003118,qty_variance,GRN qty 20.0% vs invoice
+INV/003135,duplicate,duplicate
+INV/003135-D,duplicate,duplicate of INV/003135
+INV/003137,tax_error,GST charged 12% vs correct 5%
+INV/003138,qty_variance,GRN qty -15.0% vs invoice
+INV/003140,gstin_invalid,malformed GSTIN
+INV/003143,duplicate,duplicate
+INV/003143-D,duplicate,duplicate of INV/003143
+INV/003150,duplicate,duplicate
+INV/003150-D,duplicate,duplicate of INV/003150
+INV/003157,qty_variance,GRN qty 15.0% vs invoice
+INV/003159,duplicate,duplicate
+INV/003159-D,duplicate,duplicate of INV/003159
+INV/003165,price_mismatch,invoice rate 19.9% above PO
+INV/003178,tax_error,GST charged 5% vs correct 5%
+INV/003185,tax_error,GST charged 18% vs correct 12%
+INV/003192,date_anomaly,invoice dated before PO
+INV/003194,price_mismatch,invoice rate 9.0% above PO
+INV/003197,duplicate,duplicate
+INV/003197-D,duplicate,duplicate of INV/003197
+INV/003203,gstin_invalid,malformed GSTIN
+INV/003204,gstin_invalid,malformed GSTIN
+INV/003220,missing_grn,no GRN — goods not received
+INV/003236,gstin_invalid,malformed GSTIN
+INV/003244,qty_variance,GRN qty 20.0% vs invoice
+INV/003251,tax_error,GST charged 5% vs correct 5%
+INV/003257,duplicate,duplicate
+INV/003257-D,duplicate,duplicate of INV/003257
+INV/003258,qty_variance,GRN qty 20.0% vs invoice
+INV/003272,qty_variance,GRN qty 15.0% vs invoice
+INV/003274,duplicate,duplicate
+INV/003274-D,duplicate,duplicate of INV/003274
+INV/003276,tax_error,GST charged 12% vs correct 18%
+INV/003282,duplicate,duplicate
+INV/003282-D,duplicate,duplicate of INV/003282
+INV/003292,duplicate,duplicate
+INV/003292-D,duplicate,duplicate of INV/003292
+INV/003296,qty_variance,GRN qty -15.0% vs invoice
+INV/003298,missing_grn,no GRN — goods not received
+INV/003310,date_anomaly,invoice dated before PO
+INV/003319,gstin_invalid,malformed GSTIN
+INV/003333,date_anomaly,invoice dated before PO
+INV/003336,tax_error,GST charged 12% vs correct 5%
+INV/003344,qty_variance,GRN qty 20.0% vs invoice
+INV/003347,tax_error,GST charged 5% vs correct 5%
+INV/003355,date_anomaly,invoice dated before PO
+INV/003360,missing_grn,no GRN — goods not received
+INV/003372,qty_variance,GRN qty 15.0% vs invoice
+INV/003373,qty_variance,GRN qty -20.0% vs invoice
+INV/003375,price_mismatch,invoice rate 23.8% above PO
+INV/003390,missing_grn,no GRN — goods not received
+INV/003393,tax_error,GST charged 5% vs correct 18%
+INV/003406,price_mismatch,invoice rate 12.3% above PO
+INV/003409,price_mismatch,invoice rate 17.1% above PO
+INV/003412,tax_error,GST charged 18% vs correct 18%
+INV/003416,tax_error,GST charged 12% vs correct 12%
+INV/003437,price_mismatch,invoice rate 21.9% above PO
+INV/003461,missing_grn,no GRN — goods not received
+INV/003476,tax_error,GST charged 5% vs correct 12%
+INV/003483,gstin_invalid,malformed GSTIN
+INV/003518,tax_error,GST charged 18% vs correct 12%
+INV/003549,qty_variance,GRN qty 20.0% vs invoice
+INV/003555,gstin_invalid,malformed GSTIN
+INV/003590,qty_variance,GRN qty 15.0% vs invoice
+INV/003594,duplicate,duplicate
+INV/003594-D,duplicate,duplicate of INV/003594
+INV/003597,duplicate,duplicate
+INV/003597-D,duplicate,duplicate of INV/003597
+INV/003614,date_anomaly,invoice dated before PO
+INV/003615,missing_grn,no GRN — goods not received
+INV/003652,date_anomaly,invoice dated before PO
+INV/003658,gstin_invalid,malformed GSTIN
+INV/003659,qty_variance,GRN qty -20.0% vs invoice
+INV/003661,gstin_invalid,malformed GSTIN
+INV/003663,tax_error,GST charged 18% vs correct 18%
+INV/003671,duplicate,duplicate
+INV/003671-D,duplicate,duplicate of INV/003671
+INV/003677,date_anomaly,invoice dated before PO
+INV/003685,missing_grn,no GRN — goods not received
+INV/003687,date_anomaly,invoice dated before PO
+INV/003688,missing_grn,no GRN — goods not received
+INV/003694,price_mismatch,invoice rate 20.8% above PO
+INV/003698,tax_error,GST charged 18% vs correct 18%
+INV/003709,gstin_invalid,malformed GSTIN
+INV/003710,missing_grn,no GRN — goods not received
+INV/003729,date_anomaly,invoice dated before PO
+INV/003760,duplicate,duplicate
+INV/003760-D,duplicate,duplicate of INV/003760
+INV/003769,tax_error,GST charged 18% vs correct 12%
+INV/003783,date_anomaly,invoice dated before PO
+INV/003784,tax_error,GST charged 18% vs correct 18%
+INV/003789,qty_variance,GRN qty -20.0% vs invoice
+INV/003790,missing_grn,no GRN — goods not received
+INV/003798,duplicate,duplicate
+INV/003798-D,duplicate,duplicate of INV/003798
+INV/003823,duplicate,duplicate
+INV/003823-D,duplicate,duplicate of INV/003823
+INV/003824,missing_grn,no GRN — goods not received
+INV/003831,duplicate,duplicate
+INV/003831-D,duplicate,duplicate of INV/003831
+INV/003835,gstin_invalid,malformed GSTIN
+INV/003843,duplicate,duplicate
+INV/003843-D,duplicate,duplicate of INV/003843
+INV/003860,date_anomaly,invoice dated before PO
+INV/003883,date_anomaly,invoice dated before PO
+INV/003886,price_mismatch,invoice rate 20.7% above PO
+INV/003887,gstin_invalid,malformed GSTIN
+INV/003897,gstin_invalid,malformed GSTIN
+INV/003919,date_anomaly,invoice dated before PO
+INV/003932,missing_grn,no GRN — goods not received
+INV/003946,date_anomaly,invoice dated before PO
+INV/003947,price_mismatch,invoice rate 11.9% above PO
+INV/003953,duplicate,duplicate
+INV/003953-D,duplicate,duplicate of INV/003953
+INV/003965,price_mismatch,invoice rate 24.4% above PO
+INV/003966,qty_variance,GRN qty 20.0% vs invoice
+INV/003969,qty_variance,GRN qty -20.0% vs invoice
+INV/003972,date_anomaly,invoice dated before PO
+INV/003981,gstin_invalid,malformed GSTIN
+INV/003999,gstin_invalid,malformed GSTIN
+INV/004008,qty_variance,GRN qty 15.0% vs invoice
+INV/004032,missing_grn,no GRN — goods not received
+INV/004034,price_mismatch,invoice rate 14.8% above PO
+INV/004049,missing_grn,no GRN — goods not received
+INV/004051,missing_grn,no GRN — goods not received
+INV/004072,missing_grn,no GRN — goods not received
+INV/004073,gstin_invalid,malformed GSTIN
+INV/004074,qty_variance,GRN qty 15.0% vs invoice
+INV/004081,tax_error,GST charged 5% vs correct 5%
+INV/004084,price_mismatch,invoice rate 17.9% above PO
+INV/004088,price_mismatch,invoice rate 18.4% above PO
+INV/004090,gstin_invalid,malformed GSTIN
+INV/004094,gstin_invalid,malformed GSTIN
+INV/004107,missing_grn,no GRN — goods not received
+INV/004108,tax_error,GST charged 18% vs correct 5%
+INV/004120,date_anomaly,invoice dated before PO
+INV/004123,date_anomaly,invoice dated before PO
+INV/004133,gstin_invalid,malformed GSTIN
+INV/004163,price_mismatch,invoice rate 12.6% above PO
+INV/004181,price_mismatch,invoice rate 20.3% above PO
+INV/004184,price_mismatch,invoice rate 8.7% above PO
+INV/004187,gstin_invalid,malformed GSTIN
+INV/004200,gstin_invalid,malformed GSTIN
+INV/004222,gstin_invalid,malformed GSTIN
+INV/004223,duplicate,duplicate
+INV/004223-D,duplicate,duplicate of INV/004223
+INV/004238,date_anomaly,invoice dated before PO
+INV/004244,price_mismatch,invoice rate 18.1% above PO
+INV/004247,missing_grn,no GRN — goods not received
+INV/004253,price_mismatch,invoice rate 13.8% above PO
+INV/004257,date_anomaly,invoice dated before PO
+INV/004264,gstin_invalid,malformed GSTIN
+INV/004267,missing_grn,no GRN — goods not received
+INV/004269,tax_error,GST charged 5% vs correct 12%
+INV/004282,date_anomaly,invoice dated before PO
+INV/004290,qty_variance,GRN qty 20.0% vs invoice
+INV/004306,price_mismatch,invoice rate 12.8% above PO
+INV/004307,qty_variance,GRN qty -15.0% vs invoice
+INV/004318,gstin_invalid,malformed GSTIN
+INV/004323,duplicate,duplicate
+INV/004323-D,duplicate,duplicate of INV/004323
+INV/004329,price_mismatch,invoice rate 12.1% above PO
+INV/004337,tax_error,GST charged 5% vs correct 12%
+INV/004338,duplicate,duplicate
+INV/004338-D,duplicate,duplicate of INV/004338
+INV/004341,missing_grn,no GRN — goods not received
+INV/004345,qty_variance,GRN qty 20.0% vs invoice
+INV/004361,tax_error,GST charged 5% vs correct 18%
+INV/004373,date_anomaly,invoice dated before PO
+INV/004392,duplicate,duplicate
+INV/004392-D,duplicate,duplicate of INV/004392
+INV/004406,gstin_invalid,malformed GSTIN
+INV/004407,tax_error,GST charged 5% vs correct 5%
+INV/004408,qty_variance,GRN qty 20.0% vs invoice
+INV/004418,date_anomaly,invoice dated before PO
+INV/004426,missing_grn,no GRN — goods not received
+INV/004429,price_mismatch,invoice rate 15.8% above PO
+INV/004449,missing_grn,no GRN — goods not received
+INV/004461,tax_error,GST charged 5% vs correct 12%
+INV/004470,duplicate,duplicate
+INV/004470-D,duplicate,duplicate of INV/004470
+INV/004471,qty_variance,GRN qty -20.0% vs invoice
+INV/004487,price_mismatch,invoice rate 23.2% above PO
+INV/004504,duplicate,duplicate
+INV/004504-D,duplicate,duplicate of INV/004504
+INV/004508,gstin_invalid,malformed GSTIN
+INV/004516,duplicate,duplicate
+INV/004516-D,duplicate,duplicate of INV/004516
+INV/004520,qty_variance,GRN qty 20.0% vs invoice
+INV/004528,duplicate,duplicate
+INV/004528-D,duplicate,duplicate of INV/004528
+INV/004535,date_anomaly,invoice dated before PO
+INV/004536,gstin_invalid,malformed GSTIN
+INV/004539,qty_variance,GRN qty -20.0% vs invoice
+INV/004546,tax_error,GST charged 12% vs correct 5%
+INV/004549,qty_variance,GRN qty -20.0% vs invoice
+INV/004564,tax_error,GST charged 5% vs correct 5%
+INV/004569,date_anomaly,invoice dated before PO
+INV/004574,missing_grn,no GRN — goods not received
+INV/004605,date_anomaly,invoice dated before PO
+INV/004621,date_anomaly,invoice dated before PO
+INV/004627,price_mismatch,invoice rate 11.3% above PO
+INV/004640,missing_grn,no GRN — goods not received
+INV/004641,missing_grn,no GRN — goods not received
+INV/004648,duplicate,duplicate
+INV/004648-D,duplicate,duplicate of INV/004648
+INV/004652,missing_grn,no GRN — goods not received
+INV/004659,qty_variance,GRN qty -15.0% vs invoice
+INV/004663,date_anomaly,invoice dated before PO
+INV/004671,duplicate,duplicate
+INV/004671-D,duplicate,duplicate of INV/004671
+INV/004684,date_anomaly,invoice dated before PO
+INV/004695,date_anomaly,invoice dated before PO
+INV/004702,date_anomaly,invoice dated before PO
+INV/004715,missing_grn,no GRN — goods not received
+INV/004725,duplicate,duplicate
+INV/004725-D,duplicate,duplicate of INV/004725
+INV/004732,date_anomaly,invoice dated before PO
+INV/004762,duplicate,duplicate
+INV/004762-D,duplicate,duplicate of INV/004762
+INV/004765,duplicate,duplicate
+INV/004765-D,duplicate,duplicate of INV/004765
+INV/004767,date_anomaly,invoice dated before PO
+INV/004770,gstin_invalid,malformed GSTIN
+INV/004783,price_mismatch,invoice rate 18.9% above PO
+INV/004789,duplicate,duplicate
+INV/004789-D,duplicate,duplicate of INV/004789
+INV/004796,qty_variance,GRN qty 15.0% vs invoice
+INV/004806,gstin_invalid,malformed GSTIN
+INV/004814,price_mismatch,invoice rate 12.6% above PO
+INV/004815,tax_error,GST charged 18% vs correct 18%
+INV/004819,price_mismatch,invoice rate 21.7% above PO
+INV/004820,qty_variance,GRN qty -20.0% vs invoice
+INV/004821,missing_grn,no GRN — goods not received
+INV/004824,price_mismatch,invoice rate 18.9% above PO
+INV/004833,qty_variance,GRN qty 20.0% vs invoice
+INV/004838,tax_error,GST charged 18% vs correct 5%
+INV/004846,price_mismatch,invoice rate 13.5% above PO
+INV/004862,qty_variance,GRN qty -20.0% vs invoice
+INV/004879,qty_variance,GRN qty 15.0% vs invoice
+INV/004893,qty_variance,GRN qty 15.0% vs invoice
+INV/004897,tax_error,GST charged 12% vs correct 12%
+INV/004898,tax_error,GST charged 12% vs correct 18%
+INV/004912,missing_grn,no GRN — goods not received
+INV/004914,qty_variance,GRN qty 20.0% vs invoice
+INV/004928,qty_variance,GRN qty -15.0% vs invoice
+INV/004938,date_anomaly,invoice dated before PO
+INV/004942,price_mismatch,invoice rate 4.7% above PO
+INV/004962,gstin_invalid,malformed GSTIN
+INV/004973,price_mismatch,invoice rate 15.0% above PO
+INV/004974,date_anomaly,invoice dated before PO
+INV/004989,price_mismatch,invoice rate 10.6% above PO
+INV/004996,price_mismatch,invoice rate 17.6% above PO
+INV/005000,qty_variance,GRN qty 15.0% vs invoice

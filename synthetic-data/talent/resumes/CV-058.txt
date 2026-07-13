@@ -1,0 +1,17 @@
+Kiara Rao
+Mumbai, India | kiara@example.com | +91-8389587094
+
+SUMMARY
+IT Support Engineer with 3 years of experience in consumer goods. Known for delivery focus.
+
+SKILLS
+ticketing, Windows, troubleshooting, helpdesk, Active Directory, networking
+
+EXPERIENCE
+- Sr. IT Executive, Acme Foods (2020-2023)
+    Delivered growth through Active Directory and helpdesk.
+- Jr. IT Associate, Sunrise FMCG (2020-2023)
+    Delivered cost savings through networking and troubleshooting.
+
+EDUCATION
+B.Sc Food Technology

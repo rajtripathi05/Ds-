@@ -1,0 +1,121 @@
+vendor_code,vendor_name,vendor_kind,gstin,payment_terms,state
+VEND-0001,Deshpande Enterprises,Raw Material,05SYN7964D1Z5,Net 45,Karnataka
+VEND-0002,Pillai Logistics,Ingredients,17SYN4896A1Z7,Net 30,Uttar Pradesh
+VEND-0003,Menon Industries,Packaging,05SYN7275D1Z1,Advance,Kerala
+VEND-0004,Malhotra Foods,Ingredients,05SYN5737A1Z8,Net 45,Rajasthan
+VEND-0005,Rao Foods,Logistics,27SYN7849F1Z6,Net 30,Haryana
+VEND-0006,Chauhan Enterprises,Raw Material,29SYN5618E1Z1,Net 30,Maharashtra
+VEND-0007,Naidu Enterprises,Services,31SYN5053F1Z4,Net 45,Delhi
+VEND-0008,Gupta Foods,Packaging,14SYN2642D1Z8,Net 30,Rajasthan
+VEND-0009,Reddy Enterprises,Services,29SYN6794F1Z3,Net 45,West Bengal
+VEND-0010,Naidu Packaging,Ingredients,30SYN5908D1Z3,Net 45,Goa
+VEND-0011,Patel Packaging,Logistics,17SYN3044F1Z0,Net 30,Karnataka
+VEND-0012,Shah Industries,Logistics,21SYN8990D1Z0,Net 60,Kerala
+VEND-0013,Nair Enterprises,Services,32SYN8447C1Z2,Net 45,Chhattisgarh
+VEND-0014,Yadav Agro,Ingredients,24SYN2486G1Z6,Net 60,Tamil Nadu
+VEND-0015,Gupta Foods,Ingredients,26SYN4190A1Z0,Net 30,Tamil Nadu
+VEND-0016,Gupta Logistics,Services,35SYN5010G1Z8,Advance,Chhattisgarh
+VEND-0017,Ahmed Packaging,Ingredients,25SYN8004B1Z6,Net 60,West Bengal
+VEND-0018,Reddy Logistics,Logistics,08SYN4274A1Z4,Net 60,Madhya Pradesh
+VEND-0019,Chauhan Packaging,Ingredients,19SYN1394E1Z4,Net 45,Telangana
+VEND-0020,Joshi Agro,Packaging,07SYN7689A1Z6,Net 60,Maharashtra
+VEND-0021,Yadav Foods,Raw Material,34SYN7702E1Z3,Net 45,Uttar Pradesh
+VEND-0022,Gupta Packaging,Ingredients,35SYN4697H1Z2,Net 30,Madhya Pradesh
+VEND-0023,Naidu Traders,Packaging,33SYN4333E1Z0,Advance,Tamil Nadu
+VEND-0024,Ahmed Packaging,Logistics,18SYN8160F1Z1,Advance,Chhattisgarh
+VEND-0025,Patel Industries,Raw Material,18SYN2169F1Z6,Net 30,Madhya Pradesh
+VEND-0026,Sharma Industries,Ingredients,18SYN3971A1Z2,Net 45,Delhi
+VEND-0027,Mukherjee Traders,Logistics,21SYN7027E1Z8,Advance,Tamil Nadu
+VEND-0028,Chatterjee Traders,Ingredients,17SYN2446H1Z7,Advance,Karnataka
+VEND-0029,Kaur Logistics,Raw Material,24SYN7301G1Z0,Advance,Delhi
+VEND-0030,Deshpande Enterprises,Raw Material,12SYN7909B1Z7,Net 45,Tamil Nadu
+VEND-0031,Nair Logistics,Ingredients,17SYN8242C1Z7,Net 60,Gujarat
+VEND-0032,Malhotra Foods,Raw Material,15SYN9081B1Z2,Net 30,Madhya Pradesh
+VEND-0033,Reddy Logistics,Raw Material,10SYN7141H1Z5,Advance,Kerala
+VEND-0034,Das Industries,Raw Material,06SYN8493G1Z1,Net 60,Rajasthan
+VEND-0035,Ahmed Packaging,Services,30SYN1066H1Z7,Net 45,Telangana
+VEND-0036,Pillai Packaging,Packaging,29SYN8022A1Z5,Net 60,Delhi
+VEND-0037,Mukherjee Foods,Ingredients,18SYN7345C1Z2,Net 30,Madhya Pradesh
+VEND-0038,Menon Industries,Packaging,29SYN6000D1Z4,Advance,Uttarakhand
+VEND-0039,Menon Industries,Packaging,19SYN6118B1Z0,Advance,Chhattisgarh
+VEND-0040,Ahmed Packaging,Logistics,06SYN3209F1Z1,Net 45,Bihar
+VEND-0041,Banerjee Enterprises,Packaging,17SYN7014B1Z5,Net 30,Maharashtra
+VEND-0042,Rao Agro,Raw Material,18SYN8694E1Z5,Net 45,West Bengal
+VEND-0043,Mehta Traders,Packaging,04SYN7884H1Z5,Net 60,Madhya Pradesh
+VEND-0044,Mishra Packaging,Ingredients,24SYN6087B1Z4,Net 45,West Bengal
+VEND-0045,Nair Enterprises,Raw Material,05SYN6032E1Z7,Net 45,Odisha
+VEND-0046,Chatterjee Enterprises,Logistics,12SYN6424A1Z0,Net 30,Rajasthan
+VEND-0047,Singh Foods,Raw Material,14SYN4930C1Z8,Net 60,Kerala
+VEND-0048,Naidu Industries,Ingredients,09SYN3488B1Z3,Net 30,Karnataka
+VEND-0049,Naidu Traders,Logistics,36SYN8679G1Z0,Net 45,Punjab
+VEND-0050,Yadav Enterprises,Logistics,10SYN8394D1Z0,Net 45,Punjab
+VEND-0051,Menon Packaging,Ingredients,31SYN3532C1Z8,Net 45,Tamil Nadu
+VEND-0052,Reddy Packaging,Services,12SYN4908F1Z5,Advance,Telangana
+VEND-0053,Das Foods,Packaging,06SYN6012A1Z4,Advance,Tamil Nadu
+VEND-0054,Mehta Foods,Services,29SYN9963D1Z5,Net 45,Uttar Pradesh
+VEND-0055,Shah Foods,Services,16SYN4657B1Z3,Net 60,Bihar
+VEND-0056,Sharma Industries,Ingredients,30SYN3890E1Z1,Net 45,Chhattisgarh
+VEND-0057,Menon Logistics,Raw Material,13SYN1204F1Z0,Net 60,Maharashtra
+VEND-0058,Rao Enterprises,Services,05SYN7943A1Z6,Advance,Uttarakhand
+VEND-0059,Kaur Logistics,Ingredients,26SYN5156B1Z6,Net 60,Chhattisgarh
+VEND-0060,Mukherjee Enterprises,Raw Material,07SYN9104G1Z4,Net 60,Rajasthan
+VEND-0061,Rao Logistics,Ingredients,34SYN2370G1Z4,Net 45,Chhattisgarh
+VEND-0062,Kapoor Industries,Services,26SYN5460E1Z4,Net 60,Kerala
+VEND-0063,Khan Enterprises,Ingredients,07SYN4428H1Z2,Advance,Gujarat
+VEND-0064,Malhotra Foods,Ingredients,12SYN7152C1Z5,Net 30,Assam
+VEND-0065,Ahmed Enterprises,Raw Material,23SYN4255D1Z8,Net 45,Karnataka
+VEND-0066,Chatterjee Agro,Raw Material,05SYN4082B1Z1,Advance,Gujarat
+VEND-0067,Das Traders,Services,13SYN9656C1Z3,Net 30,Haryana
+VEND-0068,Malhotra Packaging,Packaging,33SYN5455H1Z6,Net 30,Madhya Pradesh
+VEND-0069,Nair Foods,Raw Material,18SYN3392H1Z6,Net 60,Goa
+VEND-0070,Yadav Traders,Ingredients,35SYN3371H1Z7,Advance,Odisha
+VEND-0071,Chatterjee Packaging,Logistics,11SYN7451D1Z7,Net 60,Maharashtra
+VEND-0072,Shah Enterprises,Logistics,17SYN7631F1Z2,Net 30,Tamil Nadu
+VEND-0073,Kulkarni Traders,Packaging,04SYN1867D1Z4,Net 30,Goa
+VEND-0074,Banerjee Logistics,Logistics,33SYN2148A1Z4,Net 45,Goa
+VEND-0075,Chauhan Foods,Ingredients,26SYN2821G1Z6,Advance,Punjab
+VEND-0076,Chauhan Foods,Logistics,12SYN8277G1Z5,Net 45,Gujarat
+VEND-0077,Chatterjee Industries,Logistics,21SYN2590G1Z4,Net 60,Gujarat
+VEND-0078,Menon Agro,Services,31SYN1175A1Z6,Advance,Madhya Pradesh
+VEND-0079,Nair Foods,Raw Material,19SYN7474H1Z5,Net 45,Punjab
+VEND-0080,Rao Logistics,Services,17SYN3777F1Z5,Net 60,Rajasthan
+VEND-0081,Kapoor Industries,Services,06SYN6256H1Z0,Net 30,Madhya Pradesh
+VEND-0082,Khan Industries,Logistics,24SYN6658A1Z0,Net 30,Tamil Nadu
+VEND-0083,Nair Traders,Raw Material,28SYN4741C1Z7,Advance,Uttarakhand
+VEND-0084,Kulkarni Enterprises,Packaging,03SYN2614F1Z4,Net 45,Madhya Pradesh
+VEND-0085,Iyer Agro,Packaging,08SYN3968A1Z5,Net 60,Chhattisgarh
+VEND-0086,Gupta Agro,Services,07SYN7098D1Z0,Net 30,West Bengal
+VEND-0087,Kaur Agro,Ingredients,08SYN6288G1Z7,Net 60,Uttarakhand
+VEND-0088,Chauhan Logistics,Logistics,07SYN3699H1Z8,Net 30,Rajasthan
+VEND-0089,Bose Traders,Services,36SYN6228E1Z4,Advance,Goa
+VEND-0090,Singh Foods,Ingredients,14SYN6511D1Z5,Net 30,Bihar
+VEND-0091,Pillai Agro,Packaging,12SYN1205G1Z1,Net 60,Haryana
+VEND-0092,Chatterjee Traders,Logistics,35SYN4762F1Z4,Net 60,Assam
+VEND-0093,Naidu Industries,Ingredients,18SYN8043D1Z0,Net 30,Kerala
+VEND-0094,Joshi Traders,Services,04SYN3482H1Z4,Advance,Maharashtra
+VEND-0095,Patel Logistics,Raw Material,25SYN5415D1Z3,Net 60,Chhattisgarh
+VEND-0096,Mukherjee Enterprises,Services,34SYN2449G1Z5,Net 60,Bihar
+VEND-0097,Shah Traders,Logistics,20SYN5260B1Z7,Net 45,West Bengal
+VEND-0098,Rao Traders,Ingredients,11SYN9583H1Z2,Net 60,Chhattisgarh
+VEND-0099,Mehta Traders,Raw Material,21SYN5685F1Z7,Net 45,West Bengal
+VEND-0100,Shah Industries,Ingredients,17SYN3560A1Z0,Net 60,Kerala
+VEND-0101,Pillai Enterprises,Raw Material,14SYN8435H1Z0,Advance,Rajasthan
+VEND-0102,Shah Foods,Packaging,33SYN5884H1Z1,Net 30,Haryana
+VEND-0103,Pillai Packaging,Services,12SYN5985A1Z2,Net 45,Telangana
+VEND-0104,Iyer Agro,Raw Material,05SYN6993G1Z6,Net 45,Chhattisgarh
+VEND-0105,Mehta Foods,Services,06SYN3530G1Z2,Net 60,Madhya Pradesh
+VEND-0106,Joshi Traders,Ingredients,25SYN7571D1Z6,Net 60,Uttar Pradesh
+VEND-0107,Naidu Industries,Packaging,34SYN7917C1Z2,Net 30,Goa
+VEND-0108,Mehta Industries,Ingredients,05SYN6531D1Z8,Net 60,Bihar
+VEND-0109,Mishra Enterprises,Raw Material,36SYN3071D1Z2,Advance,Uttarakhand
+VEND-0110,Mishra Enterprises,Packaging,03SYN2271C1Z4,Net 30,Uttar Pradesh
+VEND-0111,Deshpande Foods,Logistics,21SYN4337E1Z2,Advance,Haryana
+VEND-0112,Shah Agro,Logistics,31SYN5139H1Z7,Advance,Uttarakhand
+VEND-0113,Deshpande Enterprises,Raw Material,35SYN3853E1Z1,Net 30,Uttar Pradesh
+VEND-0114,Sharma Foods,Ingredients,35SYN6712E1Z2,Net 30,Kerala
+VEND-0115,Mishra Enterprises,Ingredients,23SYN5634C1Z8,Advance,Maharashtra
+VEND-0116,Bose Enterprises,Services,10SYN9921F1Z8,Net 30,Telangana
+VEND-0117,Mehta Packaging,Services,08SYN2481G1Z4,Net 30,Maharashtra
+VEND-0118,Singh Industries,Logistics,03SYN3688G1Z3,Net 30,Chhattisgarh
+VEND-0119,Rao Agro,Services,35SYN9930F1Z1,Advance,Maharashtra
+VEND-0120,Naidu Traders,Packaging,33SYN1818E1Z6,Advance,Maharashtra

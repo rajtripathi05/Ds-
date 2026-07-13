@@ -1,0 +1,17 @@
+Anika Iyer
+Mumbai, India | anika@example.com | +91-9878917888
+
+SUMMARY
+ML Engineer with 7 years of experience in manufacturing. Known for delivery focus.
+
+SKILLS
+TensorFlow, model deployment, scikit-learn, NLP, machine learning
+
+EXPERIENCE
+- ML Specialist, Sunrise FMCG (2019-2022)
+    Delivered productivity through TensorFlow and model deployment.
+- ML Officer, Horizon Ingredients (2024-2022)
+    Delivered growth through machine learning and machine learning.
+
+EDUCATION
+MBA, Marketing

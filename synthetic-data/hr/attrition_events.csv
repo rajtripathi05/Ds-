@@ -1,0 +1,719 @@
+emp_id,department,sub_function,band,tenure_years,attrition_month,attrition_reason
+EMP-00001,Manufacturing,Quality,M3,2.1,2025-02-23,low performance rating
+EMP-00005,Finance,FP&A,M1,1.6,2025-11-07,below-band pay
+EMP-00009,Manufacturing,Quality,M1,1.0,2025-06-16,low engagement
+EMP-00011,IT,Applications,M2,1.2,2025-09-26,below-band pay
+EMP-00014,Manufacturing,Maintenance,M4,2.2,2025-11-11,low engagement
+EMP-00016,Finance,Controllership,M1,4.5,2025-03-20,low engagement
+EMP-00041,Marketing,Brand,M2,4.8,2025-05-12,low engagement
+EMP-00044,Sales,Key Accounts,M2,2.0,2025-07-07,low performance rating
+EMP-00048,IT,Applications,M1,4.1,2025-08-21,low performance rating
+EMP-00052,R&D,Packaging Dev,M1,1.8,2025-02-27,low engagement
+EMP-00054,R&D,Packaging Dev,M3,1.1,2025-09-07,low engagement
+EMP-00058,Finance,Controllership,M2,1.3,2025-05-09,low engagement
+EMP-00064,HR,Payroll,M3,7.9,2025-01-10,low engagement
+EMP-00067,Supply Chain,Logistics,M2,2.4,2025-10-13,below-band pay
+EMP-00086,Sales,Key Accounts,M1,0.3,2025-04-20,long commute
+EMP-00095,Legal,Compliance,M2,10.1,2025-12-03,low engagement
+EMP-00096,IT,Infrastructure,M3,1.1,2025-12-28,below-band pay
+EMP-00104,HR,HRBP,M5,2.7,2025-10-04,below-band pay
+EMP-00105,R&D,Product Dev,M3,4.4,2025-10-11,low performance rating
+EMP-00107,R&D,Packaging Dev,M2,0.4,2025-05-03,low performance rating
+EMP-00112,Customer Service,Distributor Care,M1,3.1,2025-10-26,low engagement
+EMP-00114,Manufacturing,Production,M2,2.4,2025-09-16,low engagement
+EMP-00118,Supply Chain,Warehouse,M3,4.8,2025-07-07,long commute
+EMP-00128,Customer Service,Distributor Care,M1,3.3,2025-06-26,low engagement
+EMP-00129,Sales,Field Sales,M1,3.8,2025-02-21,long commute
+EMP-00132,HR,HRBP,M5,6.6,2025-05-17,below-band pay
+EMP-00136,IT,Infrastructure,M1,0.2,2025-05-14,low performance rating
+EMP-00142,Supply Chain,Warehouse,M2,1.6,2025-11-18,low engagement
+EMP-00153,Customer Service,Consumer Care,M1,7.8,2025-06-07,low performance rating
+EMP-00161,HR,HRBP,M1,8.1,2025-07-13,below-band pay
+EMP-00168,Legal,Compliance,M4,1.0,2025-05-20,low engagement
+EMP-00172,Supply Chain,Warehouse,M2,1.7,2025-09-15,low engagement
+EMP-00188,Legal,Contracts,M1,2.8,2025-11-25,below-band pay
+EMP-00189,Manufacturing,Production,M3,1.4,2025-09-06,below-band pay
+EMP-00194,Sales,Field Sales,M4,1.2,2025-01-21,below-band pay
+EMP-00200,Sales,Sales Ops,M2,3.8,2025-12-17,low performance rating
+EMP-00212,Finance,Controllership,M3,2.9,2025-03-19,low engagement
+EMP-00213,Customer Service,Distributor Care,M1,10.5,2025-08-07,low performance rating
+EMP-00216,R&D,Packaging Dev,M3,4.7,2025-11-27,low performance rating
+EMP-00225,Marketing,Digital,M1,15.4,2025-12-15,no recent promotion
+EMP-00245,Finance,FP&A,M3,5.7,2025-05-21,low performance rating
+EMP-00247,Legal,Contracts,M3,6.0,2025-09-26,low engagement
+EMP-00253,Manufacturing,Maintenance,M2,4.2,2025-10-28,below-band pay
+EMP-00258,Legal,Compliance,M1,0.4,2025-07-19,low performance rating
+EMP-00259,Finance,Accounts Payable,M1,6.7,2025-12-21,below-band pay
+EMP-00260,IT,Applications,M3,3.3,2025-01-17,low engagement
+EMP-00262,Supply Chain,Warehouse,M4,6.8,2025-04-12,low engagement
+EMP-00277,R&D,Product Dev,M2,4.5,2025-08-05,below-band pay
+EMP-00281,Sales,Field Sales,M1,3.7,2025-04-05,no recent promotion
+EMP-00284,Legal,Compliance,M1,2.8,2025-12-22,low engagement
+EMP-00292,Manufacturing,Maintenance,M1,3.3,2025-05-28,long commute
+EMP-00299,Finance,Accounts Payable,M3,9.6,2025-07-14,low engagement
+EMP-00301,R&D,Product Dev,M3,11.4,2025-06-28,low engagement
+EMP-00314,HR,Talent Acquisition,M2,1.6,2025-02-21,low performance rating
+EMP-00322,Legal,Contracts,M2,1.9,2025-04-28,below-band pay
+EMP-00335,Marketing,Trade Marketing,M1,3.8,2025-07-09,no recent promotion
+EMP-00341,R&D,Packaging Dev,M1,0.5,2025-05-21,low engagement
+EMP-00355,R&D,Product Dev,M2,3.9,2025-03-09,low performance rating
+EMP-00361,Legal,Compliance,M5,2.2,2025-11-20,low engagement
+EMP-00367,Sales,Sales Ops,M3,0.4,2025-04-13,low engagement
+EMP-00379,Manufacturing,Production,M2,5.3,2025-04-04,low performance rating
+EMP-00384,R&D,Product Dev,M2,7.2,2025-03-07,no recent promotion
+EMP-00385,Customer Service,Consumer Care,M2,3.4,2025-01-08,low performance rating
+EMP-00400,R&D,Product Dev,M2,9.5,2025-05-15,below-band pay
+EMP-00410,Finance,Controllership,M6,2.0,2025-08-18,low engagement
+EMP-00411,HR,Payroll,M3,0.4,2025-07-14,low performance rating
+EMP-00412,Supply Chain,Warehouse,M3,8.8,2025-11-02,below-band pay
+EMP-00414,IT,Data & Analytics,M4,1.8,2025-04-06,low engagement
+EMP-00438,HR,Payroll,M2,0.9,2025-05-05,no recent promotion
+EMP-00447,Marketing,Digital,M6,10.6,2025-01-09,low engagement
+EMP-00451,Manufacturing,Quality,M1,14.5,2025-05-22,no recent promotion
+EMP-00457,IT,Applications,M6,1.5,2025-09-06,long commute
+EMP-00459,Customer Service,Distributor Care,M4,2.3,2025-11-28,low performance rating
+EMP-00468,Manufacturing,Quality,M5,2.3,2025-01-24,low engagement
+EMP-00473,Marketing,Digital,M1,2.1,2025-08-26,below-band pay
+EMP-00476,Customer Service,Consumer Care,M2,2.2,2025-01-02,low engagement
+EMP-00481,Supply Chain,Logistics,M2,4.8,2025-02-11,long commute
+EMP-00485,IT,Infrastructure,M1,3.2,2025-10-10,low performance rating
+EMP-00488,HR,Talent Acquisition,M1,3.5,2025-02-14,below-band pay
+EMP-00494,Marketing,Trade Marketing,M2,2.2,2025-06-22,below-band pay
+EMP-00508,Finance,Controllership,M4,1.6,2025-11-03,low engagement
+EMP-00511,Finance,Accounts Payable,M1,0.2,2025-07-27,below-band pay
+EMP-00516,Legal,Compliance,M1,2.0,2025-12-27,below-band pay
+EMP-00520,IT,Data & Analytics,M4,0.7,2025-03-08,low performance rating
+EMP-00537,Finance,Accounts Payable,M2,4.5,2025-02-19,low engagement
+EMP-00541,Legal,Contracts,M6,0.9,2025-12-17,low engagement
+EMP-00548,Customer Service,Distributor Care,M1,8.0,2025-02-17,no recent promotion
+EMP-00557,HR,Payroll,M1,3.8,2025-11-27,low engagement
+EMP-00562,Legal,Compliance,M1,5.4,2025-10-25,low performance rating
+EMP-00563,Manufacturing,Maintenance,M4,4.3,2025-09-09,below-band pay
+EMP-00567,Marketing,Trade Marketing,M3,1.2,2025-08-03,low engagement
+EMP-00570,Manufacturing,Maintenance,M2,6.5,2025-04-20,below-band pay
+EMP-00583,IT,Data & Analytics,M1,1.7,2025-02-25,low performance rating
+EMP-00586,IT,Infrastructure,M3,0.9,2025-06-11,below-band pay
+EMP-00587,IT,Applications,M1,0.4,2025-10-24,low engagement
+EMP-00591,IT,Data & Analytics,M5,0.2,2025-07-26,low engagement
+EMP-00593,Sales,Key Accounts,M2,2.5,2025-12-24,below-band pay
+EMP-00605,IT,Infrastructure,M5,1.0,2025-04-14,low engagement
+EMP-00612,Legal,Compliance,M3,15.1,2025-04-05,low performance rating
+EMP-00615,Customer Service,Distributor Care,M1,2.4,2025-02-06,low engagement
+EMP-00623,Supply Chain,Planning,M6,0.6,2025-04-09,low engagement
+EMP-00628,IT,Applications,M1,1.4,2025-08-14,no recent promotion
+EMP-00642,Sales,Field Sales,M4,3.4,2025-05-28,low performance rating
+EMP-00646,Sales,Field Sales,M4,8.5,2025-10-02,no recent promotion
+EMP-00655,Legal,Contracts,M4,3.3,2025-08-18,no recent promotion
+EMP-00657,R&D,Packaging Dev,M4,0.7,2025-06-23,below-band pay
+EMP-00663,R&D,Packaging Dev,M1,0.4,2025-02-11,low engagement
+EMP-00668,Manufacturing,Production,M6,2.6,2025-09-14,low performance rating
+EMP-00669,R&D,Packaging Dev,M1,3.8,2025-08-22,below-band pay
+EMP-00671,HR,HRBP,M1,11.1,2025-04-09,below-band pay
+EMP-00673,IT,Applications,M6,2.2,2025-03-12,below-band pay
+EMP-00682,Manufacturing,Maintenance,M1,3.0,2025-08-23,below-band pay
+EMP-00686,Customer Service,Consumer Care,M2,18.8,2025-06-27,below-band pay
+EMP-00689,Manufacturing,Maintenance,M3,5.5,2025-05-01,low engagement
+EMP-00701,Supply Chain,Logistics,M1,1.3,2025-11-20,below-band pay
+EMP-00702,Customer Service,Distributor Care,M2,2.0,2025-01-27,long commute
+EMP-00703,HR,Payroll,M1,0.9,2025-12-22,low engagement
+EMP-00705,Customer Service,Consumer Care,M1,1.5,2025-01-23,low engagement
+EMP-00725,Supply Chain,Logistics,M1,14.3,2025-11-08,no recent promotion
+EMP-00729,HR,Talent Acquisition,M2,2.4,2025-05-18,low engagement
+EMP-00740,IT,Data & Analytics,M2,12.7,2025-07-10,low engagement
+EMP-00742,Customer Service,Consumer Care,M1,3.3,2025-11-23,low engagement
+EMP-00743,Finance,Controllership,M4,1.3,2025-06-26,below-band pay
+EMP-00745,Legal,Compliance,M2,0.3,2025-11-04,low engagement
+EMP-00746,Legal,Compliance,M2,3.3,2025-09-28,low engagement
+EMP-00759,Marketing,Digital,M1,6.1,2025-04-28,low engagement
+EMP-00760,IT,Data & Analytics,M2,0.2,2025-08-13,below-band pay
+EMP-00770,Finance,Accounts Payable,M3,3.3,2025-01-13,below-band pay
+EMP-00774,Supply Chain,Logistics,M4,1.6,2025-05-10,long commute
+EMP-00780,Customer Service,Consumer Care,M4,1.4,2025-02-27,low performance rating
+EMP-00790,Sales,Sales Ops,M3,2.6,2025-04-10,low engagement
+EMP-00794,Sales,Sales Ops,M1,1.2,2025-04-28,low engagement
+EMP-00797,HR,Talent Acquisition,M1,4.1,2025-03-15,low engagement
+EMP-00798,Supply Chain,Warehouse,M1,5.3,2025-11-11,low engagement
+EMP-00799,Legal,Compliance,M3,0.2,2025-11-14,below-band pay
+EMP-00804,Legal,Contracts,M3,1.9,2025-01-09,below-band pay
+EMP-00814,IT,Data & Analytics,M3,0.2,2025-02-27,low engagement
+EMP-00820,Supply Chain,Logistics,M1,7.0,2025-08-16,low performance rating
+EMP-00821,R&D,Packaging Dev,M1,4.2,2025-12-14,low engagement
+EMP-00830,R&D,Product Dev,M1,18.4,2025-06-23,no recent promotion
+EMP-00833,IT,Data & Analytics,M2,1.6,2025-07-27,low engagement
+EMP-00841,R&D,Product Dev,M1,1.5,2025-02-27,low engagement
+EMP-00845,Finance,Accounts Payable,M1,8.2,2025-03-23,low engagement
+EMP-00855,Sales,Field Sales,M1,6.2,2025-05-17,low engagement
+EMP-00863,HR,Talent Acquisition,M4,9.1,2025-02-12,long commute
+EMP-00866,Manufacturing,Maintenance,M4,4.9,2025-07-20,low engagement
+EMP-00869,R&D,Product Dev,M1,3.9,2025-12-27,below-band pay
+EMP-00876,HR,Payroll,M4,5.2,2025-09-24,below-band pay
+EMP-00877,Supply Chain,Logistics,M2,0.4,2025-06-15,long commute
+EMP-00878,Manufacturing,Production,M2,5.6,2025-12-01,low engagement
+EMP-00880,Supply Chain,Logistics,M3,0.2,2025-01-21,below-band pay
+EMP-00887,Legal,Contracts,M2,3.2,2025-11-06,long commute
+EMP-00890,HR,HRBP,M3,11.8,2025-11-15,below-band pay
+EMP-00892,Customer Service,Distributor Care,M5,20.0,2025-11-05,no recent promotion
+EMP-00909,R&D,Product Dev,M1,1.1,2025-01-13,below-band pay
+EMP-00912,Legal,Compliance,M4,2.2,2025-04-21,below-band pay
+EMP-00941,IT,Applications,M1,6.1,2025-05-11,long commute
+EMP-00946,IT,Infrastructure,M1,1.5,2025-10-03,long commute
+EMP-00948,Finance,FP&A,M4,4.1,2025-02-06,low engagement
+EMP-00951,R&D,Product Dev,M2,1.8,2025-04-17,low performance rating
+EMP-00953,Legal,Contracts,M1,0.6,2025-12-25,below-band pay
+EMP-00954,Sales,Field Sales,M1,0.4,2025-11-25,low engagement
+EMP-00960,Legal,Contracts,M2,5.4,2025-03-28,below-band pay
+EMP-00963,Sales,Field Sales,M1,2.8,2025-10-22,low engagement
+EMP-00967,HR,Talent Acquisition,M5,2.3,2025-07-26,long commute
+EMP-00973,Finance,FP&A,M1,8.3,2025-06-15,low engagement
+EMP-00976,Manufacturing,Quality,M3,2.9,2025-08-28,low engagement
+EMP-00977,Supply Chain,Planning,M2,0.3,2025-12-05,below-band pay
+EMP-00979,HR,Talent Acquisition,M2,11.3,2025-05-06,no recent promotion
+EMP-00981,HR,Payroll,M6,5.4,2025-11-19,low engagement
+EMP-00984,Legal,Contracts,M2,9.2,2025-06-26,below-band pay
+EMP-00985,Finance,Controllership,M1,1.8,2025-05-07,low engagement
+EMP-00989,IT,Data & Analytics,M2,13.6,2025-02-14,below-band pay
+EMP-00990,Finance,Accounts Payable,M4,7.2,2025-06-06,no recent promotion
+EMP-00994,Manufacturing,Production,M1,6.4,2025-07-13,below-band pay
+EMP-00996,IT,Applications,M2,1.5,2025-10-08,low performance rating
+EMP-01001,HR,HRBP,M1,2.9,2025-01-01,low engagement
+EMP-01013,Customer Service,Consumer Care,M2,4.4,2025-09-21,below-band pay
+EMP-01029,Legal,Compliance,M3,2.4,2025-10-21,low engagement
+EMP-01030,Sales,Field Sales,M2,2.6,2025-04-03,low engagement
+EMP-01043,Supply Chain,Logistics,M3,0.7,2025-08-07,low engagement
+EMP-01050,Manufacturing,Quality,M1,1.8,2025-05-23,low performance rating
+EMP-01055,Legal,Compliance,M1,4.8,2025-03-02,no recent promotion
+EMP-01060,Finance,FP&A,M3,1.2,2025-07-20,low performance rating
+EMP-01065,Manufacturing,Quality,M2,0.3,2025-07-20,low engagement
+EMP-01084,Supply Chain,Logistics,M4,11.8,2025-05-05,no recent promotion
+EMP-01088,IT,Data & Analytics,M3,2.2,2025-02-12,long commute
+EMP-01092,R&D,Product Dev,M3,5.8,2025-03-19,low engagement
+EMP-01095,Legal,Contracts,M3,4.8,2025-02-01,below-band pay
+EMP-01100,Legal,Compliance,M1,7.1,2025-12-17,below-band pay
+EMP-01109,IT,Infrastructure,M6,2.1,2025-07-25,no recent promotion
+EMP-01118,IT,Infrastructure,M4,1.3,2025-08-27,low engagement
+EMP-01120,Marketing,Brand,M4,3.5,2025-11-16,low engagement
+EMP-01124,Sales,Sales Ops,M1,1.2,2025-02-08,low engagement
+EMP-01148,Supply Chain,Logistics,M4,0.2,2025-12-07,below-band pay
+EMP-01151,Marketing,Digital,M1,0.5,2025-04-28,low performance rating
+EMP-01154,Finance,Controllership,M1,11.0,2025-05-10,no recent promotion
+EMP-01158,Customer Service,Consumer Care,M1,0.5,2025-12-16,below-band pay
+EMP-01169,Supply Chain,Logistics,M4,2.7,2025-07-05,low engagement
+EMP-01176,Sales,Field Sales,M3,0.2,2025-07-28,low engagement
+EMP-01186,Manufacturing,Production,M4,1.9,2025-04-20,low engagement
+EMP-01211,Legal,Contracts,M3,0.4,2025-04-27,low engagement
+EMP-01216,Supply Chain,Warehouse,M2,2.8,2025-05-24,below-band pay
+EMP-01217,IT,Infrastructure,M2,2.5,2025-11-07,low engagement
+EMP-01223,Sales,Sales Ops,M4,4.3,2025-07-06,low performance rating
+EMP-01225,Finance,FP&A,M1,7.1,2025-07-26,low engagement
+EMP-01232,Customer Service,Distributor Care,M3,10.0,2025-03-01,low engagement
+EMP-01234,Sales,Field Sales,M3,1.9,2025-05-09,low performance rating
+EMP-01235,IT,Data & Analytics,M1,7.4,2025-04-20,low engagement
+EMP-01237,Finance,Accounts Payable,M1,2.7,2025-08-08,low performance rating
+EMP-01239,Legal,Contracts,M1,1.2,2025-06-19,low engagement
+EMP-01244,Sales,Field Sales,M1,1.4,2025-11-21,below-band pay
+EMP-01250,Manufacturing,Quality,M5,3.8,2025-08-03,low performance rating
+EMP-01261,Supply Chain,Planning,M1,6.7,2025-01-16,low performance rating
+EMP-01266,Manufacturing,Production,M4,8.4,2025-03-28,low performance rating
+EMP-01273,Marketing,Brand,M2,3.7,2025-06-23,long commute
+EMP-01278,Supply Chain,Logistics,M1,4.9,2025-07-22,below-band pay
+EMP-01283,Legal,Compliance,M2,2.6,2025-04-23,low engagement
+EMP-01284,Legal,Contracts,M3,1.4,2025-07-23,no recent promotion
+EMP-01297,Sales,Key Accounts,M1,6.6,2025-07-24,no recent promotion
+EMP-01302,Manufacturing,Quality,M2,14.3,2025-10-09,low performance rating
+EMP-01310,Manufacturing,Maintenance,M5,3.7,2025-02-04,low engagement
+EMP-01313,R&D,Packaging Dev,M2,3.3,2025-09-02,long commute
+EMP-01321,Legal,Contracts,M2,0.2,2025-01-11,low engagement
+EMP-01325,Manufacturing,Production,M2,1.2,2025-04-16,low engagement
+EMP-01327,Customer Service,Consumer Care,M2,3.2,2025-06-20,low engagement
+EMP-01334,Legal,Compliance,M5,3.5,2025-11-26,long commute
+EMP-01342,Marketing,Digital,M4,11.9,2025-10-23,below-band pay
+EMP-01347,Manufacturing,Quality,M2,7.1,2025-12-26,low engagement
+EMP-01351,Marketing,Digital,M4,9.9,2025-01-01,no recent promotion
+EMP-01368,Manufacturing,Quality,M1,0.7,2025-05-17,low performance rating
+EMP-01374,Finance,FP&A,M4,2.1,2025-10-13,low engagement
+EMP-01375,Manufacturing,Maintenance,M6,2.0,2025-05-13,below-band pay
+EMP-01379,Manufacturing,Quality,M3,9.7,2025-11-12,no recent promotion
+EMP-01390,HR,Payroll,M1,11.8,2025-03-18,low engagement
+EMP-01391,Sales,Key Accounts,M5,3.8,2025-01-19,low performance rating
+EMP-01392,Supply Chain,Logistics,M4,9.6,2025-03-09,no recent promotion
+EMP-01393,HR,Payroll,M1,0.8,2025-03-17,below-band pay
+EMP-01394,HR,Talent Acquisition,M1,7.2,2025-08-11,low engagement
+EMP-01399,Supply Chain,Logistics,M2,4.1,2025-08-05,below-band pay
+EMP-01401,IT,Infrastructure,M2,1.1,2025-02-11,long commute
+EMP-01404,Sales,Field Sales,M2,3.6,2025-12-17,below-band pay
+EMP-01405,Manufacturing,Production,M1,0.5,2025-07-05,low engagement
+EMP-01406,Customer Service,Distributor Care,M1,7.5,2025-05-04,low engagement
+EMP-01407,Finance,Controllership,M5,1.2,2025-06-02,low engagement
+EMP-01411,Marketing,Brand,M4,0.2,2025-03-16,low engagement
+EMP-01422,R&D,Product Dev,M2,0.4,2025-05-24,no recent promotion
+EMP-01434,Customer Service,Consumer Care,M1,1.0,2025-06-14,low engagement
+EMP-01439,HR,HRBP,M5,11.2,2025-05-09,below-band pay
+EMP-01449,Sales,Key Accounts,M3,3.9,2025-10-27,low engagement
+EMP-01450,Finance,Accounts Payable,M1,1.0,2025-05-17,below-band pay
+EMP-01455,HR,Payroll,M2,6.0,2025-06-14,low performance rating
+EMP-01459,Legal,Compliance,M5,1.9,2025-03-11,low engagement
+EMP-01470,IT,Infrastructure,M1,2.5,2025-12-16,low performance rating
+EMP-01479,R&D,Product Dev,M2,6.8,2025-03-18,low engagement
+EMP-01480,IT,Infrastructure,M2,7.4,2025-11-21,below-band pay
+EMP-01484,IT,Applications,M1,0.9,2025-08-02,low engagement
+EMP-01485,Sales,Sales Ops,M3,15.6,2025-04-05,below-band pay
+EMP-01487,Supply Chain,Warehouse,M6,1.9,2025-01-08,no recent promotion
+EMP-01489,Legal,Contracts,M4,10.5,2025-03-02,low performance rating
+EMP-01497,IT,Applications,M4,5.2,2025-08-09,low engagement
+EMP-01509,Customer Service,Distributor Care,M1,14.6,2025-03-23,below-band pay
+EMP-01514,Supply Chain,Planning,M3,2.5,2025-08-14,low engagement
+EMP-01520,Supply Chain,Warehouse,M1,4.3,2025-02-16,low performance rating
+EMP-01523,Manufacturing,Production,M4,1.0,2025-01-15,low engagement
+EMP-01530,R&D,Packaging Dev,M1,1.4,2025-06-23,low engagement
+EMP-01543,Marketing,Brand,M2,2.9,2025-09-16,low performance rating
+EMP-01544,Customer Service,Consumer Care,M1,3.3,2025-08-16,low performance rating
+EMP-01545,Manufacturing,Quality,M2,14.5,2025-02-28,below-band pay
+EMP-01561,Customer Service,Distributor Care,M6,3.6,2025-12-28,below-band pay
+EMP-01564,R&D,Product Dev,M4,1.8,2025-03-04,below-band pay
+EMP-01573,Manufacturing,Quality,M2,9.9,2025-06-03,no recent promotion
+EMP-01574,Marketing,Brand,M4,1.3,2025-04-28,below-band pay
+EMP-01575,Manufacturing,Production,M1,9.2,2025-05-06,below-band pay
+EMP-01576,Customer Service,Distributor Care,M1,5.3,2025-03-24,no recent promotion
+EMP-01582,Customer Service,Consumer Care,M2,3.9,2025-09-27,low engagement
+EMP-01587,Marketing,Digital,M2,2.8,2025-05-19,low performance rating
+EMP-01592,R&D,Product Dev,M1,1.4,2025-11-19,low performance rating
+EMP-01600,HR,Talent Acquisition,M1,5.1,2025-04-19,low engagement
+EMP-01606,R&D,Product Dev,M1,7.6,2025-01-17,low engagement
+EMP-01614,HR,Payroll,M2,4.1,2025-10-06,below-band pay
+EMP-01615,Customer Service,Distributor Care,M4,5.6,2025-07-03,low engagement
+EMP-01617,Marketing,Brand,M1,4.3,2025-04-25,low performance rating
+EMP-01622,Customer Service,Consumer Care,M2,2.0,2025-08-22,below-band pay
+EMP-01633,Supply Chain,Logistics,M3,0.8,2025-02-11,low engagement
+EMP-01634,Supply Chain,Warehouse,M3,5.8,2025-01-10,below-band pay
+EMP-01660,Legal,Compliance,M1,4.2,2025-11-22,low performance rating
+EMP-01661,Finance,Accounts Payable,M1,1.1,2025-02-13,low engagement
+EMP-01668,R&D,Packaging Dev,M1,1.4,2025-06-19,below-band pay
+EMP-01676,Supply Chain,Logistics,M5,7.6,2025-02-27,below-band pay
+EMP-01677,Finance,FP&A,M3,17.3,2025-06-05,low engagement
+EMP-01678,R&D,Packaging Dev,M2,2.3,2025-01-03,low engagement
+EMP-01689,Manufacturing,Quality,M3,12.9,2025-08-27,long commute
+EMP-01690,Supply Chain,Logistics,M2,7.5,2025-12-22,below-band pay
+EMP-01692,Legal,Compliance,M5,1.3,2025-08-15,low engagement
+EMP-01717,Sales,Field Sales,M2,4.4,2025-11-09,below-band pay
+EMP-01721,Legal,Compliance,M1,3.3,2025-10-22,low performance rating
+EMP-01743,Legal,Compliance,M1,2.8,2025-01-11,low engagement
+EMP-01745,Manufacturing,Production,M3,12.6,2025-01-21,below-band pay
+EMP-01749,Sales,Field Sales,M2,7.1,2025-10-15,low engagement
+EMP-01751,R&D,Product Dev,M3,0.7,2025-06-24,below-band pay
+EMP-01761,IT,Data & Analytics,M2,6.6,2025-12-26,low engagement
+EMP-01764,Customer Service,Consumer Care,M1,1.5,2025-10-05,low engagement
+EMP-01766,Manufacturing,Production,M1,17.4,2025-04-28,low engagement
+EMP-01780,Marketing,Digital,M2,1.1,2025-01-26,low performance rating
+EMP-01782,Marketing,Trade Marketing,M4,6.0,2025-11-10,below-band pay
+EMP-01795,Supply Chain,Logistics,M4,0.2,2025-06-26,long commute
+EMP-01802,Sales,Field Sales,M3,8.8,2025-01-24,no recent promotion
+EMP-01804,Sales,Field Sales,M3,7.4,2025-02-18,low engagement
+EMP-01809,Customer Service,Distributor Care,M2,7.7,2025-10-13,no recent promotion
+EMP-01811,HR,HRBP,M1,9.2,2025-02-13,low engagement
+EMP-01816,Sales,Field Sales,M2,0.5,2025-05-06,low engagement
+EMP-01817,Marketing,Digital,M3,10.5,2025-04-25,no recent promotion
+EMP-01822,IT,Data & Analytics,M2,3.1,2025-07-03,no recent promotion
+EMP-01838,Customer Service,Consumer Care,M2,3.9,2025-01-28,low engagement
+EMP-01840,Marketing,Brand,M3,2.6,2025-04-06,below-band pay
+EMP-01849,Supply Chain,Logistics,M2,0.2,2025-07-25,below-band pay
+EMP-01852,Legal,Compliance,M4,2.9,2025-07-10,low engagement
+EMP-01855,R&D,Packaging Dev,M4,9.8,2025-11-25,no recent promotion
+EMP-01858,Sales,Key Accounts,M1,0.6,2025-11-05,low engagement
+EMP-01859,Manufacturing,Quality,M1,0.6,2025-02-10,low performance rating
+EMP-01860,IT,Infrastructure,M1,5.4,2025-08-26,low engagement
+EMP-01866,R&D,Product Dev,M4,1.3,2025-07-24,low engagement
+EMP-01869,Supply Chain,Warehouse,M2,0.5,2025-05-22,below-band pay
+EMP-01880,Marketing,Digital,M2,3.3,2025-10-05,below-band pay
+EMP-01883,Manufacturing,Quality,M2,3.0,2025-06-22,long commute
+EMP-01900,HR,Payroll,M1,3.8,2025-02-27,below-band pay
+EMP-01902,Legal,Contracts,M1,5.4,2025-06-17,low engagement
+EMP-01903,Finance,Accounts Payable,M4,2.9,2025-04-16,low performance rating
+EMP-01917,Manufacturing,Quality,M3,7.3,2025-08-13,below-band pay
+EMP-01922,Supply Chain,Warehouse,M2,1.6,2025-08-09,below-band pay
+EMP-01923,Supply Chain,Warehouse,M2,2.1,2025-10-20,low performance rating
+EMP-01931,Legal,Contracts,M3,0.9,2025-07-03,low engagement
+EMP-01940,R&D,Product Dev,M1,2.4,2025-07-26,low performance rating
+EMP-01943,HR,Talent Acquisition,M2,3.4,2025-06-20,below-band pay
+EMP-01948,IT,Applications,M5,1.4,2025-03-14,low engagement
+EMP-01957,Marketing,Trade Marketing,M2,8.0,2025-11-14,low engagement
+EMP-01964,Customer Service,Distributor Care,M1,1.4,2025-02-02,low engagement
+EMP-01965,Sales,Field Sales,M3,0.7,2025-09-11,below-band pay
+EMP-01968,Supply Chain,Logistics,M4,6.6,2025-08-22,no recent promotion
+EMP-01969,HR,Talent Acquisition,M2,1.0,2025-04-21,low engagement
+EMP-01970,Supply Chain,Logistics,M2,7.7,2025-11-23,no recent promotion
+EMP-01971,Supply Chain,Logistics,M2,4.9,2025-03-16,low engagement
+EMP-01974,Marketing,Digital,M2,16.0,2025-09-21,low engagement
+EMP-01976,HR,Talent Acquisition,M1,1.6,2025-11-17,low performance rating
+EMP-01996,R&D,Product Dev,M3,4.8,2025-02-10,low performance rating
+EMP-01997,Sales,Key Accounts,M1,1.3,2025-08-14,below-band pay
+EMP-02003,Finance,Controllership,M5,2.5,2025-02-26,below-band pay
+EMP-02007,Sales,Sales Ops,M2,14.2,2025-08-10,long commute
+EMP-02025,Marketing,Trade Marketing,M2,0.6,2025-03-05,below-band pay
+EMP-02033,Marketing,Brand,M2,1.0,2025-11-10,below-band pay
+EMP-02035,Customer Service,Consumer Care,M1,0.2,2025-04-17,below-band pay
+EMP-02036,Manufacturing,Production,M4,13.8,2025-07-10,no recent promotion
+EMP-02037,Marketing,Digital,M5,0.2,2025-10-02,low performance rating
+EMP-02038,Finance,FP&A,M1,3.4,2025-09-03,low engagement
+EMP-02039,Legal,Contracts,M3,4.1,2025-01-17,low engagement
+EMP-02048,IT,Data & Analytics,M2,1.4,2025-02-17,low engagement
+EMP-02055,Marketing,Trade Marketing,M2,2.4,2025-07-14,no recent promotion
+EMP-02061,Legal,Contracts,M5,6.3,2025-02-15,low engagement
+EMP-02068,Legal,Compliance,M6,0.5,2025-11-24,below-band pay
+EMP-02073,Sales,Field Sales,M1,1.5,2025-10-27,low engagement
+EMP-02077,R&D,Product Dev,M6,0.4,2025-05-12,low engagement
+EMP-02078,Legal,Compliance,M1,3.5,2025-05-19,below-band pay
+EMP-02084,Supply Chain,Warehouse,M1,9.7,2025-02-25,no recent promotion
+EMP-02091,Sales,Field Sales,M2,5.3,2025-09-01,below-band pay
+EMP-02094,Finance,Accounts Payable,M1,7.1,2025-02-24,below-band pay
+EMP-02096,Customer Service,Consumer Care,M2,20.9,2025-11-15,low performance rating
+EMP-02105,R&D,Packaging Dev,M3,3.1,2025-03-26,low performance rating
+EMP-02109,IT,Applications,M2,1.1,2025-03-27,no recent promotion
+EMP-02127,Legal,Compliance,M2,8.0,2025-07-02,low engagement
+EMP-02131,Supply Chain,Planning,M1,0.6,2025-02-14,low performance rating
+EMP-02145,R&D,Packaging Dev,M2,0.8,2025-12-10,below-band pay
+EMP-02150,Marketing,Trade Marketing,M1,11.0,2025-06-19,below-band pay
+EMP-02155,Sales,Sales Ops,M3,8.7,2025-12-15,below-band pay
+EMP-02157,Legal,Contracts,M1,1.2,2025-11-15,low engagement
+EMP-02162,Sales,Key Accounts,M1,1.9,2025-10-26,long commute
+EMP-02165,Supply Chain,Warehouse,M4,3.1,2025-05-11,low engagement
+EMP-02175,Sales,Field Sales,M2,2.2,2025-03-07,below-band pay
+EMP-02176,Legal,Compliance,M2,9.9,2025-03-03,below-band pay
+EMP-02185,Legal,Compliance,M2,1.5,2025-12-20,low performance rating
+EMP-02188,Customer Service,Consumer Care,M3,6.4,2025-05-28,no recent promotion
+EMP-02190,Customer Service,Distributor Care,M5,6.1,2025-11-04,low performance rating
+EMP-02193,Customer Service,Consumer Care,M3,2.5,2025-07-18,below-band pay
+EMP-02196,Supply Chain,Warehouse,M4,1.5,2025-01-01,low performance rating
+EMP-02199,Marketing,Brand,M1,0.3,2025-07-04,below-band pay
+EMP-02203,R&D,Packaging Dev,M4,5.8,2025-01-06,below-band pay
+EMP-02223,Customer Service,Consumer Care,M2,1.0,2025-11-16,low engagement
+EMP-02224,IT,Infrastructure,M1,0.8,2025-08-23,low performance rating
+EMP-02231,Manufacturing,Production,M2,0.2,2025-07-28,below-band pay
+EMP-02234,HR,Payroll,M5,10.7,2025-11-24,low engagement
+EMP-02244,R&D,Product Dev,M1,1.6,2025-10-24,low engagement
+EMP-02246,Finance,FP&A,M1,0.5,2025-08-10,long commute
+EMP-02249,Customer Service,Distributor Care,M2,1.7,2025-10-27,low engagement
+EMP-02252,Sales,Field Sales,M3,0.6,2025-10-12,low engagement
+EMP-02263,Legal,Contracts,M2,5.7,2025-12-22,low performance rating
+EMP-02269,Sales,Key Accounts,M3,0.8,2025-12-22,low engagement
+EMP-02270,Manufacturing,Quality,M4,6.7,2025-07-26,below-band pay
+EMP-02272,Finance,Accounts Payable,M3,11.3,2025-05-03,low engagement
+EMP-02283,Sales,Sales Ops,M2,0.8,2025-03-05,low performance rating
+EMP-02284,Sales,Key Accounts,M3,6.3,2025-01-07,below-band pay
+EMP-02288,Manufacturing,Quality,M3,1.2,2025-02-27,low performance rating
+EMP-02300,Manufacturing,Quality,M3,0.5,2025-01-23,no recent promotion
+EMP-02303,Legal,Contracts,M2,0.7,2025-04-28,low engagement
+EMP-02305,Supply Chain,Planning,M2,3.6,2025-01-07,low engagement
+EMP-02316,Marketing,Trade Marketing,M1,4.2,2025-08-21,below-band pay
+EMP-02325,Sales,Sales Ops,M1,5.4,2025-03-21,low engagement
+EMP-02329,Legal,Contracts,M2,2.8,2025-04-14,below-band pay
+EMP-02339,Sales,Sales Ops,M2,0.2,2025-11-28,low performance rating
+EMP-02345,Customer Service,Consumer Care,M3,8.4,2025-09-07,no recent promotion
+EMP-02355,Supply Chain,Warehouse,M2,19.1,2025-02-10,below-band pay
+EMP-02364,Finance,Controllership,M4,1.7,2025-08-05,low engagement
+EMP-02368,Legal,Compliance,M2,7.1,2025-08-14,below-band pay
+EMP-02370,Marketing,Digital,M2,3.8,2025-01-04,low engagement
+EMP-02372,R&D,Packaging Dev,M2,1.4,2025-03-05,low engagement
+EMP-02378,R&D,Packaging Dev,M3,5.7,2025-12-23,low engagement
+EMP-02381,Supply Chain,Warehouse,M4,2.7,2025-08-16,low engagement
+EMP-02384,Legal,Compliance,M1,0.2,2025-08-01,below-band pay
+EMP-02387,R&D,Packaging Dev,M6,3.8,2025-08-19,low engagement
+EMP-02389,Manufacturing,Production,M3,8.3,2025-04-07,no recent promotion
+EMP-02412,Marketing,Trade Marketing,M6,1.6,2025-05-19,low engagement
+EMP-02414,Customer Service,Consumer Care,M2,6.0,2025-07-02,low performance rating
+EMP-02417,Legal,Contracts,M1,0.4,2025-06-01,low engagement
+EMP-02420,IT,Applications,M5,12.7,2025-02-21,low performance rating
+EMP-02423,IT,Applications,M3,2.7,2025-12-14,low performance rating
+EMP-02424,Marketing,Brand,M1,12.6,2025-07-28,long commute
+EMP-02427,IT,Data & Analytics,M1,0.4,2025-08-24,low engagement
+EMP-02431,Supply Chain,Planning,M4,9.8,2025-10-20,low engagement
+EMP-02434,Supply Chain,Logistics,M2,0.9,2025-12-18,below-band pay
+EMP-02442,HR,HRBP,M1,0.4,2025-05-02,below-band pay
+EMP-02446,Customer Service,Distributor Care,M2,13.1,2025-08-13,no recent promotion
+EMP-02449,Finance,Accounts Payable,M3,6.7,2025-08-17,low engagement
+EMP-02450,Legal,Contracts,M3,5.1,2025-10-24,low performance rating
+EMP-02452,Supply Chain,Warehouse,M3,1.8,2025-10-22,below-band pay
+EMP-02453,HR,HRBP,M3,5.6,2025-08-08,low engagement
+EMP-02474,Customer Service,Distributor Care,M2,0.4,2025-12-02,low performance rating
+EMP-02476,Sales,Key Accounts,M1,2.8,2025-09-01,below-band pay
+EMP-02478,Customer Service,Distributor Care,M1,1.4,2025-07-19,below-band pay
+EMP-02488,Supply Chain,Warehouse,M4,3.5,2025-06-18,low engagement
+EMP-02490,Finance,Accounts Payable,M3,2.6,2025-02-09,low engagement
+EMP-02494,Sales,Key Accounts,M5,2.9,2025-11-14,low engagement
+EMP-02504,Customer Service,Distributor Care,M4,4.5,2025-08-04,low performance rating
+EMP-02507,IT,Applications,M5,0.2,2025-08-20,below-band pay
+EMP-02510,IT,Data & Analytics,M3,4.6,2025-11-12,low engagement
+EMP-02512,Customer Service,Consumer Care,M2,4.5,2025-08-23,below-band pay
+EMP-02526,IT,Infrastructure,M1,7.5,2025-07-01,no recent promotion
+EMP-02530,Marketing,Trade Marketing,M3,1.4,2025-03-10,low performance rating
+EMP-02534,Manufacturing,Production,M1,11.5,2025-12-07,low engagement
+EMP-02547,Finance,Accounts Payable,M5,2.3,2025-08-12,low engagement
+EMP-02552,Sales,Key Accounts,M2,10.6,2025-08-08,no recent promotion
+EMP-02558,R&D,Product Dev,M1,4.1,2025-09-08,low engagement
+EMP-02561,Finance,Accounts Payable,M3,5.8,2025-10-22,below-band pay
+EMP-02568,Marketing,Trade Marketing,M1,0.4,2025-06-20,below-band pay
+EMP-02569,HR,Payroll,M3,12.5,2025-12-22,low engagement
+EMP-02574,Legal,Compliance,M4,3.1,2025-08-05,below-band pay
+EMP-02578,Finance,Accounts Payable,M4,3.0,2025-05-24,low engagement
+EMP-02579,Marketing,Digital,M1,0.3,2025-12-13,low engagement
+EMP-02602,Marketing,Digital,M3,3.7,2025-07-27,low engagement
+EMP-02603,HR,HRBP,M2,7.8,2025-11-21,low performance rating
+EMP-02610,Supply Chain,Planning,M2,7.1,2025-12-12,low performance rating
+EMP-02632,R&D,Packaging Dev,M2,1.6,2025-08-26,no recent promotion
+EMP-02645,Customer Service,Consumer Care,M1,0.4,2025-03-20,low engagement
+EMP-02647,Sales,Field Sales,M3,7.8,2025-04-10,below-band pay
+EMP-02649,IT,Data & Analytics,M3,7.2,2025-12-24,below-band pay
+EMP-02654,Supply Chain,Logistics,M3,15.4,2025-02-22,low engagement
+EMP-02655,Finance,FP&A,M2,0.5,2025-08-05,low engagement
+EMP-02671,Manufacturing,Maintenance,M3,0.3,2025-03-07,low engagement
+EMP-02672,Sales,Field Sales,M2,5.5,2025-03-20,below-band pay
+EMP-02673,Manufacturing,Production,M2,3.4,2025-08-04,low engagement
+EMP-02679,Sales,Sales Ops,M3,1.7,2025-07-16,below-band pay
+EMP-02680,Sales,Key Accounts,M2,6.4,2025-05-08,low engagement
+EMP-02692,R&D,Packaging Dev,M2,2.5,2025-04-18,below-band pay
+EMP-02697,HR,HRBP,M4,2.4,2025-01-01,low engagement
+EMP-02701,Supply Chain,Warehouse,M3,6.7,2025-06-09,no recent promotion
+EMP-02705,R&D,Packaging Dev,M3,10.0,2025-06-22,low engagement
+EMP-02708,Manufacturing,Maintenance,M1,8.9,2025-03-06,no recent promotion
+EMP-02710,Supply Chain,Planning,M3,2.6,2025-09-02,low engagement
+EMP-02712,Finance,Controllership,M1,3.1,2025-02-11,low engagement
+EMP-02713,R&D,Packaging Dev,M1,3.1,2025-07-04,below-band pay
+EMP-02716,Marketing,Brand,M1,2.6,2025-10-08,below-band pay
+EMP-02718,Supply Chain,Warehouse,M6,6.6,2025-02-18,low performance rating
+EMP-02730,R&D,Product Dev,M4,1.4,2025-04-16,below-band pay
+EMP-02742,Supply Chain,Warehouse,M4,9.9,2025-05-11,no recent promotion
+EMP-02745,Manufacturing,Quality,M2,2.8,2025-06-25,low engagement
+EMP-02750,Manufacturing,Quality,M1,2.0,2025-01-25,below-band pay
+EMP-02758,Manufacturing,Maintenance,M3,4.4,2025-09-09,below-band pay
+EMP-02764,HR,HRBP,M2,2.5,2025-03-28,low performance rating
+EMP-02766,Supply Chain,Planning,M5,7.3,2025-12-28,low engagement
+EMP-02767,Manufacturing,Maintenance,M2,5.2,2025-09-20,below-band pay
+EMP-02773,Customer Service,Distributor Care,M4,2.6,2025-11-04,low performance rating
+EMP-02775,Manufacturing,Maintenance,M3,1.3,2025-12-02,low performance rating
+EMP-02790,Customer Service,Distributor Care,M2,1.0,2025-08-26,low engagement
+EMP-02796,Supply Chain,Logistics,M2,2.2,2025-08-27,no recent promotion
+EMP-02797,Supply Chain,Planning,M3,4.2,2025-02-04,below-band pay
+EMP-02804,Supply Chain,Planning,M3,1.2,2025-10-20,below-band pay
+EMP-02805,IT,Data & Analytics,M1,8.4,2025-02-27,below-band pay
+EMP-02830,IT,Data & Analytics,M3,0.4,2025-09-02,below-band pay
+EMP-02831,R&D,Packaging Dev,M1,4.6,2025-09-04,below-band pay
+EMP-02844,R&D,Product Dev,M1,2.6,2025-03-21,low engagement
+EMP-02845,Finance,Controllership,M1,11.5,2025-02-28,low engagement
+EMP-02851,Manufacturing,Quality,M2,1.5,2025-04-12,below-band pay
+EMP-02857,Customer Service,Consumer Care,M3,1.9,2025-03-24,long commute
+EMP-02858,Sales,Key Accounts,M2,2.3,2025-05-23,long commute
+EMP-02861,Legal,Contracts,M2,0.7,2025-08-25,below-band pay
+EMP-02862,HR,Payroll,M2,8.0,2025-09-16,below-band pay
+EMP-02865,Legal,Contracts,M2,11.8,2025-12-28,below-band pay
+EMP-02874,Legal,Contracts,M1,1.1,2025-02-05,long commute
+EMP-02879,Customer Service,Consumer Care,M2,1.2,2025-11-12,below-band pay
+EMP-02883,Sales,Field Sales,M2,3.1,2025-06-27,low performance rating
+EMP-02888,Manufacturing,Maintenance,M5,1.9,2025-03-04,low engagement
+EMP-02892,R&D,Product Dev,M6,0.5,2025-04-15,below-band pay
+EMP-02895,IT,Applications,M6,5.1,2025-07-25,low performance rating
+EMP-02897,IT,Applications,M6,9.8,2025-01-08,low engagement
+EMP-02898,Manufacturing,Quality,M1,8.6,2025-08-11,low engagement
+EMP-02905,Customer Service,Consumer Care,M2,6.6,2025-05-17,no recent promotion
+EMP-02907,R&D,Packaging Dev,M5,1.1,2025-03-03,no recent promotion
+EMP-02914,Customer Service,Consumer Care,M3,0.9,2025-05-12,below-band pay
+EMP-02919,Manufacturing,Production,M1,0.7,2025-12-25,low performance rating
+EMP-02920,HR,Talent Acquisition,M3,4.4,2025-07-12,below-band pay
+EMP-02923,Manufacturing,Production,M1,2.0,2025-11-22,low performance rating
+EMP-02925,Marketing,Trade Marketing,M1,7.3,2025-04-05,low engagement
+EMP-02926,HR,HRBP,M3,6.1,2025-09-14,below-band pay
+EMP-02931,Legal,Compliance,M3,3.8,2025-04-05,low performance rating
+EMP-02944,Manufacturing,Production,M1,4.5,2025-07-14,below-band pay
+EMP-02948,Supply Chain,Logistics,M4,2.0,2025-07-15,below-band pay
+EMP-02955,Finance,Accounts Payable,M2,3.6,2025-09-26,below-band pay
+EMP-02958,Supply Chain,Warehouse,M1,1.9,2025-11-12,low performance rating
+EMP-02959,IT,Applications,M1,3.2,2025-01-15,low engagement
+EMP-02963,Finance,Controllership,M1,10.2,2025-03-25,low performance rating
+EMP-02965,R&D,Packaging Dev,M1,2.6,2025-01-23,low engagement
+EMP-02968,Sales,Key Accounts,M1,0.3,2025-09-03,low engagement
+EMP-02970,Finance,Accounts Payable,M1,13.9,2025-02-11,no recent promotion
+EMP-02972,Manufacturing,Production,M3,0.2,2025-06-13,low engagement
+EMP-02984,Customer Service,Distributor Care,M3,12.9,2025-03-14,below-band pay
+EMP-02985,Marketing,Digital,M1,4.2,2025-01-13,low performance rating
+EMP-02989,IT,Applications,M1,1.6,2025-01-22,below-band pay
+EMP-03001,Supply Chain,Warehouse,M4,2.1,2025-11-05,below-band pay
+EMP-03002,Marketing,Brand,M3,0.2,2025-10-02,below-band pay
+EMP-03005,HR,Talent Acquisition,M1,1.4,2025-11-23,low engagement
+EMP-03006,Manufacturing,Quality,M3,7.5,2025-11-17,low performance rating
+EMP-03007,Supply Chain,Planning,M3,0.6,2025-05-14,low engagement
+EMP-03008,Marketing,Digital,M1,9.9,2025-07-22,below-band pay
+EMP-03014,Supply Chain,Planning,M3,1.9,2025-12-18,below-band pay
+EMP-03016,IT,Infrastructure,M3,4.3,2025-05-24,low engagement
+EMP-03031,Sales,Field Sales,M4,2.8,2025-12-11,low performance rating
+EMP-03034,Legal,Compliance,M1,6.5,2025-06-01,no recent promotion
+EMP-03035,Supply Chain,Logistics,M6,1.4,2025-05-17,low engagement
+EMP-03038,Customer Service,Distributor Care,M1,6.8,2025-10-05,below-band pay
+EMP-03043,IT,Infrastructure,M3,16.8,2025-12-13,low engagement
+EMP-03049,Sales,Sales Ops,M5,7.9,2025-08-21,below-band pay
+EMP-03060,Legal,Contracts,M1,0.2,2025-04-18,low engagement
+EMP-03065,Manufacturing,Production,M2,6.7,2025-10-26,low engagement
+EMP-03069,Customer Service,Consumer Care,M3,0.5,2025-10-21,long commute
+EMP-03070,Sales,Key Accounts,M2,1.9,2025-08-23,low engagement
+EMP-03074,IT,Applications,M3,1.8,2025-06-26,low performance rating
+EMP-03076,Finance,Controllership,M4,3.5,2025-11-13,low engagement
+EMP-03077,HR,HRBP,M2,1.4,2025-04-10,below-band pay
+EMP-03082,Manufacturing,Production,M1,6.0,2025-02-02,below-band pay
+EMP-03092,R&D,Product Dev,M5,3.9,2025-09-11,below-band pay
+EMP-03095,Finance,Controllership,M2,5.7,2025-07-24,no recent promotion
+EMP-03099,Customer Service,Consumer Care,M1,13.0,2025-12-24,low performance rating
+EMP-03108,HR,Talent Acquisition,M3,0.8,2025-03-17,low performance rating
+EMP-03113,Sales,Field Sales,M3,1.7,2025-09-10,long commute
+EMP-03117,Finance,FP&A,M1,1.2,2025-04-03,low engagement
+EMP-03118,Supply Chain,Warehouse,M3,1.2,2025-09-18,low engagement
+EMP-03128,Legal,Contracts,M1,1.8,2025-05-17,low engagement
+EMP-03160,Sales,Key Accounts,M2,2.3,2025-06-25,low engagement
+EMP-03163,Legal,Compliance,M1,0.9,2025-11-06,below-band pay
+EMP-03164,Sales,Field Sales,M3,4.1,2025-01-01,low engagement
+EMP-03174,Supply Chain,Planning,M6,2.4,2025-09-19,below-band pay
+EMP-03189,Sales,Field Sales,M1,1.7,2025-05-08,below-band pay
+EMP-03190,Finance,Accounts Payable,M1,0.3,2025-05-24,below-band pay
+EMP-03201,Manufacturing,Production,M3,2.4,2025-07-17,low engagement
+EMP-03209,Manufacturing,Quality,M1,1.3,2025-02-24,low performance rating
+EMP-03210,Manufacturing,Production,M1,6.7,2025-01-27,no recent promotion
+EMP-03215,IT,Infrastructure,M1,0.4,2025-06-09,low engagement
+EMP-03229,R&D,Product Dev,M3,5.6,2025-11-17,low engagement
+EMP-03235,Manufacturing,Maintenance,M1,0.6,2025-06-04,low performance rating
+EMP-03247,R&D,Packaging Dev,M2,0.3,2025-01-25,low engagement
+EMP-03248,R&D,Packaging Dev,M4,3.3,2025-11-04,low engagement
+EMP-03249,R&D,Product Dev,M4,0.4,2025-08-10,low engagement
+EMP-03250,HR,Payroll,M2,11.9,2025-10-24,below-band pay
+EMP-03252,HR,Payroll,M2,2.8,2025-01-15,below-band pay
+EMP-03255,R&D,Packaging Dev,M1,3.7,2025-06-08,low performance rating
+EMP-03258,IT,Applications,M2,2.1,2025-12-19,low performance rating
+EMP-03259,HR,Payroll,M2,0.2,2025-10-23,low engagement
+EMP-03268,Manufacturing,Quality,M3,5.8,2025-11-22,low engagement
+EMP-03276,IT,Applications,M4,0.5,2025-09-28,below-band pay
+EMP-03286,HR,Payroll,M3,0.2,2025-10-08,low engagement
+EMP-03288,Sales,Field Sales,M2,3.0,2025-06-10,below-band pay
+EMP-03293,Customer Service,Consumer Care,M2,10.2,2025-05-22,no recent promotion
+EMP-03294,IT,Data & Analytics,M2,0.4,2025-12-19,low engagement
+EMP-03295,IT,Data & Analytics,M2,0.4,2025-11-05,low engagement
+EMP-03333,Legal,Compliance,M1,1.1,2025-12-13,low engagement
+EMP-03334,Marketing,Trade Marketing,M1,1.6,2025-09-24,below-band pay
+EMP-03339,Marketing,Digital,M1,4.6,2025-04-04,no recent promotion
+EMP-03345,IT,Applications,M2,20.5,2025-06-17,low engagement
+EMP-03350,R&D,Product Dev,M2,7.7,2025-10-07,low engagement
+EMP-03355,Marketing,Trade Marketing,M2,1.7,2025-06-15,low engagement
+EMP-03357,Legal,Compliance,M2,5.9,2025-02-05,low performance rating
+EMP-03365,Manufacturing,Quality,M2,2.9,2025-12-14,low engagement
+EMP-03368,Sales,Key Accounts,M3,7.6,2025-07-03,low performance rating
+EMP-03378,Sales,Sales Ops,M5,7.3,2025-02-02,below-band pay
+EMP-03383,Finance,Accounts Payable,M5,3.3,2025-07-05,below-band pay
+EMP-03385,Marketing,Brand,M1,3.1,2025-08-07,low performance rating
+EMP-03388,R&D,Product Dev,M5,1.6,2025-08-03,below-band pay
+EMP-03392,Sales,Sales Ops,M3,2.3,2025-06-22,below-band pay
+EMP-03397,IT,Data & Analytics,M1,2.0,2025-09-13,low engagement
+EMP-03401,HR,Talent Acquisition,M1,6.0,2025-10-18,low engagement
+EMP-03403,Manufacturing,Maintenance,M2,2.2,2025-09-25,low engagement
+EMP-03404,Customer Service,Distributor Care,M4,3.1,2025-07-28,low engagement
+EMP-03408,Finance,FP&A,M1,0.2,2025-05-19,below-band pay
+EMP-03413,Finance,Accounts Payable,M2,0.4,2025-08-21,low performance rating
+EMP-03423,IT,Infrastructure,M3,3.5,2025-07-15,below-band pay
+EMP-03425,Finance,Controllership,M1,1.0,2025-12-16,low engagement
+EMP-03432,HR,HRBP,M2,8.1,2025-12-14,no recent promotion
+EMP-03433,Manufacturing,Quality,M6,13.4,2025-03-05,low performance rating
+EMP-03435,Customer Service,Consumer Care,M1,5.5,2025-09-05,low performance rating
+EMP-03460,Supply Chain,Warehouse,M4,8.2,2025-08-23,low performance rating
+EMP-03468,Legal,Compliance,M2,2.0,2025-08-05,long commute
+EMP-03473,Supply Chain,Logistics,M2,6.9,2025-12-17,low engagement
+EMP-03480,Legal,Compliance,M2,7.9,2025-09-04,low performance rating
+EMP-03483,Manufacturing,Quality,M4,5.6,2025-12-07,low engagement
+EMP-03484,Customer Service,Distributor Care,M2,0.7,2025-08-16,below-band pay
+EMP-03496,Sales,Key Accounts,M4,0.2,2025-01-24,below-band pay
+EMP-03498,Marketing,Brand,M3,4.5,2025-03-18,low performance rating
+EMP-03499,Supply Chain,Logistics,M2,0.9,2025-06-04,below-band pay
+EMP-03509,Sales,Field Sales,M3,18.6,2025-10-28,no recent promotion
+EMP-03510,IT,Infrastructure,M1,8.8,2025-07-04,long commute
+EMP-03516,Legal,Contracts,M3,0.9,2025-02-12,long commute
+EMP-03527,Manufacturing,Maintenance,M1,16.6,2025-10-10,no recent promotion
+EMP-03530,HR,HRBP,M2,12.8,2025-01-17,low engagement
+EMP-03537,Manufacturing,Quality,M1,0.3,2025-03-04,below-band pay
+EMP-03543,Supply Chain,Warehouse,M4,3.8,2025-06-10,low engagement
+EMP-03547,Legal,Compliance,M2,2.0,2025-06-10,low engagement
+EMP-03550,IT,Infrastructure,M4,0.5,2025-05-16,low performance rating
+EMP-03564,HR,Payroll,M1,3.5,2025-01-26,below-band pay
+EMP-03571,HR,Talent Acquisition,M3,3.8,2025-03-05,low performance rating
+EMP-03574,IT,Infrastructure,M2,1.1,2025-10-14,long commute
+EMP-03583,Customer Service,Distributor Care,M2,0.3,2025-01-10,below-band pay
+EMP-03584,Legal,Contracts,M3,4.3,2025-05-07,low engagement
+EMP-03588,Marketing,Digital,M2,1.9,2025-03-27,low engagement
+EMP-03591,Supply Chain,Warehouse,M4,4.9,2025-12-16,below-band pay
+EMP-03594,R&D,Packaging Dev,M1,1.0,2025-01-04,low performance rating
+EMP-03595,Finance,Controllership,M1,15.8,2025-09-12,no recent promotion
+EMP-03596,Sales,Sales Ops,M6,1.2,2025-02-28,low engagement
+EMP-03598,Sales,Field Sales,M4,3.9,2025-01-14,below-band pay
+EMP-03601,Marketing,Brand,M1,2.3,2025-08-19,low engagement
+EMP-03602,R&D,Packaging Dev,M1,4.5,2025-05-19,low performance rating
+EMP-03605,Manufacturing,Maintenance,M5,0.4,2025-08-11,low engagement
+EMP-03616,Supply Chain,Planning,M3,0.2,2025-07-16,below-band pay
+EMP-03623,Marketing,Trade Marketing,M2,5.1,2025-12-27,long commute
+EMP-03632,Supply Chain,Logistics,M5,6.7,2025-10-05,low engagement
+EMP-03642,Legal,Compliance,M1,6.9,2025-03-17,low performance rating
+EMP-03643,Sales,Field Sales,M4,6.1,2025-11-15,no recent promotion
+EMP-03647,Supply Chain,Warehouse,M2,0.5,2025-08-22,low performance rating
+EMP-03650,Marketing,Brand,M4,22.0,2025-08-05,low engagement
+EMP-03652,Sales,Key Accounts,M1,0.7,2025-12-11,low engagement
+EMP-03655,Supply Chain,Logistics,M2,3.3,2025-02-26,low engagement
+EMP-03657,Customer Service,Distributor Care,M1,5.9,2025-10-22,below-band pay
+EMP-03659,Manufacturing,Maintenance,M4,3.0,2025-10-14,no recent promotion
+EMP-03660,Marketing,Brand,M1,0.9,2025-07-08,below-band pay
+EMP-03673,Customer Service,Consumer Care,M1,0.2,2025-07-11,below-band pay
+EMP-03681,HR,Talent Acquisition,M3,6.0,2025-09-02,low engagement
+EMP-03686,IT,Data & Analytics,M1,2.5,2025-11-15,low engagement
+EMP-03700,Finance,Controllership,M2,13.3,2025-12-09,low performance rating
+EMP-03703,Supply Chain,Warehouse,M2,2.3,2025-11-03,low engagement
+EMP-03705,Marketing,Digital,M1,10.3,2025-03-23,low engagement
+EMP-03707,Sales,Field Sales,M2,3.4,2025-01-19,below-band pay
+EMP-03714,Manufacturing,Production,M3,0.7,2025-11-26,low engagement
+EMP-03716,Sales,Field Sales,M4,11.8,2025-12-10,low engagement
+EMP-03718,Legal,Contracts,M4,4.6,2025-09-21,low engagement
+EMP-03719,IT,Infrastructure,M5,12.0,2025-02-21,no recent promotion
+EMP-03726,IT,Applications,M4,1.5,2025-09-03,no recent promotion
+EMP-03727,Manufacturing,Production,M5,0.9,2025-04-20,low engagement
+EMP-03755,R&D,Product Dev,M2,2.5,2025-09-19,low performance rating
+EMP-03757,Supply Chain,Logistics,M1,10.0,2025-01-19,no recent promotion
+EMP-03770,Manufacturing,Production,M3,1.8,2025-09-07,low engagement
+EMP-03775,Legal,Contracts,M4,6.9,2025-08-17,long commute
+EMP-03778,Marketing,Brand,M1,3.3,2025-01-04,low engagement
+EMP-03781,Manufacturing,Quality,M1,0.2,2025-11-18,low engagement
+EMP-03787,Sales,Field Sales,M5,0.9,2025-03-01,below-band pay
+EMP-03797,Legal,Compliance,M3,0.2,2025-05-26,no recent promotion
+EMP-03804,IT,Infrastructure,M1,4.0,2025-04-08,low engagement
+EMP-03820,Marketing,Trade Marketing,M4,5.8,2025-12-27,low engagement
+EMP-03821,Customer Service,Consumer Care,M3,1.4,2025-10-15,below-band pay
+EMP-03826,Sales,Sales Ops,M2,0.4,2025-02-26,below-band pay
+EMP-03827,IT,Infrastructure,M1,2.5,2025-09-20,low performance rating
+EMP-03837,IT,Infrastructure,M3,10.2,2025-06-13,low engagement
+EMP-03843,R&D,Product Dev,M3,9.1,2025-10-02,long commute
+EMP-03853,IT,Data & Analytics,M2,11.9,2025-08-28,low engagement
+EMP-03854,Manufacturing,Maintenance,M2,8.2,2025-01-11,below-band pay
+EMP-03857,Supply Chain,Logistics,M4,22.0,2025-07-06,below-band pay
+EMP-03873,R&D,Packaging Dev,M1,0.3,2025-07-01,long commute
+EMP-03880,R&D,Product Dev,M2,0.5,2025-09-11,low performance rating
+EMP-03883,Manufacturing,Maintenance,M3,5.4,2025-07-09,low engagement
+EMP-03890,IT,Infrastructure,M1,4.6,2025-02-04,below-band pay
+EMP-03896,Legal,Compliance,M3,12.2,2025-02-18,below-band pay
+EMP-03898,Supply Chain,Warehouse,M2,2.0,2025-03-10,low engagement
+EMP-03909,Sales,Field Sales,M2,1.3,2025-03-06,low engagement
+EMP-03916,HR,HRBP,M2,0.2,2025-05-25,below-band pay
+EMP-03920,Finance,Controllership,M2,4.7,2025-02-05,low engagement
+EMP-03921,Supply Chain,Warehouse,M1,0.2,2025-05-14,below-band pay
+EMP-03922,HR,Payroll,M4,17.0,2025-11-06,low engagement
+EMP-03925,HR,Talent Acquisition,M1,1.6,2025-01-20,below-band pay
+EMP-03929,Finance,FP&A,M1,0.7,2025-06-06,below-band pay
+EMP-03964,Finance,FP&A,M1,0.2,2025-01-23,below-band pay
+EMP-03969,Supply Chain,Planning,M2,5.2,2025-01-10,low engagement
+EMP-03971,R&D,Packaging Dev,M5,6.0,2025-07-04,low performance rating
+EMP-03972,Customer Service,Distributor Care,M1,6.5,2025-06-05,below-band pay
+EMP-03975,Supply Chain,Warehouse,M1,11.4,2025-07-11,low performance rating
+EMP-03976,HR,HRBP,M1,2.8,2025-05-13,low engagement
+EMP-03981,Sales,Key Accounts,M1,0.5,2025-02-02,low performance rating
+EMP-03983,R&D,Packaging Dev,M3,3.9,2025-04-08,low engagement
+EMP-03989,IT,Infrastructure,M6,9.7,2025-10-19,low engagement
+EMP-03993,Legal,Contracts,M1,0.2,2025-04-16,low performance rating
+EMP-03995,Supply Chain,Warehouse,M1,16.9,2025-09-25,low engagement
+EMP-03996,R&D,Packaging Dev,M1,2.8,2025-09-13,below-band pay
+EMP-03997,Sales,Key Accounts,M1,3.7,2025-02-09,low engagement

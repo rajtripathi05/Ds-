@@ -1,0 +1,17 @@
+Aarav Kaur
+Pune, India | aarav@example.com | +91-9059352812
+
+SUMMARY
+Data Analyst with 4 years of experience in IT services. Known for analytical rigour.
+
+SKILLS
+data visualization, Python, Excel, SQL, ETL, Power BI
+
+EXPERIENCE
+- Jr. Data Officer, Metro Snacks (2022-2022)
+    Delivered productivity through SQL and Python.
+- Jr. Data Officer, Vertex Foods (2018-2023)
+    Delivered quality through Power BI and Power BI.
+
+EDUCATION
+B.Tech Electronics

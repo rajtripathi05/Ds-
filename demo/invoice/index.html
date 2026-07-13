@@ -169,21 +169,21 @@ function renderDetail(s){
 function decidedHTML(s,done){
   const gt=s.ground_truth||{}; const gtDec=gt.decision||'—';
   const youReject=done.you==='reject';
-  // "correct" = your action aligns with ground-truth intent (reject aligns with reject; approve aligns with auto_approve)
-  const align = (youReject&&gtDec==='reject')||(!youReject&&gtDec==='auto_approve');
+  const judgment = gtDec==='route_to_human';
+  const align = judgment ? true : ((youReject&&gtDec==='reject')||(!youReject&&gtDec==='auto_approve'));
+  const verdict = judgment
+    ? `<span class="match">✓ correctly escalated</span> — the engine was right to route this to a human; there's no single auto-answer, so your call stands.`
+    : `Your decision ${align?'<span class="match">matched ✓</span>':'<span class="mismatch">differed ✗</span>'} the answer key.`;
   return `<div class="decided">You <b>${done.you==='approve'?'approved':'rejected'}</b> this invoice.
-    <div class="gt">Answer key: <b>${esc(gtDec)}</b>${gt.discrepancy_type?' · '+esc(gt.discrepancy_type):''}${gt.reason?' — '+esc(gt.reason):''}<br>
-    Your decision ${align?'<span class="match">matched ✓</span>':'<span class="mismatch">differed ✗</span>'} the ground truth. Every override is logged and retrains the auto-approve gate.</div></div>`;
+    <div class="gt">Answer key: <b>${esc(judgment?'route to a human (judgment call)':gtDec)}</b>${gt.discrepancy_type?' · '+esc(gt.discrepancy_type):''}${gt.reason?' — '+esc(gt.reason):''}<br>
+    ${verdict} Every override is logged and retrains the auto-approve gate.</div></div>`;
 }
 function decide(id,action){
   const s=SETS.find(x=>x.set_id===id); const gt=(s.ground_truth||{}).decision;
-  const align=(action==='reject'&&gt==='reject')||(action==='approve'&&gt==='auto_approve');
+  const align = gt==='route_to_human' ? true : ((action==='reject'&&gt==='reject')||(action==='approve'&&gt==='auto_approve'));
   decisions[id]={you:action,correct:align};
   document.getElementById('decidedSlot').innerHTML=decidedHTML(s,decisions[id]);
   renderList();renderProg();
-  // auto-advance to next pending human item
-  const next=SETS.find(x=>x.outcome==='route_to_human'&&!decisions[x.set_id]);
-  if(next){setTimeout(()=>{},350);}
 }
 function renderProg(){
   const total=SETS.filter(x=>x.outcome==='route_to_human').length;

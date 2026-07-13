@@ -1,0 +1,14 @@
+question,expected_doc,answer
+How many earned leave days per year?,hr-leave-policy.md,"24 days, capped at 45 days carry-forward."
+What is the maternity leave duration?,hr-leave-policy.md,26 weeks.
+How many WFH days per week are allowed?,hr-wfh-policy.md,"Up to 2 days per week for corporate roles, with manager approval."
+What is the hotel limit for metro cities?,hr-travel-policy.md,"Rs 6,000 per night in metros."
+What is the mileage reimbursement rate?,hr-travel-policy.md,Rs 12 per km for own vehicle.
+Within how many days must a POSH complaint be filed?,hr-posh-policy.md,Within 3 months of the incident.
+What is the notice period for senior grades M4-M6?,hr-notice-period.md,60 days.
+What is the quantity tolerance in AP three-way match?,fin-ap-policy.md,±2 percent.
+What match is required before paying a vendor invoice?,fin-ap-policy.md,"A 3-way match of invoice, PO and GRN."
+What is a manager's spending approval limit?,fin-delegation-authority.md,Up to Rs 1 lakh.
+What quantity variance in GRN gets escalated?,sc-grn-sop.md,Anything beyond ±2 percent.
+What temperature range is required for cold-chain dairy?,sc-cold-chain-sop.md,Between 2 and 8 degrees Celsius.
+When is a trade-scheme over-claim rejected?,sales-trade-scheme-policy.md,When it exceeds 10 percent of entitlement.

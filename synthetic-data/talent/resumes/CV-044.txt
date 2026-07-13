@@ -1,0 +1,17 @@
+Vihaan Pillai
+Noida, India | vihaan@example.com | +91-9090251568
+
+SUMMARY
+Finance Executive with 3 years of experience in consumer goods. Known for stakeholder management.
+
+SKILLS
+Tally, invoice processing, GST, scikit-learn, MLOps
+
+EXPERIENCE
+- Jr. Finance Associate, Metro Snacks (2020-2022)
+    Delivered growth through Tally and GST.
+- Jr. Finance Specialist, Zenith Retail (2022-2022)
+    Delivered productivity through invoice processing and scikit-learn.
+
+EDUCATION
+MBA, Marketing

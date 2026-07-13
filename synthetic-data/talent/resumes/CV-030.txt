@@ -1,0 +1,17 @@
+Zoya Mehta
+Chennai, India | zoya@example.com | +91-7736420307
+
+SUMMARY
+ML Engineer with 9 years of experience in IT services. Known for ownership.
+
+SKILLS
+NLP, TensorFlow, scikit-learn, vector databases, Python, model deployment, machine learning, MLOps
+
+EXPERIENCE
+- ML Associate, Vertex Foods (2018-2023)
+    Delivered quality through model deployment and TensorFlow.
+- ML Associate, Delta Trading (2021-2023)
+    Delivered cost savings through vector databases and model deployment.
+
+EDUCATION
+M.Sc Statistics

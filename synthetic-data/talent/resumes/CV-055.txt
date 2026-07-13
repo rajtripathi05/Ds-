@@ -1,0 +1,17 @@
+Imran Kaur
+Pune, India | imran@example.com | +91-8341091233
+
+SUMMARY
+ML Engineer with 9 years of experience in FMCG. Known for ownership.
+
+SKILLS
+vector databases, scikit-learn, Python, TensorFlow, NLP, machine learning
+
+EXPERIENCE
+- ML Officer, Zenith Retail (2020-present)
+    Delivered cost savings through Python and vector databases.
+- Jr. ML Executive, Orbit Beverages (2018-2023)
+    Delivered growth through machine learning and scikit-learn.
+
+EDUCATION
+B.Tech, Computer Science

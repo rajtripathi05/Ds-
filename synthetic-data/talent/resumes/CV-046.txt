@@ -1,0 +1,17 @@
+Ananya Joshi
+Bengaluru, India | ananya@example.com | +91-8491972668
+
+SUMMARY
+RPA Developer with 6 years of experience in IT services. Known for stakeholder management.
+
+SKILLS
+process automation, workflow design, exception handling, UiPath, OCR, VBA
+
+EXPERIENCE
+- Sr. RPA Associate, Nimbus Consumer (2021-2022)
+    Delivered growth through UiPath and OCR.
+- RPA Officer, Nimbus Consumer (2019-2022)
+    Delivered cost savings through exception handling and UiPath.
+
+EDUCATION
+B.Tech, Computer Science

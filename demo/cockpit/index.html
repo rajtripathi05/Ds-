@@ -255,7 +255,7 @@ function renderChart(){
    `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="National demand actual and forward forecast">
       <polygon points="${area}" fill="#9a938b" opacity=".10"></polygon>
       <polyline points="${aPts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#9a938b" stroke-width="2.5"></polyline>
-      <polyline points="${fPts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="var(--acc)" stroke-width="3.5" stroke-dasharray="1 0"></polyline>
+      <polyline points="${fPts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#b3282d" stroke-width="3.5" stroke-dasharray="1 0"></polyline>
       <line x1="${x(fStart)}" y1="${pad}" x2="${x(fStart)}" y2="${H-pad}" stroke="#d8d2ca" stroke-dasharray="4 4"></line>
     </svg>`;
 }
